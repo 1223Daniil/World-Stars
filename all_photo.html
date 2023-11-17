@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width">
+    <title>Все фото</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/all_photo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Nanum+Gothic:wght@400;700&family=Oswald:wght@300;400;500;600&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Teko:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class= "first_type">
+
+<div class="header">
+        <div class="container">
+            <div class="header_up">
+               <a class="logo_link"><img src="images/logo.svg"></a>
+                <div class="nav">
+                    <div class="bell">
+                        <a href="#">
+                            <img src="images/bell.png" alt="Notifications">
+                        </a>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="header_prof_card">
+                        <img class="header_photo" src="images/3.svg">
+                        <div class="name">
+                            Александр
+                            <div class="stars">
+                                <img src="images/header_stars.png" alt="Stars">
+                            </div>
+                        </div>
+                        <div class="header_bag">
+                            <img src="images/bag_ws.png" alt="Shopping Bag">
+                        </div>
+                        <div class="header_num">
+                            45
+                        </div>
+                    </div>
+                    <div class="menu-container">
+                        <img src="images/menu.svg" id="menuButton" onclick="toggleModal('modal_menu')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div id="modal_menu" class="modal" onclick="closeModal('modal_menu')">
+        <div class="modal-content_menu">
+           <div class="container">
+               <div class="modal_nav">
+                 <div class="modal_out_cont">
+                     <div class="modal_nav_cont">
+                          <a href="#" class ="modal_nav_el">
+                           <img src="images/m1.svg">
+                           <span>Звездный магазин</span>
+                           <img class="modal_arrow" src="images/arrow.svg">
+                       </a>
+                       <a href="#" class ="modal_nav_el">
+                          <img src="images/m2.svg">
+                           <span>Смотри и пиши новости</span>
+                           <img class="modal_arrow" src="images/arrow.svg">
+                       </a>
+                       <a href="#" class ="modal_nav_el">
+                          <img src="images/m3.svg">
+                           <span>Предложи звезду</span>
+                           <img class="modal_arrow" src="images/arrow.svg">
+                       </a>
+                       <a href="#" class ="modal_nav_el">
+                          <img src="images/m3.svg">
+                           <span>Выбирай мировую<br> звезду</span>
+                           <img class="modal_arrow" src="images/arrow.svg">
+                       </a>
+
+
+
+                       <a href="#" class ="modal_nav_el">
+                          <img src="images/m4.svg">
+                           <span>Олимп славы</span>
+                           <img class="modal_arrow" src="images/arrow.svg">
+                       </a>
+                       <a href="#" class ="modal_nav_el ">
+                          <img src="images/m5.svg">
+                           <span>Афиша встреч </span>
+                           <img class="modal_arrow" src="images/arrow.svg">
+                       </a>
+                       <a href="#" class ="modal_nav_el">
+                          <img src="images/m6.svg">
+                           <span>Профиль</span>
+                           <img class="modal_arrow" src="images/arrow.svg">
+                       </a>
+                       <a href="#" class ="modal_nav_el">
+                          <img src="images/m6.svg">
+                           <span>Кошелек</span>
+                           <img class="modal_arrow" src="images/arrow.svg">
+                       </a>
+                    </div>
+                 </div>
+                 
+                
+
+                </div>
+                <div class="modal_blocks">
+                  <div class="modal_nav_last">
+                     <a class ="modal_nav_el">
+                       <img src="images/m7.svg">
+                        <span>Зарабатывай на сайте</span>
+                    </a>
+                 </div>
+                   <div class="modal_blocks_cont_first">
+                       <div class="modal_blocks_cont1">
+                            <div class="modal_block">
+                                <p>ЗАРАБОТАЙ КЕШБЕК НА РЕКЛАМНОЙ НОВОСТИ</p>
+                                <img class="modal_block_img" src="images/mb1.svg">
+                            </div>
+                            <div class="modal_block">
+                                <p>ЗАРАБОТАТЬ НА СТИКЕРАХ И СМАЙЛИКАХ</p>
+                                <img class="modal_block_img" src="images/mb2.svg">
+                            </div>
+                        </div>
+                            <div class="modal_blocks_cont2">
+                                <div class="modal_block">
+                                    <p>ЗАРАБОТАТЬ НА КОЛЕСЕ УДАЧИ</p>
+                                    <img class="modal_block_img1" src="images/mb3.svg">
+                                </div>
+                                <div class="modal_block">
+                                    <p>ПОЛУЧИ КЕШБЕК НА ВСТРЕЧАХ С МИРОВЫМИ ЗВЕЗДАМИ</p>
+                                    <img class="modal_block_img" src="images/mb4.svg">
+                                </div> 
+                            </div>
+                </div>
+                    <div class="modal_blocks_cont3">
+                        <div class="modal_block">
+                            <p>ЗАРАБАТЫВАТЬ МОДЕРАТОРОМ</p>
+                            <img class="modal_block_img" src="images/mb5.svg">
+                        </div>
+                        <div class="modal_block">
+                            <p>ЗАРАБАТЫВАТЬ  НА 100% ЗАПОЛНЕНИИ ПРОФИЛЯ</p>
+                            <img class="modal_block_img" src="images/mb6.svg">
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+
+<div class="all_photo_main">
+
+<div class="container">
+             <div class="ap_left">
+              <div class="ap_main_buttons">
+                <div class="ap_main_up">
+                    <div>
+                     <a href="prof.html"><img class="ap_back_arrow"src="images/arrow-3.svg"></a>
+                 </div>
+                 
+                  <div class="ap_main_buttons1">
+                      <a href="#" >Мои фото</a>
+                  </div>
+                  <div>
+                      <a href="all_video.html" class="ap_main_buttons2">Мои видео</a>
+                  </div>
+                </div>
+                 
+                  
+                  <div class="ap_nav">
+                      <span class="ap_nav_main">Мои альбомы</span><br><br>
+                      <div class="ap_nav_cont_main">
+                          <div class="ap_nav_cont">
+                              <div class="ap_nav_el">
+                                  <a href="#"><span>Я и звезды </span> <img src="images/heart.svg"> 138 <img src="images/arrow.svg"></a>
+                              </div>
+                              <div class="ap_nav_el">
+                                  <a href="#"><span>Я с друзья </span> <img src="images/heart.svg"> 3 <img src="images/arrow.svg"></a>
+                              </div>
+                          </div>
+                          <div class="ap_nav_cont">
+                              <div class="ap_nav_el">
+                                  <a href="#"><span>Другие фото </span><img src="images/heart.svg"> 176 <img src="images/arrow.svg"></a>
+                              </div>
+                              <div class="ap_nav_el">
+                                  <a href="#"><span>Лучшее </span> <img src="images/heart.svg"> 176 <img src="images/arrow.svg"></a>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      
+                  </div>
+              </div>
+              <div class="ap_nav">
+                  <div class="ap_nav_cont">
+                      <p>Выбирай интересное фото/видео, отправляй в сети, мессенджеры, на конкурс   и делись в чатах WS</p>
+                  </div>
+              </div>
+          </div>
+          <div class="ap_man_around_stars">
+                <div class="man">
+                    <img class="man_img" src="images/jumping.svg">
+                    
+                        <div class="ws1">
+                           <span>1WS</span>
+                            <img src="images/star.svg">
+                        </div>
+                        <div class="ws500">
+                           <span>500WS</span>
+                           <div class="500ws_cont">
+                               <img src="images/star.svg">
+                            <img src="images/star.svg">
+                           </div>
+                        </div>
+                        <div class="ws1000">
+                          <span>1000WS</span>
+                           <div class="ws1000_cont">
+                               <img src="images/star.svg">
+                                <img src="images/star.svg">
+                                <img src="images/star.svg">
+                           </div>
+                            
+                        </div>
+                        <div class="ws1500">
+                          <span>1500WS</span>
+                           <div class="ws1500_cont_first">
+                                <img src="images/star.svg">
+                                <img src="images/star.svg">
+                           </div>
+                            <div class="ws1500_cont_second">
+                                <img src="images/star.svg">
+                                <img src="images/star.svg">
+                           </div>
+
+                        </div>
+                        <div class="ws2000">
+                           <span>2000WS</span>
+                            <img src="images/star.svg">
+                            <img src="images/star.svg">
+                            <img src="images/star.svg">
+                            <img src="images/star.svg">
+                            <img src="images/star.svg">
+                            <h1>M</h1>
+                        </div>
+                </div>
+            </div>
+         </div>
+         <div class="container">
+             <div class="all_photo_nav">
+                  <span class="all_photo_button">Добавлено в мае</span>
+               <span class="all_photo_button">Добавлено в мае</span> 
+<!--               <img src="images/magnifier.png">-->
+              </div>
+         </div>
+          
+      </div>
+      
+<div class="all_photo">
+         <div class="container">
+           <div class="ap_photo_phone">
+               <div class="ap_cont_phone">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+               </div>
+               <div class="ap_cont_phone">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+               </div>
+               <div class="ap_cont_phone">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+               </div>
+               <div class="ap_cont_phone">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+               </div>
+               <div class="ap_cont_phone">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+               </div>
+               <div class="ap_cont_phone">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+               </div>
+               <div class="ap_cont_phone">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                   <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+               </div>
+           </div>
+<div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <img src="images/messi2.svg"><p>weo]priqdw'iwofpkirejpfvirevnrejkvnaervniunrevnierve</p>
+        </div>
+    </div>
+            <div class="all_photo_cont">               
+                <div class="ap_1cont">
+                      <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                      <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                      <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                      <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                  </div>
+                  <div class="ap_sec_line">
+                      <div class="ap_2cont">
+                       <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                      </div>
+                      <div class="ap_3cont">
+                          <div>
+                              <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                              <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                          </div>
+                           <div>
+                              <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                              <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="ap_4cont">
+                       <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                       <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                      <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                      <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                  </div>
+                  <div class="ap_5cont">
+                       <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                       <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                       <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                      <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                  </div>
+                <span class="all_photo_button">Добавлено в июле</span>
+            </div>
+           
+            <div class="third_line">
+                      <div class="ap_6cont">
+                           <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                           <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                      </div>
+
+                      <div class="ap_7cont">
+                           <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                      </div>
+                      <div class="ap_8cont">
+                           <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                          <img class="photo_img" onclick="toggleModal('modal_photo')" src="images/messi2.svg">
+                      </div>
+                  </div>
+         </div>
+          
+      </div>
+
+<div class="its_intresting">
+        <div class="its_intresting_info">
+           <div class="its_intresting_text">
+               <span>Это интересно!</span>
+                <p>Смотрите  самые свежие новости о любимых спортсменов, музыкантов,  актеров,  моделей и дизайнеров и других. Приходи на встречи с мировыми звездами, дружи  с теми кто любит таких же  звезд! </p>
+           </div>
+            <div class="its_intresting_photo">
+                  <img class="its_intresting_photo_el" src="images/ellipse.svg">
+                  <img class="its_intresting_photo_main" src="images/man_with_phone.svg">
+                  <img class="its_intresting_photo_el" src="images/ellipse.svg">
+                  <img class="its_intresting_photo_main2" src="images/man_with_phone.svg">
+            </div>
+        </div>
+        <div class="container">
+            <div class="its_intresting_video">
+                <img  src="images/video.svg">
+                <div class="its_intresting_video_cont">
+                    <div class="its_intresting_video_buttons">
+                        <button>Мода</button>
+                        <button>Спорт</button>
+                        <button>Кино</button>
+                        <button>Музыка</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+    </div>
+    
+<div class="footer">
+        <div class="container">
+           <div class="footer_lists">
+               <ul class="footer_row">
+                <li><a href="#" ><span class ='footer_logo_link'>World Stars</span><br> <span>мировые звезды brics</span> </a></li>
+                <li><a href="#"><span>О нас</span></a></li>
+                <li><a href="#"><span>Словарь сайта</span></a></li>
+                <li><a href="#"><span>Контакты</span></a></li>
+            </ul>
+            <ul class="footer_row">
+                <li><a href="#"><span>Главная</span></a></li>
+                <li><a href="#"><span>Звезды кино</span></a></li>
+                <li><a href="#"><span>Встречи со звездами</span></a></li>
+                <li><a href="#"><span>Знакомься дружи</span></a></li>
+            </ul>
+            <ul class="footer_row">
+                <li><a href="#"><span>Поддержка</span> </a></li>
+                <li><a href="#"><span>Политика конфиденциальности</span></a></li>
+                <li><a href="#"><span>Term of service</span></a></li>
+                <li><a href="#"><span>Social Media</span></a></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+     
+<div id="modal_photo" class="modal" onclick="closeModal('modal_photo')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+                        <div class="large_photo">
+                            <img src="images/messi2.svg" class="modal_main">
+                            <div class="modal_link">
+                                <img src="images/heart.svg">
+                                <span>760</span>
+                            </div>
+                            
+                            <div class="modall_list">
+                               <span>репост<br>нуть<br>
+                                repost</span>
+                                <img src="images/%D1%82%D0%B3%20%D1%87%D0%B5%D1%80%D1%80%D0%BD.svg">
+                                <img src="images/%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%20%D1%87%D0%B5%D1%80%D0%BD.svg">
+                                <img src="images/%D0%B2%D1%82%20%D1%87%D0%B5%D1%80%D0%BD.svg">
+                                <img src="images/%D0%B2%D0%BA%20%D1%87%D0%B5%D1%80%D0%BD.svg">
+                                <img src="images/%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.svg">
+                                <img src="images/heart.svg">
+                            </div>
+                        </div>
+    </div>
+  </div>
+
+    <script>
+        ///////
+ document.getElementById('modal_menu').style.display = 'none';
+    document.getElementById('modal_photo').style.display = 'none';
+
+    function toggleModal(modalId) {
+      var modal = document.getElementById(modalId);
+      if (modal.style.display === 'block') {
+        modal.style.display = 'none';
+      } else {
+        modal.style.display = 'block';
+      }
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = 'none';
+    }
+    </script>
+</body>
+</html>

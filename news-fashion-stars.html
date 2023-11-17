@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#000" />
+
+    <title>World Stars</title>
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon/favicon.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/mainStyle.css">
+  </head>
+  <body>
+    <div class="wrapper fashion-bg">
+     <div class="header_main">
+        <div class="container">
+            <div class="header_up">
+                <a class="logo_link"><img src="assets/image/logo.svg"></a>
+                <div class="nav">
+                    <div class="bell">
+                        <a href="#">
+                            <img src="assets/image/bell.png" alt="Notifications">
+                        </a>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="header_prof_card">
+                        <img class="header_photo" src="assets/image/Union.svg">
+                        <div class="name">
+                            <a>Регистрация</a>
+                            
+                            <div class="stars">
+                                <img src="assets/image/none_stars.svg" alt="Stars">
+                            </div>
+                        </div>
+                        <div class="header_bag">
+                            <img src="assets/image/bag_ws.png" alt="Shopping Bag" >
+                        </div>
+                        <div class="header_num">
+                            0
+                        </div>
+                    </div>
+                    <div class="menu-container">
+                        <img src="assets/image/menu.svg" id="menuButton">
+                    </div>
+                </div>
+                <div class="login_in">
+                    <span>Войти</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <main class="main">
+  <section class="stars-news">
+  <div class="container">
+    <div class="stars-news__content">
+      <div class="stars-news__header">
+        <div class="row">
+          <div class="col-12 mb-sm-5 mb-3">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="news-sport-stars.html">Спорт</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="news-movie-stars.html">Кино</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="news-music-stars.html">Музыка</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link active" href="#">Мода</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="star-news__body body-news">
+        <div class="row">
+          <div class="col-12 mb-md-5 mb-3">
+            <div class="body-news__box">
+              <div class="body-news__box-item">
+                <h1 class="body-news__title">Мировые звезды моды</h1>
+                <div class="body-news__text">
+                  <p>Смотри и пиши свои новости о любимых мировых звездах моды</p>
+                </div>
+              </div>
+              <div class="body-news__box-item">
+                <div class="body-news__img">
+                  <img src="assets/images/sport-news/sport-news-1.jpg" alt="sport-stars-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="body-news__box">
+              <div class="body-news__adv-img"></div>
+              <div class="body-news__box-images">
+                <div class="body-news__img">
+                  <img src="assets/images/sport-news/sport-news-2.jpg" alt="sport-stars-img" />
+                </div>
+                <div class="body-news__img">
+                  <img src="assets/images/sport-news/sport-news-2.jpg" alt="sport-stars-img" />
+                </div>
+                <div class="body-news__img">
+                  <img src="assets/images/sport-news/sport-news-3.jpg" alt="sport-stars-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="star-news__footer"></div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="choose-news">
+  <div class="container">
+    <div class="choose-news__content">
+      <div class="choose-news__title title">
+        <h2>Выбери мировую звезду моды и смотри о ней новости</h2>
+      </div>
+    </div>
+    <form action="#" method="get" class="choose-form" id="choose-form">
+      <div class="row">
+        <div class="col-12 mb-5 d-flex justify-content-lg-between justify-content-center flex-lg-nowrap flex-wrap">
+          <div class="choose-form__header-wrap js-filters mb-lg-0 mb-4">
+            <button type="button" class="filter-btn">Бразилия</button>
+            <button type="button" class="filter-btn">Россия</button>
+            <button type="button" class="filter-btn">Индия</button>
+            <button type="button" class="filter-btn">Китай</button>
+            <button type="button" class="filter-btn">ЮАР</button>
+            <button type="button" class="filter-btn">Аргентина</button>
+            <button type="button" class="filter-btn">Египет</button>
+            <button type="button" class="filter-btn">Эфиопия</button>
+            <button type="button" class="filter-btn">Иран</button>
+            <button type="button" class="filter-btn">Саудовская Аравия</button>
+            <button type="button" class="filter-btn">ОАЭ</button>
+            <button type="button" class="filter-btn">Другие</button>
+          </div>
+          <label class="choose-form__search-label">
+            <button type="button">
+              <svg class="icon icon--choose-search-icon">
+                <use xlink:href="assets/svg-sprite.svg#choose-search-icon"></use>
+              </svg>
+            </button>
+          </label>
+        </div>
+      </div>
+      <div class="choose-form__body">
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-1" />
+            <img src="assets/images/choose/checkbox-img-1.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-2" />
+            <img src="assets/images/choose/choose-stars-img-3.jpg" alt="" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-3" />
+            <img src="assets/images/choose/checkbox-img-2.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-4" />
+            <img src="assets/images/choose/checkbox-img-2.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-5" />
+            <img src="assets/images/choose/checkbox-img-2.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-6" />
+            <img src="assets/images/choose/checkbox-img-2.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-7" />
+            <img src="assets/images/choose/checkbox-img-2.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-8" />
+            <img src="assets/images/choose/checkbox-img-2.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-9" />
+            <img src="assets/images/choose/checkbox-img-2.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-10" />
+            <img src="assets/images/choose/checkbox-img-2.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-11" />
+            <img src="assets/images/choose/checkbox-img-2.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+        <label class="choose-form__img-label">
+          <div class="choose-form__label-content">
+            <input type="checkbox" name="img-12" />
+            <img src="assets/images/choose/checkbox-img-2.jpg" alt="checkbox-img" />
+            <div class="favourite-btn">
+              <svg class="icon icon--star"><use xlink:href="assets/svg-sprite.svg#star"></use></svg>
+            </div>
+          </div>
+        </label>
+      </div>
+<!--
+      <div class="choose-form__footer">
+        <div class="choose-form__footer-content">
+          <span class="choose-form__submit-descr">Подтверди свой выбор</span>
+          <button class="submit" type="submit">
+            <span>Подтвердить</span>
+            <div class="circle">
+              <svg class="icon icon--submit"><use xlink:href="assets/svg-sprite.svg#submit"></use></svg>
+            </div>
+          </button>
+          <div class="pagination">
+            <span class="pagination__descr">Страница</span>
+            <span class="pagination__current-page">1</span>
+            <span class="pagination__page-of">из</span>
+            <span class="pagination__last-page">300</span>
+            <div class="pagination__btns">
+              <a href="#" class="pagination-prev">
+                <svg class="icon icon--pagination-arrow">
+                  <use xlink:href="assets/svg-sprite.svg#pagination-arrow"></use>
+                </svg>
+              </a>
+              <a href="#" class="pagination-next">
+                <svg class="icon icon--pagination-arrow">
+                  <use xlink:href="assets/svg-sprite.svg#pagination-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+-->
+    </form>
+  </div>
+</section>
+
+
+  <section class="news">
+  <div class="container">
+    <div class="news__content">
+      <div class="news__title title">
+        <h3>Читай новости по выбранным тобой звездам</h3>
+      </div>
+      <ul class="news__list">
+        <li class="news__item">
+          <div class="news__item-img">
+            <img src="assets/images/news/news.png" alt="news-img" />
+          </div>
+          <a href="" class="news__item-link">Леонель Месси стал лучшим игроком по версии журнала Times</a>
+          <div class="news__item-descr">
+            <span>Автор:</span>
+            <span>Саманта</span>
+            <span></span>
+            <span>31 Окт. 2023</span>
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__item-img">
+            <img src="assets/images/news/news.png" alt="news-img" />
+          </div>
+          <a href="" class="news__item-link">Леонель Месси стал лучшим игроком по версии журнала Times</a>
+          <div class="news__item-descr">
+            <span>Автор:</span>
+            <span>Саманта</span>
+            <span></span>
+            <span>31 Окт. 2023</span>
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__item-img">
+            <img src="assets/images/news/news.png" alt="news-img" />
+          </div>
+          <a href="" class="news__item-link">Леонель Месси стал лучшим игроком по версии журнала Times</a>
+          <div class="news__item-descr">
+            <span>Автор:</span>
+            <span>Саманта</span>
+            <span></span>
+            <span>31 Окт. 2023</span>
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__item-img">
+            <img src="assets/images/news/news.png" alt="news-img" />
+          </div>
+          <a href="" class="news__item-link">Леонель Месси стал лучшим игроком по версии журнала Times</a>
+          <div class="news__item-descr">
+            <span>Автор:</span>
+            <span>Саманта</span>
+            <span></span>
+            <span>31 Окт. 2023</span>
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__item-img">
+            <img src="assets/images/news/news.png" alt="news-img" />
+          </div>
+          <a href="" class="news__item-link">Леонель Месси стал лучшим игроком по версии журнала Times</a>
+          <div class="news__item-descr">
+            <span>Автор:</span>
+            <span>Саманта</span>
+            <span></span>
+            <span>31 Окт. 2023</span>
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__item-img">
+            <img src="assets/images/news/news.png" alt="news-img" />
+          </div>
+          <a href="" class="news__item-link">Леонель Месси стал лучшим игроком по версии журнала Times</a>
+          <div class="news__item-descr">
+            <span>Автор:</span>
+            <span>Саманта</span>
+            <span></span>
+            <span>31 Окт. 2023</span>
+          </div>
+        </li>
+      </ul>
+<!--
+      <div class="news__footer">
+        <div class="sorting-select">
+          <select name="sorting" class="js-choice">
+            <option value="">Сортировка</option>
+            <option value="По популярности">По популярности</option>
+            <option value="По дате публикации">По дате публикации</option>
+          </select>
+        </div>
+        <a href="#" class="news__more-link more-link">
+          <span>Показать больше новостей</span>
+          <svg class="icon icon--more-arrow"><use xlink:href="assets/svg-sprite.svg#more-arrow"></use></svg>
+        </a>
+      </div>
+-->
+    </div>
+  </div>
+</section>
+
+
+  <section class="style">
+  <div class="container">
+    <div class="style__titlee title">
+     <div class="style_tit">
+         <h3 style="font-weight: bold">Выбери свой<br> звездный стиль</h3>
+      <select name="clothing-select" class="js-choicee">
+             <optione value="Спортивный стиль">Спортивный стиль</optione>
+              <option value="Спортивный стиль">Спортивный стиль</option>
+              <option value="Классический стиль">Классический стиль</option>
+              <option value="Романтический стиль">Романтический стиль</option>
+              <option value="Современный стиль">Современный стиль</option>
+              <option value="Этно стиль">Этно стиль</option>
+            </select>
+     </div>
+      
+            <div class="jump_man">
+                <div class="jump_img">
+                    <img src="assets/image/Jumping-2.svg">
+                </div>
+                <img class= "starr" src="assets/image/star.svg">
+                <img class= "starr" src="assets/image/star.svg">
+                <img class= "starr" src="assets/image/star.svg">
+                <img class= "starr" src="assets/image/star.svg">
+                <img class= "starr" src="assets/image/star.svg">
+            </div>
+    </div>
+    <div class="style__content">
+      <!-- Firts slider -->
+      <div class="style__box">
+        <div class="style__item">
+          <div class="style-select">
+            <select name="clothing-select" class="js-choice">
+              <option value="Спортивный стиль">Спортивный стиль</option>
+              <option value="Классический стиль">Классический стиль</option>
+              <option value="Романтический стиль">Романтический стиль</option>
+              <option value="Современный стиль">Современный стиль</option>
+              <option value="Этно стиль">Этно стиль</option>
+            </select>
+          </div>
+          <div class="style-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-1.png" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-2.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-3.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-4.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-5.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-6.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-7.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-8.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-9.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-10.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-11.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-12.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-13.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-14.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-15.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-16.jpg" alt="sport-style" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/sport-styles/sport-style-17.jpg" alt="sport-style" />
+              </div>
+            </div>
+            <div class="style-navigation">
+              <div class="style-button-prev">
+                <svg class="icon icon--style-slider-prev">
+                  <use xlink:href="assets/svg-sprite.svg#style-slider-prev"></use>
+                </svg>
+              </div>
+              <div class="style-button-next">
+                <svg class="icon icon--style-slider-next">
+                  <use xlink:href="assets/svg-sprite.svg#style-slider-next"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="style__box-descr">Стили одежды</div>
+      </div>
+
+      <!-- Second slider -->
+      <div class="style__box">
+        <div class="style__item">
+          <div class="style-select">
+            <select name="clothing-select" class="js-choice">
+              <option value="Кроссовки Adidas">Кроссовки Adidas</option>
+              <option value="Джемпер">Джемпер</option>
+              <option value="Кроссовки Nike">Кроссовки Nike</option>
+              <option value="Джинсы">Джинсы</option>
+            </select>
+          </div>
+          <div class="style-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/accessories/accessories-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/accessories/accessories-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/accessories/accessories-1.png" alt="" />
+              </div>
+            </div>
+            <div class="style-navigation">
+              <div class="style-button-prev">
+                <svg class="icon icon--style-slider-prev">
+                  <use xlink:href="assets/svg-sprite.svg#style-slider-prev"></use>
+                </svg>
+              </div>
+              <div class="style-button-next">
+                <svg class="icon icon--style-slider-next">
+                  <use xlink:href="assets/svg-sprite.svg#style-slider-next"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="style__box-descr">Одежда, обувь и акссуары</div>
+        <button type="button" class="to-basket mt-md-5 mt-3">В корзину</button>
+      </div>
+
+      <!-- Third slider -->
+      <div class="style__box">
+        <div class="style__item">
+          <div class="style-select">
+            <select name="clothing-select" class="js-choice">
+              <option value="Анджелина Джоли">Анджелина Джоли</option>
+              <option value="Бред Питт">Бред Питт</option>
+              <option value="Джонни Депп">Джонни Депп</option>
+              <option value="Леонардо Дикаприо">Леонардо Дикаприо</option>
+            </select>
+          </div>
+          <div class="style-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/star-styles/star-styles-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/star-styles/star-styles-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/fashion-news/star-styles/star-styles-1.png" alt="" />
+              </div>
+            </div>
+            <div class="style-navigation">
+              <div class="style-button-prev">
+                <svg class="icon icon--style-slider-prev">
+                  <use xlink:href="assets/svg-sprite.svg#style-slider-prev"></use>
+                </svg>
+              </div>
+              <div class="style-button-next">
+                <svg class="icon icon--style-slider-next">
+                  <use xlink:href="assets/svg-sprite.svg#style-slider-next"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="style__box-descr">Мировые звезды</div>
+      </div>
+    </div>
+
+    <div class="style__shop shop">
+      <div class="shop__content">
+        <div class="shop-slider swiper">
+          <div class="shop-slider-wrapper swiper-wrapper">
+            <div class="shop-slider-slide swiper-slide">
+              <div class="shop-slider-box">
+                <div class="shop-slider__img">
+                  <img src="assets/images/fashion-news/shop/shop-1.png" alt="shop-img" />
+                </div>
+                <a class="buy" href="#">Купить</a>
+              </div>
+              <span class="shop-slider-name">Кроссовки Adidas</span>
+              <span class="shop-slider-price">1 000 WS</span>
+            </div>
+            <div class="shop-slider-slide swiper-slide">
+              <div class="shop-slider-box">
+                <div class="shop-slider__img">
+                  <img src="assets/images/fashion-news/shop/shop-2.png" alt="shop-img" />
+                </div>
+                <a class="buy" href="#">Купить</a>
+              </div>
+              <span class="shop-slider-name">Штаны Adidas</span>
+              <span class="shop-slider-price">1 000 WS</span>
+            </div>
+            <div class="shop-slider-slide swiper-slide">
+              <div class="shop-slider-box">
+                <div class="shop-slider__img">
+                  <img src="assets/images/fashion-news/shop/shop-3.png" alt="shop-img" />
+                </div>
+                <a class="buy" href="#">Купить</a>
+              </div>
+              <span class="shop-slider-name">Свитшот Adidas</span>
+              <span class="shop-slider-price">1 000 WS</span>
+            </div>
+            <div class="shop-slider-slide swiper-slide">
+              <div class="shop-slider-box">
+                <div class="shop-slider__img">
+                  <img src="assets/images/fashion-news/shop/shop-1.png" alt="shop-img" />
+                </div>
+                <a class="buy" href="#">Купить</a>
+              </div>
+              <span class="shop-slider-name">Кроссовки Adidas</span>
+              <span class="shop-slider-price">1 000 WS</span>
+            </div>
+            <div class="shop-slider-slide swiper-slide">
+              <div class="shop-slider-box">
+                <div class="shop-slider__img">
+                  <img src="assets/images/fashion-news/shop/shop-2.png" alt="shop-img" />
+                </div>
+                <a class="buy" href="#">Купить</a>
+              </div>
+              <span class="shop-slider-name">Штаны Adidas</span>
+              <span class="shop-slider-price">1 000 WS</span>
+            </div>
+            <div class="shop-slider-slide swiper-slide">
+              <div class="shop-slider-box">
+                <div class="shop-slider__img">
+                  <img src="assets/images/fashion-news/shop/shop-3.png" alt="shop-img" />
+                </div>
+                <a class="buy" href="#">Купить</a>
+              </div>
+              <span class="shop-slider-name">Свитшот Adidas</span>
+              <span class="shop-slider-price">1 000 WS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="history">
+  <div class="container">
+    <div class="history__content">
+      <div class="history__box">
+        <h4 class="history__title">Поздравляем! Ты заработал 180 WS</h4>
+        <a class="history__link" href="#">Смотреть историю покупок</a>
+      </div>
+      <div class="history__img">
+        <img src="assets/images/blocks/history-img.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <div class="its_intresting">
+        <div class="its_intresting_info">
+           <div class="its_intresting_text">
+               <span>Это интересно!</span>
+                <p>Смотрите  самые свежие новости о любимых спортсменов, музыкантов,  актеров,  моделей и дизайнеров и других. Приходи на встречи с мировыми звездами, дружи  с теми кто любит таких же  звезд! </p>
+           </div>
+            <div class="its_intresting_photo">
+                  <img class="its_intresting_photo_el" src="assets/image/image/ellipse.svg">
+                  <img class="its_intresting_photo_main" src="assets/image/man_with_phone.svg">
+                  <img class="its_intresting_photo_el" src="assets/image/image/ellipse.svg">
+                  <img class="its_intresting_photo_main2" src="assets/image/man_with_phone.svg">
+            </div>
+        </div>
+        <div class="container">
+            <div class="its_intresting_video">
+                <img  src="assets/image/video.svg">
+                <div class="its_intresting_video_cont">
+                    <div class="its_intresting_video_buttons">
+                        <button>Мода</button>
+                        <button>Спорт</button>
+                        <button>Кино</button>
+                        <button>Музыка</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+    </div>
+
+</main>
+
+
+      <!-- Footer-->
+<footer class="footer">
+  <div class="container">
+    <a href="/" class="logo">
+      <img src="./assets/images/chat/logo.png" alt="">
+    </a>
+    <div class="footer__content">
+      <div class="footer__box">
+        <a href="#" class="footer__link">О нас</a>
+        <a href="#" class="footer__link">Словарь сайта</a>
+        <a href="#" class="footer__link">Контакты</a>
+      </div>
+      <div class="footer__box">
+        <a href="#" class="footer__link">Главная</a>
+        <a href="#" class="footer__link">Звезды кино</a>
+        <a href="#" class="footer__link">Мода</a>
+        <a href="#" class="footer__link">Встречи со звездами</a>
+        <a href="#" class="footer__link">Знакомься дружи</a>
+      </div>
+      <div class="footer__box">
+        <a href="#" class="footer__link">Поддержка</a>
+        <a href="#" class="footer__link">Social Media</a>
+        <a href="#" class="footer__link">Privacy Policy</a>
+        <a href="#" class="footer__link">Term of service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+    </div>
+  </body>
+</html>
