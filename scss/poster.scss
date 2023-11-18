@@ -1,0 +1,408 @@
+.wrapper_bg {
+  background-image: url("../assets/images/bg/movie-bg.png");
+}
+.container_fluid {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.poster_header_up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px 30px 0px;
+  .poster_nav {
+    display: flex;
+    align-items: center;
+    .header_prof_card {
+      align-items: center;
+    }
+  }
+}
+.sortDate {
+  &_title {
+    display: flex;
+    gap: 174px;
+    justify-content: center;
+    h1 {
+      color: #000;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Montserrat;
+      font-size: 55px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      width: 611px;
+    }
+    h3 {
+      width: 410px;
+      color: #000;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Montserrat;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 98.5%;
+    }
+  }
+  .sortDate_button {
+    margin-left: 236px;
+    &_group,
+    &_country {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 27px;
+      margin-bottom: 40px;
+      button {
+        border-radius: 5px;
+        border: 1px solid #000;
+        background: #fff;
+        transition: color 0.5s;
+        color: #212121;
+        text-align: center;
+        padding: 11px 24px;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      button:hover {
+        border-radius: 5px;
+        border: 1px solid var(--q, #ff2c15);
+        background: var(--q, linear-gradient(180deg, #ff2c15 0%, #fa9317 100%));
+        color: #fff;
+      }
+    }
+    &_country {
+      button {
+        color: var(--, #212121);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      &_input {
+        border-radius: 5px;
+        border: 1px solid #000;
+        background: #fff;
+        display: flex;
+        padding: 13px 25px;
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        input {
+          border: none;
+        }
+        input::placeholder {
+          color: #000;
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .wath_container {
+    margin-bottom: 70px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 20px 30px 0px rgba(71, 169, 255, 0.3);
+    padding: 20px 70px;
+    &_content_month {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 65px;
+      span {
+        color: #2e2c2c;
+        text-align: center;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5%; /* 35.46px */
+        transition: border-bottom 0.5s, mix-blend-mode 0.5s, padding-bottom 0.5s;
+      }
+      span:hover {
+        border-bottom: 2px solid var(--q, #ff2c15);
+        mix-blend-mode: darken;
+        padding-bottom: 15px;
+        background: linear-gradient(
+          110deg,
+          #ff2c15 -10.23%,
+          #ffc477 -2.32%,
+          #ff2713 6.28%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    &_content_day {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 77px;
+      div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        span:not(.wath_container_content_day_number) {
+          text-align: center;
+          background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
+          background-clip: text;
+          color: transparent;
+
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .wath_container_content_day_number {
+          color: #000;
+          text-align: center;
+          font-feature-settings: "clig" off, "liga" off;
+          font-family: Montserrat;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 98.5%;
+          cursor: pointer;
+        }
+        .wath_container_content_day_number:hover {
+          color: red;
+        }
+      }
+    }
+    &_content_date_text {
+      color: #ff2c15;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 31px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px; /* 72.222% */
+    }
+    h5 {
+      color: #000;
+      margin-bottom: 66px;
+      font-family: Montserrat;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px; /* 72.222% */
+    }
+    .wath_container_content_note {
+      display: flex;
+      flex-direction: column;
+      gap: 43px;
+      margin-top: 92px;
+      .note {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: #000 solid 3px;
+        padding-bottom: 16px;
+        span {
+          color: #000;
+          font-feature-settings: "clig" off, "liga" off;
+          font-family: Montserrat;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 130%; /* 46.8px */
+          text-transform: uppercase;
+        }
+        button {
+          border-radius: 12px;
+          background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
+          padding: 16px 27px;
+          color: #fff;
+          border: none;
+          color: #fff;
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 20px; /* 62.5% */
+        }
+      }
+    }
+  }
+}
+.allcard {
+  h2 {
+    color: #000;
+    font-feature-settings: "clig" off, "liga" off;
+    max-width: 650px;
+    /* ЗАГОЛОВОК */
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 71.5px */
+  }
+  &_container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 100px;
+    margin-top: 70px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      background: #fff;
+      max-width: 389px;
+      gap: 15px;
+      margin-top: 0px;
+      padding-bottom: 20px;
+      span {
+        margin-left: 15px;
+      }
+      &_name {
+        color: #000;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5%;
+      }
+      &_description {
+        color: #000;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+      .card_img {
+        height: 378px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .card_img_participate {
+          padding: 25px 38px;
+          align-items: center;
+          background-color: #000;
+          display: flex;
+          justify-content: space-between;
+          border-radius: 0px 0px 15px 15px;
+          div {
+            color: #fff;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+        .card_date {
+          color: #fff;
+          text-align: center;
+          font-feature-settings: "clig" off, "liga" off;
+          font-family: Montserrat;
+          font-size: 20px;
+          margin: 28px 0px 0px 33px;
+          display: inline-block;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          border-radius: 12px;
+          border: 1px solid #fff;
+          padding: 5px 36px;
+          align-self: baseline;
+        }
+      }
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: all 200ms;
+    }
+  }
+  .organization_poster {
+    color: #000;
+    font-feature-settings: "clig" off, "liga" off;
+    margin: 42px 0px 82px 0px;
+    /* Начертание для банера */
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 98.5%; /* 35.46px */
+  }
+}
+.announcements {
+  .announcements_firststar {
+    margin-left: 100%;
+    position: relative;
+    right: 100px;
+  }
+  .announcements_container {
+    display: flex;
+    justify-content: end;
+    .announcements_block {
+      border-radius: 9.747px;
+      border: 1px solid #000;
+      background: #fff;
+      padding: 28px 50px 47px 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 900px;
+      gap: 15px;
+      .announcements_block_item {
+        display: flex;
+        gap: 20px;
+        align-items: end;
+        border-bottom: 1px solid black;
+        .announcements_block_item_name {
+          color: #000;
+          font-feature-settings: "clig" off, "liga" off;
+
+          /* Подзаголвок */
+          font-family: Montserrat;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120.5%; /* 35.46px */
+        }
+        .announcements_block_item_watch {
+          color: #ff0606;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+.footer {
+  margin-top: 200px;
+}

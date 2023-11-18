@@ -1,0 +1,1051 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-size: cover;
+    font-family: 'Montserrat';
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.first_type {
+    background-image:url(background.png);
+}
+.second_type {
+   background-image: url(in_2.png);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1600px;
+    margin: 0 12%;
+
+}
+.header {
+    width: 100%;
+    height:10vh;
+    margin-bottom: 200px;
+
+    
+}
+.header_up {
+    display: flex;
+    align-items: center;
+    margin-top: 91px;
+  
+}
+.logo_link p {
+    Font-size: 42px;
+}
+.nav {
+    display: flex;
+    margin-left: auto; 
+    align-items: center;
+    padding: 5px;
+    font-size:20px;
+    z-index: 15;
+    margin-bottom: 50px;
+}
+.bell {
+    margin: 0 20px;
+    position: relative;
+    z-index: 5;
+}
+.circle {
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.header_prof_card {
+    display: flex;
+    align-items: center; 
+    margin-right: 40px;
+    
+}
+.header_photo {
+    border-radius: 50%;
+    width: 58px;
+}
+
+.header_num {
+    margin: 15px 0 0 2px;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+.menu_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.burger-menu {
+    cursor: pointer;
+}
+.main_container {
+    position: relative;
+    display: flex;
+}
+.myProf_main_span {
+    font-size: 64px;
+    
+}
+.myProf {
+    display: flex;
+}
+
+        #avatar-container {
+            border: 2px solid #007BFF;
+            width: 500px;
+            height: 500px;
+        }
+#avatar-container span {
+    position: absolute;
+    padding: 3px 4px;
+    background: #fff;
+    border:2px solid orange;
+    left:200px;
+    top:250px;
+}
+        #avatar {
+            width: 350px;
+            height: 300px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #image-upload {
+            display: none;
+        }
+
+
+        .modal_main_photo {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            z-index: 1;
+            width: 33%;
+        }
+
+        .modal-content {
+            text-align: center;
+        }
+
+        #select-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        #preview-container {
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        #preview {
+            max-width: 100%;
+            max-height: 100%;
+        }
+/////
+.under_photo {
+    
+}
+.under_photo_text {
+    position: absolute;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    width: 350px;
+    height: 65px;
+    font-size:12px;
+    font-weight: bold;
+    top: 4px;
+    left: 4px;
+    padding: 10px;
+}
+.under_photo_text p {
+    width: 224px;
+}
+.under_photo_text img {
+    transform: rotate(-90deg);
+    width: 10px;
+    position: absolute;
+    bottom: 13px;
+    left:230px;
+}
+.myProf_main_span_backgound {
+    width: 358px;
+    height: 73px;
+    background: linear-gradient(to right, red, orange);
+    border-radius: 10px;
+    position: relative;
+}
+.O5ws_back {
+    position: absolute;
+    background: linear-gradient(to right, red, orange);
+    width: 68px;
+    height: 28px;
+    bottom: 7px;
+    right: 13px;
+    
+}
+.O5ws {
+    background: #fff;
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num_ws {
+    font-size: 16px;
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.info_for_friends {
+    font-size:12px;
+    width: 215px;
+    height: 50px;
+    margin: 50px 0;
+    
+}
+.menu_prof ul {
+    position:absolute;
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 310px;
+}
+
+.menu_prof li {
+    display: inherit;
+    font-size: 14px;
+    padding: 10px 0px;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+/*
+.menu_prof ul:hover li {
+    display: block;
+}
+*/
+
+
+.menu_prof_img {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+
+}
+.data {
+    width: 500px;
+    padding: 10px;
+    margin-left: 100px;
+    position: relative;
+}
+
+.data-item {
+    font-weight: bold;
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.data-item:first-child span {
+  font-size: 30px;
+  margin-left: -30px;
+  margin-bottom: 50px;
+}
+
+.data-item span {
+    
+  width: 90px;
+  align-content: center;
+  margin-right: 80px;
+}
+.country_cont_fir {
+    display: flex;
+}
+.country_cont_sec{
+    display: flex;
+}
+
+.config-selector {
+  margin-right: 10px;
+  position: relative;
+}
+
+.config-button {
+  width: 122px;
+  height: 37px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-weight: bold;
+  margin-right: 5px;
+  z-index: 1;
+}
+.active {
+  border: 3px solid red;
+}
+.choice-selector {
+    display: flex;
+    margin-left: 63px;
+}
+.config-button img {
+  width: 12px;
+  margin-left: 10px;
+}
+
+.config-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.config-list li {
+  display: block;
+}
+
+.config-list li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.config-list li a:hover {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.config-selector:hover .config-list {
+  display: block;
+}
+.config-input-large {
+    padding: 0 15px;
+    height: 37px;
+    width: 300px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: bold;
+    z-index: 1;
+    white-space: nowrap;  
+}
+.data-item:nth-child(3) span {
+        margin-right: 70px;
+    }
+    .data-item:nth-child(4) span {
+        width: 60px;
+    }
+    .data-item:nth-child(7) span {
+        width: 65px;
+    }
+.config-button.style {
+        padding: 0px 20px;
+        width: auto;
+    }
+.data-item:nth-child(7) span {
+        margin-right: 70px;
+    }
+.data-item:nth-child(4) span {
+        margin-right: 72px;
+    }
+.under_data {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    width: 300px;
+    font-size: 16px;
+}
+.personal_data {
+    display: flex;
+    width: 100%;
+}
+.personal_data_button {
+    margin-left: 10px;
+    width: 18px;
+    height: 21px;
+    border: 2px solid red;
+}
+.personal_data button img {
+    width: 10px;
+}
+.save_button {
+    position: absolute;
+    background: linear-gradient(to right, red, orange);
+    justify-content: center;
+    align-content: center;
+    left:400px;
+    top:-20px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size:16px;
+    color:#fff;
+}
+.main_up {
+    display: flex;
+    margin-bottom: 100px;
+    width: 100%;
+    position: relative;
+}
+.circle_stat {
+    position: absolute;
+    justify-content: flex-end;
+    right: 100px;
+    top:-100px;
+}
+.border_circle {
+    width: 210px;
+    height: 210px;
+    border-radius:50%;
+    background: none;
+    
+    border: 5px solid orange; 
+    border-top: 5px solid white;
+    position: absolute;
+    transform: rotate(30deg);
+    
+}
+.border_circle span {
+    
+    position: absolute;
+    right: 40px;
+    bottom: 70px;
+    transform: rotate(-30deg);
+    font-size:46px;
+}
+.circle_stat p {
+    position: absolute;
+    top:250px;
+    width: 200px;
+    text-align: center;
+    
+}
+.main_down {
+    width: 70%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 500px;
+    margin-top:50px;
+}
+.main_down p {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 32px;
+    width: 700px;
+    
+}
+.man_around_stars {
+
+    position: absolute;
+    right: -10px;
+    top: 70px;
+}
+.man {
+    position: relative;
+}
+.man_img {
+    position: absolute;
+}
+.ws1 {
+    position: relative;
+    right: 100px;
+    display: flex;
+    transform: rotate(-27deg);
+    top:-50px;
+}
+.man span {
+    left:17px;
+    top:-5px;
+    position: absolute;
+    font-weight: bold;
+}
+.ws500 {
+    position: relative;
+    left: 140px;
+    top:-70px;
+}
+.ws500 span {
+    left:40px;
+}
+.ws500 img:nth-child(1)
+{
+    transform: rotate(30deg);
+}
+.ws500 img:nth-child(2)
+{
+    transform: rotate(-30deg);
+}
+.ws1000{
+    position: relative;
+    top:-20px;
+    right: 160px;
+    display: block;
+}
+.ws1000 span {
+    left:35px;
+}
+.ws1000 img:nth-child(2)
+{
+    position: absolute;
+    top:30px;
+    left: 35px;
+}
+.ws1000 img:nth-child(1) {
+    transform: rotate(-17deg);
+}
+.ws1000 img:nth-child(3) {
+    transform: rotate(17deg);
+}
+.ws1000_cont {
+    display: flex;
+}
+.ws1500{
+    position: relative;
+    left: 140px;
+    top:-90px;
+}
+.ws1500 span {
+    left: 35px;
+}
+.ws1500_cont_second img{
+    margin-left: -25px;
+    transform: rotate(23deg);
+}
+.ws1500_cont_first img:nth-child(1)
+{
+    transform: rotate(-15deg);
+    top:3px;
+}
+.ws1500_cont_first img:nth-child(2)
+{
+    transform: rotate(-5deg);
+}
+.ws1500_cont_second
+{
+    margin-left: 35px;
+    margin-top: -20px;
+}
+.ws2000{
+    top:-50px;
+    right: 50px;
+    position: relative;
+}
+.ws2000 span {
+    left:80px;
+}
+.ws2000 img {
+    margin-left: -20px;
+}
+.ws2000 h1 {
+    position: absolute;
+    margin-top: -50px;
+    right:-30px;
+    font-size: 40px;
+    bottom: 10px;
+}
+.ws2000 img:nth-child(1)
+{
+    transform: rotate(10deg);
+}
+.ws2000 img:nth-child(2)
+{
+    transform: rotate(-10deg);
+}
+.ws2000 img:nth-child(3)
+{
+    transform: rotate(10deg);
+}
+.ws2000 img:nth-child(4)
+{
+    transform: rotate(-10deg);
+}
+.ws2000 img:nth-child(5)
+{
+    transform: rotate(10deg);
+}
+.photo_part {
+    margin-top: 200px;
+    position: relative;
+    max-width: 1700px;
+}
+
+.photo_text span {
+    font-size: 50px;
+}
+
+.photo_text p {
+    font-size: 36px;
+}
+
+.photo-grid {
+    
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1300px;
+}
+.photo_line {
+    width: 100%;
+    padding: 30px 15px 70px 15px;
+    display: flex;
+    
+}
+.photo_cont {
+    width: 50%;
+    display: flex;
+}
+.photo {
+    margin-right: 2em;
+}
+.video {
+    margin-right: 2em;
+}
+.photo img {
+    height: 295px;
+}
+.photo_img {
+      width: 100%;
+}
+
+.photo:nth-child(odd) {
+    z-index: 0;
+}
+.img_link {
+    position: absolute;
+    z-index: 0;
+    top: 10px;
+    right: 10px; 
+    width: 15%;
+    height: auto; 
+}
+.image_button {
+  width: 165px;
+  height: 48px;
+  background: linear-gradient(to right, red, orange);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 15px;
+  margin:40px 0 0 50px;
+}
+.image_button_sec {
+    display: block;
+    position: absolute;
+    bottom:10px;
+    right: 200px;
+    
+}
+.image_button_sec span{
+     width: 505px;
+  height: 48px;
+  background: linear-gradient(to right, red, orange);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 15px;
+  margin-left: 150px;
+  text-decoration: none;
+}
+.image_button_sec p {
+    position: absolute;
+    top:-40px;
+    right: 10px;
+}
+.video_button {
+  width: 187px;
+  height: 48px;
+  background: linear-gradient(to right, red, orange);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 15px;
+  margin:40px 0 0 50px;
+}
+
+/*===================
+==================*/
+
+
+
+@media only screen and (max-width: 767px) {
+    
+    .container {
+        margin: 0 0%;
+        
+    }
+    .its_intresting_text {
+}
+    .its_intresting_info {
+         text-align: left;
+        display: block;
+    }
+    .its_intresting_text span {
+    white-space: inherit;
+    }
+    .main_container {
+        display: block;
+    }
+    
+}
+
+/* Медиа-запрос для планшетов (ширина от 768px до 1023px) */
+@media only screen  and (max-width: 1200px) {
+    
+    .container {
+        margin: 0% 2%;
+        padding: 0%;
+    }
+    .header {
+        margin-bottom: 200px;
+    }
+    #modal_menu {
+        height: 720px;
+    }
+    .modal_arrow {
+        margin-right: 50px;
+    }
+    .modal_blocks {
+        top:250px;
+        margin-right: 40px;
+    }
+    .modal_nav_last {
+        left:-130px;
+    }
+    .modal_blocks_cont_first {
+        display: block;
+    }
+    .modal_blocks_cont1 {
+        margin-bottom: 30px;
+    }
+    .modal_blocks_cont3 {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .modal_nav {
+        left:50px;
+    }
+    .modal_nav_last {
+        margin-left: 150px;
+    }
+    .modal_arrow {
+        right: -50px;
+    }
+    .modal_blocks_cont_first {
+        display: block;
+    }
+    .modal_blocks_cont1 {
+        display: flex;
+    }
+    .modal_blocks_cont2 {
+        display: flex;
+    }
+    .modal_blocks_cont3 {
+        display: flex;
+    }
+    .main {
+        margin-top: -120px;
+    }
+    .name {
+        font-size:20px;
+    }
+    .circle_stat {
+        right: 300px;
+    }
+    .menu_prof ul li {
+        font-size:20px;
+    }
+    .menu_prof ul {
+        font-size:20px;
+        position: inherit;
+    }
+    .data-item:nth-child(8)
+    {
+        margin-bottom: 15px;
+    }
+    .data-item:nth-child(2)
+    {
+        left: 30px;
+    }
+    .data-item span {
+        font-size: 25px;
+    }
+    .data-item input {
+        height: 50px;
+        width: 250px;
+    }
+    .data-item-cont {
+        display: block;
+    }
+    .data-item:nth-child(3) button {
+        margin-left: 20px;
+        
+    }
+    .data-item:nth-child(3) span {
+        margin-right: 20px;
+    }
+    .data-item:nth-child(4) span {
+        margin-right: 20px;
+    }
+    .data-item:nth-child(7) span {
+        margin-right: 40px;
+    }
+    .choice-selector{
+        display: block;
+    }
+    .config-button {
+        height: 60px;
+        width: 210px;
+        font-size: 25px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+    .config-input-small {
+        margin-bottom: 15px;
+        font-size: 25px;
+        height: 60px;
+        width: 50%;
+    }
+    .config-input-large {
+        margin-bottom: 15px;
+        font-size: 25px;
+        height: 60px;
+        width: 210%;
+
+    }
+    .under_data {
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    .save_button {
+        top:-60px;
+        right: -100px;
+        font-size: 20px;
+    }
+    .myProf_main_span_backgound
+    {
+        width: 408px;
+        height: 123px;
+    }
+    .under_photo_text {
+        width: 400px;
+        height: 110px;
+        top:6px;
+        left: 4px;
+    }
+    .under_photo_text p {
+        font-size: 16px;
+        width: 270px;
+    }
+    .under_photo_text img {
+        width: 20px;
+    }
+    .info_for_friends {
+        font-size: 24px;
+        height: 100px;
+        width: 500px;
+    }
+    .main_down p {
+        bottom:-30px;
+    }
+    .man_around_stars{
+        right: 50%;
+    }
+    
+    .image_button {
+        width: 200px;
+        height: 100px;
+        font-size: 25px;
+        margin-left: 150px;
+        margin-bottom: -100px;
+    }
+    .image_button_sec span {
+        width: 200px;
+        height: 100px;
+        font-size: 25px;
+        bottom: -10px;
+        
+        background: linear-gradient(to left, orange, red);
+        
+    }
+    .image_button_sec {
+        position: absolute;
+        left: 670px;
+    }
+    .video_button {
+        width: 200px;
+        height: 100px;
+        font-size: 25px;
+        margin-left: 150px;
+
+    }
+    .photo_part {
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    .photo-grid {
+        margin:40px 0 0 150px;
+        width: 540px;
+        height: 600px;
+        padding: 0px 15px 0px 30px;
+    }
+    .photo_line {
+        width: 100%;
+        display: block;
+    }
+    .photo_cont {
+        margin-top: -30px;
+        padding: 0;
+        height: 260px;
+        width: 100%;
+    }
+    .photo_img {
+        width: 30%;
+    }
+
+    
+    .main_container {
+        display: block;
+    }
+    
+    
+}
+
+@media only screen  and (max-width: 1360px) {
+    .modal_nav {
+        left: 100px;
+    }
+    .modal_blocks {
+        right: 50px;
+    } 
+    .modal_block:last-child {
+        margin-right: 0px;
+    }
+}
+    
+@media only screen and  (max-width: 1600px) {
+     Здесь ваши стили для маленьших десктопов 
+    .container {
+        margin: 0% 15%;
+    }
+    .photo_img {
+        width: 100%;
+    }
+    .choice-selector {
+        display: block;
+        
+    }
+    .country_cont_sec {
+        margin-top: 10px;
+    }
+    .choice-selector:last-of-type
+    {
+        margin-left: 40px;
+    }
+    .data-item:nth-child(4) span {
+        width: 90px;
+        margin-right: 38px;
+    }
+    .save_button {
+        left:0px;
+        top:70px;
+    }
+    .its_intresting_photo {
+        
+    }
+    .image_button_sec span {
+        width: 215px;
+        left: -320px;
+        bottom: -10px;
+        position: absolute;
+        background: linear-gradient(to left, orange, red);
+    }
+    .image_button_sec p {
+        position: absolute;
+        width: 200px;
+        top:-70px;
+        right: -120px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+     Здесь ваши стили для средних и крупных десктопов 
+    
+    .photo {
+        width: 350px;
+    }
+    .photo_line {
+        padding: 30px 15px 70px 25px;
+    }
+    .choice-selector:last-of-type
+    {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .data-item:nth-child(3) .choice-selector {
+        display: flex;
+        
+    }
+    .data-item:nth-child(3) .country_cont_fir{
+        display: block;        
+    }
+    .data-item:nth-child(3) .country_cont_sec{
+        display: block;
+        margin-top: 0px;
+    }
+}

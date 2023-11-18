@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.modal1 {
+            max-width: 2100px;
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 680px;
+            z-index: 10;
+            border-bottom: 2px solid black;
+            z-index: 10;
+        }
+.modal2 {
+    display: none;
+}
+.ap_man_around_stars {
+    position: absolute;
+    right:200px;
+    top: 300px;
+}
+.ap_left {
+    margin-top: 0px;
+}
+.ap_main_buttons {
+   
+}
+.ap_back_arrow{
+    width: 50px;
+}
+.ap_main_buttons1 {
+    margin: 50px 0;
+}
+.ap_main_buttons2 {
+    margin: 0px 0 50px 0;
+}
+.ap_main_buttons1 a {
+    width: 250px;
+    height: 70px;
+    font-size:34px;
+    text-align: center;
+    padding: 10px 15px;
+    border:2px solid;
+    text-decoration: none;
+    margin: 50px 0;
+    color:#000;
+}
+.ap_main_buttons2 {
+    width: 250px;
+    height: 70px;
+    font-size:34px;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    background: linear-gradient(to right, red, orange);
+    color:#fff;
+}
+.ap_nav {
+    font-weight: bold;
+    margin-top: 60px;
+}
+.ap_nav_main {
+    position: absolute;
+    margin-bottom: 50px;
+    font-size:24px;
+    margin-left: 60px;
+}
+.ap_nav a {
+    text-decoration: none;
+    color:#000;
+   
+    
+}
+.ap_nav_el {
+    margin-bottom: 30px;
+    width: 310px;
+    border:2px solid;
+        padding: 10px;
+     text-align: center;
+}
+.ap_nav_el:hover {
+    border-color: red;
+}
+.ap_nav_cont p {
+    font-size: 40px;
+}
+.all_photo_cont {
+    max-width: 1000px;
+    position: relative;
+    margin-top: 50px;
+    align-items:center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    
+}
+.all_photo_cont p {
+    
+}
+.ap_photo_phone {
+    display: none;
+}
+.all_photo_nav {
+    margin: 100px 0 50px 10%;
+    display: flex;
+    position: relative;
+    width: 85%;
+    max-width: 950px;
+}
+.all_photo_button {
+    position: absolute;
+    display: flex;
+    right: 40px;
+    background: #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    padding: 7px 2px;
+}
+.all_photo_nav span:nth-child(1) {
+    left: 50px;
+}
+.all_photo_nav span:nth-child(2) {
+    right: 7%;
+}
+.all_photo_cont span {
+    left:0px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.ap_cont_phone {
+    display: flex;
+}
+.ap_cont_phone img{
+    width: 35%;
+    margin: 5px;
+}
+.all_photo_cont img {
+    width: 20%;
+    margin:5px;
+    
+}
+.ap_sec_line {
+    width: 100%;
+    display: flex;
+}
+.ap_3cont img {
+    height: auto;
+    width: 35%;
+    
+}
+.ap_2cont img {
+    width: 150%;
+}
+.ap_3cont {
+  margin-left: 15%;
+}
+.third_line {
+    position: relative;
+    margin-left: 50px;
+    max-width: 1000px;
+    display: flex;
+    margin-bottom: 1000px;
+    margin-left: 15%;
+}
+.third_line img {
+    width: 50%;
+}
+.ap_6cont {
+    position: absolute;
+    left:0px;
+    display: block;
+    width: 40%;
+}
+.ap_6cont img {
+    margin-bottom: 1vh;
+}
+.ap_8cont img {
+    margin-bottom: 1vh;
+}
+.ap_7cont {
+    width: 82.5%;
+    left:22%;;
+    position: absolute;
+}
+.ap_8cont {
+    width: 40%;
+    position: absolute;
+    left:65%;
+    display: block;
+}
+.modal {
+            display: none;
+            position: fixed;
+            z-index: 20;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            position: absolute;
+            background: none;
+            margin: 15% auto;
+            width: 30%;
+            text-align: center;
+            bottom: 10%;
+            left: 35%;
+        }
+.large_photo {
+    position: relative;
+}
+.modall_list {
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    height: 99%;
+    width: 10%;
+    font-weight: bold;
+    font-size:7px;
+    position: absolute;
+    bottom: 2px;
+    right: 0px;
+    padding: 15px 0 0 0;
+}
+.modall_list span {
+    position: absolute;
+    font-size: 10px;
+    top:10px;
+    right: 5px;
+}
+.modall_list img:first-of-type {
+    margin-top: 40px;
+}
+.modall_list img:last-of-type {
+    width: 60%;
+    margin-top: 10px;
+}
+.modall_list img {
+    width: 100%;
+    margin-bottom: 3%;
+}
+.modal_main {
+    width: 100%;
+    position: relative;
+}
+.modal_link {
+    position: absolute;
+    top:30px;
+    left:30px;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+.modal_link span {
+    position: absolute;
+    margin-left:10px;
+}
+
+
+@media only screen  and (max-width: 900px) {
+    .ap_sec_line {
+        width: 103%;
+    }
+    .third_line {
+        margin-left: 30px;
+    }
+    .ap_6cont {
+        width: 40%;
+    }
+    .ap_7cont {
+        width: 88%;
+    }
+    .ap_8cont {
+        width: 40%;
+        left:69%;
+    }
+    .ap_6cont img {
+    margin-bottom: 0.5vh;
+    }
+    .ap_8cont img {
+        margin-bottom: 0.5vh;
+    }
+}
+
+@media only screen  and (max-width: 1200px) {
+    .ap_man_around_stars {
+        margin-right: 40px;
+    }
+    .ap_nav {
+        margin: 200px 0 0 10%;
+    }
+    .ap_main_up {
+        margin-left: 40px;
+    }
+    .ap_nav_cont_main {
+        font-size: 18px;
+        display: flex;
+    }
+    .ap_nav_main {
+        margin-left: 220px;
+        
+    }
+    .ap_nav_cont {
+        margin-right: 20px;
+    }
+    .all_photo_nav {
+        width: 100%;
+        margin-left:0px;
+    }
+    .ap_man_around_stars {
+        right:100px;
+    }
+    .all_photo_cont {
+        display: none;
+        margin-left:0px;
+    }
+    .ap_photo_phone {
+        display: block;
+        
+    }
+    .third_line {
+        display: none;
+    }
+    .modal-content {
+        top:25vh;
+    }
+    .modal-content {
+        font-size: 26px;
+        width: 70%;
+        left:15%;
+            
+    }
+    .modal_link img {
+        width: 40px;
+    }
+    .modal_link img {
+        top:40px;
+    }
+    .modall_list span {
+        font-size: 14px;
+    }
+    .modall_list img:first-of-type {
+        margin-top: 60px;
+    }
+    .modall_list img{
+        margin-bottom: 10px;
+    }
+    .all_photo_nav span:nth-child(2) {
+    right: 0%;
+}
+}
