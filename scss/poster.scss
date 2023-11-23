@@ -117,6 +117,9 @@
         display: flex;
         align-items: center;
         gap: 5px;
+        a {
+          color: #000;
+        }
       }
       button:hover {
         border-radius: 5px;
