@@ -1,9 +1,29 @@
+@import "./breakpoint.scss";
 .wrapper_bg {
   background-image: url("../assets/images/bg/movie-bg.png");
+  background-size: cover;
 }
+
 .container_fluid {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 10px;
+  @include x-large-screen {
+    max-width: 1245px;
+  }
+  @include large-screen {
+    max-width: 1140px;
+  }
+
+  @include middle-screen {
+    max-width: 960px;
+  }
+  @include small-screen {
+    max-width: 720px;
+  }
+  @include very-small-screen {
+    max-width: 540px;
+  }
 }
 .poster_header_up {
   display: flex;
@@ -13,45 +33,74 @@
   .poster_nav {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 10;
     .header_prof_card {
       align-items: center;
+      @include very-small-screen {
+        display: none;
+      }
     }
   }
 }
 .sortDate {
   &_title {
     display: flex;
-    gap: 174px;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 15px;
     h1 {
       color: #000;
       font-feature-settings: "clig" off, "liga" off;
       font-family: Montserrat;
-      font-size: 55px;
+      font-size: 3.4rem;
       font-style: normal;
       font-weight: 600;
       line-height: 130%;
       width: 611px;
+      @include middle-screen {
+        font-size: 3rem;
+        width: auto;
+      }
+      @include very-small-screen {
+        font-size: 0.875rem;
+      }
+      @include small-screen {
+        font-size: 2.2rem;
+      }
     }
     h3 {
       width: 410px;
       color: #000;
       font-feature-settings: "clig" off, "liga" off;
       font-family: Montserrat;
-      font-size: 36px;
+      font-size: 2.25rem;
       font-style: normal;
       font-weight: 400;
       line-height: 98.5%;
+      @include middle-screen {
+        font-size: 1.8rem;
+        width: auto;
+      }
+      @include very-small-screen {
+        display: none;
+      }
     }
   }
   .sortDate_button {
     margin-left: 236px;
+    @include large-screen {
+      margin-left: 0px;
+      margin-top: 15px;
+    }
     &_group,
     &_country {
       display: flex;
       flex-wrap: wrap;
       gap: 27px;
       margin-bottom: 40px;
+      @include large-screen {
+        justify-content: center;
+      }
       button {
         border-radius: 5px;
         border: 1px solid #000;
@@ -123,20 +172,34 @@
     border-radius: 20px;
     box-shadow: 0px 20px 30px 0px rgba(71, 169, 255, 0.3);
     padding: 20px 70px;
+    @include middle-screen {
+      padding: 20px 50px;
+    }
+    @include very-small-screen {
+      padding: 20px 20px;
+    }
     &_content_month {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin-bottom: 65px;
+      flex-wrap: wrap;
+      gap: 20px;
       span {
         color: #2e2c2c;
         text-align: center;
         font-feature-settings: "clig" off, "liga" off;
         font-family: Montserrat;
-        font-size: 36px;
+        font-size: 2.25rem;
         font-style: normal;
         font-weight: 400;
         line-height: 98.5%; /* 35.46px */
         transition: border-bottom 0.5s, mix-blend-mode 0.5s, padding-bottom 0.5s;
+        @include large-screen {
+          font-size: 2rem;
+        }
+        @include middle-screen {
+          font-size: 1.5rem;
+        }
       }
       span:hover {
         border-bottom: 2px solid var(--q, #ff2c15);
@@ -172,7 +235,6 @@
           background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
           background-clip: text;
           color: transparent;
-
           font-family: Montserrat;
           font-size: 20px;
           font-style: normal;
@@ -184,11 +246,14 @@
           text-align: center;
           font-feature-settings: "clig" off, "liga" off;
           font-family: Montserrat;
-          font-size: 36px;
+          font-size: 2.25rem;
           font-style: normal;
           font-weight: 400;
           line-height: 98.5%;
           cursor: pointer;
+          @include middle-screen {
+            font-size: 1.8rem;
+          }
         }
         .wath_container_content_day_number:hover {
           color: red;
@@ -208,10 +273,16 @@
       color: #000;
       margin-bottom: 66px;
       font-family: Montserrat;
-      font-size: 36px;
+      font-size: 2.25rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 26px; /* 72.222% */
+      @include large-screen {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      @include small-screen {
+        font-size: 1.7rem;
+      }
     }
     .wath_container_content_note {
       display: flex;
@@ -223,15 +294,25 @@
         justify-content: space-between;
         border-bottom: #000 solid 3px;
         padding-bottom: 16px;
+        gap: 10px;
         span {
           color: #000;
           font-feature-settings: "clig" off, "liga" off;
           font-family: Montserrat;
-          font-size: 36px;
+          font-size: 2.25rem;
           font-style: normal;
           font-weight: 600;
           line-height: 130%; /* 46.8px */
           text-transform: uppercase;
+          @include large-screen {
+            font-size: 2rem;
+          }
+          @include middle-screen {
+            font-size: 1.5rem;
+          }
+          @include small-screen {
+            font-size: 1.2rem;
+          }
         }
         button {
           border-radius: 12px;
@@ -242,9 +323,23 @@
           color: #fff;
           text-align: center;
           font-family: Montserrat;
-          font-size: 32px;
+          font-size: 2rem;
           font-weight: 700;
-          line-height: 20px; /* 62.5% */
+          @include large-screen {
+            font-size: 1.7rem;
+            padding: 10px 20px;
+          }
+          @include middle-screen {
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            font-weight: 600;
+          }
+          @include small-screen {
+            font-size: 0.8rem;
+          }
+          @include very-small-screen {
+            font-size: 0.5rem;
+          }
         }
       }
     }
@@ -257,10 +352,20 @@
     max-width: 650px;
     /* ЗАГОЛОВОК */
     font-family: Montserrat;
-    font-size: 55px;
+    font-size: 3.4rem;
     font-style: normal;
     font-weight: 600;
     line-height: 130%; /* 71.5px */
+    @include middle-screen {
+      font-size: 3rem;
+      width: auto;
+    }
+    @include small-screen {
+      font-size: 2.2rem;
+    }
+    @include very-small-screen {
+      font-size: 2rem;
+    }
   }
   &_container {
     display: flex;
@@ -268,6 +373,10 @@
     column-gap: 10px;
     row-gap: 100px;
     margin-top: 70px;
+    justify-content: center;
+    @include middle-screen {
+      row-gap: 40px;
+    }
     .card {
       display: flex;
       flex-direction: column;
@@ -277,6 +386,7 @@
       gap: 15px;
       margin-top: 0px;
       padding-bottom: 20px;
+
       span {
         margin-left: 15px;
       }
@@ -284,19 +394,25 @@
         color: #000;
         font-feature-settings: "clig" off, "liga" off;
         font-family: Montserrat;
-        font-size: 36px;
+        font-size: 2.25rem;
         font-style: normal;
         font-weight: 400;
         line-height: 98.5%;
+        @include middle-screen {
+          font-size: 1.7rem;
+        }
       }
       &_description {
         color: #000;
         font-feature-settings: "clig" off, "liga" off;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
+        @include middle-screen {
+          font-size: 0.9rem;
+        }
       }
       .card_img {
         height: 378px;
@@ -315,10 +431,13 @@
             color: #fff;
             text-align: center;
             font-family: Montserrat;
-            font-size: 20px;
+            font-size: 1.25rem;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            @include middle-screen {
+              font-size: 0.9rem;
+            }
           }
         }
         .card_date {
@@ -326,7 +445,7 @@
           text-align: center;
           font-feature-settings: "clig" off, "liga" off;
           font-family: Montserrat;
-          font-size: 20px;
+          font-size: 1.25rem;
           margin: 28px 0px 0px 33px;
           display: inline-block;
           font-style: normal;
@@ -336,6 +455,9 @@
           border: 1px solid #fff;
           padding: 5px 36px;
           align-self: baseline;
+          @include middle-screen {
+            font-size: 0.9rem;
+          }
         }
       }
     }
@@ -362,9 +484,26 @@
     position: relative;
     right: 100px;
   }
+  .star_last {
+    position: relative;
+    bottom: 50px;
+    @include x-large-screen {
+      display: none;
+    }
+  }
   .announcements_container {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    gap: 20px;
+    @include x-large-screen {
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      @include x-large-screen {
+        display: none;
+      }
+    }
     .announcements_block {
       border-radius: 9.747px;
       border: 1px solid #000;
@@ -375,29 +514,40 @@
       justify-content: space-between;
       max-width: 900px;
       gap: 15px;
+      @include middle-screen {
+        width: auto;
+        justify-content: center;
+        padding: 28px 15px 47px 15px;
+      }
+
       .announcements_block_item {
         display: flex;
         gap: 20px;
         align-items: end;
         border-bottom: 1px solid black;
+
         .announcements_block_item_name {
           color: #000;
           font-feature-settings: "clig" off, "liga" off;
-
-          /* Подзаголвок */
           font-family: Montserrat;
-          font-size: 36px;
+          font-size: 2.25rem;
           font-style: normal;
           font-weight: 400;
           line-height: 120.5%; /* 35.46px */
+          @include middle-screen {
+            font-size: 1.8rem;
+          }
         }
         .announcements_block_item_watch {
           color: #ff0606;
           font-family: Montserrat;
-          font-size: 20px;
+          font-size: 1.25rem;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
+          @include middle-screen {
+            font-size: 1rem;
+          }
         }
       }
     }

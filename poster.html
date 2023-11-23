@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="css/poster.css">
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="stylesheet" href="css/mainStyle.css">
+    <script src="js/libs.min.js" defer></script>
+    <script src="js/main.min.js" defer></script>
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon/favicon.png" />
     <title>World Stars</title>
+    
 </head>
 <body>
     <div class="wrapper_bg">
@@ -48,6 +51,102 @@
             </div>
         </header>
         <main>
+            <div id="modal_menu" class="modal_menu">
+                <div class="modal-content_menu">
+                   <div class="container">
+                      <div class="modal_container">
+                           <div class="modal_nav">
+                         <div class="modal_out_cont">
+                             <div class="modal_nav_cont">
+                                  <a href="./sign-in.html" class ="modal_nav_el">
+                                   <img src="assets/image/m1.svg">
+                                   <span>Звездный магазин</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m2.svg">
+                                   <span>Смотри и пиши новости</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m3.svg">
+                                   <span>Предложи звезду</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m3.svg">
+                                   <span>Выбирай мировую<br> звезду</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m4.svg">
+                                   <span>Олимп славы</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el ">
+                                  <img src="assets/image/m5.svg">
+                                   <span>Афиша встреч </span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m6.svg">
+                                   <span>Профиль</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m6.svg">
+                                   <span>Кошелек</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                                   
+                            </div>
+                         </div>
+                        </div>
+                        <span class ="modal_nav_el" id="modal_nav_el_dop">Дополнительно</span>
+                        <div class="modal_blocks">
+                          <div class="modal_nav_last">
+                             <a class ="modal_nav_el modal_last_el">
+                               <img src="assets/image/m7.svg">
+                                <span>Зарабатывай на сайте</span>
+                            </a>
+                         </div>
+                           <div class="modal_blocks_cont_first">
+                               <div class="modal_blocks_cont1">
+                                    <div class="modal_block">
+                                        <p>ЗАРАБОТАЙ КЕШБЕК НА РЕКЛАМНОЙ НОВОСТИ</p>
+                                        <img class="modal_block_img" src="assets/image/mb1.svg">
+                                    </div>
+                                    <div class="modal_block">
+                                        <p>ЗАРАБОТАТЬ НА СТИКЕРАХ И СМАЙЛИКАХ</p>
+                                        <img class="modal_block_img" src="assets/image/mb2.svg">
+                                    </div>
+                                </div>
+                                    <div class="modal_blocks_cont2">
+                                        <div class="modal_block">
+                                            <p>ЗАРАБОТАТЬ НА КОЛЕСЕ УДАЧИ</p>
+                                            <img class="modal_block_img1" src="assets/image/mb3.svg">
+                                        </div>
+                                        <div class="modal_block">
+                                            <p>ПОЛУЧИ КЕШБЕК НА ВСТРЕЧАХ С МИРОВЫМИ ЗВЕЗДАМИ</p>
+                                            <img class="modal_block_img" src="assets/image/mb4.svg">
+                                        </div> 
+                                    </div>
+                        </div>
+                            <div class="modal_blocks_cont3">
+                                <div class="modal_block">
+                                    <p>ЗАРАБАТЫВАТЬ МОДЕРАТОРОМ</p>
+                                    <img class="modal_block_img" src="assets/image/mb5.svg">
+                                </div>
+                                <div class="modal_block">
+                                    <p>ЗАРАБАТЫВАТЬ  НА 100% ЗАПОЛНЕНИИ ПРОФИЛЯ</p>
+                                    <img class="modal_block_img" src="assets/image/mb6.svg">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
             <section class="sortDate container_fluid">
                 <div class="sortDate_title">
                     <h1>ВСТРЕЧИ С МИРОВЫМИ ЗВЕЗДАМИ</h1>
@@ -55,11 +154,11 @@
                 </div>
                 <div class="sortDate_button">
                     <div class="sortDate_button_group">
-                        <button>Спорт <img src="./assets/svg-sprite/arrowdown.svg" alt="arrowdown"></button>
-                        <button>Кино</button>
-                        <button>Музыка</button>
-                        <button>Мода</button>
-                        <button>Танцы</button>
+                        <button><a href="all_video.html">Спорт </a><img src="./assets/svg-sprite/arrowdown.svg" alt="arrowdown"></button>
+                        <button><a href="all_video.html">Кино </a></button>
+                        <button><a href="all_photo.html">Музыка </a></button>
+                        <button><a href="news-fashion-stars.html">Мода </a></button>
+                        <button><a href="all_photo.html">Танцы </a></button>
                     </div>
                     <div class="sortDate_button_country">
                         <button>Бразилия</button>
@@ -232,11 +331,13 @@
                     </div>
                 </div>
                 <p class="organization_poster">Наш анонс! <br>
-                    Мы хотим организовать встречи :</p>
+                    Мы хотим организовать встречи :
+                </p>
             </section>
             <section class="announcements  container">
                 <img class="announcements_firststar" src="./assets/images/poster/star01 18.png" alt="star">
                 <div class="announcements_container">
+                    <img src="./assets/images/poster/WhatsApp Image 2023-11-18 at 18.50.28-PhotoRoom.png-PhotoRoom.png" alt="more star">
                     <div class="announcements_block">
                         <div class="announcements_block_item">
                             <span class="announcements_block_item_name">Джеки Чан</span>
@@ -264,13 +365,14 @@
                         </div>
                     </div>
                 </div>
+                <img class="announcements_firststar star_last" src="./assets/images/poster/star01 18.png" alt="star">
             </section>
         </main>
         <footer class="footer">
             <div class="container">
                <div class="footer_lists">
                    <ul class="footer_row">
-                    <li><a href="#" ><span class ='footer_logo_link'>World Stars</span><br> <span>мировые звезды brics</span> </a></li>
+                    <li><a href="#"><span class ='footer_logo_link'>World Stars</span><br> <span>мировые звезды brics</span> </a></li>
                     <li><a href="#"><span>О нас</span></a></li>
                     <li><a href="#"><span>Словарь сайта</span></a></li>
                     <li><a href="#"><span>Контакты</span></a></li>
@@ -291,5 +393,42 @@
             </div>
         </footer>
     </div>
+    <script>
+          const modal_menu = document.getElementById("modal_menu");
+          const modalContent = document.querySelector(".modal-content_menu");
+          const menuButton = document.getElementById("menuButton");
+  
+          // Функция открытия и закрытия модального окна
+          function toggleModalMenu() {
+              if (modal_menu.style.display === "block") {
+                  modal_menu.style.display = "none";
+              } else {
+                  modal_menu.style.display = "block";
+              }
+          }
+  
+          // modal_nav Добавляем обработчик события для кнопки меню (открытия и закрытия модального окна)
+          menuButton.addEventListener("click", toggleModalMenu);
+  
+          
+            const modalNavElDop = document.getElementById('modal_nav_el_dop');
+            const modalBlocks = document.querySelector('.modal_blocks');
+            const modalNav = document.querySelector('.modal_nav');
+            let isVisible = false; // Флаг для отслеживания видимости блока
+  
+      modalNavElDop.addEventListener('click', () => {
+          if (isVisible) {
+              modalBlocks.style.display = 'none';
+              modalNav.style.display = 'block';
+          } else {
+              modalBlocks.style.display = 'block'; 
+              modalNav.style.display = 'none';
+          }
+          isVisible = !isVisible; // Инвертировать флаг видимости
+      });
+          
+          
+          
+    </script>
 </body>
 </html>
