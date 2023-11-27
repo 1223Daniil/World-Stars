@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 10;
+    z-index: 15;
     .header_prof_card {
       align-items: center;
       @include very-small-screen {
@@ -49,7 +49,7 @@
     justify-content: space-between;
     gap: 15px;
     h1 {
-      color: #000;
+      color: #000000;
       font-feature-settings: "clig" off, "liga" off;
       font-family: Montserrat;
       font-size: 3.4rem;
@@ -88,6 +88,8 @@
   }
   .sortDate_button {
     margin-left: 236px;
+    display: flex;
+    flex-direction: column;
     @include large-screen {
       margin-left: 0px;
       margin-top: 15px;
@@ -95,11 +97,37 @@
     &_group,
     &_country {
       display: flex;
-      flex-wrap: wrap;
       gap: 27px;
       margin-bottom: 40px;
-      @include large-screen {
-        justify-content: center;
+      flex-wrap: wrap;
+      select {
+        border: 1px solid #000;
+        border-radius: 5px;
+        background: #fff;
+        color: #212121;
+        padding: 11px 24px;
+        font-size: 1.25rem;
+        font-weight: 700;
+        option {
+          border-radius: 5px;
+          background: #fff;
+          font-size: 1.3rem;
+          @include large-screen {
+            font-size: 1.1rem;
+          }
+          @include very-small-screen {
+            font-size: 0.813rem;
+            font-weight: 800;
+          }
+        }
+        @include large-screen {
+          font-size: 1.1rem;
+        }
+        @include very-small-screen {
+          font-size: 0.813rem;
+          font-weight: 800;
+          padding: 6px 16px;
+        }
       }
       button {
         border-radius: 5px;
@@ -110,40 +138,67 @@
         text-align: center;
         padding: 11px 24px;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         display: flex;
         align-items: center;
         gap: 5px;
-        a {
-          color: #000;
+
+        @include large-screen {
+          font-size: 1.1rem;
+          padding: 6px 16px;
+        }
+        @include very-small-screen {
+          font-size: 0.813rem;
+          font-weight: 800;
+          padding: 6px 16px;
         }
       }
+      // button:nth-child(7) {
+      //   display: block;
+      // }
       button:hover {
         border-radius: 5px;
         border: 1px solid var(--q, #ff2c15);
         background: var(--q, linear-gradient(180deg, #ff2c15 0%, #fa9317 100%));
         color: #fff;
       }
+      @include middle-screen {
+        font-size: 1rem;
+        width: 100%; /* Ширина 100%, чтобы кнопки могли выходить за границы экрана */
+        overflow-x: auto; /* Включаем горизонтальную прокрутку */
+        white-space: nowrap;
+        flex-wrap: nowrap;
+      }
+      @include very-small-screen {
+        font-size: 0.813rem;
+      }
     }
     &_country {
       button {
-        color: var(--, #212121);
+        color: #212121;
         text-align: center;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        @include large-screen {
+          font-size: 1.1rem;
+        }
+        @include very-small-screen {
+          font-size: 0.813rem;
+          font-weight: 700;
+        }
       }
       &_input {
         border-radius: 5px;
         border: 1px solid #000;
         background: #fff;
         display: flex;
-        padding: 13px 25px;
+        padding: 7px 25px;
         color: #000;
         text-align: center;
         font-family: Montserrat;
@@ -158,7 +213,7 @@
           color: #000;
           text-align: center;
           font-family: Montserrat;
-          font-size: 20px;
+          font-size: 1.25rem;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -166,7 +221,17 @@
         img {
           cursor: pointer;
         }
+        @include very-small-screen {
+          display: none;
+        }
       }
+      @include very-small-screen {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+    @include middle-screen {
+      flex-direction: column-reverse;
     }
   }
   .wath_container {
@@ -174,7 +239,7 @@
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0px 20px 30px 0px rgba(71, 169, 255, 0.3);
-    padding: 20px 70px;
+    padding: 67px 70px;
     @include middle-screen {
       padding: 20px 50px;
     }
@@ -202,6 +267,12 @@
         }
         @include middle-screen {
           font-size: 1.5rem;
+        }
+      }
+      span:nth-child(4),
+      div:nth-child(5) {
+        @include very-small-screen {
+          display: none;
         }
       }
       span:hover {
@@ -262,15 +333,22 @@
           color: red;
         }
       }
+      div:last-child {
+        display: none;
+      }
     }
     &_content_date_text {
       color: #ff2c15;
-      text-align: center;
       font-family: Montserrat;
-      font-size: 31px;
+      font-size: 1.938rem;
       font-style: normal;
       font-weight: 700;
       line-height: 26px; /* 72.222% */
+      @include small-screen {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+      }
     }
     h5 {
       color: #000;
@@ -338,10 +416,12 @@
             font-weight: 600;
           }
           @include small-screen {
-            font-size: 0.8rem;
+            font-size: 1.4rem;
           }
           @include very-small-screen {
-            font-size: 0.5rem;
+            font-size: 0.625rem;
+            font-weight: 700;
+            line-height: 20px;
           }
         }
       }
@@ -384,12 +464,14 @@
       display: flex;
       flex-direction: column;
       border-radius: 10px;
-      background: #fff;
+      background: #ffffff;
       max-width: 389px;
       gap: 15px;
       margin-top: 0px;
       padding-bottom: 20px;
-
+      @include very-small-screen {
+        max-width: 153px;
+      }
       span {
         margin-left: 15px;
       }
@@ -404,6 +486,9 @@
         @include middle-screen {
           font-size: 1.7rem;
         }
+        @include very-small-screen {
+          font-size: 0.875rem;
+        }
       }
       &_description {
         color: #000;
@@ -416,6 +501,9 @@
         @include middle-screen {
           font-size: 0.9rem;
         }
+        @include very-small-screen {
+          font-size: 0.625rem;
+        }
       }
       .card_img {
         height: 378px;
@@ -423,6 +511,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-size: cover;
+        background-size: cover; /* Растягиваем картинку, чтобы она полностью покрывала фон */
+        background-position: center;
+        @include very-small-screen {
+          max-height: 151px;
+          border-radius: 10px 10px 0px 0px;
+        }
         .card_img_participate {
           padding: 25px 38px;
           align-items: center;
@@ -430,6 +525,21 @@
           display: flex;
           justify-content: space-between;
           border-radius: 0px 0px 15px 15px;
+          @include very-small-screen {
+            border-radius: 12px;
+            background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
+            padding: 2px 7px 2px 7px;
+            align-self: baseline;
+            align-items: center;
+            margin-bottom: 13px;
+            margin-left: auto;
+          }
+          img {
+            @include very-small-screen {
+              display: none;
+            }
+          }
+
           div {
             color: #fff;
             text-align: center;
@@ -441,10 +551,16 @@
             @include middle-screen {
               font-size: 0.9rem;
             }
+            @include very-small-screen {
+              color: #fff;
+              font-size: 10px;
+              font-weight: 700;
+              line-height: 20px;
+            }
           }
         }
         .card_date {
-          color: #fff;
+          color: #000000;
           text-align: center;
           font-feature-settings: "clig" off, "liga" off;
           font-family: Montserrat;
@@ -455,11 +571,13 @@
           font-weight: 400;
           line-height: 140%;
           border-radius: 12px;
-          border: 1px solid #fff;
+          border: 1px solid #000000;
           padding: 5px 36px;
           align-self: baseline;
           @include middle-screen {
             font-size: 0.9rem;
+            margin: 5px 0px 0px 5px;
+            padding: 5px 5px;
           }
         }
       }
@@ -472,7 +590,7 @@
   .organization_poster {
     color: #000;
     font-feature-settings: "clig" off, "liga" off;
-    margin: 42px 0px 82px 0px;
+    margin: 25px 0px 0px 0px;
     /* Начертание для банера */
     font-family: Montserrat;
     font-size: 36px;
@@ -521,6 +639,7 @@
         width: auto;
         justify-content: center;
         padding: 28px 15px 47px 15px;
+        margin-bottom: 40px;
       }
 
       .announcements_block_item {
@@ -555,7 +674,4 @@
       }
     }
   }
-}
-.footer {
-  margin-top: 200px;
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/mainStyle.css">
     <script src="js/libs.min.js" defer></script>
     <script src="js/main.min.js" defer></script>
+    <script src="js/poster.js" defer></script>
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon/favicon.png" />
     <title>World Stars</title>
@@ -30,8 +31,6 @@
                         <div class="header_prof_card">
                             <img class="header_photo" src="assets/image/Union.svg">
                             <div class="name">
-                                <a>Регистрация</a>
-                                
                                 <div class="stars">
                                     <img src="assets/image/none_stars.svg" alt="Stars">
                                 </div>
@@ -154,25 +153,36 @@
                 </div>
                 <div class="sortDate_button">
                     <div class="sortDate_button_group">
-                        <button><a href="all_video.html">Спорт </a><img src="./assets/svg-sprite/arrowdown.svg" alt="arrowdown"></button>
-                        <button><a href="all_video.html">Кино </a></button>
-                        <button><a href="all_photo.html">Музыка </a></button>
-                        <button><a href="news-fashion-stars.html">Мода </a></button>
-                        <button><a href="all_photo.html">Танцы </a></button>
+                        <select name="sport" id="sport">
+                            <option value="football">Футбол</option>
+                            <option value="volleyball">Волейбол</option>
+                            <option value="Basketball">Баскетбол</option>
+                            <option value="Hockey">Хоккей</option>
+                            <option value="Cricket">Крикет</option>
+                        </select>
+
+                        <button>Кино</button>
+                        <button>Музыка</button>
+                        <button>Мода</button>
+                        <button>Танцы</button>
                     </div>
                     <div class="sortDate_button_country">
+                    <div style="display: flex; gap: 10px;">
                         <button>Бразилия</button>
-                        <button>Россия</button>
+                        <button onclick="filterCards('Rassia')">Россия</button>
                         <button>Индия</button>
                         <button>Китай</button>
                         <button>ЮАР</button>
                         <button>Аргентина</button>
                         <button>Египет</button>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
                         <button>Эфиопия</button>
                         <button>Иран</button>
                         <button>Саудовская Аравия</button>
                         <button>ОАЭ</button>
                         <button>другие</button>
+                    </div>
                         <div class="sortDate_button_country_input">
                             <img src="./assets/svg-sprite/magnifier.svg" alt="magnifier">
                             <input type="text" id="sortDate_input" placeholder="Поиск звезды">
@@ -191,148 +201,57 @@
                                 <img src="./assets/svg-sprite/arrowright.svg" alt="arrowright">
                             </div>
                         </div>
-                        <div class="wath_container_content_day">
-                            <div>
-                                <span class="wath_container_content_day_number">11</span>
-                                <span>пн</span>
-                            </div>
-                            <div>
-                                <span class="wath_container_content_day_number">12</span>
-                                <span>вт</span>
-                            </div>
-                            <div>
-                                <span class="wath_container_content_day_number">13</span>
-                                <span>ср</span>
-                            </div>
-                            <div>
-                                <span class="wath_container_content_day_number">14</span>
-                                <span>чт</span>
-                            </div>
-                            <div>
-                                <span class="wath_container_content_day_number">15</span>
-                                <span>пт</span>
-                            </div>
-                            <div>
-                                <span class="wath_container_content_day_number">16</span>
-                                <span>сб</span>
-                            </div>
-                            <div>
-                                <span class="wath_container_content_day_number">17</span>
-                                <span>вс</span>
-                            </div>
-                        </div>
+                       
                         <h5>ЧИТАЙ АФИШУ, ПРИХОДИ НА ВСТРЕЧУ </h5>
-                        <span class="wath_container_content_date_text">11 сентября 2023</span>
-                        <div class="wath_container_content_note">
-                            <div class="note">
-                                <span>Михаил  Кержаков</span>
-                                <button>СМОТРЕТЬ АФИШУ</button>
+                        <div class="allcard_container">
+                            <div class="card">
+                                <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6.png');">
+                                    <div class="card_date">11  СЕНТЯБРЯ</div>
+                                    <div class="card_img_participate">
+                                        <div>принять участие</div>
+                                        <img src="./assets/images/poster/card_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <span class="card_name">Сергей Семак</span>
+                                <span class="card_description">
+                                    Фан-встреча с артистом 
+                                    в онлайн формате на платформе
+                                    Twich с розыгрышем призов
+                                </span>
                             </div>
-                            <div class="note">
-                                <span>Михаил  Кержаков</span>
-                                <button>СМОТРЕТЬ АФИШУ</button>
+                            <div class="card">
+                                <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6 (2).png');">
+                                    <div class="card_date">11  СЕНТЯБРЯ</div>
+                                    <div class="card_img_participate">
+                                        <div>принять участие</div>
+                                        <img src="./assets/images/poster/card_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <span class="card_name">Сергей Семак</span>
+                                <span class="card_description">
+                                    Фан-встреча с артистом 
+                                    в онлайн формате на платформе
+                                    Twich с розыгрышем призов
+                                </span>
+                            </div>
+                            <div class="card">
+                                <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6 (1).png');">
+                                    <div class="card_date">11  СЕНТЯБРЯ</div>
+                                    <div class="card_img_participate">
+                                        <div>принять участие</div>
+                                        <img src="./assets/images/poster/card_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <span class="card_name">Сергей Семак</span>
+                                <span class="card_description">
+                                    Фан-встреча с артистом 
+                                    в онлайн формате на платформе
+                                    Twich с розыгрышем призов
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="allcard container">
-                <h2>Афиша мероприятий Это интресно!</h2>
-                <div class="allcard_container">
-                    <div class="card">
-                        <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6.png');">
-                            <div class="card_date">11  СЕНТЯБРЯ</div>
-                            <div class="card_img_participate">
-                                <div>принять участие</div>
-                                <img src="./assets/images/poster/card_arrow.svg" alt="">
-                            </div>
-                        </div>
-                        <span class="card_name">Сергей Семак</span>
-                        <span class="card_description">
-                            Фан-встреча с артистом 
-                            в онлайн формате на платформе
-                            Twich с розыгрышем призов
-                        </span>
-                    </div>
-                    <div class="card">
-                        <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6 (2).png');">
-                            <div class="card_date">11  СЕНТЯБРЯ</div>
-                            <div class="card_img_participate">
-                                <div>принять участие</div>
-                                <img src="./assets/images/poster/card_arrow.svg" alt="">
-                            </div>
-                        </div>
-                        <span class="card_name">Сергей Семак</span>
-                        <span class="card_description">
-                            Фан-встреча с артистом 
-                            в онлайн формате на платформе
-                            Twich с розыгрышем призов
-                        </span>
-                    </div>
-                    <div class="card">
-                        <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6 (1).png');">
-                            <div class="card_date">11  СЕНТЯБРЯ</div>
-                            <div class="card_img_participate">
-                                <div>принять участие</div>
-                                <img src="./assets/images/poster/card_arrow.svg" alt="">
-                            </div>
-                        </div>
-                        <span class="card_name">Сергей Семак</span>
-                        <span class="card_description">
-                            Фан-встреча с артистом 
-                            в онлайн формате на платформе
-                            Twich с розыгрышем призов
-                        </span>
-                    </div>
-                    <div class="card">
-                        <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6.png');">
-                            <div class="card_date">11  СЕНТЯБРЯ</div>
-                            <div class="card_img_participate">
-                                <div>принять участие</div>
-                                <img src="./assets/images/poster/card_arrow.svg" alt="">
-                            </div>
-                        </div>
-                        <span class="card_name">Сергей Семак</span>
-                        <span class="card_description">
-                            Фан-встреча с артистом 
-                            в онлайн формате на платформе
-                            Twich с розыгрышем призов
-                        </span>
-                    </div>
-                    <div class="card">
-                        <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6.png');">
-                            <div class="card_date">11  СЕНТЯБРЯ</div>
-                            <div class="card_img_participate">
-                                <div>принять участие</div>
-                                <img src="./assets/images/poster/card_arrow.svg" alt="">
-                            </div>
-                        </div>
-                        <span class="card_name">Сергей Семак</span>
-                        <span class="card_description">
-                            Фан-встреча с артистом 
-                            в онлайн формате на платформе
-                            Twich с розыгрышем призов
-                        </span>
-                    </div>
-                    <div class="card">
-                        <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6.png');">
-                            <div class="card_date">11  СЕНТЯБРЯ</div>
-                            <div class="card_img_participate">
-                                <div>принять участие</div>
-                                <img src="./assets/images/poster/card_arrow.svg" alt="">
-                            </div>
-                        </div>
-                        <span class="card_name">Сергей Семак</span>
-                        <span class="card_description">
-                            Фан-встреча с артистом 
-                            в онлайн формате на платформе
-                            Twich с розыгрышем призов
-                        </span>
-                    </div>
-                </div>
-                <p class="organization_poster">Наш анонс! <br>
-                    Мы хотим организовать встречи :
-                </p>
             </section>
             <section class="announcements  container">
                 <img class="announcements_firststar" src="./assets/images/poster/star01 18.png" alt="star">
