@@ -152,25 +152,25 @@
                     <h3>Приходи, общайся, задавай вопросы, получай ответы от мировой звезды!</h3>
                 </div>
                 <div class="sortDate_button">
-                    <div class="sortDate_button_group">
+                    <div class="sortDate_button_group" >
                         <select name="sport" id="sport">
-                            <option value="football">Футбол</option>
-                            <option value="volleyball">Волейбол</option>
+                            <option value="Football">Футбол</option>
+                            <option value="Volleyball">Волейбол</option>
                             <option value="Basketball">Баскетбол</option>
                             <option value="Hockey">Хоккей</option>
                             <option value="Cricket">Крикет</option>
                         </select>
 
-                        <button>Кино</button>
-                        <button>Музыка</button>
-                        <button>Мода</button>
+                        <button data-group="Movie">Кино</button>
+                        <button data-group="Music">Музыка</button>
+                        <button data-group="Fashion">Мода</button>
                         <button>Танцы</button>
                     </div>
                     <div class="sortDate_button_country">
                     <div style="display: flex; gap: 10px;">
-                        <button>Бразилия</button>
-                        <button onclick="filterCards('Rassia')">Россия</button>
-                        <button>Индия</button>
+                        <button data-country="Brazil">Бразилия</button>
+                        <button data-country="Rassia">Россия</button>
+                        <button data-country="India">Индия</button>
                         <button>Китай</button>
                         <button>ЮАР</button>
                         <button>Аргентина</button>
@@ -192,63 +192,19 @@
                 <div class="wath_container">
                     <div class="wath_container_content">
                         <div class="wath_container_content_month">
-                            <span>ИЮЛЬ</span>
-                            <span>АВГУСТ</span>
-                            <span>СЕНТЯБРЬ</span>
-                            <span>ОКТЯБРЬ</span>
-                            <div>
+                            <button data-month="ИЮЛЬ">ИЮЛЬ</button>
+                            <button data-month="АВГУСТ">АВГУСТ</button>
+                            <button data-month="СЕНТЯБРЬ">СЕНТЯБРЬ</button>
+                            <button data-month="ОКТЯБРЬ">ОКТЯБРЬ</button>
+                            <!-- <div>
                                 <span>НОЯБРЬ</span>
                                 <img src="./assets/svg-sprite/arrowright.svg" alt="arrowright">
-                            </div>
+                            </div> -->
                         </div>
                        
                         <h5>ЧИТАЙ АФИШУ, ПРИХОДИ НА ВСТРЕЧУ </h5>
+                        <h2 class="card_date">11, 15, 17, 25  сентября 2023</h2>
                         <div class="allcard_container">
-                            <div class="card">
-                                <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6.png');">
-                                    <div class="card_date">11  СЕНТЯБРЯ</div>
-                                    <div class="card_img_participate">
-                                        <div>принять участие</div>
-                                        <img src="./assets/images/poster/card_arrow.svg" alt="">
-                                    </div>
-                                </div>
-                                <span class="card_name">Сергей Семак</span>
-                                <span class="card_description">
-                                    Фан-встреча с артистом 
-                                    в онлайн формате на платформе
-                                    Twich с розыгрышем призов
-                                </span>
-                            </div>
-                            <div class="card">
-                                <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6 (2).png');">
-                                    <div class="card_date">11  СЕНТЯБРЯ</div>
-                                    <div class="card_img_participate">
-                                        <div>принять участие</div>
-                                        <img src="./assets/images/poster/card_arrow.svg" alt="">
-                                    </div>
-                                </div>
-                                <span class="card_name">Сергей Семак</span>
-                                <span class="card_description">
-                                    Фан-встреча с артистом 
-                                    в онлайн формате на платформе
-                                    Twich с розыгрышем призов
-                                </span>
-                            </div>
-                            <div class="card">
-                                <div class="card_img" style="background-image: url('./assets/images/poster/image\ 6 (1).png');">
-                                    <div class="card_date">11  СЕНТЯБРЯ</div>
-                                    <div class="card_img_participate">
-                                        <div>принять участие</div>
-                                        <img src="./assets/images/poster/card_arrow.svg" alt="">
-                                    </div>
-                                </div>
-                                <span class="card_name">Сергей Семак</span>
-                                <span class="card_description">
-                                    Фан-встреча с артистом 
-                                    в онлайн формате на платформе
-                                    Twich с розыгрышем призов
-                                </span>
-                            </div>
                         </div>
                     </div>
                 </div>

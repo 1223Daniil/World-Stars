@@ -156,9 +156,12 @@
           padding: 6px 16px;
         }
       }
-      // button:nth-child(7) {
-      //   display: block;
-      // }
+      button.active {
+        border-radius: 5px;
+        border: 1px solid var(--q, #ff2c15);
+        background: var(--q, linear-gradient(180deg, #ff2c15 0%, #fa9317 100%));
+        color: #fff;
+      }
       button:hover {
         border-radius: 5px;
         border: 1px solid var(--q, #ff2c15);
@@ -252,7 +255,7 @@
       margin-bottom: 65px;
       flex-wrap: wrap;
       gap: 20px;
-      span {
+      button {
         color: #2e2c2c;
         text-align: center;
         font-feature-settings: "clig" off, "liga" off;
@@ -262,6 +265,7 @@
         font-weight: 400;
         line-height: 98.5%; /* 35.46px */
         transition: border-bottom 0.5s, mix-blend-mode 0.5s, padding-bottom 0.5s;
+        border: none;
         @include large-screen {
           font-size: 2rem;
         }
@@ -269,13 +273,27 @@
           font-size: 1.5rem;
         }
       }
-      span:nth-child(4),
+      button.active {
+        border-bottom: 2px solid var(--q, #ff2c15);
+        mix-blend-mode: darken;
+        padding-bottom: 15px;
+        background: linear-gradient(
+          110deg,
+          #ff2c15 -10.23%,
+          #ffc477 -2.32%,
+          #ff2713 6.28%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      button:nth-child(4),
       div:nth-child(5) {
         @include very-small-screen {
           display: none;
         }
       }
-      span:hover {
+      button:hover {
         border-bottom: 2px solid var(--q, #ff2c15);
         mix-blend-mode: darken;
         padding-bottom: 15px;
@@ -428,177 +446,172 @@
     }
   }
 }
-.allcard {
-  h2 {
-    color: #000;
-    font-feature-settings: "clig" off, "liga" off;
-    max-width: 650px;
-    /* ЗАГОЛОВОК */
-    font-family: Montserrat;
-    font-size: 3.4rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 130%; /* 71.5px */
-    @include middle-screen {
-      font-size: 3rem;
-      width: auto;
-    }
-    @include small-screen {
-      font-size: 2.2rem;
-    }
-    @include very-small-screen {
-      font-size: 2rem;
-    }
+.card_date {
+  color: #ff2c15;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 98.5%;
+  @include small-screen {
+    font-size: 2.2rem;
   }
-  &_container {
+  @include very-small-screen {
+    font-size: 2rem;
+  }
+}
+.allcard_container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 100px;
+  margin-top: 70px;
+  justify-content: center;
+  @include middle-screen {
+    row-gap: 40px;
+  }
+  .card {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 100px;
-    margin-top: 70px;
-    justify-content: center;
-    @include middle-screen {
-      row-gap: 40px;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #ffffff;
+    max-width: 389px;
+    gap: 15px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    box-shadow: 0px 4px rgb(143, 142, 142);
+    @include very-small-screen {
+      max-width: 153px;
     }
-    .card {
+    span {
+      margin-left: 15px;
+    }
+    &_name {
+      color: #000;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Montserrat;
+      font-size: 2.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 98.5%;
+      @include middle-screen {
+        font-size: 1.7rem;
+      }
+      @include very-small-screen {
+        font-size: 0.875rem;
+      }
+    }
+    &_description {
+      color: #000;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Montserrat;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      @include middle-screen {
+        font-size: 0.9rem;
+      }
+      @include very-small-screen {
+        font-size: 0.625rem;
+      }
+    }
+    .card_img {
+      height: 378px;
+      position: relative;
       display: flex;
       flex-direction: column;
-      border-radius: 10px;
-      background: #ffffff;
-      max-width: 389px;
-      gap: 15px;
-      margin-top: 0px;
-      padding-bottom: 20px;
+      justify-content: space-between;
+      background-size: cover;
+      background-size: cover; /* Растягиваем картинку, чтобы она полностью покрывала фон */
+      background-position: center;
       @include very-small-screen {
-        max-width: 153px;
+        max-height: 151px;
+        border-radius: 10px 10px 0px 0px;
       }
-      span {
-        margin-left: 15px;
-      }
-      &_name {
-        color: #000;
-        font-feature-settings: "clig" off, "liga" off;
-        font-family: Montserrat;
-        font-size: 2.25rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 98.5%;
-        @include middle-screen {
-          font-size: 1.7rem;
-        }
+      .card_img_participate {
+        padding: 25px 38px;
+        align-items: center;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0px 0px 15px 15px;
         @include very-small-screen {
-          font-size: 0.875rem;
+          border-radius: 12px;
+          background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
+          padding: 2px 7px 2px 7px;
+          align-self: baseline;
+          align-items: center;
+          margin-bottom: 13px;
+          margin-left: auto;
+        }
+        img {
+          @include very-small-screen {
+            display: none;
+          }
+        }
+
+        div {
+          color: #fff;
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          @include middle-screen {
+            font-size: 0.9rem;
+          }
+          @include very-small-screen {
+            color: #fff;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 20px;
+          }
         }
       }
-      &_description {
-        color: #000;
+      .card_date {
+        color: #000000;
+        text-align: center;
         font-feature-settings: "clig" off, "liga" off;
         font-family: Montserrat;
         font-size: 1.25rem;
+        margin: 28px 0px 0px 33px;
+        display: inline-block;
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
+        border-radius: 12px;
+        border: 1px solid #000000;
+        padding: 5px 36px;
+        align-self: baseline;
         @include middle-screen {
           font-size: 0.9rem;
-        }
-        @include very-small-screen {
-          font-size: 0.625rem;
-        }
-      }
-      .card_img {
-        height: 378px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-size: cover;
-        background-size: cover; /* Растягиваем картинку, чтобы она полностью покрывала фон */
-        background-position: center;
-        @include very-small-screen {
-          max-height: 151px;
-          border-radius: 10px 10px 0px 0px;
-        }
-        .card_img_participate {
-          padding: 25px 38px;
-          align-items: center;
-          background-color: #000;
-          display: flex;
-          justify-content: space-between;
-          border-radius: 0px 0px 15px 15px;
-          @include very-small-screen {
-            border-radius: 12px;
-            background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
-            padding: 2px 7px 2px 7px;
-            align-self: baseline;
-            align-items: center;
-            margin-bottom: 13px;
-            margin-left: auto;
-          }
-          img {
-            @include very-small-screen {
-              display: none;
-            }
-          }
-
-          div {
-            color: #fff;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            @include middle-screen {
-              font-size: 0.9rem;
-            }
-            @include very-small-screen {
-              color: #fff;
-              font-size: 10px;
-              font-weight: 700;
-              line-height: 20px;
-            }
-          }
-        }
-        .card_date {
-          color: #000000;
-          text-align: center;
-          font-feature-settings: "clig" off, "liga" off;
-          font-family: Montserrat;
-          font-size: 1.25rem;
-          margin: 28px 0px 0px 33px;
-          display: inline-block;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 140%;
-          border-radius: 12px;
-          border: 1px solid #000000;
-          padding: 5px 36px;
-          align-self: baseline;
-          @include middle-screen {
-            font-size: 0.9rem;
-            margin: 5px 0px 0px 5px;
-            padding: 5px 5px;
-          }
+          margin: 5px 0px 0px 5px;
+          padding: 5px 5px;
         }
       }
-    }
-    .card:hover {
-      transform: scale(1.03);
-      transition: all 200ms;
     }
   }
-  .organization_poster {
-    color: #000;
-    font-feature-settings: "clig" off, "liga" off;
-    margin: 25px 0px 0px 0px;
-    /* Начертание для банера */
-    font-family: Montserrat;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 98.5%; /* 35.46px */
+  .card:hover {
+    transform: scale(1.03);
+    transition: all 200ms;
   }
 }
+.organization_poster {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  margin: 25px 0px 0px 0px;
+  /* Начертание для банера */
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 98.5%; /* 35.46px */
+}
+
 .announcements {
   .announcements_firststar {
     margin-left: 100%;
