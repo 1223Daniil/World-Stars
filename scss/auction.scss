@@ -134,6 +134,7 @@
     flex-wrap: wrap;
     gap: 26px;
     justify-content: center;
+    margin-bottom: 24px;
     .auction_container_card {
       display: flex;
       flex-direction: column;
@@ -213,6 +214,46 @@
         font-size: 20px;
         font-weight: 700;
         border: none;
+      }
+    }
+  }
+  .auction_scroll {
+    display: flex;
+    .auction_scroll_conditions {
+      color: #000;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 120%;
+      text-transform: uppercase;
+      max-width: 350px;
+      display: block;
+    }
+    .auction_scroll_number {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      span {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        line-height: 140%;
+      }
+      .auction_scroll_number_first {
+        padding: 1px 10px 1px 4px;
+        border: 3px solid #ff2c15;
+        background: #fff;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+    .showAll {
+      span {
+        color: #ff0606;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 120%; /* 26.4px */
       }
     }
   }
