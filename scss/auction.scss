@@ -1,0 +1,285 @@
+@import "./breakpoint.scss";
+.wrapper_bg {
+  background-image: url("../assets/images/bg/sport-bg.png");
+  background-size: cover;
+}
+.container-fluid {
+  max-width: 1200px;
+  @include large-screen {
+    max-width: 1000px;
+  }
+  @include middle-screen {
+    max-width: 850px;
+  }
+  @include small-screen {
+    max-width: 600px;
+  }
+  @include very-small-screen {
+    max-width: 400px;
+  }
+}
+.poster_header_up {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px 30px 0px;
+  position: relative;
+  z-index: 4;
+  .poster_nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+    .menu-container {
+      @include very-small-screen {
+        display: none;
+      }
+    }
+    .header_prof_card {
+      align-items: center;
+      @include very-small-screen {
+        display: none;
+      }
+    }
+  }
+}
+.auctionTitle {
+  h3 {
+    margin: 34px 0px 67px 0px;
+    color: #000;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 130%;
+    span {
+      color: #ff0606;
+    }
+  }
+  .infoAuction_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    ul {
+      color: #000;
+      font-size: 36px;
+      line-height: 120%; /* 35.46px */
+      text-transform: uppercase;
+      span {
+        color: #ff0606;
+      }
+    }
+    div {
+      p {
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 36px;
+        line-height: 98.5%;
+      }
+      .infoAuction_container_allstate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .infoAuction_container_time {
+          display: flex;
+          span {
+            padding: 11px 38px;
+            font-size: 36px;
+            font-weight: 500;
+            background-color: white;
+            border: 2px solid #ff2c15;
+            color: #ff2c15;
+          }
+        }
+        .infoAuction_container_day {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          span {
+            color: #000;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 98.5%;
+          }
+        }
+      }
+    }
+  }
+  .AuctionImage {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: end;
+    margin-bottom: 80px;
+    .AuctionImage_info {
+      color: #000;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 98.5%;
+    }
+  }
+}
+.auction {
+  h2 {
+    color: #000;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+  }
+  .auction_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: center;
+    .auction_container_card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      .auction_container_card_number {
+        border: 1px solid red;
+        border-radius: 50%;
+        padding: 5px 15px;
+        background-color: white;
+      }
+      .auction_container_card_content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        background: #fff;
+        padding: 10px 20px 20px 20px;
+        gap: 10px;
+        width: 214px;
+        height: 327px;
+        justify-content: space-between;
+        span {
+          color: #000;
+          font-family: Montserrat;
+          font-size: 36px;
+          line-height: 98.5%; /* 35.46px */
+        }
+        .auction_container_card_content_name {
+          font-size: 20px;
+          line-height: 140%;
+        }
+      }
+    }
+    .auction_container_cardplus {
+      margin-top: 52px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 15px;
+      background: #fff;
+      padding: 10px 10px 20px 10px;
+      gap: 30px;
+      justify-content: flex-end;
+      width: 214px;
+      height: 327px;
+
+      span {
+        border-radius: 10px;
+        border: 1px solid #000;
+        color: #000;
+        text-align: center;
+        font-size: 36px;
+        padding: 8px 9px 0px 16px;
+      }
+    }
+    .auction_container_cardpay {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 214px;
+      height: 327px;
+      margin-top: 52px;
+      span {
+        color: #000;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 120%;
+      }
+      button {
+        padding: 19px 43px;
+        border-radius: 14px;
+        background: linear-gradient(118deg, #ff2c15 -5.25%, #fa931a 98.66%);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 700;
+        border: none;
+      }
+    }
+  }
+}
+.ItsInteresting {
+  background: linear-gradient(265deg, #f00 -74.64%, #ffd466 112.9%);
+  padding-top: 40px;
+  margin-top: 30px;
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+    @include middle-screen {
+      flex-direction: column;
+    }
+    img {
+      @include small-screen {
+        display: none;
+      }
+    }
+    &_text {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      h2 {
+        color: #fff;
+        font-size: 3.438rem;
+        font-weight: 600;
+        line-height: 130%; /* 71.5px */
+        @include middle-screen {
+          font-size: 2.8rem;
+        }
+        @include very-small-screen {
+          font-size: 1.125rem;
+        }
+      }
+      span {
+        color: #fff;
+        font-size: 1.375rem;
+        line-height: 120%; /* 26.4px */
+        @include middle-screen {
+          font-size: 1rem;
+        }
+        @include very-small-screen {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}
+.podium {
+  .podium_button {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 42px;
+    flex-wrap: wrap;
+    button {
+      padding: 7px 15px 7px 15px;
+      border-radius: 7px;
+      box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04),
+        0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+      color: #000;
+      text-align: center;
+      font-size: 22px;
+      line-height: 120%; /* 26.4px */
+      border: none;
+    }
+  }
+}
