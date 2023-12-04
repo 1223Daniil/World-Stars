@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0px 30px 0px;
+  padding: 40px 10px 30px 10px;
   .poster_nav {
     display: flex;
     align-items: center;
@@ -39,6 +39,12 @@
       align-items: center;
       @include very-small-screen {
         display: none;
+      }
+    }
+    .menu-container {
+      @include very-small-screen {
+        position: static;
+        margin-left: 15px;
       }
     }
   }
@@ -97,9 +103,13 @@
     &_group,
     &_country {
       display: flex;
-      gap: 27px;
+      gap: 20px;
       margin-bottom: 40px;
-      flex-wrap: wrap;
+      img {
+        @include large-screen {
+          display: none;
+        }
+      }
       select {
         border: 1px solid #000;
         border-radius: 5px;
@@ -107,6 +117,7 @@
         color: #212121;
         padding: 11px 24px;
         font-size: 1.25rem;
+        align-self: center;
         font-weight: 700;
         option {
           border-radius: 5px;
@@ -134,8 +145,10 @@
         border: 1px solid #000;
         background: #fff;
         transition: color 0.5s;
+        align-self: center;
         color: #212121;
         text-align: center;
+        align-self: center;
         padding: 11px 24px;
         font-family: Montserrat;
         font-size: 1.25rem;
@@ -180,6 +193,7 @@
       }
     }
     &_country {
+      flex-wrap: wrap;
       button {
         color: #212121;
         text-align: center;
@@ -613,28 +627,18 @@
 }
 
 .announcements {
-  .announcements_firststar {
-    margin-left: 100%;
-    position: relative;
-    right: 100px;
-  }
-  .star_last {
-    position: relative;
-    bottom: 50px;
-    @include x-large-screen {
-      display: none;
-    }
-  }
   .announcements_container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 101px;
     @include x-large-screen {
       align-items: center;
       justify-content: center;
     }
     img {
-      @include x-large-screen {
+      align-self: baseline;
+      @include large-screen {
         display: none;
       }
     }

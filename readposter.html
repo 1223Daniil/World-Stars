@@ -136,10 +136,6 @@
                             <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
                             <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
                             </div>
-                            <div class="PosterInfo_content_slider_item">
-                            <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
-                            </div>
                         </div>
                         <button>Смотреть далее<img src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"></button>
                     </div>
@@ -147,38 +143,43 @@
             </section>
             <section class="videoStar container-fluid">
                 <h3>Видео звезды</h3>
-                <video width="auto" height="auto" controls>
+                <video id="mainVideo" width="auto" height="auto" controls>
                     <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
                     Ваш браузер не поддерживает тег video.
                 </video>
                 <div class="PosterInfo_content_slider">
-                    <div class="slider_container">
+                    <div class="slider_container_video">
                         <div class="PosterInfo_content_slider_item">
-                        <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                        <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            <video width="178" height="100" controls onclick="changeMainVideo(`./assets/images/readposter/video (2160p).mp4`)">
+                                <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
+                                Ваш браузер не поддерживает тег video.
+                            </video>
+                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
                         </div>
                         <div class="PosterInfo_content_slider_item">
-                        <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                        <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            <video width="178" height="100" controls onclick="changeMainVideo('./assets/images/readposter/hd1000.mov')">
+                                <source src="./assets/images/readposter/hd1000.mov" type="video/mp4">
+                                Ваш браузер не поддерживает тег video.
+                            </video>
+                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
                         </div>
                         <div class="PosterInfo_content_slider_item">
-                        <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                        <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            <video width="178" height="100" controls onclick="changeMainVideo('./assets/images/readposter/rabbit320.webm')">
+                                <source src="./assets/images/readposter/rabbit320.webm" type="video/mp4">
+                                Ваш браузер не поддерживает тег video.
+                            </video>
+                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
                         </div>
                         <div class="PosterInfo_content_slider_item">
-                        <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                        <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
+                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
                         </div>
                         <div class="PosterInfo_content_slider_item">
-                        <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                        <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
-                        </div>
-                        <div class="PosterInfo_content_slider_item">
-                        <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                        <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
+                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
                         </div>
                     </div>
-                    <button>Смотреть далее<img src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"></button>
+                    <button class="ButtonScroll">Смотреть далее<img src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"></button>
                 </div>
                 <button class="goposter">НА ВСТРЕЧУ <img src="./assets/images/readposter/arrowright.svg" alt="arrowright"></button>
             </section>
@@ -205,23 +206,36 @@
         <footer class="footer">
             <div class="container">
                <div class="footer_lists">
-                   <ul class="footer_row">
+                <ul class="footer_row">
                     <li><a href="#"><span class ='footer_logo_link'>World Stars</span><br> <span>мировые звезды brics</span> </a></li>
                     <li><a href="#"><span>О нас</span></a></li>
                     <li><a href="#"><span>Словарь сайта</span></a></li>
-                    <li><a href="#"><span>Контакты</span></a></li>
+                    <li><a href="#"><span>Встреси со звёздами</span></a></li>
+                    <li><a href="#"><span>Знакомься дружи</span></a></li>
                 </ul>
                 <ul class="footer_row">
                     <li><a href="#"><span>Главная</span></a></li>
                     <li><a href="#"><span>Звезды кино</span></a></li>
-                    <li><a href="#"><span>Встречи со звездами</span></a></li>
-                    <li><a href="#"><span>Знакомься дружи</span></a></li>
+                    <li><a href="#"><span>Мода</span></a></li>
+                    <li><a href="#"><span>Спорт</span></a></li>
+                    <li><a href="#"><span>Музыка</span></a></li>
+                    <li><a href="#"><span>Танцы</span></a></li>
                 </ul>
                 <ul class="footer_row">
                     <li><a href="#"><span>Поддержка</span> </a></li>
                     <li><a href="#"><span>Политика конфиденциальности</span></a></li>
                     <li><a href="#"><span>Term of service</span></a></li>
                     <li><a href="#"><span>Social Media</span></a></li>
+                    <li><a href="#"><span>Контакты</span></a></li>
+                    <div class="footer_row_contact">
+                        <div class="circlestar">
+                            <img src="./assets/images/footer/footerstar.svg" alt="footerstar">
+                        </div>
+                        <img src="./assets/images/footer/WhatsApp Inc. svg (1).png" alt="WhatsApp">
+                        <img src="./assets/images/footer/social icons.png" alt="social">
+                        <img src="./assets/images/footer/Telegram_2019_Logo.png" alt="Telegram_2019_Logo">
+                        <img src="./assets/images/footer/App Icon.svg" alt="App">
+                    </div>
                 </ul>
                </div>
             </div>

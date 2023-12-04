@@ -369,15 +369,16 @@
   }
   &_slider,
   .videoStar {
-    .slider_container {
+    .slider_container,
+    .slider_container_video {
       border-radius: 7px;
       margin: 23px 0px 30px 0px;
       background: #fff;
       padding: 25px 17px;
       display: flex;
-      flex-wrap: wrap;
+      overflow: hidden;
       gap: 21px;
-      justify-content: center;
+      scroll-behavior: smooth;
       .PosterInfo_content_slider_item {
         display: flex;
         flex-direction: column;

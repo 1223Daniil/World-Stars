@@ -1,3 +1,8 @@
+// скролл контейнера
+let scrollLeftBt = document.querySelector(".ButtonScroll");
+const container = document.querySelector(".slider_container_video");
+let scrollleftActive = false;
+//появление
 let text = document.getElementById("text-content");
 let button = document.getElementById("Readmore");
 let textVisable = false;
@@ -17,3 +22,21 @@ button.addEventListener("click", () => {
     textVisable = true;
   }
 });
+scrollLeftBt.addEventListener("click", () => {
+  if (scrollleftActive) {
+    container.scrollLeft -= 156;
+    scrollLeftBt.innerHTML = `Смотреть далее <img src="./assets/images/readposter/blackarrow.svg" alt="blackarrow">`;
+    scrollleftActive = false;
+  } else {
+    container.scrollLeft += 156;
+    scrollleftActive = true;
+    scrollLeftBt.innerHTML = `<img style="transform: rotate(180deg);" src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"> Назад`;
+  }
+});
+function changeMainVideo(source) {
+  let mainVideo = document.getElementById("mainVideo");
+  mainVideo.src = source;
+  mainVideo.load();
+  mainVideo.play();
+  mainVideo.scrollIntoView({ behavior: "smooth" });
+}
