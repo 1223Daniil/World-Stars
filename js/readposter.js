@@ -22,17 +22,12 @@ button.addEventListener("click", () => {
     textVisable = true;
   }
 });
-scrollLeftBt.addEventListener("click", () => {
-  if (scrollleftActive) {
-    container.scrollLeft -= 156;
-    scrollLeftBt.innerHTML = `Смотреть далее <img src="./assets/images/readposter/blackarrow.svg" alt="blackarrow">`;
-    scrollleftActive = false;
-  } else {
-    container.scrollLeft += 156;
-    scrollleftActive = true;
-    scrollLeftBt.innerHTML = `<img style="transform: rotate(180deg);" src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"> Назад`;
-  }
-});
+function backslider() {
+  container.scrollLeft -= 156;
+}
+function prevslider() {
+  container.scrollLeft += 156;
+}
 function changeMainVideo(source) {
   let mainVideo = document.getElementById("mainVideo");
   mainVideo.src = source;

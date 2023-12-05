@@ -68,11 +68,6 @@ function filterCards() {
   renderCards(filteredCards);
 }
 
-function filterCardsByGroup(group) {
-  const filteredCards = cards.filter((card) => card.group === group);
-  renderCards(filteredCards);
-}
-
 function setActiveButton(buttons, activeButton, filterType) {
   buttons.forEach((button) => {
     button.classList.remove("active");
@@ -91,11 +86,17 @@ countryButtons.forEach((button) => {
 groupButtons.forEach((button) => {
   button.addEventListener("click", () => {
     setActiveButton(groupButtons, button, "group");
+    // При клике на другую кнопку из группы, снимаем класс active с select
+    groupSelect.classList.remove("active");
   });
 });
 
 groupSelect.addEventListener("change", () => {
+  setActiveButton([groupSelect], groupSelect, "group");
   activeFilters.group = groupSelect.value;
+  groupButtons.forEach((button) => {
+    button.classList.remove("active");
+  });
   filterCards();
 });
 
@@ -105,4 +106,5 @@ monthButtons.forEach((button) => {
   });
 });
 
+// По умолчанию отображаем все карточки
 renderCards(cards);

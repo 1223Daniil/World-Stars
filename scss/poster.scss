@@ -110,6 +110,13 @@
           display: none;
         }
       }
+      select.active {
+        background: var(--q, linear-gradient(180deg, #ff2c15 0%, #fa9317 100%));
+        color: white;
+        option {
+          color: black;
+        }
+      }
       select {
         border: 1px solid #000;
         border-radius: 5px;
@@ -121,7 +128,7 @@
         font-weight: 700;
         option {
           border-radius: 5px;
-          background: #fff;
+          background: #ffffff;
           font-size: 1.3rem;
           @include large-screen {
             font-size: 1.1rem;
@@ -627,6 +634,17 @@
 }
 
 .announcements {
+  h3 {
+    color: #000;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 98.5%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
   .announcements_container {
     display: flex;
     justify-content: space-between;
