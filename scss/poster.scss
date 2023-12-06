@@ -7,7 +7,7 @@
 .container_fluid {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 17px;
   @include x-large-screen {
     max-width: 1245px;
   }
@@ -93,7 +93,7 @@
     }
   }
   .sortDate_button {
-    margin-left: 236px;
+    margin-left: 180px;
     display: flex;
     flex-direction: column;
     @include large-screen {
@@ -103,10 +103,10 @@
     &_group,
     &_country {
       display: flex;
-      gap: 20px;
+      gap: 15px;
       margin-bottom: 40px;
       img {
-        @include large-screen {
+        @include x-large-screen {
           display: none;
         }
       }
@@ -140,6 +140,7 @@
         }
         @include large-screen {
           font-size: 1.1rem;
+          padding: 6px 16px;
         }
         @include very-small-screen {
           font-size: 0.813rem;
@@ -664,11 +665,12 @@
       border-radius: 9.747px;
       border: 1px solid #000;
       background: #fff;
-      padding: 28px 50px 47px 50px;
+      padding: 36px 50px 47px 50px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       max-width: 900px;
+      align-self: center;
       gap: 15px;
       @include middle-screen {
         width: auto;

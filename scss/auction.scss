@@ -25,7 +25,10 @@
   justify-content: space-between;
   padding: 40px 0px 30px 0px;
   position: relative;
-  z-index: 4;
+  .logo_link {
+    position: relative;
+    z-index: 4;
+  }
   .poster_nav {
     display: flex;
     align-items: center;
@@ -69,6 +72,7 @@
       }
     }
     div {
+      max-width: 446px;
       p {
         color: #000;
         text-align: center;
@@ -117,6 +121,9 @@
       font-size: 36px;
       font-weight: 400;
       line-height: 98.5%;
+      span {
+        color: red;
+      }
     }
   }
 }
@@ -133,7 +140,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 26px;
-    justify-content: center;
     margin-bottom: 24px;
     .auction_container_card {
       display: flex;
@@ -154,13 +160,13 @@
         background: #fff;
         padding: 10px 20px 20px 20px;
         gap: 10px;
-        width: 214px;
+        width: 184px;
         height: 327px;
         justify-content: space-between;
         span {
           color: #000;
           font-family: Montserrat;
-          font-size: 36px;
+          font-size: 30px;
           line-height: 98.5%; /* 35.46px */
         }
         .auction_container_card_content_name {

@@ -9,23 +9,59 @@ let cards = [
     month: "СЕНТЯБРЬ",
   },
   {
+    name: "Михаил  Кержаков",
+    date: "11 сентября",
+    description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
+    country: "Rassia",
+    group: "Football",
+    pathimg: "./assets/images/poster/image 6 (2).png",
+    month: "СЕНТЯБРЬ",
+  },
+  {
     name: "Карина Кросс",
-    date: "15 октябрь",
+    date: "15 сентября",
     description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
     country: "Rassia",
     group: "Fashion",
     pathimg: "./assets/images/poster/image 6 (1).png",
-    month: "ОКТЯБРЬ",
+    month: "СЕНТЯБРЬ",
   },
-  // Добавьте другие карточки по мере необходимости
+  {
+    name: "Сергей Семак",
+    date: "15 сентября",
+    description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
+    country: "Rassia",
+    group: "Football",
+    pathimg: "./assets/images/poster/image 6.png",
+    month: "СЕНТЯБРЬ",
+  },
+  {
+    name: "Сергей Семак",
+    date: "17 сентября",
+    description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
+    country: "Rassia",
+    group: "Football",
+    pathimg: "./assets/images/poster/image 6.png",
+    month: "СЕНТЯБРЬ",
+  },
+  {
+    name: "Сергей Семак",
+    date: "25 сентября",
+    description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
+    country: "Rassia",
+    group: "Football",
+    pathimg: "./assets/images/poster/image 6.png",
+    month: "СЕНТЯБРЬ",
+  },
 ];
 const cardsContainer = document.querySelector(".allcard_container");
 const countryButtons = document.querySelectorAll("[data-country]");
 const groupButtons = document.querySelectorAll("[data-group]");
 const monthButtons = document.querySelectorAll("[data-month]");
 const groupSelect = document.getElementById("sport");
+const cardDate = document.querySelector(".card_date");
 let activeFilters = { country: null, group: null };
-
+cardDate.innerHTML = "";
 function renderCards(filteredCards) {
   cardsContainer.innerHTML = "";
   filteredCards.forEach((card) => {
@@ -49,6 +85,7 @@ function renderCards(filteredCards) {
 }
 
 function filterCards() {
+  cardDate.innerHTML = "";
   let filteredCards = [...cards];
   if (activeFilters.country) {
     filteredCards = filteredCards.filter(
@@ -65,6 +102,14 @@ function filterCards() {
       (card) => card.month === activeFilters.month
     );
   }
+  filteredCards.map((item, index) => {
+    const numbersArray = item.date.match(/\d+/g);
+    if (index == filteredCards.length - 1) {
+      cardDate.innerHTML += `${numbersArray} сентября`;
+    } else {
+      cardDate.innerHTML += `${numbersArray}, `;
+    }
+  });
   renderCards(filteredCards);
 }
 
@@ -106,5 +151,4 @@ monthButtons.forEach((button) => {
   });
 });
 
-// По умолчанию отображаем все карточки
 renderCards(cards);

@@ -35,3 +35,27 @@ function changeMainVideo(source) {
   mainVideo.play();
   mainVideo.scrollIntoView({ behavior: "smooth" });
 }
+function changeMainPhoto(source) {
+  let mainPhoto = document.getElementById("mainphoto");
+  mainPhoto.src = source;
+  mainPhoto.scrollIntoView({ behavior: "smooth" });
+}
+function playVideo() {
+  var videoContainer = document.getElementById("videoContainer");
+  var videoPreview = document.getElementById("videoPreview");
+  var videoLink = document.querySelector(".video__link");
+
+  videoPreview.style.display = "none";
+  videoLink.style.display = "none"; // Устанавливаем display: none для video__link
+
+  // Создаем элемент iframe
+  var iframe = document.createElement("iframe");
+  iframe.width = "560";
+  iframe.height = "315";
+  iframe.src = "https://www.youtube.com/embed/yWM_3JSDn9s?autoplay=1";
+  iframe.frameBorder = "0";
+  iframe.allowFullscreen = true;
+
+  // Добавляем iframe в контейнер
+  videoContainer.appendChild(iframe);
+}

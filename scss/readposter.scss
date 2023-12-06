@@ -55,8 +55,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 40px 0px 30px 0px;
-  position: relative;
-  z-index: 4;
+  .logo_link {
+    img {
+      position: relative;
+      z-index: 10;
+    }
+  }
   .poster_nav {
     display: flex;
     align-items: center;
@@ -390,6 +394,9 @@
   }
   &_slider,
   .videoStar {
+    h3 {
+      margin-top: 30px;
+    }
     .slider_container,
     .slider_container_video {
       border-radius: 7px;
@@ -406,6 +413,14 @@
         align-items: center;
         gap: 10px;
         max-width: 178px;
+        video {
+          max-height: 100px;
+        }
+        .playvideo {
+          position: relative;
+          bottom: 100px;
+          margin: 0 auto;
+        }
         span {
           color: rgba(0, 0, 0, 0.5);
           font-size: 10px;
@@ -528,7 +543,4 @@
       border: none;
     }
   }
-}
-.footer_lists {
-  flex-direction: column;
 }
