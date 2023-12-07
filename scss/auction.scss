@@ -105,11 +105,15 @@
           display: flex;
           span {
             padding: 11px 38px;
-            font-size: 36px;
+            font-size: 2.25rem;
             font-weight: 500;
             background-color: white;
             border: 2px solid #ff2c15;
             color: #ff2c15;
+            @include small-screen {
+              font-size: 1.6rem;
+              padding: 6px 25px;
+            }
           }
         }
         .infoAuction_container_day {
@@ -167,7 +171,7 @@
     flex-wrap: wrap;
     gap: 26px;
     margin-bottom: 24px;
-    @include small-screen {
+    @include middle-screen {
       justify-content: center;
     }
     .auction_container_card {
@@ -192,7 +196,7 @@
         width: 184px;
         height: 327px;
         justify-content: space-between;
-        @include very-small-screen {
+        @include small-screen {
           width: 134px;
           height: 197px;
         }
@@ -231,8 +235,10 @@
         height: 197px;
       }
       img {
-        width: 59.011px;
-        height: 59px;
+        @include small-screen {
+          width: 59px;
+          height: 59px;
+        }
       }
       span {
         border-radius: 10px;
@@ -305,6 +311,21 @@
       gap: 30px;
       @include small-screen {
         flex-wrap: wrap;
+      }
+      .scrollBt {
+        display: flex;
+
+        button {
+          border: none;
+          background: #ff4415;
+          padding: 10px;
+        }
+        .scrollBt_prev {
+          border-radius: 6px 0px 0px 6px;
+        }
+        .scrollBt_next {
+          border-radius: 0px 6px 6px 0px;
+        }
       }
       span {
         color: #000;

@@ -60,7 +60,8 @@ const groupButtons = document.querySelectorAll("[data-group]");
 const monthButtons = document.querySelectorAll("[data-month]");
 const groupSelect = document.getElementById("sport");
 const cardDate = document.querySelector(".card_date");
-let activeFilters = { country: null, group: null };
+const searchInput = document.getElementById("sortDate_input");
+let activeFilters = { country: null, group: null, search: "" };
 cardDate.innerHTML = "";
 function renderCards(filteredCards) {
   cardsContainer.innerHTML = "";
@@ -92,6 +93,12 @@ function filterCards() {
   if (activeFilters.country) {
     filteredCards = filteredCards.filter(
       (card) => card.country === activeFilters.country
+    );
+  }
+  if (activeFilters.search) {
+    const searchLower = activeFilters.search.toLowerCase();
+    filteredCards = filteredCards.filter((card) =>
+      card.name.toLowerCase().includes(searchLower)
     );
   }
   if (activeFilters.group) {
@@ -152,5 +159,8 @@ monthButtons.forEach((button) => {
     setActiveButton(monthButtons, button, "month");
   });
 });
-
+searchInput.addEventListener("input", () => {
+  activeFilters.search = searchInput.value;
+  filterCards();
+});
 renderCards(cards);

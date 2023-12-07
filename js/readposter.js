@@ -34,6 +34,7 @@ function changeMainVideo(source) {
   mainVideo.play();
   mainVideo.scrollIntoView({ behavior: "smooth" });
 }
+
 function changeMainPhoto(source) {
   let mainPhoto = document.getElementById("mainphoto");
   mainPhoto.src = source;

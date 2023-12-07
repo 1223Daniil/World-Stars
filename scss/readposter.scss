@@ -45,9 +45,6 @@
   @include very-small-screen {
     font-size: 0.875rem;
   }
-  a {
-    color: #000 !important;
-  }
 }
 .poster_header_up {
   display: flex;
@@ -152,7 +149,7 @@
       }
       .wathVideo_content_video_cloud_button {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding: 40px 0px;
         .cloud_left {
           position: absolute;
