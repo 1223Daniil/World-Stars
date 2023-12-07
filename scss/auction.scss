@@ -51,24 +51,37 @@
   h3 {
     margin: 34px 0px 67px 0px;
     color: #000;
-    font-size: 55px;
+    font-size: 3.438rem;
     font-weight: 600;
     line-height: 130%;
+
     span {
       color: #ff0606;
+    }
+    @include middle-screen {
+      font-size: 2rem;
+      text-align: center;
     }
   }
   .infoAuction_container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 48px;
+    @include middle-screen {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
     ul {
       color: #000;
-      font-size: 36px;
+      font-size: 2.25rem;
       line-height: 120%; /* 35.46px */
       text-transform: uppercase;
       span {
         color: #ff0606;
+      }
+      @include middle-screen {
+        font-size: 1.5rem;
       }
     }
     div {
@@ -77,8 +90,11 @@
         color: #000;
         text-align: center;
         font-family: Montserrat;
-        font-size: 36px;
+        font-size: 2.25rem;
         line-height: 98.5%;
+        @include middle-screen {
+          font-size: 1.5rem;
+        }
       }
       .infoAuction_container_allstate {
         display: flex;
@@ -116,13 +132,20 @@
     gap: 25px;
     align-items: end;
     margin-bottom: 80px;
+    @include middle-screen {
+      flex-direction: column;
+      align-items: center;
+    }
     .AuctionImage_info {
       color: #000;
-      font-size: 36px;
+      font-size: 2.25rem;
       font-weight: 400;
       line-height: 98.5%;
       span {
         color: red;
+      }
+      @include middle-screen {
+        font-size: 1.5rem;
       }
     }
   }
@@ -131,16 +154,22 @@
   h2 {
     color: #000;
     text-align: center;
-    font-size: 55px;
+    font-size: 3.438rem;
     font-weight: 600;
     line-height: 130%;
     text-align: center;
+    @include middle-screen {
+      font-size: 2rem;
+    }
   }
   .auction_container {
     display: flex;
     flex-wrap: wrap;
     gap: 26px;
     margin-bottom: 24px;
+    @include small-screen {
+      justify-content: center;
+    }
     .auction_container_card {
       display: flex;
       flex-direction: column;
@@ -163,15 +192,25 @@
         width: 184px;
         height: 327px;
         justify-content: space-between;
+        @include very-small-screen {
+          width: 134px;
+          height: 197px;
+        }
         span {
           color: #000;
           font-family: Montserrat;
-          font-size: 30px;
+          font-size: 1.875rem;
           line-height: 98.5%; /* 35.46px */
+          @include small-screen {
+            font-size: 1rem;
+          }
         }
         .auction_container_card_content_name {
-          font-size: 20px;
+          font-size: 1.25rem;
           line-height: 140%;
+          @include small-screen {
+            font-size: 0.9rem;
+          }
         }
       }
     }
@@ -187,14 +226,24 @@
       justify-content: flex-end;
       width: 214px;
       height: 327px;
-
+      @include small-screen {
+        width: 134px;
+        height: 197px;
+      }
+      img {
+        width: 59.011px;
+        height: 59px;
+      }
       span {
         border-radius: 10px;
         border: 1px solid #000;
         color: #000;
         text-align: center;
-        font-size: 36px;
+        font-size: 2.25rem;
         padding: 8px 9px 0px 16px;
+        @include small-screen {
+          font-size: 0.9rem;
+        }
       }
     }
     .auction_container_cardpay {
@@ -204,11 +253,18 @@
       width: 214px;
       height: 327px;
       margin-top: 52px;
+      @include small-screen {
+        width: 134px;
+        height: 197px;
+      }
       span {
         color: #000;
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 600;
         line-height: 120%;
+        @include small-screen {
+          font-size: 0.9rem;
+        }
       }
       button {
         padding: 19px 43px;
@@ -217,14 +273,23 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         color: #fff;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 700;
         border: none;
+        @include small-screen {
+          font-size: 0.875rem;
+          padding: 12px 6px;
+        }
       }
     }
   }
   .auction_scroll {
     display: flex;
+    @include small-screen {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+
     .auction_scroll_conditions {
       color: #000;
       font-size: 22px;
@@ -238,6 +303,9 @@
       display: flex;
       align-items: center;
       gap: 30px;
+      @include small-screen {
+        flex-wrap: wrap;
+      }
       span {
         color: #000;
         font-family: Montserrat;
