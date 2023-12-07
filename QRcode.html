@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- Styles -->
-            <link rel="stylesheet" href="css/auction.css">
-            <link rel="stylesheet" href="css/main.min.css" />
-            <link rel="stylesheet" href="css/mainStyle.css">
-            <script src="js/libs.min.js" defer></script>
-            <script src="js/main.min.js" defer></script>
-            <script src="js/auction.js" defer></script>
-            <!-- Favicon -->
-            <link rel="icon" href="assets/images/favicon/favicon.png" />
-        <title>World Stars</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/QRcode.css">
+        <link rel="stylesheet" href="css/main.min.css" />
+        <link rel="stylesheet" href="css/mainStyle.css">
+        <script src="js/libs.min.js" defer></script>
+        <script src="js/main.min.js" defer></script>
+        <!-- Favicon -->
+        <link rel="icon" href="assets/images/favicon/favicon.png" />
+    <title>World Stars</title>
+</head>
 <body>
     <div class="wrapper_bg">
-        <header class="header_main">
+        <header class="header_main" style="background-color: black;">
             <div class="container">
                 <div class="poster_header_up">
-                    <a class="logo_link"><img src="assets/image/logo.svg"></a>
+                    <a class="logo_link"><img src="assets/images/readposter/Group 1000001938.png"></a>
                     <div class="poster_nav">
                         <div class="bell">
+                           
                             <a href="#">
-                                <img src="assets/image/bell.png" alt="Notifications">
+                                <img src="assets/images/readposter/headermessage.svg" alt="Notifications">
                             </a>
                             <div class="circle"></div>
                         </div>
                         <div class="header_prof_card">
-                            <img style="border-radius: 50%;" src="./assets/image/Bitmap (1).png" alt="image">
+                            <img style=" border-radius: 20px;" class="header_photo" src="assets/images/readposter/Bitmap.png">
                             <div class="name">
                                 <div class="stars">
-                                    <img src="assets/image/header_stars.png" alt="Stars">
+                                    <span style="color: white;">Александр</span>
+                                    <img src="assets/images/readposter/headerstar.svg" alt="Stars">
                                 </div>
                             </div>
                             <div class="header_bag">
-                                <img src="assets/image/bag_ws.png" alt="Shopping Bag" >
+                                <img src="assets/images/readposter/Group 1000001080.svg" alt="Shopping Bag" >
                             </div>
                             <div class="header_num">
                                 25
                             </div>
                         </div>
                         <div class="menu-container">
-                            <img src="assets/image/menu.svg" id="menuButton">
+                            <img  onclick="toggleModalMenu()" src="assets/images/readposter/headermenu.svg" class="menuButton">
                         </div>
                     </div>
                 </div>
@@ -145,128 +146,25 @@
                    </div>
                 </div>
             </div>
-            <section class="auctionTitle container-fluid">
-                <a href="/World-Stars/readposter"><img src="./assets/images/auction/backarrow.svg" alt="arrow left"></a>
-                <h3>Аукцион <br>на участие  во встрече с Сергеем Семаком <span>11 сентября</span></h3>
-                <div class="infoAuction_container">
-                        <ul>
-                            <li>Колличесво на встрече <span>28 МЕСТ</span></li>
-                            <li>СТАРТОВАЯ ЦЕНА <span>1 000 WS</span></li>
-                            <li>ШАГ ВАУКЦИОНА  <span>200 ws</span></li>
-                        </ul>
-                    <div>
-                        <p>До окончания аукциона осталось</p>
-                        <div class="infoAuction_container_allstate">
-                            <div class="infoAuction_container_time">
-                                <span>7</span>
-                                <span>3:00</span>
-                                <span>15:00</span>
-                            </div>
-                            <div class="infoAuction_container_day">
-                                <p>дней</p>
-                                <p>часов</p>
-                                <p>минут</p>
-                            </div>
+            <section class="wathVideo">
+                <div class="wathVideo_content container-fluid">
+                    <a href="/World-Stars/auction"><img src="./assets/images/readposter/Icon Button.png" alt="arrow left"></a>
+                    <div class="wathVideo_content_title">ПОЛУЧИ ПРОМОКОД ДЛЯ ВХОДА НА ВСТРЕЧУ !</div>
+                    <div class="wathVideo_content_video ">
+                        <div class="wathVideo_content_video">
+                            <img src="./assets/images/readposter/image 182.png" alt="image">
                         </div>
-                    </div>
-                </div>
-                <div class="AuctionImage">
-                    <img src="./assets/images/auction/image 5 (1).png" alt="image">
-                    <div class="AuctionImage_info">
-                        <p>начало аукциона  <span>17 декабря</span>  в 12:00 по МСК</p>
-                        <p>окончание аукциона <span> 1 января</span> в 12:00 по МСК</p>
+                        <div class="wathVideo_content_video_cloud_button">
+                            <img src="./assets/images/blocks/cloud-1.png" alt="cloud" class="cloud_left">
+                            <p>мы ждем тебя на встрече со звездой</p>
+                            <img src="./assets/images/blocks/cloud-2.png" alt="cloud" class="cloud_right">
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="auction container-fluid">
-                <h2>ПОВЫШАЙ  СВОЮ СТАВКУ, ЗАНИМАЙ МЕСТО СРЕДИ  УЧАСТНИКОВ КОТОРЫЕ ПРИЙДУТ НА ВСТРЕЧУ  </h2>
-                <div class="auction_container">
-                    <div class="auction_container_card">
-                        <div class="auction_container_card_number">21</div>
-                        <div class="auction_container_card_content">
-                            <span class="auction_container_card_content_name">Саманта</span>
-                            <img src="./assets/images/auction/nft3row4 6 (1).png" alt="images">
-                            <span>1 000 WS</span>
-                        </div>
-                    </div>
-                    <div class="auction_container_card">
-                        <div class="auction_container_card_number">22</div>
-                        <div class="auction_container_card_content">
-                            <span class="auction_container_card_content_name"> Евгений</span>
-                            <img src="./assets/images/auction/nft3row4 6 (2).png" alt="images">
-                            <span>1 200 WS</span>
-                        </div>
-                    </div>
-                    <div class="auction_container_card">
-                        <div class="auction_container_card_number">23</div>
-                        <div class="auction_container_card_content">
-                            <span class="auction_container_card_content_name">Алиси Аманда Беатриса</span>
-                            <img src="./assets/images/auction/nft3row4 6 (3).png" alt="images">
-                            <span>1 400 WS</span>
-                        </div>
-                    </div>
-                    <div class="auction_container_card">
-                        <div class="auction_container_card_number">24</div>
-                        <div class="auction_container_card_content">
-                            <span class="auction_container_card_content_name">Анна</span>
-                            <img src="./assets/images/auction/nft3row4 6 (4).png" alt="images">
-                            <span>1 600 WS</span>
-                        </div>
-                    </div>
-                    <div class="auction_container_card">
-                        <div class="auction_container_card_number">25</div>
-                        <div class="auction_container_card_content">
-                            <span class="auction_container_card_content_name">Варвара</span>
-                            <img src="./assets/images/auction/nft3row4 6 (5).png" alt="images">
-                            <span>1 800 WS</span>
-                        </div>
-                    </div>
-                    <div class="auction_container_card">
-                        <div class="auction_container_card_number">26</div>
-                        <div class="auction_container_card_content">
-                            <span class="auction_container_card_content_name"> Екатерина</span>
-                            <img src="./assets/images/auction/nft3row4 6 (6).png" alt="images">
-                            <span>2 000 WS</span>
-                        </div>
-                    </div>
-                    <div class="auction_container_card">
-                        <div class="auction_container_card_number">27</div>
-                        <div class="auction_container_card_content">
-                            <span class="auction_container_card_content_name"> Рикарда</span>
-                            <img src="./assets/images/auction/nft3row4 6 (7).png" alt="images">
-                            <span>2 200 WS</span>
-                        </div>
-                    </div>
-                    <div class="auction_container_card">
-                        <div class="auction_container_card_number">28</div>
-                        <div class="auction_container_card_content">
-                            <span class="auction_container_card_content_name">Генри</span>
-                            <img src="./assets/images/auction/nft3row4 6 (8).png" alt="images">
-                            <span>2 400 WS</span>
-                        </div>
-                    </div>
-                    <div class="auction_container_cardplus">
-                            <img src="./assets/images/auction/plus.svg" alt="plus">
-                            <span>2 600,00 </span>
-                    </div>
-                    <div class="auction_container_cardpay">
-                        <span>ЧТОБЫ СТАТЬ УЧАСТНИКОМ ВСТРЕЧИ   НАДО ОПЛАТИТЬ НА 200 ws БОЛЬШЕ 8 ГО УЧАСТНИКА!</span>
-                        <a href="/World-Stars/QRcode"><button>ОПЛАТИТЬ</button></a>
-                    </div>
-                </div>
-                <div class="auction_scroll">
-                    <span class="auction_scroll_conditions">Выбывшему из участников встречи возвращается им оплаченная сумма  полностью!</span>
-                    <div class="auction_scroll_number">
-                        <span>Страница</span>
-                        <div class="auction_scroll_number_first">1</div>
-                        <span>из 100</span>
-                        <img src="./assets/images/auction/buttonscroll.svg" alt="buttonscroll">
-                        <div class="showAll">
-                            <span>показать всех <img src="./assets/images/auction/redarrow.svg" alt="redarrow"></span>
-                        </div>
-                        
-                    </div>
-                </div>
+            <section class="QR_code container-fluid">
+                <h2>ваш QR код для оплаты участия во встрече с Сергеем Семаком</h2>
+                <img src="./assets/images/QR-code/qr-code-PhotoRoom.png-PhotoRoom.png" alt="/QR-code">
             </section>
             <section class="ItsInteresting">
                 <div class="ItsInteresting_content container-fluid">
@@ -281,25 +179,17 @@
                 <div class="container">
                   <div class="interesting__content">
                     <div class="interesting__body">
-                      <div class="video" id="videoContainer">
-                        <div class="video__preview-img" id="videoPreview">
-                          <img src="assets/image/video.svg" alt="" />
+                        <div class="playvideoLast">
+                            <img src="./assets/images/readposter/bigplayvideo.svg" alt="playvideo">
                         </div>
-                        <div class="its_intresting_video_buttons">
-                          <a href="fashion-news-card.html">Мода</a>
-                          <a href="sport-news-card.html">Спорт</a>
-                          <a href="movie-news-card.html">Кино</a>
-                          <a href="music-news-card.html">Музыка</a>
-                          <a>Танцы</a>
-                        </div>
-                        <a class="video__link" onclick="playVideo()">
-                          <svg class="icon icon--video-play"><use xlink:href="assets/svg-sprite.svg#video-play"></use></svg>
-                        </a>
-                      </div>
+                        <video onclick="removePlay('.playvideoLast')" poster="./assets/images/readposter/image 182.png" id="mainVideo" width="auto" height="auto" controls>
+                            <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
+                            Ваш браузер не поддерживает тег video.
+                        </video>
                     </div>
                   </div>
                 </div>
-              </section>
+            </section>
         </main>
         <footer class="footer">
             <div class="container">
@@ -342,39 +232,64 @@
     <script>
         const modal_menu = document.getElementById("modal_menu");
         const modalContent = document.querySelector(".modal-content_menu");
-        const menuButton = document.getElementById("menuButton");
-
+        const posterNav = document.querySelector(".poster_nav");
+        const menuButton = document.querySelector(".menuButton");
         // Функция открытия и закрытия модального окна
-        function playVideo() {
-  var videoContainer = document.getElementById("videoContainer");
-  var videoPreview = document.getElementById("videoPreview");
-  var videoLink = document.querySelector(".video__link");
-
-  videoPreview.style.display = "none";
-  videoLink.style.display = "none"; // Устанавливаем display: none для video__link
-
-  // Создаем элемент iframe
-  var iframe = document.createElement("iframe");
-  iframe.width = "560";
-  iframe.height = "315";
-  iframe.src = "https://www.youtube.com/embed/yWM_3JSDn9s?autoplay=1";
-  iframe.frameBorder = "0";
-  iframe.allowFullscreen = true;
-
-  // Добавляем iframe в контейнер
-  videoContainer.appendChild(iframe);
-}
         function toggleModalMenu() {
+     
             if (modal_menu.style.display === "block") {
                 modal_menu.style.display = "none";
+                posterNav.innerHTML = ` <div class="bell">
+                            <a href="#">
+                                <img src="assets/images/readposter/headermessage.svg" alt="Notifications">
+                            </a>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="header_prof_card">
+                            <img style=" border-radius: 20px;" class="header_photo" src="assets/images/readposter/Bitmap.png">
+                            <div class="name">
+                                <div class="stars">
+                                    <span style="color: white;">Александр</span>
+                                    <img src="assets/images/readposter/headerstar.svg" alt="Stars">
+                                </div>
+                            </div>
+                            <div class="header_bag">
+                                <img src="assets/images/readposter/Group 1000001080.svg" alt="Shopping Bag" >
+                            </div>
+                            <div class="header_num">
+                                25
+                            </div>
+                        </div>
+                        <div class="menu-container">
+                            <img  onclick="toggleModalMenu()" src="assets/images/readposter/headermenu.svg" class="menuButton">
+                        </div>`
             } else {
                 modal_menu.style.display = "block";
+                posterNav.innerHTML = ` <div class="bell">
+                             <a href="#">
+                                 <img src="assets/image/bell.png" alt="Notifications">
+                             </a>
+                             <div class="circle"></div>
+                         </div>
+                         <div class="header_prof_card">
+                             <img style="border-radius: 50%;" src="./assets/image/Bitmap (1).png" alt="image">
+                             <div class="name">
+                                 <div class="stars">
+                                     <img src="assets/image/header_stars.png" alt="Stars">
+                                 </div>
+                             </div>
+                             <div class="header_bag">
+                                 <img src="assets/image/bag_ws.png" alt="Shopping Bag" >
+                             </div>
+                             <div class="header_num">
+                                 25
+                             </div>
+                         </div>
+                         <div class="menu-container">
+                             <img onclick="toggleModalMenu()"  src="assets/image/menu.svg" class="menuButton">
+                         </div>`
             }
         }
-
-        // modal_nav Добавляем обработчик события для кнопки меню (открытия и закрытия модального окна)
-        menuButton.addEventListener("click", toggleModalMenu);
-
         
           const modalNavElDop = document.getElementById('modal_nav_el_dop');
           const modalBlocks = document.querySelector('.modal_blocks');
@@ -388,10 +303,15 @@
         } else {
             modalBlocks.style.display = 'block'; 
             modalNav.style.display = 'none';
+            
         }
         isVisible = !isVisible; // Инвертировать флаг видимости
     });
-        
+    
+    function removePlay(bt) {
+  document.querySelector(bt).style.display = "none";
+}
+
         
         
   </script>

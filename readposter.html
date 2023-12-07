@@ -149,11 +149,14 @@
             </div>
             <section class="wathVideo">
                 <div class="wathVideo_content container-fluid">
-                    <img src="./assets/images/readposter/Icon Button.png" alt="arrow left">
+                    <a href="/World-Stars/poster"><img src="./assets/images/readposter/Icon Button.png" alt="arrow left"></a>
                     <h2 class="wathVideo_content_title"><span>11 сентября</span> состоится встреча с Сергеем Семаком</h2>
                     <div class="wathVideo_content_video ">
                         <div class="wathVideo_content_video">
-                            <video width="auto" height="auto" controls>
+                            <div class="playvideo">
+                                <img src="./assets/images/readposter/bigplayvideo.svg" alt="playvideo">
+                            </div>
+                            <video onclick="removePlay('.playvideo')"  width="auto" height="auto" poster="./assets/images/readposter/image 182.png" controls>
                                 <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
                                 Ваш браузер не поддерживает тег video.
                             </video>
@@ -214,18 +217,18 @@
                     </div>
                     <div class="PosterInfo_content_slider">
                         <h3>Смотреть Фото</h3>
-                        <div class="slider_container">
+                        <div class="slider_container_photo">
                             <div class="PosterInfo_content_slider_item">
-                            <img onclick="changeMainPhoto(`./assets/images/readposter/leo-messi-de-golce-gabanna.png`)" src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="image">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                                <img onclick="changeMainPhoto(`./assets/images/readposter/leo-messi-de-golce-gabanna.png`)" src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="image">
+                                <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
                             </div>
                             <div class="PosterInfo_content_slider_item">
-                            <img onclick="changeMainPhoto(`./assets/images/readposter/image 6 (1).png`)" src="./assets/images/readposter/image 6 (1).png" alt="image">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                                <img onclick="changeMainPhoto(`./assets/images/readposter/image 6 (1).png`)" src="./assets/images/readposter/image 6 (1).png" alt="image">
+                                <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
                             </div>
                             <div class="PosterInfo_content_slider_item">
-                            <img onclick="changeMainPhoto(`./assets/images/readposter/image 6 (2).png`)" src="./assets/images/readposter/image 6 (2).png" alt="image">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                                <img onclick="changeMainPhoto(`./assets/images/readposter/image 6 (2).png`)" src="./assets/images/readposter/image 6 (2).png" alt="image">
+                                <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
                             </div>
                             <div class="PosterInfo_content_slider_item">
                                 <img onclick="changeMainPhoto(`./assets/images/readposter/leo-messi-de-golce-gabanna.png`)" src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="image">
@@ -235,68 +238,98 @@
                                     <img onclick="changeMainPhoto(`./assets/images/readposter/leo-messi-de-golce-gabanna.png`)" src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="image">
                                     <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
                             </div>
+                            <div class="PosterInfo_content_slider_item">
+                                <img onclick="changeMainPhoto(`./assets/images/readposter/leo-messi-de-golce-gabanna.png`)" src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="image">
+                                <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            </div>
+                            <div class="PosterInfo_content_slider_item">
+                                <img onclick="changeMainPhoto(`./assets/images/readposter/leo-messi-de-golce-gabanna.png`)" src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="image">
+                                <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            </div>
+                            <div class="PosterInfo_content_slider_item">
+                                <img onclick="changeMainPhoto(`./assets/images/readposter/leo-messi-de-golce-gabanna.png`)" src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="image">
+                                <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            </div>
                         </div>
                         <div></div>
                         <div class="slider_container_button">
-                            <button onclick="backslider()"><img style="transform: rotate(180deg);" src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"> Назад</button>
-                            <button onclick="prevslider()" >Смотреть далее<img src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"></button>
+                            <button onclick="backslider(`.slider_container_photo`)"><img style="transform: rotate(180deg);" src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"> Назад</button>
+                            <button onclick="prevslider(`.slider_container_photo`)" >Смотреть далее<img src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"></button>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="videoStar container-fluid">
                 <h3>Видео звезды</h3>
-                <video id="mainVideo" width="auto" height="auto" controls>
-                    <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
-                    Ваш браузер не поддерживает тег video.
-                </video>
+                    <div class="playvideoLast">
+                        <img src="./assets/images/readposter/bigplayvideo.svg" alt="playvideo">
+                    </div>
+                    <video onclick="removePlay('.playvideoLast')" poster="./assets/images/readposter/image 182.png" id="mainVideo" width="auto" height="auto" controls>
+                        <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
+                        Ваш браузер не поддерживает тег video.
+                    </video>
                 <div class="PosterInfo_content_slider">
                     <div class="slider_container_video">
-                        <div class="PosterInfo_content_slider_item">
-
-                                <video width="178" height="auto" onclick="changeMainVideo(`./assets/images/readposter/video (2160p).mp4`)">
+                        <div class="PosterInfo_content_slider_item" onclick="changeMainVideo(`./assets/images/readposter/video (2160p).mp4`), removePlay('.playvideoLast') ">
+                                <video width="178" height="auto">
                                     <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
                                     Ваш браузер не поддерживает тег video.
                                 </video>
                                 <img class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
                         </div>
-                        <div class="PosterInfo_content_slider_item">
-                            <video width="178" height="auto" onclick="changeMainVideo('./assets/images/readposter/hd1000.mov')">
+                        <div class="PosterInfo_content_slider_item" onclick="changeMainVideo(`./assets/images/readposter/hd1000.mov`), removePlay('.playvideoLast') ">
+                            <video width="178" height="auto">
                                 <source src="./assets/images/readposter/hd1000.mov" type="video/mp4">
                                 Ваш браузер не поддерживает тег video.
                             </video>
-                            <img class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
+                            <p>ссылка на фото https://yandex.ru/images/search?</p>
                         </div>
-                        <div class="PosterInfo_content_slider_item">
-                            <video width="178" height="auto" onclick="changeMainVideo('./assets/images/readposter/rabbit320.webm')">
-                                <source src="./assets/images/readposter/rabbit320.webm" type="video/mp4">
+                        <div class="PosterInfo_content_slider_item" onclick="changeMainVideo(`./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4`), removePlay('.playvideoLast') ">
+                            <video width="178" height="auto">
+                                <source src="./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает тег video.
                             </video>
-                            <img class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                            <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
+                            <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
                         </div>
-                        <!-- <div class="PosterInfo_content_slider_item">
-                            <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4'), removePlay('.playvideoLast') ">
+                            <video width="178" height="auto">
+                                <source src="./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает тег video.
+                            </video>
+                            <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
+                            <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
                         </div>
-                        <div class="PosterInfo_content_slider_item">
-                            <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4'), removePlay('.playvideoLast') ">
+                            <video width="178" height="auto">
+                                <source src="./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает тег video.
+                            </video>
+                            <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
+                            <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
                         </div>
-                        <div class="PosterInfo_content_slider_item">
-                            <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
+                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4'), removePlay('.playvideoLast') ">
+                            <video width="178" height="auto">
+                                <source src="./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает тег video.
+                            </video>
+                            <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
+                            <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
                         </div>
-                        <div class="PosterInfo_content_slider_item">
-                            <img src="./assets/images/readposter/leo-messi-de-golce-gabanna.png" alt="messi">
-                            <span>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></span>
-                        </div> -->
+                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4'), removePlay('.playvideoLast') ">
+                            <video width="178" height="auto">
+                                <source src="./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает тег video.
+                            </video>
+                            <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
+                            <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
+                        </div>
                     </div>
                     <div class="slider_container_button">
-                        <button onclick="backslider()"><img style="transform: rotate(180deg);" src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"> Назад</button>
-                        <button onclick="prevslider()" >Смотреть далее<img src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"></button>
+                        <button onclick="backslider(`.slider_container_video`)"><img style="transform: rotate(180deg);" src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"> Назад</button>
+                        <button onclick="prevslider(`.slider_container_video`)">Смотреть далее<img src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"></button>
                     </div>
                 </div>
                 <button  class="goposter"><a href="/World-Stars/auction">НА ВСТРЕЧУ </a><img src="./assets/images/readposter/arrowright.svg" alt="arrowright"></button>

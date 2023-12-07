@@ -1,6 +1,5 @@
 // скролл контейнера
 let scrollLeftBt = document.querySelector(".ButtonScroll");
-const container = document.querySelector(".slider_container_video");
 let scrollleftActive = false;
 //появление
 let text = document.getElementById("text-content");
@@ -22,11 +21,11 @@ button.addEventListener("click", () => {
     textVisable = true;
   }
 });
-function backslider() {
-  container.scrollLeft -= 156;
+function backslider(containerslider) {
+  document.querySelector(containerslider).scrollLeft -= 199;
 }
-function prevslider() {
-  container.scrollLeft += 156;
+function prevslider(containerslider) {
+  document.querySelector(containerslider).scrollLeft += 199;
 }
 function changeMainVideo(source) {
   let mainVideo = document.getElementById("mainVideo");
@@ -58,4 +57,8 @@ function playVideo() {
 
   // Добавляем iframe в контейнер
   videoContainer.appendChild(iframe);
+}
+
+function removePlay(bt) {
+  document.querySelector(bt).style.display = "none";
 }

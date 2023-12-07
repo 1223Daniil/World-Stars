@@ -72,10 +72,12 @@ function renderCards(filteredCards) {
     }');">
         <div class="card_date">${card.date}</div>
         <div class="card_img_participate">
+          <a href="/World-Stars/readposter">
             <div>смотреть афишу</div>
             <img src="./assets/images/poster/card_arrow.svg" alt="">
+          </a>
         </div>
-    </div>
+        </div>
     <span class="card_name">${card.name}</span>
     <span class="card_description">${card.description}
     </span>

@@ -234,6 +234,9 @@
         input {
           border: none;
         }
+        input[type="text"] {
+          font-size: 1.25rem;
+        }
         input::placeholder {
           color: #000;
           text-align: center;
@@ -545,7 +548,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: end;
       background-size: cover;
       background-size: cover; /* Растягиваем картинку, чтобы она полностью покрывала фон */
       background-position: center;
@@ -554,11 +557,14 @@
         border-radius: 10px 10px 0px 0px;
       }
       .card_img_participate {
+        a {
+          display: flex;
+          justify-content: space-between;
+        }
         padding: 25px 38px;
         align-items: center;
         background-color: #000;
-        display: flex;
-        justify-content: space-between;
+
         border-radius: 0px 0px 15px 15px;
         @include very-small-screen {
           border-radius: 12px;
@@ -600,15 +606,17 @@
         font-feature-settings: "clig" off, "liga" off;
         font-family: Montserrat;
         font-size: 1.25rem;
-        margin: 28px 0px 0px 33px;
+        margin: 0px 15px 15px 0px;
         display: inline-block;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 700;
         line-height: 140%;
         border-radius: 12px;
-        border: 1px solid #000000;
+        border: 2px solid #000;
+
+        background: #fff;
         padding: 5px 36px;
-        align-self: baseline;
+        align-self: flex-end;
         @include middle-screen {
           font-size: 0.9rem;
           margin: 5px 0px 0px 5px;
