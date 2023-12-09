@@ -59,7 +59,6 @@ function playVideo() {
   // Добавляем iframe в контейнер
   videoContainer.appendChild(iframe);
 }
-
-function removePlay(bt) {
-  document.querySelector(bt).style.display = "none";
+function onPlay(playbt) {
+  document.querySelector(playbt).style.display = "none";
 }

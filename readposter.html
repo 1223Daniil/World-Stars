@@ -156,7 +156,7 @@
                             <div class="playvideo">
                                 <img src="./assets/images/readposter/bigplayvideo.svg" alt="playvideo">
                             </div>
-                            <video  onclick="removePlay('.playvideo')"  width="auto" height="auto" poster="./assets/images/readposter/image-182.webp" controls>
+                            <video onplay="onPlay(`.playvideo`)"  width="auto" height="auto" poster="./assets/images/readposter/image-182.webp" controls>
                                 <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
                                 Ваш браузер не поддерживает тег video.
                             </video>
@@ -264,7 +264,7 @@
                     <div class="playvideoLast">
                         <img src="./assets/images/readposter/bigplayvideo.svg" alt="playvideo">
                     </div>
-                    <video onclick="removePlay('.playvideoLast')" poster="./assets/images/readposter/image-182.webp" id="mainVideo" width="auto" height="auto" controls>
+                    <video onplay="onPlay(`.playvideoLast`)" poster="./assets/images/readposter/image-182.webp" id="mainVideo" width="auto" height="auto" controls>
                         <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
                         Ваш браузер не поддерживает тег video.
                     </video>
