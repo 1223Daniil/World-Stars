@@ -45,6 +45,13 @@
         display: none;
       }
     }
+    .menu-container {
+      @include very-small-screen {
+        position: static;
+        margin-left: 15px;
+        display: block;
+      }
+    }
   }
 }
 .auctionTitle {

@@ -69,6 +69,13 @@
     display: none;
   }
 }
+@media (max-width: 576px) {
+  .poster_header_up .poster_nav .menu-container {
+    position: static;
+    margin-left: 15px;
+    display: block;
+  }
+}
 .poster_header_up .poster_nav .header_num {
   color: white;
 }
@@ -167,12 +174,26 @@
   color: #ff0606;
   max-width: 1009px;
   text-align: center;
-  font-size: 55px;
+  font-size: 3.438rem;
   font-weight: 600;
   line-height: 130%;
   margin: 0 auto;
   position: relative;
   top: 100px;
+}
+@media (max-width: 768px) {
+  .wathVideo .wathVideo_content .wathVideo_content_title {
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0);
+    padding: 0px 0px;
+    top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .wathVideo .wathVideo_content .wathVideo_content_title {
+    font-size: 0.875rem;
+    top: 0px;
+  }
 }
 .wathVideo .wathVideo_content .wathVideo_content_video {
   border-radius: 15px;
@@ -204,9 +225,17 @@
   color: #000;
   margin: 0 auto;
   text-align: center;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 500;
   line-height: 98.5%; /* 35.46px */
+}
+@media (max-width: 768px) {
+  .wathVideo .wathVideo_content .wathVideo_content_video .wathVideo_content_video_cloud_button p {
+    font-size: 1.5rem;
+    border: none;
+    background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
+    color: #fff;
+  }
 }
 .wathVideo .wathVideo_content .wathVideo_content_video .wathVideo_content_video_cloud_button .cloud_left {
   position: absolute;
@@ -240,12 +269,17 @@
           flex-direction: column;
 }
 .QR_code h2 {
-  margin: 36px 0px 58px 0px;
+  margin: 96px 0px 58px 0px;
   color: #000;
   text-align: center;
   font-size: 55px;
   font-weight: 600;
   line-height: 130%; /* 71.5px */
+}
+@media (max-width: 768px) {
+  .QR_code h2 {
+    font-size: 2rem;
+  }
 }
 
 .interesting__body {
@@ -269,12 +303,20 @@
 }
 @media (max-width: 992px) {
   .interesting__body .playvideoLast {
-    top: 250px;
+    top: 350px;
   }
 }
 @media (max-width: 768px) {
   .interesting__body .playvideoLast {
-    top: 250px;
+    top: 200px;
+    border: none;
+    padding: 0px 0px 0px 0px;
+    border-radius: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .interesting__body .playvideoLast {
+    top: 160px;
   }
 }
 

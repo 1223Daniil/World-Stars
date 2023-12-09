@@ -74,6 +74,13 @@
         display: none;
       }
     }
+    .menu-container {
+      @include very-small-screen {
+        position: static;
+        margin-left: 15px;
+        display: block;
+      }
+    }
     .header_num {
       color: white;
     }
@@ -124,6 +131,11 @@
           padding: 60px 60px 45px 60px;
           border: 3px white solid;
           border-radius: 120px;
+          @include small-screen {
+            border: 0px white solid;
+            padding: 0px 0px 0px 0px;
+            top: 44%;
+          }
         }
         video {
           border-radius: 15px;
@@ -493,6 +505,18 @@
     border-radius: 50%;
     top: 400px;
     align-self: center;
+    @include middle-screen {
+      top: 350px;
+    }
+    @include small-screen {
+      top: 200px;
+      border: none;
+      padding: 0px 0px 0px 0px;
+      border-radius: 0px;
+    }
+    @include very-small-screen {
+      top: 160px;
+    }
   }
 
   h3 {
@@ -526,10 +550,10 @@
     justify-content: space-between;
     gap: 130px;
     @include middle-screen {
-      flex-direction: column;
+      padding: 40px 0px 30px 0px;
     }
     img {
-      @include small-screen {
+      @include middle-screen {
         display: none;
       }
     }

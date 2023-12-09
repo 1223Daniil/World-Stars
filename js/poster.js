@@ -5,7 +5,7 @@ let cards = [
     description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
     country: "Rassia",
     group: "Football",
-    pathimg: "./assets/images/poster/image 6.png",
+    pathimg: "./assets/images/poster/image 6.webp",
     month: "СЕНТЯБРЬ",
   },
   {
@@ -14,7 +14,7 @@ let cards = [
     description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
     country: "Rassia",
     group: "Football",
-    pathimg: "./assets/images/poster/image 6 (2).png",
+    pathimg: "./assets/images/poster/image 6 (2).webp",
     month: "СЕНТЯБРЬ",
   },
   {
@@ -23,7 +23,7 @@ let cards = [
     description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
     country: "Rassia",
     group: "Fashion",
-    pathimg: "./assets/images/poster/image 6 (1).png",
+    pathimg: "./assets/images/poster/image 6 (1).webp",
     month: "СЕНТЯБРЬ",
   },
   {
@@ -32,7 +32,7 @@ let cards = [
     description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
     country: "Rassia",
     group: "Football",
-    pathimg: "./assets/images/poster/image 6.png",
+    pathimg: "./assets/images/poster/image 6.webp",
     month: "СЕНТЯБРЬ",
   },
   {
@@ -41,7 +41,7 @@ let cards = [
     description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
     country: "Rassia",
     group: "Football",
-    pathimg: "./assets/images/poster/image 6.png",
+    pathimg: "./assets/images/poster/image 6.webp",
     month: "СЕНТЯБРЬ",
   },
   {
@@ -50,7 +50,7 @@ let cards = [
     description: `Фан-встреча с артистом в онлайн формате на платформе Twich с розыгрышем призов`,
     country: "Rassia",
     group: "Football",
-    pathimg: "./assets/images/poster/image 6.png",
+    pathimg: "./assets/images/poster/image 6.webp",
     month: "СЕНТЯБРЬ",
   },
 ];

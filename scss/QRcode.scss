@@ -46,6 +46,13 @@
         display: none;
       }
     }
+    .menu-container {
+      @include very-small-screen {
+        position: static;
+        margin-left: 15px;
+        display: block;
+      }
+    }
     .header_num {
       color: white;
     }
@@ -117,12 +124,22 @@
       color: #ff0606;
       max-width: 1009px;
       text-align: center;
-      font-size: 55px;
+      font-size: 3.438rem;
       font-weight: 600;
       line-height: 130%;
       margin: 0 auto;
       position: relative;
       top: 100px;
+      @include small-screen {
+        font-size: 2rem;
+        background: rgba(255, 255, 255, 0);
+        padding: 0px 0px;
+        top: 20px;
+      }
+      @include very-small-screen {
+        font-size: 0.875rem;
+        top: 0px;
+      }
     }
     .wathVideo_content_video {
       border-radius: 15px;
@@ -143,9 +160,15 @@
           color: #000;
           margin: 0 auto;
           text-align: center;
-          font-size: 36px;
+          font-size: 2.25rem;
           font-weight: 500;
           line-height: 98.5%; /* 35.46px */
+          @include small-screen {
+            font-size: 1.5rem;
+            border: none;
+            background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
+            color: #fff;
+          }
         }
         .cloud_left {
           position: absolute;
@@ -170,12 +193,15 @@
   align-items: center;
   flex-direction: column;
   h2 {
-    margin: 36px 0px 58px 0px;
+    margin: 96px 0px 58px 0px;
     color: #000;
     text-align: center;
     font-size: 55px;
     font-weight: 600;
     line-height: 130%; /* 71.5px */
+    @include small-screen {
+      font-size: 2rem;
+    }
   }
 }
 .interesting__body {
@@ -189,10 +215,16 @@
     top: 400px;
     align-self: center;
     @include middle-screen {
-      top: 250px;
+      top: 350px;
     }
     @include small-screen {
-      top: 250px;
+      top: 200px;
+      border: none;
+      padding: 0px 0px 0px 0px;
+      border-radius: 0px;
+    }
+    @include very-small-screen {
+      top: 160px;
     }
   }
 }
