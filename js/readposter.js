@@ -30,9 +30,13 @@ function prevslider(containerslider) {
 function changeMainVideo(source) {
   let mainVideo = document.getElementById("mainVideo");
   mainVideo.src = source;
+
+  mainVideo.addEventListener("loadedmetadata", function () {
+    mainVideo.play();
+    mainVideo.scrollIntoView({ behavior: "smooth" });
+  });
+
   mainVideo.load();
-  mainVideo.play();
-  mainVideo.scrollIntoView({ behavior: "smooth" });
 }
 
 function changeMainPhoto(source) {
@@ -61,4 +65,13 @@ function playVideo() {
 }
 function onPlay(playbt) {
   document.querySelector(playbt).style.display = "none";
+}
+
+function WathVideo(video) {
+  let Mainvideo = document.getElementById(video);
+  if (Mainvideo.paused) {
+    Mainvideo.play();
+  } else {
+    Mainvideo.pause();
+  }
 }

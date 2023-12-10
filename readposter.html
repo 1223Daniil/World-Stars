@@ -156,10 +156,11 @@
                             <div class="playvideo">
                                 <img src="./assets/images/readposter/bigplayvideo.svg" alt="playvideo">
                             </div>
-                            <video onplay="onPlay(`.playvideo`)"  width="auto" height="auto" poster="./assets/images/readposter/image-182.webp" controls>
-                                <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
-                                Ваш браузер не поддерживает тег video.
-                            </video>
+                                <video id="firstVideo" onplay="onPlay(`.playvideo`)"  width="auto" height="auto" poster="./assets/images/readposter/image-182.webp" controls>
+                                    <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает тег video.
+                                </video>
+                                <button onclick="WathVideo(`firstVideo`)">Смотреть Видео</button>
                             <p>Большое интервью с Сергеем по завершению Чемпионата по Футболу 2023</p>
                         </div>
                         <div class="wathVideo_content_video_cloud_button">
@@ -264,13 +265,13 @@
                     <div class="playvideoLast">
                         <img src="./assets/images/readposter/bigplayvideo.svg" alt="playvideo">
                     </div>
-                    <video onplay="onPlay(`.playvideoLast`)" poster="./assets/images/readposter/image-182.webp" id="mainVideo" width="auto" height="auto" controls>
+                    <video  onplay="onPlay(`.playvideoLast`)" poster="./assets/images/readposter/image-182.webp" id="mainVideo" width="auto" height="auto" controls>
                         <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
                         Ваш браузер не поддерживает тег video.
                     </video>
                 <div class="PosterInfo_content_slider">
                     <div class="slider_container_video">
-                        <div class="PosterInfo_content_slider_item" onclick="changeMainVideo(`./assets/images/readposter/video (2160p).mp4`), removePlay('.playvideoLast') ">
+                        <div class="PosterInfo_content_slider_item" onclick="changeMainVideo(`./assets/images/readposter/video (2160p).mp4`)">
                                 <video width="178" height="auto">
                                     <source src="./assets/images/readposter/video (2160p).mp4" type="video/mp4">
                                     Ваш браузер не поддерживает тег video.
@@ -278,7 +279,7 @@
                                 <img class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
                             <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
                         </div>
-                        <div class="PosterInfo_content_slider_item" onclick="changeMainVideo(`./assets/images/readposter/hd1000.mov`), removePlay('.playvideoLast') ">
+                        <div class="PosterInfo_content_slider_item" onclick="changeMainVideo(`./assets/images/readposter/hd1000.mov`) ">
                             <video width="178" height="auto">
                                 <source src="./assets/images/readposter/hd1000.mov" type="video/mp4">
                                 Ваш браузер не поддерживает тег video.
@@ -286,7 +287,7 @@
                             <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
                             <p>ссылка на фото https://yandex.ru/images/search?</p>
                         </div>
-                        <div class="PosterInfo_content_slider_item" onclick="changeMainVideo(`./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4`), removePlay('.playvideoLast') ">
+                        <div class="PosterInfo_content_slider_item" onclick="changeMainVideo(`./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4`)">
                             <video width="178" height="auto">
                                 <source src="./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает тег video.
@@ -294,7 +295,7 @@
                             <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
                             <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
                         </div>
-                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4'), removePlay('.playvideoLast') ">
+                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4') ">
                             <video width="178" height="auto">
                                 <source src="./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает тег video.
@@ -302,7 +303,7 @@
                             <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
                             <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
                         </div>
-                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4'), removePlay('.playvideoLast') ">
+                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4') ">
                             <video width="178" height="auto">
                                 <source src="./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает тег video.
@@ -310,7 +311,7 @@
                             <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
                             <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
                         </div>
-                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4'), removePlay('.playvideoLast') ">
+                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4') ">
                             <video width="178" height="auto">
                                 <source src="./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает тег video.
@@ -318,7 +319,7 @@
                             <img onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4')" class="playvideo" src="./assets/images/readposter/playvideo.svg" alt="playvideo">
                             <p>ссылка на фото <a href="https://yandex.ru/images/search?">https://yandex.ru/images/search?</a></p>
                         </div>
-                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4'), removePlay('.playvideoLast') ">
+                        <div class="PosterInfo_content_slider_item"  onclick="changeMainVideo('./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4') ">
                             <video width="178" height="auto">
                                 <source src="./assets/images/readposter/istockphoto-1073048020-640_adpp_is.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает тег video.
@@ -332,7 +333,7 @@
                         <button onclick="prevslider(`.slider_container_video`)">Смотреть далее<img src="./assets/images/readposter/blackarrow.svg" alt="blackarrow"></button>
                     </div>
                 </div>
-                <a href="/World-Stars/auction"> <button class="goposter">НА ВСТРЕЧУ <img src="./assets/images/readposter/arrowright.svg" alt="arrowright"></button></a>
+                <a href="/World-Stars/auction"> <button onclick="console.log('11111');" class="goposter">НА ВСТРЕЧУ <img src="./assets/images/readposter/arrowright.svg" alt="arrowright"></button></a>
             </section>
             <section class="ItsInteresting">
                 <div class="ItsInteresting_content container-fluid">
