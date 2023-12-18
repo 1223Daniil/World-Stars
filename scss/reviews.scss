@@ -1,0 +1,264 @@
+@import "./breakpoint.scss";
+.wrapper_bg {
+  background-image: url("../assets/images/bg/movie-bg.png");
+  background-size: cover;
+}
+.container_fluid {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 17px;
+  @include x-large-screen {
+    max-width: 1245px;
+  }
+  @include large-screen {
+    max-width: 1140px;
+  }
+
+  @include middle-screen {
+    max-width: 960px;
+  }
+  @include small-screen {
+    max-width: 720px;
+  }
+  @include very-small-screen {
+    max-width: 540px;
+  }
+}
+.poster_header_up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10px 30px 10px;
+  .poster_nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+    .header_prof_card {
+      align-items: center;
+      @include very-small-screen {
+        display: none;
+      }
+    }
+    .menu-container {
+      @include very-small-screen {
+        position: static;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+.WheelofFortune {
+  background-image: url("../assets/images/reviewsPage/Group\ 1000001744.png");
+  background-size: cover;
+  &_content {
+    padding: 100px 15px 200px 15px;
+    @include small-screen {
+      padding: 46px 50px 30px 15px;
+    }
+    h1 {
+      color: #fff;
+      font-size: 3.438rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 130%; /* 71.5px */
+      width: 700px;
+      @include large-screen {
+        font-size: 3rem;
+      }
+      @include middle-screen {
+        font-size: 2rem;
+      }
+      @include small-screen {
+        font-size: 0.875rem;
+        width: 300px;
+      }
+    }
+  }
+}
+.SortButton {
+  &_button_country {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  button {
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    transition: color 0.5s;
+    align-self: center;
+    color: #212121;
+    text-align: center;
+    align-self: center;
+    padding: 11px 24px;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @include large-screen {
+      font-size: 1.1rem;
+      padding: 6px 16px;
+    }
+    @include very-small-screen {
+      font-size: 0.813rem;
+      font-weight: 800;
+      padding: 6px 16px;
+    }
+  }
+  button.active {
+    border-radius: 5px;
+    border: 1px solid #ff2c15;
+    background: linear-gradient(180deg, #ff2c15 0%, #fa9317 100%);
+    color: #fff;
+  }
+  button:hover {
+    border-radius: 5px;
+    border: 1px solid #ff2c15;
+    background: linear-gradient(180deg, #ff2c15 0%, #fa9317 100%);
+    color: #fff;
+  }
+  @include large-screen {
+    font-size: 1rem;
+    width: 100%; /* Ширина 100%, чтобы кнопки могли выходить за границы экрана */
+    overflow-x: auto; /* Включаем горизонтальную прокрутку */
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  @include very-small-screen {
+    font-size: 0.813rem;
+  }
+}
+.reviews {
+  h2 {
+    text-align: center;
+    font-size: 3.438rem;
+    font-weight: 600;
+    line-height: 130%; /* 71.5px */
+    @include large-screen {
+      font-size: 3rem;
+    }
+    @include middle-screen {
+      font-size: 2rem;
+    }
+    @include small-screen {
+      font-size: 0.875rem;
+    }
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    margin-bottom: 19px;
+    &_card {
+      display: flex;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 22px 53px 34px 22px;
+      gap: 22px;
+      @include small-screen {
+        flex-direction: column;
+        padding: 10px 10px 10px 15px;
+      }
+      &_img {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        align-self: baseline;
+        justify-content: space-between;
+        @include small-screen {
+          flex-direction: row;
+        }
+      }
+      &_text {
+        display: flex;
+        flex-direction: column;
+        &_title {
+          font-size: 2.25rem;
+          font-weight: 400;
+          line-height: 98.5%; /* 35.46px */
+          @include middle-screen {
+            font-size: 1.7rem;
+          }
+          @include small-screen {
+            font-size: 1.25rem;
+            text-align: center;
+          }
+        }
+        &_winner {
+          color: #ff0606;
+          font-family: Montserrat;
+          font-size: 1.25rem;
+          font-weight: 700;
+          @include middle-screen {
+            font-size: 1rem;
+          }
+          @include small-screen {
+            font-size: 0.875rem;
+            text-align: center;
+          }
+        }
+        p {
+          font-size: 1.375rem;
+          margin-top: 25px;
+          font-weight: 400;
+          line-height: 120%; /* 26.4px */
+          @include middle-screen {
+            font-size: 1rem;
+          }
+          @include small-screen {
+            font-size: 0.875rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .reviews_content_button {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      border: none;
+      text-align: end;
+      background-color: #00000000;
+      color: #000;
+      font-family: Montserrat;
+      font-size: 1.25rem;
+      font-weight: 700;
+      @include middle-screen {
+        font-size: 1rem;
+      }
+      @include small-screen {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  h3 {
+    margin: 30px 0px 181px 0px;
+    color: #ff0606;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 98.5%; /* 35.46px */
+    @include middle-screen {
+      font-size: 1rem;
+    }
+    @include small-screen {
+      font-size: 0.875rem;
+      margin: 30px 0px 20px 0px;
+    }
+    img {
+      @include small-screen {
+        width: 9.149px;
+        height: 8.887px;
+      }
+    }
+  }
+}
