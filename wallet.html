@@ -158,6 +158,7 @@
           </div>
         </div>
         <section class="SortButton container_fluid">
+          <h2>Мой кошелек</h2>
           <div class="SortButton_button_country">
               <div style="display: flex; gap: 10px;">
                   <button data-country="Brazil">Бразилия</button>
@@ -175,14 +176,21 @@
                   <button data-country="UAE">ОАЭ</button>
                   <button data-country="other">другие</button>
               </div>
-            </div>
+          </div>
         </section>
         <section class="MyIncome container_fluid">
-          <div class="MyIncome_mobile">
-            <h3>МОИ ДОХОДЫ: </h3>
-            <div class="MyIncome_mobile_content">
-              <span>ВСЕГО:</span>
-              <div class="MyIncome_money_mobile">
+          <div class="MyIncome_title">
+            <h2>Александр</h2>
+            <div class="MyIncome_title_star">
+                <img src="./assets/images/readposter/star.svg" alt="star">
+                <img src="./assets/images/readposter/star.svg" alt="star">
+                <img src="./assets/images/readposter/star.svg" alt="star">
+                <img src="./assets/images/readposter/star.svg" alt="star">
+                <img src="./assets/images/readposter/star.svg" alt="star">
+            </div>
+            <div class="MyIncome_title_all">
+              <span>Всего</span>
+              <div class="MyIncome_title_all_money">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -195,33 +203,17 @@
             </div>
           </div>
           <div class="MyIncome_content">
-            <div class="MyIncome_content_title">
-              <h2>Александр</h2>
-              <div class="MyIncome_content_title_star">
-                  <img src="./assets/images/readposter/star.svg" alt="star">
-                  <img src="./assets/images/readposter/star.svg" alt="star">
-                  <img src="./assets/images/readposter/star.svg" alt="star">
-                  <img src="./assets/images/readposter/star.svg" alt="star">
-                  <img src="./assets/images/readposter/star.svg" alt="star">
-              </div>
-              <div class="MyIncome_content_title_all">
-                <span>ВСЕГО:</span>
-                <div class="MyIncome_content_title_all_money">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div>4</div>
-                  <div>5</div>
-                </div>
-                <span>WS</span>
-              </div>
-            </div>
             <div class="MyIncome_content_main">
-              <img src="./assets/images/wallet/Bitmap (2).png" alt="user">
+              <img src="./assets/images/wallet/Bitmap (3).png" alt="user">
               <div class="MyIncome_content_main_Income">
-                <h3>МОИ ДОХОДЫ: </h3>
+                <div class="MyIncome_content_main_Income_sort">
+                  <h3>МОИ ДОХОДЫ: </h3>
+                  <select name="history" id="history">
+                    <option>По Сумме</option>
+                    <option>По Дате</option>
+                    <option>По Типу</option>
+                  </select>
+                </div>
                 <ul>
                   <li><p style="border: 3px solid #ff2c15;">5 600 ws</p><span>ОТ РЕКЛАМНЫХ НОВОСТЕЙ</span></li>
                   <li><p style="border: 3px solid #B9F5DB;">2 000 ws</p><span>ОТ ПОКУПОК  В ЗВЕЗДНОМ МАГАЗИНЕ</span></li>
@@ -239,69 +231,42 @@
             </div>
           </div>
         </section>
-        <section class="Currency container_fluid">
-          <h2>Пополни свой кошелек,
-            выигрывай бонусы WS 
-            и совершай покупи, СОЗДАВАЙ СВОЙ СТИЛЬ, ПРИХОДИ НА ВСТРЕЧИ!
-          </h2>
-          <div class="Currency_content">
-            <div class="Currency_content_card">
-              <input type="checkbox" id="myCheckbox">
-              <label for="myCheckbox"></label>
-              <div>600.00 ₽</div>
-              <span>рубли</span>
-            </div>
-            <div class="Currency_content_card">
-              <input type="checkbox" id="myyuan">
-              <label for="myyuan"></label>
-              <div>0.00 ¥</div>
-              <span>юани</span>
-            </div>
-            <div class="Currency_content_card">
-              <input type="checkbox" id="myreal">
-              <label for="myreal"></label>
-              <div>0.0 R$</div>
-              <span>реал</span>
-            </div>
-            <div class="Currency_content_card">
-              <input type="checkbox" id="myrupi">
-              <label for="myrupi"></label>
-              <div>0.00 ₹</div>
-              <span>рупи</span>
-            </div>
-            <div class="Currency_content_card">
-              <input type="checkbox" id="myRand">
-              <label for="myRand"></label>
-              <div>0.00 R</div>
-              <span>рэнд</span>
-            </div>
-            <div class="Currency_content_card">
-              <input type="checkbox" id="myWS">
-              <label for="myWS"></label>
-              <span style="font-weight: 600;">1 ws=1 ₽</span>
-              <div>45 WS</div>
-              <span>Мировые звезды</span>
-            </div>
-          </div>
-          <p class="Currency_rule">монеты являются внутренними бонусами сайта за активность пользователя</p>
-        </section>
         <section class="History container_fluid">
+          <p class="History_info">Пополни свой кошелек,
+            выигрывай бонусы WS 
+            и совершай покупи, СОЗДАВАЙ СВОЙ СТИЛЬ, ПРИХОДИ НА ВСТРЕЧИ!</p>
           <h2>История платежей</h2>
           <div class="History_container">
             <div class="History_container_sort">
-              <span>19 июл. 2023</span>
               <div class="History_container_sort_content">
                 <span>Сортировка:</span>
-                <select name="history" id="history">
-                  <option>По Сумме</option>
-                  <option>По Дате</option>
-                  <option>По Типу</option>
-                </select>
-                <select name="sort" id="sort">
-                  <option>По Сумме</option>
-                  <option>По Дате</option>
-                  <option>По Типу</option>
-                </select>
+                <div>
+                  <label for="history">Месяц</label>
+                  <select name="history" id="history">
+                    <option>сентябрь</option>
+                    <option>октябрь</option>
+                    <option>Ноябрь</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="sort">Сумма</label>
+                  <select name="sort" id="sort">
+                    <option>1000</option>
+                    <option>1500</option>
+                    <option>2000</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="sort">Валюта</label>
+                  <select name="sort" id="sort">
+                    <option>Рубли ₽</option>
+                    <option>Юани  ¥</option>
+                    <option>Реал  R$</option>
+                    <option>Рупи  ₹</option>
+                    <option>Рэнд  R</option>
+                    <option>Мировые звезды WS</option>
+                  </select>
+                </div>
               </div>
             </div>
             <div class="History_container_content">
@@ -329,79 +294,47 @@
                   </span>
                 </div>
               </div>
-              <div class="History_container_content_item">
-                <span>ДАТА</span>
-                <span>ТИП</span>
-                <span>НОМЕР ПЛАТЕЖА</span>
-                <span>СУММА</span>
-                <span>ВАЛЮТА</span>
-                <span>БАНК</span>
-                <span>ОПЕРАЦИЯ</span>
-              </div>
-              <div class="History_container_content_item_black">
-                <span>19 июл. 2023</span>
-                <span>перевод</span>
-                <span>20349439034034</span>
-                <span>1 000 </span>
-                <span>рубли</span>
-                <span>ТИНЬКОФФ</span>
-                <span>
-                  <img src="./assets/images/wallet/eye_white.png" alt="eye">
-                  <img src="./assets/images/wallet/mail.svg" alt="mail">
-                  <img src="./assets/images/wallet/file.svg" alt="file">
-                </span>
+              <div class="History_container_content_item_title">
+                <span>id</span>
+                <span>Сумма</span>
+                <span>Статус</span>
+                <span>Платежная система</span>
+                <span>Дата</span>
               </div>
               <div class="History_container_content_item">
-                <span>19 июл. 2023</span>
-                <span>перевод</span>
-                <span>20349439034034</span>
-                <span>1 000 </span>
-                <span>рубли</span>
-                <span>СБЕР</span>
-                <span>
-                  <img src="./assets/images/wallet/eye_black.png" alt="eye">
-                  <img src="./assets/images/wallet/mailBlack.svg" alt="mail">
-                  <img src="./assets/images/wallet/fileBlack.svg" alt="file">
-                </span>
-              </div>
-              <div class="History_container_content_item_black">
-                <span>19 июл. 2023</span>
-                <span>перевод</span>
-                <span>20349439034034</span>
-                <span>1 000 </span>
-                <span>рубли</span>
-                <span>ТИНЬКОФФ</span>
-                <span>
-                  <img src="./assets/images/wallet/eye_white.png" alt="eye">
-                  <img src="./assets/images/wallet/mail.svg" alt="mail">
-                  <img src="./assets/images/wallet/file.svg" alt="file">
-                </span>
+                <span>307268</span>
+                <span>1 000 ,00 р.</span>
+                <span>Ожидание</span>
+                <span>Visa/MasterCard</span>
+                <span>2023-12-18 18:00:55</span>
               </div>
               <div class="History_container_content_item">
-                <span>19 июл. 2023</span>
-                <span>перевод</span>
-                <span>20349439034034</span>
-                <span>1 000 </span>
-                <span>рубли</span>
-                <span>СБЕР</span>
-                <span>
-                  <img src="./assets/images/wallet/eye_black.png" alt="eye">
-                  <img src="./assets/images/wallet/mailBlack.svg" alt="mail">
-                  <img src="./assets/images/wallet/fileBlack.svg" alt="file">
-                </span>
+                <span>307268</span>
+                <span>1 000 ,00 р.</span>
+                <span>Ожидание</span>
+                <span>Visa/MasterCard</span>
+                <span>2023-12-18 18:00:55</span>
               </div>
-              <div class="History_container_content_item_black">
-                <span>19 июл. 2023</span>
-                <span>перевод</span>
-                <span>20349439034034</span>
-                <span>1 000 </span>
-                <span>рубли</span>
-                <span>ТИНЬКОФФ</span>
-                <span>
-                  <img src="./assets/images/wallet/eye_white.png" alt="eye">
-                  <img src="./assets/images/wallet/mail.svg" alt="mail">
-                  <img src="./assets/images/wallet/file.svg" alt="file">
-                </span>
+              <div class="History_container_content_item">
+                <span>307268</span>
+                <span>1 000 ,00 р.</span>
+                <span>Ожидание</span>
+                <span>Visa/MasterCard</span>
+                <span>2023-12-18 18:00:55</span>
+              </div>
+              <div class="History_container_content_item">
+                <span>307268</span>
+                <span>1 000 ,00 р.</span>
+                <span>Ожидание</span>
+                <span>Visa/MasterCard</span>
+                <span>2023-12-18 18:00:55</span>
+              </div>
+              <div class="History_container_content_item">
+                <span>307268</span>
+                <span>1 000 ,00 р.</span>
+                <span>Ожидание</span>
+                <span>Visa/MasterCard</span>
+                <span>2023-12-18 18:00:55</span>
               </div>
             </div>
             <div class="History_container_change">
@@ -421,18 +354,15 @@
             <div id="app">
               <div class="wheel">
                 <div class="inner">
-                  <div class="slice" id="prize-0"><span class="prize">10</span></div>
-                  <div class="slice" id="prize-1"><span class="prize">20000</span></div>
-                  <div class="slice" id="prize-2"><span class="prize">50</span></div>
-                  <div class="slice" id="prize-3"><span class="prize">5000</span></div>
-                  <div class="slice" id="prize-4"><span class="prize">100</span></div>
-                  <div class="slice" id="prize-5"><span class="prize">250</span></div>
-                  <div class="slice" id="prize-6"><span class="prize">100000</span></div>
-                  <div class="slice" id="prize-7"><span class="prize">500</span></div>
-                  <div class="slice" id="prize-8"><span class="prize">1000</span></div>
-                  <div class="slice" id="prize-9"><span class="prize">2500</span></div>
-                  <div class="slice" id="prize-10"><span class="prize">10000</span></div>
-                  <div class="slice" id="prize-11"><span class="prize">50000</span></div>
+                  <div class="slice" id="prize-0"><span class="prize child-1">200WS</span></div>
+                  <div class="slice" id="prize-1"><span class="prize child-2">приглашение на встречу</span></div>
+                  <div class="slice" id="prize-2"><span class="prize child-3">1500WS</span></div>
+                  <div class="slice" id="prize-3"><span class="prize child-4">звезда&nbsp;в&nbsp;подарок звездного магазина за&nbsp;300&nbsp;WS</span></div>
+                  <div class="slice" id="prize-4"><span class="prize child-5">300&nbsp;звезда&nbsp;в вашем&nbsp;статусе</span></div>
+                  <div class="slice" id="prize-5"><span class="prize child-6">600WS</span></div>
+                  <div class="slice" id="prize-6"><span class="prize child-7">звезда&nbsp;в&nbsp;подарок звездного магазина&nbsp;за 150&nbsp;WS</span></div>
+                  <div class="slice" id="prize-7"><span class="prize child-8">350WS</span></div>
+                  
                 </div>
               </div>
               <div class="wheel-outer"></div>

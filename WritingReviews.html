@@ -1,11 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta name="theme-color" content="#000" />
     
+        <title>World Stars</title>
+        <meta name="description" content="" />
+    
+        <!-- Favicon -->
+        <link rel="icon" href="assets/images/favicon/favicon.png" />
+    
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/libs.min.css" />
+        <link rel="stylesheet" href="css/main.min.css" />
+        <link rel="stylesheet" href="css/mainStyle.css">
+        <link rel="stylesheet" href="css/WritingReviews.css">
+    
+        <!-- Script -->
+        <script src="js/libs.min.js" defer></script>
+        <script src="js/main.min.js" defer></script>
+      </head>
+<body>
+    <div class="wrapper_bg">
+        <header class="header_main">
+            <div class="container">
+              <div class="poster_header_up">
+                  <a class="logo_link"><img src="assets/image/logo.svg"></a>
+                  <div class="poster_nav">
+                      <div class="bell">
+                          <a href="#">
+                              <img src="assets/image/bell.png" alt="Notifications">
+                          </a>
+                          <div class="circle"></div>
+                      </div>
+                      <div class="header_prof_card">
+                          <img style="border-radius: 50%;" src="./assets/image/Bitmap (1).png" alt="image">
+                          <div class="name">
+                              <div class="stars">
+                                  <img src="assets/image/header_stars.png" alt="Stars">
+                              </div>
+                          </div>
+                          <div class="header_bag">
+                              <img src="assets/image/bag_ws.png" alt="Shopping Bag" >
+                          </div>
+                          <div class="header_num">
+                              25
+                          </div>
+                      </div>
+                      <div class="menu-container">
+                          <img src="assets/image/menu.svg" id="menuButton">
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </header>
+        <main>
+            <div id="modal_menu" class="modal_menu">
+                <div class="modal-content_menu">
+                   <div class="container">
+                      <div class="modal_container">
+                           <div class="modal_nav">
+                         <div class="modal_out_cont">
+                             <div class="modal_nav_cont">
+                                  <a href="./sign-in.html" class ="modal_nav_el">
+                                   <img src="assets/image/m1.svg">
+                                   <span>Звездный магазин</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m2.svg">
+                                   <span>Смотри и пиши новости</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m3.svg">
+                                   <span>Предложи звезду</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m3.svg">
+                                   <span>Выбирай мировую<br> звезду</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m4.svg">
+                                   <span>Олимп славы</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el ">
+                                  <img src="assets/image/m5.svg">
+                                   <span>Афиша встреч </span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m6.svg">
+                                   <span>Профиль</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                               <a href="./sign-in.html" class ="modal_nav_el">
+                                  <img src="assets/image/m6.svg">
+                                   <span>Кошелек</span>
+                                   <img class="modal_arrow" src="assets/image/arrow.svg">
+                               </a>
+                                   
+                            </div>
+                         </div>
+                        </div>
+                        <span class ="modal_nav_el" id="modal_nav_el_dop">Дополнительно</span>
+                        <div class="modal_blocks">
+                          <div class="modal_nav_last">
+                             <a class ="modal_nav_el modal_last_el">
+                               <img src="assets/image/m7.svg">
+                                <span>Зарабатывай на сайте</span>
+                            </a>
+                         </div>
+                           <div class="modal_blocks_cont_first">
+                               <div class="modal_blocks_cont1">
+                                    <div class="modal_block">
+                                        <p>ЗАРАБОТАЙ КЕШБЕК НА РЕКЛАМНОЙ НОВОСТИ</p>
+                                        <img class="modal_block_img" src="assets/image/mb1.svg">
+                                    </div>
+                                    <div class="modal_block">
+                                        <p>ЗАРАБОТАТЬ НА СТИКЕРАХ И СМАЙЛИКАХ</p>
+                                        <img class="modal_block_img" src="assets/image/mb2.svg">
+                                    </div>
+                                </div>
+                                    <div class="modal_blocks_cont2">
+                                        <div class="modal_block">
+                                            <p>ЗАРАБОТАТЬ НА КОЛЕСЕ УДАЧИ</p>
+                                            <img class="modal_block_img1" src="assets/image/mb3.svg">
+                                        </div>
+                                        <div class="modal_block">
+                                            <p>ПОЛУЧИ КЕШБЕК НА ВСТРЕЧАХ С МИРОВЫМИ ЗВЕЗДАМИ</p>
+                                            <img class="modal_block_img" src="assets/image/mb4.svg">
+                                        </div> 
+                                    </div>
+                        </div>
+                            <div class="modal_blocks_cont3">
+                                <div class="modal_block">
+                                    <p>ЗАРАБАТЫВАТЬ МОДЕРАТОРОМ</p>
+                                    <img class="modal_block_img" src="assets/image/mb5.svg">
+                                </div>
+                                <div class="modal_block">
+                                    <p>ЗАРАБАТЫВАТЬ  НА 100% ЗАПОЛНЕНИИ ПРОФИЛЯ</p>
+                                    <img class="modal_block_img" src="assets/image/mb6.svg">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+            <section class="SortButton container_fluid">
+                <h1>Напиши в тех поддержку</h1>
+                <div class="SortButton_button_country">
+                    <div style="display: flex; gap: 10px;">
+                        <button data-country="Brazil">Бразилия</button>
+                        <button data-country="Rassia">Россия</button>
+                        <button data-country="India">Индия</button>
+                        <button data-country="China">Китай</button>
+                        <button data-country="RSA">ЮАР</button>
+                        <button data-country="Argentina">Аргентина</button>
+                        <button data-country="Egypt">Египет</button>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <button data-country="Ethiopia">Эфиопия</button>
+                        <button data-country="Iran">Иран</button>
+                        <button data-country="Saudi Arabia">Саудовская Аравия</button>
+                        <button data-country="UAE">ОАЭ</button>
+                        <button data-country="other">другие</button>
+                    </div>
+                  </div>
+            </section>
+            <section class="textAria container_fluid">
+                <textarea name="description" id="text" cols="30" rows="10" placeholder="Напиши свой отзыв"></textarea>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+               <div class="footer_lists">
+                <ul class="footer_row">
+                    <li><a href="#"><span class ='footer_logo_link'>World Stars</span><br> <span>мировые звезды brics</span> </a></li>
+                    <li><a href="#"><span>О нас</span></a></li>
+                    <li><a href="#"><span>Словарь сайта</span></a></li>
+                    <li><a href="#"><span>Встреси со звёздами</span></a></li>
+                    <li><a href="#"><span>Знакомься дружи</span></a></li>
+                </ul>
+                <ul class="footer_row">
+                    <li><a href="#"><span>Главная</span></a></li>
+                    <li><a href="#"><span>Звезды кино</span></a></li>
+                    <li><a href="#"><span>Мода</span></a></li>
+                    <li><a href="#"><span>Спорт</span></a></li>
+                    <li><a href="#"><span>Музыка</span></a></li>
+                    <li><a href="#"><span>Танцы</span></a></li>
+                </ul>
+                <ul class="footer_row">
+                    <li><a href="#"><span>Поддержка</span> </a></li>
+                    <li><a href="#"><span>Политика конфиденциальности</span></a></li>
+                    <li><a href="#"><span>Term of service</span></a></li>
+                    <li><a href="#"><span>Social Media</span></a></li>
+                    <li><a href="#"><span>Контакты</span></a></li>
+                    <div class="footer_row_contact">
+                        <div class="circlestar">
+                            <img src="./assets/images/footer/footerstar.svg" alt="footerstar">
+                        </div>
+                        <img src="./assets/images/footer/WhatsApp Inc. svg (1).png" alt="WhatsApp">
+                        <img src="./assets/images/footer/social icons.png" alt="social">
+                        <img src="./assets/images/footer/Telegram_2019_Logo.png" alt="Telegram_2019_Logo">
+                        <img src="./assets/images/footer/App Icon.svg" alt="App">
+                    </div>
+                </ul>
+               </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const modal_menu = document.getElementById("modal_menu");
+        const modalContent = document.querySelector(".modal-content_menu");
+        const menuButton = document.getElementById("menuButton");
+
+        // Функция открытия и закрытия модального окна
+        function toggleModalMenu() {
+            if (modal_menu.style.display === "block") {
+                modal_menu.style.display = "none";
+            } else {
+                modal_menu.style.display = "block";
+            }
+        }
+
+        // modal_nav Добавляем обработчик события для кнопки меню (открытия и закрытия модального окна)
+        menuButton.addEventListener("click", toggleModalMenu);
+
+        
+          const modalNavElDop = document.getElementById('modal_nav_el_dop');
+          const modalBlocks = document.querySelector('.modal_blocks');
+          const modalNav = document.querySelector('.modal_nav');
+          let isVisible = false; // Флаг для отслеживания видимости блока
+
+    modalNavElDop.addEventListener('click', () => {
+        if (isVisible) {
+            modalBlocks.style.display = 'none';
+            modalNav.style.display = 'block';
+        } else {
+            modalBlocks.style.display = 'block'; 
+            modalNav.style.display = 'none';
+        }
+        isVisible = !isVisible; // Инвертировать флаг видимости
+    });
+        
+        
+        
+  </script>
 </body>
 </html>

@@ -1,0 +1,134 @@
+@import "./breakpoint.scss";
+.wrapper_bg {
+  background-image: url("../assets/images/bg/movie-bg.png");
+  background-size: cover;
+}
+.container_fluid {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 17px;
+  @include x-large-screen {
+    max-width: 1245px;
+  }
+  @include large-screen {
+    max-width: 1140px;
+  }
+
+  @include middle-screen {
+    max-width: 960px;
+  }
+  @include small-screen {
+    max-width: 720px;
+  }
+  @include very-small-screen {
+    max-width: 540px;
+  }
+}
+.poster_header_up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10px 30px 10px;
+  .poster_nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+    .header_prof_card {
+      align-items: center;
+      @include very-small-screen {
+        display: none;
+      }
+    }
+    .menu-container {
+      @include very-small-screen {
+        position: static;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+.SortButton {
+  h1 {
+    font-family: Montserrat;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 130%; /* 71.5px */
+    text-align: center;
+    margin-bottom: 43px;
+    @include large-screen {
+      font-size: 3rem;
+    }
+    @include middle-screen {
+      font-size: 2rem;
+    }
+    @include small-screen {
+      font-size: 0.875rem;
+    }
+  }
+  &_button_country {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  button {
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    transition: color 0.5s;
+    align-self: center;
+    color: #212121;
+    text-align: center;
+    align-self: center;
+    padding: 11px 24px;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @include large-screen {
+      font-size: 1.1rem;
+      padding: 6px 16px;
+    }
+    @include very-small-screen {
+      font-size: 0.813rem;
+      font-weight: 800;
+      padding: 6px 16px;
+    }
+  }
+  button.active {
+    border-radius: 5px;
+    border: 1px solid #ff2c15;
+    background: linear-gradient(180deg, #ff2c15 0%, #fa9317 100%);
+    color: #fff;
+  }
+  button:hover {
+    border-radius: 5px;
+    border: 1px solid #ff2c15;
+    background: linear-gradient(180deg, #ff2c15 0%, #fa9317 100%);
+    color: #fff;
+  }
+  @include large-screen {
+    font-size: 1rem;
+    width: 100%; /* Ширина 100%, чтобы кнопки могли выходить за границы экрана */
+    overflow-x: auto; /* Включаем горизонтальную прокрутку */
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  @include very-small-screen {
+    font-size: 0.813rem;
+  }
+}
+.textAria {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 45px;
+  textarea {
+    border-radius: 10px;
+  }
+}

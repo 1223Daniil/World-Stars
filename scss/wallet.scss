@@ -49,15 +49,27 @@
   }
 }
 .SortButton {
+  h2 {
+    font-family: Montserrat;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 130%; /* 71.5px */
+    margin-bottom: 43px;
+    @include large-screen {
+      font-size: 3rem;
+    }
+    @include middle-screen {
+      font-size: 2rem;
+    }
+    @include small-screen {
+      font-size: 0.875rem;
+    }
+  }
   &_button_country {
     display: flex;
     gap: 15px;
     margin-bottom: 40px;
     flex-wrap: wrap;
-    margin-left: 240px;
-    @include middle-screen {
-      margin-left: 0px;
-    }
   }
   button {
     border-radius: 5px;
@@ -112,41 +124,50 @@
   }
 }
 .MyIncome {
-  .MyIncome_mobile {
-    display: none;
-    @include middle-screen {
-      display: block;
-    }
-    h3 {
-      text-align: center;
-      font-size: 1.4rem;
-      font-weight: 400;
-      line-height: 98.5%; /* 17.73px */
-      @include small-screen {
-        font-size: 1.125rem;
+  &_title {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    h2 {
+      color: #000;
+      font-size: 55px;
+      font-weight: 600;
+      line-height: 130%;
+      @include middle-screen {
+        display: none;
       }
     }
-    .MyIncome_mobile_content {
+    &_star {
       display: flex;
-      justify-content: center;
+      gap: 10px;
+      @include middle-screen {
+        display: none;
+      }
+    }
+    &_all {
+      display: flex;
       align-items: center;
-      gap: 20px;
-      margin: 20px 0px 30px 0px;
+      gap: 15px;
+      span:first-of-type {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 98.5%; /* 35.46px */
+        border-radius: 5px;
+        background: linear-gradient(180deg, #ff2c15 0%, #fa9317 100%);
+        padding: 12px 10px;
+      }
       span {
         color: #000;
-        text-align: center;
         font-family: Montserrat;
-        font-size: 2.25rem;
+        font-size: 36px;
         font-weight: 400;
-        line-height: 98.5%;
-        @include middle-screen {
-          font-size: 1.8rem;
-        }
-        @include small-screen {
-          font-size: 0.875rem;
-        }
+        line-height: 98.5%; /* 35.46px */
       }
-      .MyIncome_money_mobile {
+      &_money {
         display: flex;
         gap: 5px;
         border-radius: 5.882px;
@@ -160,11 +181,7 @@
           font-family: Montserrat;
           font-size: 36px;
           font-weight: 500;
-          text-align: center;
           line-height: 130%;
-          @include small-screen {
-            font-size: 1.3rem;
-          }
         }
       }
     }
@@ -173,66 +190,10 @@
     background: white;
     border-radius: 15px;
     padding: 35px 35px 35px 50px;
-    &_title {
-      display: flex;
-      gap: 20px;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      h2 {
-        color: #000;
-        font-size: 55px;
-        font-weight: 600;
-        line-height: 130%;
-        @include middle-screen {
-          display: none;
-        }
-      }
-      &_star {
-        display: flex;
-        gap: 10px;
-        @include middle-screen {
-          display: none;
-        }
-      }
-      &_all {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        @include middle-screen {
-          display: none;
-        }
-        span {
-          color: #000;
-          text-align: center;
-          font-family: Montserrat;
-          font-size: 36px;
-          font-weight: 400;
-          line-height: 98.5%; /* 35.46px */
-        }
-        &_money {
-          display: flex;
-          gap: 5px;
-          border-radius: 5.882px;
-          border: 2px solid #ff2c15;
-          background: #fff;
-          padding: 8px 10px 10px 15px;
-          div {
-            width: 25px;
-            border-bottom: 2px solid rgb(0, 0, 0);
-            color: #000;
-            font-family: Montserrat;
-            font-size: 36px;
-            font-weight: 500;
-            line-height: 130%;
-          }
-        }
-      }
-    }
     &_main {
       display: flex;
       gap: 20px;
       justify-content: space-around;
-      margin-top: 46px;
       img {
         align-self: flex-end;
         @include middle-screen {
@@ -240,15 +201,33 @@
         }
       }
       &_Income {
-        h3 {
-          color: #000;
-          font-size: 36px;
-          font-weight: 400;
-          line-height: 98.5%;
-          @include middle-screen {
-            display: none;
+        &_sort {
+          display: flex;
+          gap: 15px;
+          align-items: center;
+          margin-bottom: 50px;
+          h3 {
+            color: #000;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 98.5%;
+            @include middle-screen {
+              display: none;
+            }
+          }
+          select {
+            margin-right: 25px;
+            background-color: rgba(0, 0, 0, 0);
+            width: 199.972px;
+            height: 41.93px;
+            border-radius: 9.676px;
+            option {
+              color: #000;
+              background-color: #00000000;
+            }
           }
         }
+
         ul {
           display: flex;
           gap: 10px;
@@ -261,10 +240,11 @@
               width: 100px;
               height: 21.899px;
               color: #000;
-              font-size: 0.625rem;
+              font-size: 0.875rem;
               border-radius: 10px;
               background: #fff;
               display: flex;
+              font-weight: 700;
               align-items: center;
               justify-content: center;
               line-height: 120%; /* 12px */
@@ -296,135 +276,42 @@
     }
   }
 }
-.Currency {
-  h2 {
-    color: #000;
-    font-size: 3.438rem;
+.History {
+  margin-top: 75px;
+  &_info {
+    font-family: Montserrat;
+    font-size: 55px;
     font-weight: 600;
     line-height: 130%; /* 71.5px */
-    @include middle-screen {
-      font-size: 2.7rem;
+    margin-bottom: 70px;
+    @include large-screen {
+      font-size: 3rem;
     }
-    @include small-screen {
+    @include middle-screen {
       font-size: 2rem;
     }
-  }
-  &_content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 23px;
-    justify-content: center;
-    margin-bottom: 15px;
-    &_card {
-      border-radius: 10px;
-      background: #fff;
-      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      padding: 10px 45px;
-      width: 383px;
-      align-items: center;
-      position: relative;
-      @include small-screen {
-        width: 141px;
-        padding: 5px 20px;
-      }
-      input[type="checkbox"] {
-        display: none;
-      }
-
-      label {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        position: absolute;
-        align-self: flex-end;
-        right: 10px;
-        top: 10px;
-        @include small-screen {
-          width: 20px;
-          height: 20px;
-        }
-      }
-
-      label:before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        border: 1px solid black;
-        border-radius: 50%;
-      }
-
-      label:after {
-        content: "";
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      input[type="checkbox"]:checked + label:before {
-        background-color: transparent; /* Сделаем фон прозрачным */
-      }
-
-      input[type="checkbox"]:checked + label:after {
-        display: block;
-        width: 19px;
-        height: 14px;
-        background-image: url("../assets/images/wallet/checked.svg");
-      }
-      label:after {
-        background-image: linear-gradient(180deg, #ff0000 0%, #ffd466 100%);
-        background-size: cover;
-      }
-
-      div {
-        border-radius: 10px;
-        border: 1px solid #f00;
-        text-align: center;
-        width: 100%;
-        color: #000;
-        font-family: Montserrat;
-        font-size: 20px;
-        font-weight: 700;
-        margin: 34px 0px 22px 0px;
-        @include small-screen {
-          font-size: 12px;
-          padding: 10px 20px;
-        }
-      }
-      span {
-        color: #000;
-        font-family: Montserrat;
-        font-size: 20px;
-        line-height: 140%; /* 28px */
-      }
+    @include small-screen {
+      font-size: 0.875rem;
     }
   }
-  &_rule {
-    text-align: end;
-    font-family: Montserrat;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 120%; /* 12px */
-  }
-}
-.History {
-  margin-top: 98px;
   h2 {
     color: #000;
     font-size: 55px;
     font-weight: 600;
     line-height: 130%; /* 71.5px */
+    @include large-screen {
+      font-size: 3rem;
+    }
+    @include middle-screen {
+      font-size: 2rem;
+    }
+    @include small-screen {
+      font-size: 0.875rem;
+    }
   }
   &_container {
     margin-top: 63px;
     &_sort {
-      border-bottom: 4px solid black;
-      padding-bottom: 20px;
       @include middle-screen {
         border-bottom: none;
       }
@@ -437,26 +324,43 @@
       &_content {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 38px;
         @include middle-screen {
           flex-wrap: wrap;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          label {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 120%; /* 26.4px */
+          }
+          select {
+            background-color: rgb(255, 255, 255);
+            width: 180px;
+            height: 50px;
+            border-radius: 9.676px;
+            color: #ff2c15;
+            text-align: center;
+            font-feature-settings: "clig" off, "liga" off;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 120%; /* 26.4px */
+            option {
+              color: #000;
+              background-color: #ffffff;
+              line-height: 150%;
+            }
+          }
         }
         span {
           color: #000;
           font-size: 36px;
           font-weight: 400;
           line-height: 98.5%; /* 35.46px */
-        }
-        select {
-          margin-right: 25px;
-          background-color: rgba(0, 0, 0, 0);
-          width: 199.972px;
-          height: 41.93px;
-          border-radius: 9.676px;
-          option {
-            color: #000;
-            background-color: #00000000;
-          }
         }
       }
     }
@@ -467,14 +371,42 @@
         flex-direction: column;
         gap: 40px;
       }
-      &_item,
-      &_item_black {
+      &_item_title {
         display: grid;
-        padding: 20px 0px;
-        grid-template-columns: repeat(7, 1fr);
+        margin-bottom: 22px;
+        grid-template-columns: repeat(5, 1fr);
         align-items: center;
+        background-color: #000;
+        color: white;
         span {
+          padding: 11px 0px;
+          border-left: 1px solid white;
+          border-right: 1px solid white;
           text-align: center;
+          color: #fff;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%; /* 26.4px */
+        }
+        @include middle-screen {
+          display: none;
+        }
+      }
+      &_item {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        column-gap: 9px;
+        margin-top: 11px;
+        span {
+          padding: 11px 0px;
+          text-align: center;
+          background: rgba(255, 233, 196);
+          color: #000;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 120%; /* 26.4px */
         }
         @include middle-screen {
           display: none;
@@ -494,10 +426,6 @@
           flex-direction: column;
           gap: 10px;
         }
-      }
-      &_item_black {
-        background-color: #000;
-        color: white;
       }
     }
     &_change {
@@ -549,7 +477,7 @@
   }
 
   #app {
-    height: 500px;
+    height: 550px;
     $circle-shaped: 50%;
     position: relative;
 
@@ -561,14 +489,14 @@
     }
 
     .wheel {
-      @include position-center-and-size(relative, 450px);
+      @include position-center-and-size(relative, 550px);
       border-radius: $circle-shaped;
-      border: 8px solid rgb(255, 255, 255);
-      box-shadow: 0 0 6px 6px rgb(0, 0, 0);
+      border: 20px solid rgb(0, 0, 0);
+      // box-shadow: 0 0 6px 6px rgb(0, 0, 0);
       overflow: hidden;
       top: 20px;
       @include very-small-screen {
-        @include position-center-and-size(absolute, 350px);
+        @include position-center-and-size(absolute, 450px);
         top: 30px;
       }
       &:before {
@@ -590,17 +518,46 @@
           position: absolute;
           width: 0;
           height: 0;
-          left: 70px;
-          top: -160px;
-          border-width: 380px 150px 0 150px;
+          left: 50px;
+          top: -180px;
+          border-width: 430px 200px 0 200px;
           border-style: solid;
           transform-origin: 50% 100%;
           @include very-small-screen {
-            left: 125px;
-            top: -5px;
-            border-width: 180px 50px 0 50px;
+            left: 105px;
+            top: -25px;
+            border-width: 230px 100px 0 100px;
           }
 
+          .prize.child-1,
+          .prize.child-3,
+          .prize.child-6,
+          .prize.child-8 {
+            color: #ffaa00;
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 120%; /* 60px */
+            @include very-small-screen {
+              font-size: 20px;
+            }
+          }
+          .prize.child-2,
+          .prize.child-4,
+          .prize.child-5,
+          .prize.child-7 {
+            color: #000000;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 120%; /* 60px */
+            margin-top: -245px;
+            margin-left: -15px;
+            @include very-small-screen {
+              font-size: 12px;
+              margin-top: -180px;
+            }
+          }
           .prize {
             position: relative;
             display: block;
@@ -608,11 +565,13 @@
             left: 8px;
             text-align: center;
             font-size: 28px;
-            margin-top: -160px;
-            margin-left: -15px;
-            color: rgb(255, 255, 255);
+            margin-top: -240px;
+
             text-shadow: -1px -1px 0 rgb(88, 86, 81), 1px -1px 0 rgb(88, 86, 81),
               -1px 1px 0 rgb(88, 86, 81), 1px 1px 0 rgb(88, 86, 81);
+            @include very-small-screen {
+              margin-top: -160px;
+            }
           }
         }
       }
@@ -620,7 +579,7 @@
 
     $slices-colors-list: #16a085 #962bc0 #34495e #d35400 #f39c12 #c02b58 #2980b9
       #50c556 #d31313 #800055 #c2b503 #008000;
-    $slice-degrees-step: -30deg;
+    $slice-degrees-step: -45deg;
 
     @each $color in $slices-colors-list {
       $i: index($slices-colors-list, $color);
@@ -633,10 +592,10 @@
     }
 
     .wheel-outer {
-      @include position-center-and-size(absolute, 500px);
+      @include position-center-and-size(absolute, 550px);
       border-radius: $circle-shaped;
-      top: 0px;
-      box-shadow: 0 0 5px 5px rgb(85, 83, 83), 0 0 50px 50px rgb(0, 0, 0) inset;
+      top: 20px;
+      // box-shadow: 0 0 5px 5px rgb(85, 83, 83), 0 0 20px 20px rgb(0, 0, 0) inset;
       @include very-small-screen {
         @include position-center-and-size(absolute, 410px);
       }
@@ -644,14 +603,17 @@
 
     #svg-arrow {
       position: absolute;
-      top: -20px;
+      top: -8px;
       left: calc(#{$circle-shaped} - 101px);
       z-index: 1;
+      @include very-small-screen {
+        top: -0px;
+      }
     }
 
     #svg-dotted {
-      @include position-center-and-size(absolute, 590px);
-      top: -50px;
+      @include position-center-and-size(absolute, 660px);
+      top: -40px;
       #circle-dotted {
         fill: transparent;
         stroke: rgb(255, 255, 255);
@@ -660,9 +622,9 @@
         stroke-dashoffset: 19.5;
         stroke-linecap: round;
       }
-      @include small-screen {
-        @include position-center-and-size(absolute, 490px);
-        top: -40px;
+      @include very-small-screen {
+        @include position-center-and-size(absolute, 540px);
+        top: -15px;
       }
     }
 
@@ -671,7 +633,7 @@
       border-radius: $circle-shaped;
       outline: none;
       left: 48%;
-      top: -236px;
+      top: -276px;
       box-shadow: 0 0 5px 2px rgb(0, 0, 0);
       z-index: 10;
       background: linear-gradient(
@@ -680,12 +642,8 @@
         rgb(223, 229, 215) 30%,
         rgb(179, 190, 173) 100%
       );
-      @include small-screen {
-        top: -220px;
-        left: 45%;
-      }
       @include very-small-screen {
-        top: 190px;
+        top: 230px;
         left: 45%;
       }
       &:active {
