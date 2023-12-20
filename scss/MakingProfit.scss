@@ -1,0 +1,250 @@
+@import "./breakpoint.scss";
+.wrapper_bg {
+  background-image: url("../assets/images/bg/movie-bg.png");
+  background-size: cover;
+}
+.container_fluid {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 17px;
+  @include x-large-screen {
+    max-width: 1245px;
+  }
+  @include large-screen {
+    max-width: 1140px;
+  }
+
+  @include middle-screen {
+    max-width: 960px;
+  }
+  @include small-screen {
+    max-width: 720px;
+  }
+  @include very-small-screen {
+    max-width: 540px;
+  }
+}
+.poster_header_up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10px 30px 10px;
+  .poster_nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+    .header_prof_card {
+      align-items: center;
+      @include very-small-screen {
+        display: none;
+      }
+    }
+    .menu-container {
+      @include very-small-screen {
+        position: static;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+.SortButton {
+  h1 {
+    font-family: Montserrat;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 130%; /* 71.5px */
+    text-align: center;
+    margin-bottom: 43px;
+    @include large-screen {
+      font-size: 3rem;
+    }
+    @include middle-screen {
+      font-size: 2rem;
+    }
+    @include small-screen {
+      font-size: 0.875rem;
+    }
+  }
+  &_button_country {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  button {
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    transition: color 0.5s;
+    align-self: center;
+    color: #212121;
+    text-align: center;
+    align-self: center;
+    padding: 11px 24px;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @include large-screen {
+      font-size: 1.1rem;
+      padding: 6px 16px;
+    }
+    @include very-small-screen {
+      font-size: 0.813rem;
+      font-weight: 800;
+      padding: 6px 16px;
+    }
+  }
+  button.active {
+    border-radius: 5px;
+    border: 1px solid #ff2c15;
+    background: linear-gradient(180deg, #ff2c15 0%, #fa9317 100%);
+    color: #fff;
+  }
+  button:hover {
+    border-radius: 5px;
+    border: 1px solid #ff2c15;
+    background: linear-gradient(180deg, #ff2c15 0%, #fa9317 100%);
+    color: #fff;
+  }
+  @include large-screen {
+    font-size: 1rem;
+    width: 100%; /* Ширина 100%, чтобы кнопки могли выходить за границы экрана */
+    overflow-x: auto; /* Включаем горизонтальную прокрутку */
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  @include very-small-screen {
+    font-size: 0.813rem;
+  }
+}
+.MakingProfit {
+  h2 {
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 98.5%; /* 49.25px */
+  }
+  &_content {
+    border-radius: 20px;
+    background: #fff;
+    padding: 43px 19px 84px 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 177px;
+    &_categories {
+      display: flex;
+      gap: 11px;
+      flex-wrap: wrap;
+      padding: 15px 0px;
+      box-shadow: 0px 20px 30px 0px rgba(71, 169, 255, 0.3);
+      &_item {
+        border: 1px solid #00a8fc;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        padding: 10px 5px;
+        max-width: 185px;
+        justify-content: center;
+        &_title {
+          text-align: center;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 20px;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 20px;
+            background: linear-gradient(118deg, #ff2c15 -5.25%, #fa931a 98.66%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+    &_sort {
+      display: flex;
+      gap: 15px;
+      margin: 45px 0px 30px 0px;
+      justify-content: center;
+      span {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 98.5%; /* 35.46px */
+      }
+      select {
+        height: 50px;
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 9.676px;
+        padding: 12px 22px;
+      }
+    }
+    &_history {
+      &_card {
+        border-radius: 10px;
+        border: 6px solid #ff2c15;
+        background: #fff;
+        padding: 20px 30px;
+        box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 538px;
+        &_item {
+          display: flex;
+          flex-direction: column;
+          gap: 11px;
+          span {
+            color: #001533;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 22px;
+          }
+        }
+      }
+      &_line {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0px;
+        margin-left: 164px;
+        div {
+          width: 80px;
+          height: 4px;
+          background-color: #000;
+        }
+      }
+    }
+    button {
+      border-radius: 12px;
+      border: 1px solid #f00;
+      background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
+      color: #fff;
+      text-align: center;
+      align-self: center;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 20px 27px;
+      border: none;
+      text-transform: uppercase;
+    }
+  }
+}

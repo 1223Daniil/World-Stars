@@ -208,7 +208,7 @@
               <div class="MyIncome_content_main_Income">
                 <div class="MyIncome_content_main_Income_sort">
                   <h3>МОИ ДОХОДЫ: </h3>
-                  <select name="history" id="history">
+                  <select name="history" id="historyDate">
                     <option>По Сумме</option>
                     <option>По Дате</option>
                     <option>По Типу</option>
@@ -242,15 +242,15 @@
                 <span>Сортировка:</span>
                 <div>
                   <label for="history">Месяц</label>
-                  <select name="history" id="history">
-                    <option>сентябрь</option>
-                    <option>октябрь</option>
-                    <option>Ноябрь</option>
+                  <select name="historyMoth" id="historyMoth">
+                    <option value="сентябрь">сентябрь</option>
+                    <option value="октябрь">октябрь</option>
+                    <option value="ноябрь">ноябрь</option>
                   </select>
                 </div>
                 <div>
-                  <label for="sort">Сумма</label>
-                  <select name="sort" id="sort">
+                  <label for="price">Сумма</label>
+                  <select name="price" id="price">
                     <option>1000</option>
                     <option>1500</option>
                     <option>2000</option>
@@ -269,31 +269,7 @@
                 </div>
               </div>
             </div>
-            <div class="History_container_content">
-              <div class="History_container_content_item_mobile">
-                <div class="mobile_content">
-                  <span>ДАТА</span>
-                  <span>ТИП</span>
-                  <span>НОМЕР ПЛАТЕЖА</span>
-                  <span>СУММА</span>
-                  <span>ВАЛЮТА</span>
-                  <span>БАНК</span>
-                  <span>ОПЕРАЦИЯ</span>
-                </div>
-                <div class="mobile_content">
-                  <span>19.07.2023</span>
-                  <span>ПЕРЕВОД</span>
-                  <span>20349439034034</span>
-                  <span>1 000</span>
-                  <span>РУБЛИ</span>
-                  <span>ТИНЬКОФФ</span>
-                  <span>
-                    <img src="./assets/images/wallet/eye_black.png" alt="eye">
-                    <img src="./assets/images/wallet/mailBlack.svg" alt="mail">
-                    <img src="./assets/images/wallet/fileBlack.svg" alt="file">
-                  </span>
-                </div>
-              </div>
+            <div  class="History_container_content">
               <div class="History_container_content_item_title">
                 <span>id</span>
                 <span>Сумма</span>
@@ -301,42 +277,10 @@
                 <span>Платежная система</span>
                 <span>Дата</span>
               </div>
-              <div class="History_container_content_item">
-                <span>307268</span>
-                <span>1 000 ,00 р.</span>
-                <span>Ожидание</span>
-                <span>Visa/MasterCard</span>
-                <span>2023-12-18 18:00:55</span>
-              </div>
-              <div class="History_container_content_item">
-                <span>307268</span>
-                <span>1 000 ,00 р.</span>
-                <span>Ожидание</span>
-                <span>Visa/MasterCard</span>
-                <span>2023-12-18 18:00:55</span>
-              </div>
-              <div class="History_container_content_item">
-                <span>307268</span>
-                <span>1 000 ,00 р.</span>
-                <span>Ожидание</span>
-                <span>Visa/MasterCard</span>
-                <span>2023-12-18 18:00:55</span>
-              </div>
-              <div class="History_container_content_item">
-                <span>307268</span>
-                <span>1 000 ,00 р.</span>
-                <span>Ожидание</span>
-                <span>Visa/MasterCard</span>
-                <span>2023-12-18 18:00:55</span>
-              </div>
-              <div class="History_container_content_item">
-                <span>307268</span>
-                <span>1 000 ,00 р.</span>
-                <span>Ожидание</span>
-                <span>Visa/MasterCard</span>
-                <span>2023-12-18 18:00:55</span>
+              <div id="historyContainer">
               </div>
             </div>
+            
             <div class="History_container_change">
               <span>Страница</span>
               <span>1 из 300</span>
@@ -387,16 +331,14 @@
             <div class="WheelFortune_quantities">
               <h3>Условия: выбери колличесво spin, оплати, выйграй призы!</h3>
               <div class="WheelFortune_quantities_content">
-                <div class="WheelFortune_quantities_content_spin">
                   <button>1 spin- 500 ₽/ WS</button>
                   <button>2 spin- 900 ₽/ WS</button>
                   <button>3 spin- 1 300 ₽/ WS</button>
                   <button>4 spin- 1 600 ₽/ WS</button>
                   <button>5 spin- 1 900 ₽/ WS</button>
-                </div>
                   <button class="WheelFortune_quantities_content_bye">ОПЛАТИТЬ</button>
-                </div>
-                <h4>СМОТРИ ОТЗЫВЫ ОТ УЧАСТНИКОВ РОЗЫГРЫША <span>КОЛЕСА УДАЧИ <img src="./assets/images/wallet/arrowright.svg" alt="arrowright"></span></h4>
+              </div>
+              <h4>СМОТРИ ОТЗЫВЫ ОТ УЧАСТНИКОВ РОЗЫГРЫША <span>КОЛЕСА УДАЧИ <img src="./assets/images/wallet/arrowright.svg" alt="arrowright"></span></h4>
             </div>
            
         </section>

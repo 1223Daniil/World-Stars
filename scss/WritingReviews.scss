@@ -127,8 +127,39 @@
 .textAria {
   background-color: #fff;
   border-radius: 20px;
-  padding: 45px;
+  position: relative;
+  padding: 45px 45px 70px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 51px;
   textarea {
     border-radius: 10px;
+  }
+  textarea::placeholder {
+    font-size: 22px;
+    line-height: 120%; /* 26.4px */
+    color: #000;
+  }
+  #charCount {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 120%; /* 26.4px */
+  }
+  button {
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
+    color: #fff;
+    padding: 13px 24px 12px 24px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 120%; /* 26.4px */
   }
 }

@@ -76,6 +76,15 @@
     }
   }
 }
+.MainTitle {
+  h2 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 130%; /* 71.5px */
+  }
+}
 .SortButton {
   &_button_country {
     display: flex;

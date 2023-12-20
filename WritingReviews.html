@@ -156,7 +156,8 @@
                 </div>
             </div>
             <section class="SortButton container_fluid">
-                <h1>Напиши в тех поддержку</h1>
+                <a href="/World-Stars/reviews"><img src="./assets/images/auction/backarrow.svg" alt="arrow left"></a>
+                <h1>Напиши в тех. поддержку сайта WS</h1>
                 <div class="SortButton_button_country">
                     <div style="display: flex; gap: 10px;">
                         <button data-country="Brazil">Бразилия</button>
@@ -177,7 +178,9 @@
                   </div>
             </section>
             <section class="textAria container_fluid">
-                <textarea name="description" id="text" cols="30" rows="10" placeholder="Напиши свой отзыв"></textarea>
+                <textarea  id="myTextarea" maxlength="1000" name="description" id="text" cols="30" rows="10" oninput="updateCharCount()" placeholder="Напиши свой отзыв"></textarea>
+                <div id="charCount">0/1000 <br>Знаков</div>
+                <button>Отправить на модерацию </button>
             </section>
         </main>
         <footer class="footer">
@@ -251,7 +254,11 @@
         }
         isVisible = !isVisible; // Инвертировать флаг видимости
     });
-        
+    function updateCharCount() {
+      let textarea = document.getElementById('myTextarea');
+      let charCount = document.getElementById('charCount');
+      charCount.innerHTML = textarea.value.length + '/1000 <br>Знаков';
+    }
         
         
   </script>

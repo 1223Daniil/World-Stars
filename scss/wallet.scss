@@ -208,9 +208,12 @@
           margin-bottom: 50px;
           h3 {
             color: #000;
-            font-size: 36px;
+            font-size: 2.25rem;
             font-weight: 400;
             line-height: 98.5%;
+            @include large-screen {
+              font-size: 1.8rem;
+            }
             @include middle-screen {
               display: none;
             }
@@ -221,6 +224,9 @@
             width: 199.972px;
             height: 41.93px;
             border-radius: 9.676px;
+            @include large-screen {
+              width: auto;
+            }
             option {
               color: #000;
               background-color: #00000000;
@@ -252,8 +258,11 @@
             }
             span {
               color: #000;
-              font-size: 20px;
+              font-size: 1.25rem;
               font-weight: 700;
+              @include large-screen {
+                font-size: 0.8rem;
+              }
               @include small-screen {
                 font-size: 0.875rem;
               }
@@ -371,6 +380,13 @@
         flex-direction: column;
         gap: 40px;
       }
+      #historyContainer {
+        @include middle-screen {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+        }
+      }
       &_item_title {
         display: grid;
         margin-bottom: 22px;
@@ -404,9 +420,12 @@
           text-align: center;
           background: rgba(255, 233, 196);
           color: #000;
-          font-size: 22px;
+          font-size: 1.375rem;
           font-weight: 700;
           line-height: 120%; /* 26.4px */
+          @include large-screen {
+            font-size: 0.9rem;
+          }
         }
         @include middle-screen {
           display: none;
@@ -689,26 +708,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+      gap: 17px;
       margin: 50px 0px 50px 0px;
-      gap: 40px;
-      &_spin {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        button {
-          border-radius: 5px;
-          border: 3px solid #000;
-          color: #212121;
-          text-align: center;
-          font-family: Montserrat;
-          font-size: 22px;
-          font-weight: 400;
-          line-height: 120%; /* 26.4px */
-          padding: 10px;
-          background-color: #00000000;
-        }
+      button {
+        border-radius: 5px;
+        border: 3px solid #000;
+        color: #212121;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 120%; /* 26.4px */
+        padding: 10px;
+        background-color: #00000000;
+        width: 253px;
       }
-      &_bye {
+
+      .WheelFortune_quantities_content_bye {
         border-radius: 14px;
         padding: 19px 43px;
         color: #fff;
