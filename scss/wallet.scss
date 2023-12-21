@@ -198,13 +198,36 @@
     &_main {
       display: flex;
       gap: 20px;
+      max-height: 450px;
       justify-content: space-around;
-      img {
-        align-self: flex-end;
-        @include middle-screen {
-          display: none;
+      .MyIncome_content_main_img {
+        img:hover {
+          transform: scale(1.1);
+        }
+        .rotate {
+          transform: rotate(40deg);
+        }
+        .rotate:hover {
+          transform: rotate(40deg) scale(1.1);
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .moreStar {
+          display: flex;
+        }
+        img {
+          align-self: center;
+          flex-direction: column;
+          display: flex;
+
+          @include middle-screen {
+            display: none;
+          }
         }
       }
+
       &_Income {
         &_sort {
           display: flex;

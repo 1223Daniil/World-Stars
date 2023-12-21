@@ -57,19 +57,38 @@
     line-height: 130%; /* 71.5px */
   }
 }
+
 .payment {
   display: flex;
   align-items: center;
   &_img {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-    h5 {
-      color: #000;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-weight: 700;
-      text-align: center;
+    max-height: 550px;
+    .MyIncome_content_main_img {
+      img:hover {
+        transform: scale(1.1);
+      }
+      .rotate {
+        transform: rotate(40deg);
+      }
+      .rotate:hover {
+        transform: rotate(40deg) scale(1.1);
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .moreStar {
+        display: flex;
+      }
+      img {
+        align-self: center;
+        flex-direction: column;
+        display: flex;
+
+        @include middle-screen {
+          display: none;
+        }
+      }
     }
   }
   button {
@@ -84,6 +103,6 @@
     line-height: 120%; /* 26.4px */
     padding: 17px 53px;
     border: none;
-    margin-left: 124px;
+    margin-left: 224px;
   }
 }

@@ -90,6 +90,9 @@
           align-items: center;
 }
 .payment_img {
+  max-height: 550px;
+}
+.payment_img .MyIncome_content_main_img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,14 +100,46 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.payment_img h5 {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
+.payment_img .MyIncome_content_main_img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.payment_img .MyIncome_content_main_img .rotate {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+.payment_img .MyIncome_content_main_img .rotate:hover {
+  -webkit-transform: rotate(40deg) scale(1.1);
+          transform: rotate(40deg) scale(1.1);
+}
+.payment_img .MyIncome_content_main_img .moreStar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.payment_img .MyIncome_content_main_img img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 992px) {
+  .payment_img .MyIncome_content_main_img img {
+    display: none;
+  }
 }
 .payment button {
   border-radius: 12px;
@@ -118,5 +153,5 @@
   line-height: 120%; /* 26.4px */
   padding: 17px 53px;
   border: none;
-  margin-left: 124px;
+  margin-left: 224px;
 }
