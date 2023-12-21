@@ -1,4 +1,6 @@
 let historyContainer = document.getElementById("historyContainer");
+let incomeContainer = document.getElementById("income");
+const selectElement = document.getElementById("historyDate");
 let history = [
   {
     id: "307268",
@@ -45,9 +47,81 @@ let history = [
     month: "октябрь",
     currency: "Реал",
   },
+
   // Добавьте другие элементы истории оплаты по месяцам
 ];
+let income = [
+  {
+    price: "5 600 ws",
+    borderColor: "#ff2c15",
+    text: "ОТ РЕКЛАМНЫХ НОВОСТЕЙ",
+    term: "PerMonth",
+  },
+  {
+    price: "2 000 ws",
+    borderColor: "#B9F5DB",
+    text: "ОТ ПОКУПОК  В ЗВЕЗДНОМ МАГАЗИНЕ",
+    term: "lastTreeDays",
+  },
+  {
+    price: "1 500 ws",
+    borderColor: "#C9B6FF",
+    text: "ОТ ВСТЕЧ СО ЗВЕЗДАМИ",
+    term: "lastWeek",
+  },
+  {
+    price: "5 ws",
+    borderColor: "#FF0606",
+    text: "Заполнение профиля",
+    term: "PerMonth",
+  },
+  {
+    price: "500 ws",
+    borderColor: "#FFD20A",
+    text: "ОТ ПРОДАЖИ СТИКЕРОВ И СМАЙЛИКОВ ",
+    term: "lastWeek",
+  },
+  {
+    price: "0,00 ws",
+    borderColor: "#FF9D4C",
+    text: "ОТ МОДЕРАЦИИ",
+    term: "lastTreeDays",
+  },
+  {
+    price: "0,00 ws",
+    borderColor: "#70FF00",
+    text: "ПОЛУЧЕНО НА КОЛЕСЕ УДАЧИ",
+    term: "lastTreeDays",
+  },
+];
+selectElement.addEventListener("change", function () {
+  // Получение выбранного значения
+  const selectedValue = selectElement.value;
 
+  // Фильтрация массива в соответствии с выбранным значением
+  const filteredIncome = income.filter(
+    (item) => item.term === selectedValue || selectedValue === "castom"
+  );
+
+  // Перерисовка карточек
+  renderincome(filteredIncome);
+});
+function renderincome(cards) {
+  // Очистка контейнера перед добавлением новых карточек
+  incomeContainer.innerHTML = "";
+
+  // Добавление отфильтрованных карточек в контейнер
+  cards.forEach((card) => {
+    incomeContainer.innerHTML += `
+    <li><p style="border: 3px solid ${card.borderColor}">${card.price}</p><span>${card.text}</span></li>
+    `;
+  });
+}
+function allHistory() {
+  document.getElementById("allHistorybt").classList.toggle("active");
+  renderincome(income);
+}
+renderincome(income);
 displayHistory(history);
 
 // Обработчик изменения значения в поле выбора месяца

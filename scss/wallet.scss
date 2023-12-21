@@ -150,15 +150,20 @@
       display: flex;
       align-items: center;
       gap: 15px;
-      span:first-of-type {
-        color: #ffffff;
+      button {
+        color: #000000;
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 600;
         line-height: 98.5%; /* 35.46px */
         border-radius: 5px;
-        background: linear-gradient(180deg, #ff2c15 0%, #fa9317 100%);
+        background-color: white;
         padding: 12px 10px;
+        border: none;
+      }
+      button.active {
+        background: linear-gradient(180deg, #ff2c15 0%, #fa9317 100%);
+        color: #ffffff;
       }
       span {
         color: #000;

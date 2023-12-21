@@ -189,7 +189,7 @@
                 <img src="./assets/images/readposter/star.svg" alt="star">
             </div>
             <div class="MyIncome_title_all">
-              <span>Всего</span>
+              <button id="allHistorybt" onclick="allHistory()">Всего</button>
               <div class="MyIncome_title_all_money">
                 <div></div>
                 <div></div>
@@ -209,20 +209,20 @@
                 <div class="MyIncome_content_main_Income_sort">
                   <h3>МОИ ДОХОДЫ: </h3>
                   <select name="history" id="historyDate">
-                    <option>За последнии 3 дня</option>
-                    <option>За месяц </option>
-                    <option>За последнюю неделю</option>
-                    <option>Задать собственный период</option>
+                    <option value="PerMonth">За месяц </option>
+                    <option value="lastTreeDays">За последнии 3 дня</option>
+                    <option value="lastWeek">За последнюю неделю</option>
+                    <option value="castom">Задать собственный период</option>
                   </select>
                 </div>
-                <ul>
-                  <li><p style="border: 3px solid #ff2c15;">5 600 ws</p><span>ОТ РЕКЛАМНЫХ НОВОСТЕЙ</span></li>
+                <ul class="income" id="income">
+                  <!-- <li><p style="border: 3px solid #ff2c15;">5 600 ws</p><span>ОТ РЕКЛАМНЫХ НОВОСТЕЙ</span></li>
                   <li><p style="border: 3px solid #B9F5DB;">2 000 ws</p><span>ОТ ПОКУПОК  В ЗВЕЗДНОМ МАГАЗИНЕ</span></li>
-                  <li><p style="border: 3px solid #C9B6FF;">1 500 ws</p><span>ОТ ВСЕЧ СО ЗВЕЗДАМИ</span></li>
+                  <li><p style="border: 3px solid #C9B6FF;">1 500 ws</p><span>ОТ ВСТЕЧ СО ЗВЕЗДАМИ</span></li>
                   <li><p style="border: 3px solid #FF0606;">5 ws</p><span>Заполнение профиля</span></li>
                   <li><p style="border: 3px solid #FFD20A;">500 ws</p><span>ОТ ПРОДАЖИ СТИКЕРОВ И СМАЙЛИКОВ </span></li>
                   <li><p style="border: 3px solid #FF9D4C;">0,00 ws</p><span>ОТ МОДЕРАЦИИ </span></li>
-                  <li><p style="border: 3px solid #70FF00;">0,00 ws</p><span> ПОЛУЧЕНО НА КОЛЕСЕ УДАЧИ</span></li>
+                  <li><p style="border: 3px solid #70FF00;">0,00 ws</p><span> ПОЛУЧЕНО НА КОЛЕСЕ УДАЧИ</span></li> -->
                 </ul>
               </div>
               <div class="MyIncome_content_main_img">

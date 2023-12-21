@@ -244,9 +244,9 @@
                             <option value="ноябрь">ноябрь</option>
                         </select>
                         <select name="Date" id="Date">
-                            <option value="месяц">За месяц </option>
-                            <option value="3дня">За последнии 3 дня</option>
-                            <option value="неделю">За последнюю неделю</option>
+                            <option value="PerMonth">За месяц </option>
+                            <option value="lastTreeDays">За последнии 3 дня</option>
+                            <option value="lastWeek">За последнюю неделю</option>
                             <option value="castom">Задать собственный период</option>
                         </select>
                     </div>
@@ -335,44 +335,48 @@
         }
         isVisible = !isVisible; // Инвертировать флаг видимости
     });
-    function updateCharCount() {
-      let textarea = document.getElementById('myTextarea');
-      let charCount = document.getElementById('charCount');
-      charCount.innerHTML = textarea.value.length + '/1000 <br>Знаков';
-    }
+
     let CardContainer = document.querySelector('.MakingProfit_content_history_container_card')
     let cards = [
         {
-            date:"19.07.2023",
+            date:"19.09.2023",
             type: "КОЛЕСО УДАЧИ",
             number: 20349439034034,
             sum:1000,
             currency:'WS',
             app:'WORLDSTARS',
+            month:'сентябрь',
+            term:'PerMonth'
         },
         {
-            date:"21.07.2023",
+            date:"21.10.2023",
             type: "РЕКЛАМА",
             number: 20349439034034,
             sum:500,
             currency:'WS',
             app:'WORLDSTARS',
+            month:'октябрь',
+            term:'lastTreeDays'
         },
         {
-            date:"22.07.2023",
+            date:"22.09.2023",
             type: "МОДЕРАЦИЯ",
             number: 20349439034034,
             sum:400,
             currency:'WS',
             app:'WORLDSTARS',
+            month:'сентябрь',
+            term:'lastWeek'
         },
         {
-            date:"3.08.2023",
+            date:"3.11.2023",
             type: "РЕКЛАМА",
             number: 20349439034034,
             sum:2000,
             currency:'WS',
             app:'WORLDSTARS',
+            month:'ноябрь',
+            term:'PerMonth'
         }
     ]
         function RenderCard(index) {
@@ -401,10 +405,19 @@
         let currentIndex = 0
 
         function changeCard(direction) {
+
             currentIndex = (currentIndex + direction + cards.length) % cards.length; // Обработка направления назад с учетом кругового изменения
             RenderCard(currentIndex);
         }
+
+        document.getElementById('month').addEventListener('change', function () {
+             const selectedMonth = this.value.toLowerCase(); // Получаем выбранный месяц и приводим к нижнему регистру
+             const filteredCards = cards.filter(card => card.month.toLowerCase() === selectedMonth); // Фильтруем карточки по месяцу
+             RenderCard(0, filteredCards); // Перерисовываем карточки, начиная с первой, и передаем отфильтрованный массив
+        });
+        
         RenderCard(currentIndex);
+
   </script>
 </body>
 </html>
