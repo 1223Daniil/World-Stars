@@ -197,6 +197,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 177px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .MakingProfit_content_categories {
   display: -webkit-box;
@@ -277,7 +280,24 @@
   border-radius: 9.676px;
   padding: 12px 22px;
 }
-.MakingProfit_content_history_card {
+.MakingProfit_content_history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.MakingProfit_content_history_container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.MakingProfit_content_history_container_card {
   border-radius: 10px;
   border: 6px solid #ff2c15;
   background: #fff;
@@ -286,11 +306,12 @@
           box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 50px 1fr;
   grid-template-columns: 1fr 1fr;
+  gap: 50px;
   max-width: 538px;
 }
-.MakingProfit_content_history_card_item {
+.MakingProfit_content_history_container_card_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,24 +321,20 @@
           flex-direction: column;
   gap: 11px;
 }
-.MakingProfit_content_history_card_item span {
+.MakingProfit_content_history_container_card_item span {
   color: #001533;
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
 }
-.MakingProfit_content_history_line {
+.MakingProfit_content_history_container_line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 30px 0px;
-  margin-left: 164px;
-}
-.MakingProfit_content_history_line div {
-  width: 80px;
-  height: 4px;
-  background-color: #000;
 }
 .MakingProfit_content button {
   border-radius: 12px;
@@ -325,9 +342,7 @@
   background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
   color: #fff;
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin: 0 auto;
   font-size: 32px;
   font-weight: 700;
   line-height: 20px;

@@ -140,6 +140,7 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 177px;
+    align-items: center;
     &_categories {
       display: flex;
       gap: 11px;
@@ -199,36 +200,37 @@
       }
     }
     &_history {
-      &_card {
-        border-radius: 10px;
-        border: 6px solid #ff2c15;
-        background: #fff;
-        padding: 20px 30px;
-        box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        max-width: 538px;
-        &_item {
-          display: flex;
-          flex-direction: column;
-          gap: 11px;
-          span {
-            color: #001533;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 22px;
+      display: flex;
+      justify-content: center;
+      &_container {
+        display: inline-flex;
+        flex-direction: column;
+        &_card {
+          border-radius: 10px;
+          border: 6px solid #ff2c15;
+          background: #fff;
+          padding: 20px 30px;
+          box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 50px;
+          max-width: 538px;
+          &_item {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            span {
+              color: #001533;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 22px;
+            }
           }
         }
-      }
-      &_line {
-        display: flex;
-        gap: 10px;
-        margin: 30px 0px;
-        margin-left: 164px;
-        div {
-          width: 80px;
-          height: 4px;
-          background-color: #000;
+        &_line {
+          display: flex;
+          justify-content: space-between;
+          margin: 30px 0px;
         }
       }
     }
@@ -238,7 +240,7 @@
       background: linear-gradient(253deg, #f00 -14.77%, #ffb800 103.16%);
       color: #fff;
       text-align: center;
-      align-self: center;
+      margin: 0 auto;
       font-size: 32px;
       font-weight: 700;
       line-height: 20px;

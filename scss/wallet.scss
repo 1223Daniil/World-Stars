@@ -222,8 +222,9 @@
             margin-right: 25px;
             background-color: rgba(0, 0, 0, 0);
             width: 199.972px;
-            height: 41.93px;
+            height: 58.93px;
             border-radius: 9.676px;
+            padding: 6px;
             @include large-screen {
               width: auto;
             }
@@ -260,6 +261,7 @@
               color: #000;
               font-size: 1.25rem;
               font-weight: 700;
+              text-transform: uppercase;
               @include large-screen {
                 font-size: 0.8rem;
               }
@@ -724,7 +726,12 @@
         background-color: #00000000;
         width: 253px;
       }
-
+      button.active {
+        border: 3px solid red;
+      }
+      button:hover {
+        transform: scale(1.04);
+      }
       .WheelFortune_quantities_content_bye {
         border-radius: 14px;
         padding: 19px 43px;

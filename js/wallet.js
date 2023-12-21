@@ -146,3 +146,18 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => (deg -= sectorAngle), 100);
   }
 });
+
+let buybutton = document.querySelectorAll(
+  ".WheelFortune_quantities_content_button"
+);
+for (let i = 0; i < buybutton.length; i++) {
+  buybutton[i].addEventListener("click", function () {
+    // Удаляем класс active у всех кнопок
+    for (let j = 0; j < buybutton.length; j++) {
+      buybutton[j].classList.remove("active");
+    }
+
+    // Добавляем класс active к текущей кнопке
+    this.classList.add("active");
+  });
+}
