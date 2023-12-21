@@ -107,6 +107,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1200px) {
+  .payment_img .MyIncome_content_main_img {
+    display: none;
+  }
+}
 .payment_img .MyIncome_content_main_img img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);

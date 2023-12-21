@@ -201,6 +201,9 @@
       max-height: 450px;
       justify-content: space-around;
       .MyIncome_content_main_img {
+        @include large-screen {
+          display: none;
+        }
         img:hover {
           transform: scale(1.1);
         }

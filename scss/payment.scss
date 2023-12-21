@@ -64,6 +64,9 @@
   &_img {
     max-height: 550px;
     .MyIncome_content_main_img {
+      @include large-screen {
+        display: none;
+      }
       img:hover {
         transform: scale(1.1);
       }
