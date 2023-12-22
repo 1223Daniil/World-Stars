@@ -1,6 +1,7 @@
 let historyContainer = document.getElementById("historyContainer");
 let incomeContainer = document.getElementById("income");
 const selectElement = document.getElementById("historyDate");
+
 let history = [
   {
     id: "307268",
@@ -109,13 +110,26 @@ selectElement.addEventListener("change", function () {
 function renderincome(cards) {
   // Очистка контейнера перед добавлением новых карточек
   incomeContainer.innerHTML = "";
-
+  let totalAmount = 0;
   // Добавление отфильтрованных карточек в контейнер
   cards.forEach((card) => {
     incomeContainer.innerHTML += `
     <li><p style="border: 3px solid ${card.borderColor}">${card.price}</p><span>${card.text}</span></li>
     `;
+    const priceValue = parseInt(card.price.replace(/\D/g, ""), 10);
+    totalAmount += priceValue;
   });
+
+  const myIncomeTitleAllMoney = document.querySelector(
+    ".MyIncome_title_all_money"
+  );
+  myIncomeTitleAllMoney.innerHTML = "";
+  totalAmount
+    .toString()
+    .split("")
+    .forEach((digit) => {
+      myIncomeTitleAllMoney.innerHTML += `<div>${digit}</div>`;
+    });
 }
 function allHistory() {
   document.getElementById("allHistorybt").classList.toggle("active");
