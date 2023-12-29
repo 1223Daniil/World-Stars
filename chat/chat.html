@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+        <!-- Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/main.min.css" />
+        <link rel="stylesheet" href="../css/mainStyle.css">
+        <link rel="stylesheet" href="style-chat/normalize.css">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="style-chat/style.css">
+        <link rel="stylesheet" href="style-chat/header.css">
+        <link rel="stylesheet" href="style-chat/burger.css">
+        <link rel="stylesheet" href="style-chat/club.css">
+        <link rel="stylesheet" href="style-chat/chatfriends.css">
+        <link rel="stylesheet" href="style-chat/people.css">
+        <link rel="stylesheet" href="style-chat/window.css">
+        <link rel="stylesheet" href="style-chat/stickers.css">
+        <link rel="stylesheet" href="style-chat/blue.css">
+        <link rel="stylesheet" href="style-chat/get.css">
+        <link rel="stylesheet" href="style-chat/footer.css">
+</head>
+<body class="fon">
+    <header class="header_main">
+        <div class="container">
+            <div class="poster_header_up">
+                <a class="logo_link"><img src="../assets/image/logo.svg"></a>
+                <div class="poster_nav">
+                    <div class="bell">
+                        <a href="#">
+                            <img src="../assets/image/bell.png" alt="Notifications">
+                        </a>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="header_prof_card">
+                        <img style="border-radius: 50%; align-self: baseline;" src="../assets/image/Bitmap (1).png" alt="image">
+                        <div class="name">
+                            <div class="stars">
+                                <img src="../assets/image/header_stars.png" alt="Stars">
+                            </div>
+                        </div>
+                        <div class="header_bag">
+                            <img src="../assets/image/bag_ws.png" alt="Shopping Bag" >
+                        </div>
+                        <div class="header_num">
+                            25
+                        </div>
+                    </div>
+                    <div class="menu-container">
+                        <img src="../assets/image/menu.svg" id="menuButton">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="chat">
+        <div class="fon__image">
+            <img class="header__losso" src="image-home/losso.png" alt="">
+            <img class="spirali" src="image-home/spirali.png" alt="">
+            <img class="spiraliniz" src="image-home/spiralniz.png" alt="">
+        </div>
+        
+
+        <!-- burger menu -->
+        <div id="modal_menu" class="modal_menu">
+            <div class="modal-content_menu">
+               <div class="container">
+                  <div class="modal_container">
+                       <div class="modal_nav">
+                     <div class="modal_out_cont">
+                         <div class="modal_nav_cont">
+                             <img id="showMenuArrow" src="../assets/images/auction/backarrow.svg" alt="arrow left" style="margin-bottom: 40px; cursor: pointer;">
+                              <a href="./sign-in.html" class ="modal_nav_el">
+                               <img src="../assets/image/m1.svg">
+                               <span>Звездный магазин</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m2.svg">
+                               <span>Смотри и пиши новости</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m3.svg">
+                               <span>Предложи звезду</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m4.svg">
+                               <span>Выбирай мировую звезду</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m5.png" style="align-self: center;">
+                               <span>Олимп славы</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el ">
+                              <img src="../assets/image/m6.svg">
+                               <span>Афиша встреч </span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m7.svg">
+                               <span>Профиль</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m8.svg">
+                               <span>Кошелек</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                               
+                        </div>
+                     </div>
+                    </div>
+                    <span class ="modal_nav_el" id="modal_nav_el_dop">Дополнительно</span>
+                    <div class="modal_blocks">
+                      <div class="modal_nav_last">
+                         <a class ="modal_nav_el modal_last_el">
+                           <img src="../assets/image/bag_ws.png" style="align-self: center;">
+                            <span>Зарабатывай на сайте</span>
+                        </a>
+                     </div>
+                       <div class="modal_blocks_cont_first">
+                           <div class="modal_blocks_cont1">
+                                <div class="modal_block">
+                                    <p>ЗАРАБОТАЙ КЕШБЕК НА РЕКЛАМНОЙ НОВОСТИ</p>
+                                    <img class="modal_block_img" src="../assets/image/mb1.svg">
+                                </div>
+                                <div class="modal_block">
+                                    <p>ЗАРАБОТАТЬ НА СТИКЕРАХ И СМАЙЛИКАХ</p>
+                                    <img class="modal_block_img" src="../assets/image/mb2.svg">
+                                </div>
+                            </div>
+                                <div class="modal_blocks_cont2">
+                                    <div class="modal_block">
+                                        <p>ЗАРАБОТАТЬ НА КОЛЕСЕ УДАЧИ</p>
+                                        <img class="modal_block_img1" src="../assets/image/mb3.svg">
+                                    </div>
+                                    <div class="modal_block">
+                                        <p>ПОЛУЧИ КЕШБЕК НА ВСТРЕЧАХ С МИРОВЫМИ ЗВЕЗДАМИ</p>
+                                        <img class="modal_block_img" src="../assets/image/mb4.svg">
+                                    </div> 
+                                </div>
+                    </div>
+                        <div class="modal_blocks_cont3">
+                            <div class="modal_block">
+                                <p>ЗАРАБАТЫВАТЬ МОДЕРАТОРОМ</p>
+                                <img class="modal_block_img" src="../assets/image/mb5.svg">
+                            </div>
+                            <div class="modal_block">
+                                <p>ЗАРАБАТЫВАТЬ  НА 100% ЗАПОЛНЕНИИ ПРОФИЛЯ</p>
+                                <img class="modal_block_img" src="../assets/image/mb6.svg">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="club">
+            <div class="container">
+                <div class="club__container">
+                    <div class="club__container-left">
+                        <h2 class="club__container-title">Клуб&nbsp;звездных знакомств</h2>
+                        <p class="club__container-description">Обсуди свою новость,  предложи  мировую звезду, получи <img src="image-home/redheartclub.png" alt="">м от модератора и<img src="image-home/redheartclub.png" alt=""><img src="image-home/redheartclub.png" alt=""><img src="image-home/redheartclub.png" alt=""><img src="image-home/redheartclub.png" alt="">от друзей </p>
+                    </div>
+
+                    <div class="club__container-name">
+                        <span>Группа:Джеки Чан</span>
+                        <img src="image-home/djekiclub.png" alt="">
+                    </div>
+                    <div class="club__container-image">
+                        <img class="choice__image-star0" src="image-home/star3.png" alt="">
+                        <img class="choice__image-left" src="image-home/imagechoice.png" alt="">
+                        <img class="choice__image-star1" src="image-home/star1.png" alt="">
+                        <img class="choice__image-star2" src="image-home/star2.png" alt="">
+                        <img class="choice__image-star3" src="image-home/star3.png" alt="">
+                        <img class="choice__image-star4" src="image-home/star4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="container">
+                <div class="chat__friends">
+                    <div class="chat__friends-one">
+                        <button class="chat__friends-one-item chat__friends__bt">Чат с Еленой</button>
+
+                        <div class="chat__friends-down-left">
+                            <div class="chat__friends-down-one">
+                                <img class="chat__friends-down-image" src="image-home/elenahunes.png" alt="">
+                                <div class="chat__friends-down-one1">
+                                    
+                                    <div class="chat__container-stars">
+                                        <span class="chat__friends-down-news">120 новостей</span>
+                                        <div class="chat__container-stars-stars">
+                                            <img src="image-home/starchatorange.png" alt="">
+                                            <img src="image-home/starchatorange.png" alt="">
+                                            <img src="image-home/starchatorange.png" alt="">
+                                            <img src="image-home/starwhite.png" alt="">
+                                            <img src="image-home/starwhite.png" alt="">
+                                        </div>
+                                    </div>
+                                    <button class="chat__friends-down-profil">Смотреть профиль<img src="image-home/arrowchat.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <!-- <button class="chat__friends-down-btn1">ЧАТ С ЕЛЕНОЙ</button> -->
+                        </div>
+                    </div>
+                    
+                    <div class="chat__friends-two">
+                        <button class="chat__friends-up-item0 chat__friends__bt">Чат с твоими друзьями</button>
+
+                        <div class="chat__friends-down-two">
+                            <!-- <div class="chat__friends-down-two2">
+                                <img src="image-home/hends.png" alt="">
+                                <span class="chat__friends-down-span">Подтвержденные знакомства</span>
+                            </div>
+                            <button class="chat__friends-down-btn2">ЧАТ С ДРУЗЬЯМИ</button> -->
+                            <img src="image-home/Bitmap.png" alt="">
+                            <img src="image-home/chatheands.png" alt="">
+                            <span class="chat__friends-down-span">Подтвержденные знакомства</span>
+                        </div>
+                        <span class="chat__friends-down-span1">У тебя<span class="chat__friends-down-span2">3</span>друга</span>
+                    </div>
+
+                    <div class="chat__friends-three">
+                        <button class="chat__friends-up-item1 chat__friends__bt">Выбирай звезду и общайся в группе</button>
+                        
+                        <div class="chat__friends-down-three">
+                            <div class="gradient-wrapper">
+                                <div class="ChekBoxTable">
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Джеки Чан</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Кира Найтли</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Фродо Бэггинс</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Жан-Клод Камиль</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Леонель Месси</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Джеки Чан</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Кира Найтли</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Фродо Бэггинс</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Жан-Клод Ван-Дам</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Леонель Месси</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="people">
+            <div class="container">
+                <div class="people__container">
+                    <div class="slider__wrapper">
+                        <div class="slider__wrapper-arrow">
+                            <img src="image-home/peoplearrowleft.svg" alt="">
+                            <img src="image-home/p.svg" alt="">
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <!-- <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <!-- <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <!-- <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <!-- <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window">
+            <div class="container">
+                <div class="chats">
+                    <div class="chats-container">
+                        <div class="chats-header">
+                            <div class="chats-header-container">
+                                <div class="chats-user-avatar">
+                                    <img src="./chatimg/Bitmap.png" alt>
+                                </div>
+                                <div class="chats-users-list">
+                                    <img class="img1"
+                                        src="./chatimg/devushki-s-tatuirovkami-107-foto-59 9.png" alt>
+                                    <img class="img2"
+                                        src="./chatimg/devushki-s-tatuirovkami-107-foto-59 6.png" alt>
+                                    <img class="img3"
+                                        src="./chatimg/devushki-s-tatuirovkami-107-foto-59 6 (1).png" alt>
+                                </div>
+                            </div>
+                            <div class="chats-header-title">ЧАТ С ДРУЗЬЯМИ</div>
+                        </div>
+                        <div class="chats-body" id="chat-body">
+                            <div class="chats-message-baner read-message">
+                                <div class="link-read">ЧИТАТЬ</div>
+                                <div class="picture">
+                                    <img src="./chatimg/h1 (1).png" alt>
+                                </div>
+                                <div class="read-message-text">
+                                    <span>ПРОЧТИ МОЮ НОВОСТЬ О</span>
+                                    <span>МИРОВОЙ ЗВЕЗДЕ И ПОСТАВЬ</span>
+                                    <span>ЛАЙК!</span>
+                                </div>
+                                <div class="news-hearts-wrap">
+                                    <div class="news-hearts-m">
+                                        <img src="./chatimg/heart2.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <span>M</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chats-message-baner read-message left">
+                                <div class="link-read">ЧИТАТЬ</div>
+                                <div class="picture">
+                                    <img src="./chatimg/h1 (1).png" alt>
+                                </div>
+                                <div class="read-message-text">
+                                    <span>ПРОЧТИ МОЮ НОВОСТЬ О</span>
+                                    <span>МИРОВОЙ ЗВЕЗДЕ И ПОСТАВЬ</span>
+                                    <span>ЛАЙК!</span>
+                                </div>
+                                <div class="news-hearts-wrap">
+                                    <div class="news-hearts-m">
+                                        <img src="./chatimg/heart2.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <span>M</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chats-message-container-left">
+                                Текст сообщения, текст сообщения, текст сообщения, текст сообщения,
+                                Текст сообщения, текст сообщения, текст сообщения, текст сообщения,
+                                Текст сообщения, текст сообщения, текст сообщения, текст сообщения,
+                                Текст сообщения, текст сообщения, текст сообщения, текст сообщения,
+                                Текст сообщения, текст сообщения, текст сообщения, текст сообщения,
+                                Текст сообщения, текст сообщения, текст сообщения, текст сообщения,
+                                <div class="left-triangle"></div>
+                            </div>
+                            <div class="chats-message-baner read-message">
+                                <div class="link-read">ЧИТАТЬ</div>
+                                <div class="picture">
+                                    <img src="./chatimg/1313 6.png" alt>
+                                </div>
+                                <div class="read-message-text WS-text">
+                                    <span>ПРОЧТИ МОЕ</span>
+                                    <span>ПРЕДЛОЖЕНИЕ МИРОВОЙ</span>
+                                    <span>ЗВЕЗДЫ И ПОСТАВЬ ЛАЙК</span>
+                                </div>
+                                <div class="news-hearts-wrap">
+                                    <div class="news-hearts-m">
+                                        <img src="./chatimg/heart2.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <img src="./chatimg/heart.svg" alt>
+                                        <span>M</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chats-message-container-right">
+                                <div class="right-title-avatar">
+                                    <div class="right-title-avatar-text">Елена Хуанес Радгигес</div>
+                                    <div class="right-title-avatar-img">
+                                        <a href="sticers/sticers.html"><img class="right-title-panda" src="image-home/panda.png" alt=""></a>
+                                            <img src="./chatimg/devushki-s-tatuirovkami-107-foto-59 6.png" alt>
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    Текст сообщения, текст сообщения
+                                    <div class="right-triangle"></div>
+                                </div>
+                            </div>
+                            <div class="chats-message-container-right">
+                                <div class="right-title-avatar">
+                                    <div class="right-title-avatar-text">Елена Хуанес Радгигес</div>
+                                    <div class="right-title-avatar-img">
+                                        <a href="sticers/sticers.html"><img class="right-title-panda" src="image-home/panda.png" alt=""></a>
+                                            <img src="./chatimg/devushki-s-tatuirovkami-107-foto-59 9.png" alt>
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    Текст сообщения, текст сообщения
+                                    <div class="right-triangle"></div>
+                                </div>
+                            </div>
+                            <div class="chats-message-container-right">
+                                <div class="message">
+                                    Текст сообщения, текст сообщения
+                                    <div class="right-triangle"></div>
+                                </div>
+                            </div>
+                            <div class="chats-message-container-right">
+                                <div class="message">
+                                    Текст сообщения, текст сообщения
+                                    <div class="right-triangle"></div>
+                                </div>
+                            </div>
+                            <div class="chats-message-container-left">
+                                Текст сообщения, текст сообщения, текст сообщения, текст сообщения,
+                                <div class="left-triangle"></div>
+                            </div>
+                            <div class="chats-message-container-right">
+                                <div class="right-title-avatar">
+                                    <div class="right-title-avatar-text">Радгигес</div>
+                                    <div class="right-title-avatar-img">
+                                        <a href="sticers/sticers.html"><img class="right-title-panda" src="image-home/panda.png" alt=""></a>
+                                            <img src="./chatimg/devushki-s-tatuirovkami-107-foto-59 6 (1).png" alt>
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    Текст
+                                    <div class="right-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chats-footer">
+                        <div class="chats-footer-container">
+                            <input type="text" name id="message" placeholder="Введите текст">
+                            <div class="chats-footer-container-input-link">
+                                <a href="sticers/sticers.html"><img src="./chatimg/image 1.png" alt></a>
+                                <span class="chats-footet-text stikers">стикеры</span>
+                            </div>
+                            <div class="chats-footer-container-input-link">
+                                <img src="./chatimg/tabler_photo-up.svg" alt>
+                                <span class="chats-footet-text myfoto">мои фото</span>
+                            </div>
+                        </div>
+                        <div class="img-telega-send">
+                            <img src="./chatimg/send.svg" alt>
+                        </div>
+                    </div>
+                </div>
+                <button class="window__btn">ВЫЙТИ ИЗ ЧАТА</button>
+            </div>
+        </div>
+
+        <div class="stickers">
+            <div class="container">
+                <div class="stickers__container">
+                    <h3 class="stickers__container-title">Выбери стикер с загруженной  новостью или звездой, посылай друзьям для обсуждения! </h3>
+                    <div class="stickers__container-wrapper">
+                        <div class="stickers__container-item">
+                            <button class="stickers__container-item-up">новость&nbsp;загружена</button>
+                            <img src="image-home/sticers1.svg" alt="">
+                            <span class="stickers__container-description">ПРОЧТИ МОЮ НОВОСТЬ О  МИРОВОЙ ЗВЕЗДЕ</span>
+                            <button class="stickers__container-down">Отправить</button>
+                        </div>
+                        <div class="stickers__container-item">
+                            <button class="stickers__container-item-up">текст загружен</button>
+                            <img src="image-home/sticers2.svg" alt="">
+                            <span class="stickers__container-description">ПРОЧТИ МОЕ ПРЕДЛОЖЕНИЕ МИРОВОЙ ЗВЕЗДЫ</span>
+                            <button class="stickers__container-down">Отправить</button>
+                        </div>
+
+
+                        <div class="stickers__container-item1">
+                            <button class="stickers__container-item-up1">текст не  загружен</button>
+                            <span class="stickers__container-offer">ПРЕДЛОЖИ СВОЮ МИРОВУЮ ЗВЕЗДУ</span>
+                            <button class="stickers__container-down1">Загрузить&nbsp;текст</button>
+                        </div>
+                        <div class="stickers__container-item1">
+                            <button class="stickers__container-item-up1">текст не  загружен</button>
+                            <span class="stickers__container-news">НАПИШИ НОВОСТЬ О МИРОВОЙ ЗВЕЗДЕ</span>
+                            <button class="stickers__container-down1">Загрузить&nbsp;текст</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blue">
+            <div class="container">
+                <div class="blue__container">
+                    <h2 class="blue__container-title">Подари участнику 
+                        крутые стикеры бесплатно или создай свой!</h2>
+                    <div class="blue__container-content">
+                        <img class="blue__container-tony" src="image-home/tony.png" alt="">
+                        <a href="sticers/sticers.html"><button class="blue__container-content-btn">Галерея стикеров</button></a>
+                    </div>
+                    <img class="blue__container-heart" src="image-home/heart.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="get">
+            <div class="container">
+                <div class="get__wrapper">
+                    <div class="get__title">Получи подтвержденное знакомство! </div>
+                <div class="get__container">
+                    <div class="get__container-item1">
+                        <img class="get__container-item1-img" src="image-home/getgirl.png" alt="">
+                        <span class="get__container-item1-span">125 друзей</span>
+                        <button class="get__container-item1-btn get__container__Confirm">Подтвердить</button>
+                    </div>
+
+                    <div class="get__container-item2">
+                        <img class="get__container-item2-img" src="image-home/getfriends.png" alt="">
+                        <!-- <button class="get__container-item2-btn"> <img src="image-home/audio.svg" alt=""> <audio src="audio/eralash.mp3"></audio></button> -->
+                        <audio><source type="audio/mp3" src="audio/eralash.mp3"></audio><button onclick="this.previousSibling.play()">
+                            <img src="image-home/audio.svg" alt="">
+                        </button>
+                        <span class="get__container-item2-span">Послушай поздравление
+                            от команды World Stars</span>
+                    </div>
+
+                    <div class="get__container-item3">
+                        <img class="get__container-item3-img" src="image-home/getgirl.png" alt="">
+                        <span class="get__container-item3-span">5 друзей</span>
+                        <button class="get__container-item3-btn get__container__Confirm">Подтвержден</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footermobil -->
+
+        <!-- <div class="footermobil">
+            <div class="container">
+                <div class="footermobil__container-logo">
+                    <h2 class="footer__container-logo-world">World Stars</h2>
+                        <span class="footer__container-logo-stars">мировые звезды brics</span>
+                </div>
+                <div class="footermobil__container-wrapper">
+                    <div class="footermobil__container-left">
+                        <ul class="footer__container-menu1">
+                            <li><a class="footer__container-links-link1" href="#">О нас</a></li>
+                            <li><a class="footer__container-links-link" href="#">Словарь сайта</a></li>
+                            <li><a class="footer__container-links-link" href="#">Контакты</a></li>
+                        </ul>
+                        <ul class="footer__container-menu3">
+                            <li><a class="footer__container-links-link1" href="#">Поддержка</a></li>
+                            <li><a class="footer__container-links-link" href="#">Term of service</a></li>
+                            <li><a class="footer__container-links-link1" href="#">Social Media</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footermobil__container-right">
+                        <ul class="footer__container-menu2">
+                            <li><a class="footer__container-links-link1" href="#">Главная</a></li>
+                            <li><a class="footer__container-links-link" href="#">Звезды кино</a></li>
+                            <li><a class="footer__container-links-link" href="#">Мода</a></li>
+                            <li><a class="footer__container-links-link" href="#">Спорт</a></li>
+                            <li><a class="footer__container-links-link" href="#">Музыка</a></li>
+                            <li><a class="footer__container-links-link" href="#">Танцы</a></li>
+                            <li><a class="footer__container-links-link" href="#">Встречи со звездами</a></li>
+                            <li><a class="footer__container-links-link" href="#">Знакомься дружи</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="footermobil__container-social">
+                    <ul>
+                        <li><a class="footer__container-links-link" href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                    <div class="footermobil__container-social-container">
+                        <a href="#"><img class="footermobil__container-social-image" src="../assets/images/footer/footerstar.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/footer/socialmobilwhatsapp.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/footer/socialmobilvk.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/footer/socialmobiltelegram.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/footer/socialmobilsnap.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+           <div class="footer_lists">
+            <ul class="footer_row">
+                <li><a href="#"><span class ='footer_logo_link'>World Stars</span><br> <span>мировые звезды brics</span> </a></li>
+                <li><a href="#"><span>О нас</span></a></li>
+                <li><a href="#"><span>Словарь сайта</span></a></li>
+                <li><a href="#"><span>Встреси со звёздами</span></a></li>
+                <li><a href="#"><span>Знакомься дружи</span></a></li>
+            </ul>
+            <ul class="footer_row">
+                <li><a href="#"><span>Главная</span></a></li>
+                <li><a href="#"><span>Звезды кино</span></a></li>
+                <li><a href="#"><span>Мода</span></a></li>
+                <li><a href="#"><span>Спорт</span></a></li>
+                <li><a href="#"><span>Музыка</span></a></li>
+                <li><a href="#"><span>Танцы</span></a></li>
+            </ul>
+            <ul class="footer_row">
+                <li><a href="#"><span>Поддержка</span> </a></li>
+                <li><a href="#"><span>Политика конфиденциальности</span></a></li>
+                <li><a href="#"><span>Term of service</span></a></li>
+                <li><a href="#"><span>Social Media</span></a></li>
+                <li><a href="#"><span>Контакты</span></a></li>
+                <div class="footer_row_contact">
+                    <div class="circlestar">
+                        <img src="../assets/images/footer/footerstar.svg" alt="footerstar">
+                    </div>
+                    <img src="../assets/images/footer/WhatsApp Inc. svg (1).png" alt="WhatsApp">
+                    <img src="../assets/images/footer/social icons.png" alt="social">
+                    <img src="../assets/images/footer/Telegram_2019_Logo.png" alt="Telegram_2019_Logo">
+                    <img src="../assets/images/footer/App Icon.svg" alt="App">
+                </div>
+            </ul>
+           </div>
+        </div>
+        <div class="footerMobile container_fluid">
+            <div class="footerMobile_content">
+              <h2><span>World Stars</span><br> мировые звезды brics</h2>
+              <div class="footerMobile_content_links">
+              <ul>
+                <li style="font-weight: 700;">О нас</li>
+                <li>Словарь сайта</li>
+                <li>Контакты</li>
+                <li style="font-weight: 700;">Поддержка</li>
+                <li>Term of service</li>
+                <li style="font-weight: 700;">Social Media</li>
+              </ul>
+              <ul>
+                <li style="font-weight: 700;">Главная</li>
+                <li>Звезды кино</li>
+                <li>Мода</li>
+                <li>Спорт</li>
+                <li>Музыка</li>
+                <li>Танцы</li>
+                <li>Встречи со звездами</li>
+                <li>Знакомься дружи</li>
+              </ul>
+              </div>
+              <p class="footerMobile_content_rules">Политика конфиденциальности</p>
+               <div class="footer_row_contact">
+                 <div class="circlestar">
+                     <img src="../assets/images/footer/footerstar.svg" alt="footerstar">
+                 </div>
+                 <img src="../assets/images/footer/WhatsApp Inc. svg (1).png" alt="WhatsApp">
+                 <img src="../assets/images/footer/social icons.png" alt="social">
+                 <img src="../assets/images/footer/Telegram_2019_Logo.png" alt="Telegram_2019_Logo">
+                 <img src="../assets/images/footer/App Icon.svg" alt="App">
+               </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="index.js"></script>
+</html>

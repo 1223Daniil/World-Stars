@@ -76,7 +76,7 @@
 
 .SortButton h1 {
   font-family: Montserrat;
-  font-size: 55px;
+  font-size: 3.438rem;
   font-weight: 600;
   line-height: 130%; /* 71.5px */
   text-align: center;
@@ -89,12 +89,12 @@
 }
 @media (max-width: 992px) {
   .SortButton h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 @media (max-width: 768px) {
   .SortButton h1 {
-    font-size: 0.875rem;
+    font-size: 1.3rem;
   }
 }
 .SortButton_button_country {
@@ -122,7 +122,7 @@
   font-family: Montserrat;
   font-size: 1.25rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,9 +178,24 @@
 .MakingProfit h2 {
   color: #000;
   text-align: center;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 400;
   line-height: 98.5%; /* 49.25px */
+}
+@media (max-width: 992px) {
+  .MakingProfit h2 {
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 768px) {
+  .MakingProfit h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .MakingProfit h2 {
+    font-size: 1.5rem;
+  }
 }
 .MakingProfit_content {
   border-radius: 20px;
@@ -201,6 +216,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 992px) {
+  .MakingProfit_content {
+    background: none;
+  }
+}
 .MakingProfit_content_categories {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,6 +232,15 @@
   -webkit-box-shadow: 0px 20px 30px 0px rgba(71, 169, 255, 0.3);
           box-shadow: 0px 20px 30px 0px rgba(71, 169, 255, 0.3);
 }
+@media (max-width: 992px) {
+  .MakingProfit_content_categories {
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .MakingProfit_content_categories_item {
   border: 1px solid #00a8fc;
   display: -webkit-box;
@@ -222,17 +251,29 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 15px;
-  padding: 10px 5px;
   max-width: 185px;
+  max-height: 174px;
+  padding: 10px 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 768px) {
+  .MakingProfit_content_categories_item {
+    width: 145px;
+    max-height: 134px;
+  }
 }
 .MakingProfit_content_categories_item_title {
   text-align: center;
   font-size: 15px;
   font-weight: 700;
   line-height: 20px;
+}
+@media (max-width: 768px) {
+  .MakingProfit_content_categories_item_title {
+    font-size: 10px;
+  }
 }
 .MakingProfit_content_categories_item div {
   display: -webkit-box;
@@ -255,6 +296,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 768px) {
+  .MakingProfit_content_categories_item div span {
+    font-size: 10px;
+  }
+}
 .MakingProfit_content_sort {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,6 +310,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 992px) {
+  .MakingProfit_content_sort {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .MakingProfit_content_sort span {
   font-size: 36px;
@@ -279,6 +331,12 @@
   font-weight: 400;
   border-radius: 9.676px;
   padding: 12px 22px;
+}
+@media (max-width: 768px) {
+  .MakingProfit_content_sort select {
+    padding: 12px 22px;
+    font-size: 15px;
+  }
 }
 .MakingProfit_content_history {
   display: -webkit-box;
@@ -311,6 +369,15 @@
   gap: 50px;
   max-width: 538px;
 }
+@media (max-width: 992px) {
+  .MakingProfit_content_history_container_card {
+    gap: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 0px solid #ff2c15;
+  }
+}
 .MakingProfit_content_history_container_card_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,6 +393,11 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
+}
+@media (max-width: 992px) {
+  .MakingProfit_content_history_container_card_item span {
+    font-size: 15px;
+  }
 }
 .MakingProfit_content_history_container_line {
   display: -webkit-box;

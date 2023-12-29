@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <link rel="stylesheet" href="stylescreen/normalize.css">
+    <link rel="stylesheet" href="stylescreen/style.css">
+    <link rel="stylesheet" href="stylescreen/fonts.css">
+    <link rel="stylesheet" href="stylescreen/header.css">
+    <link rel="stylesheet" href="stylescreen/burger.css">
+    <link rel="stylesheet" href="stylescreen/pol.css">
+    <link rel="stylesheet" href="stylescreen/shoes.css">
+    <link rel="stylesheet" href="stylescreen/interest.css">
+     <link rel="stylesheet" href="stylescreen/video.css">
+     <link rel="stylesheet" href="stylescreen/footer.css">
+</head>
+<body class="fon">
+    <section class="cros">
+        <div class="header">
+            <div class="container">
+                <div class="header__container">
+                    <div class="header__container-logo">
+                        <img class="header__logo" src="image-home/logo.png" alt="">
+                        <!-- <img class="header__losso" src="image-home/losso.png" alt=""> -->
+                    </div>
+                    <div class="header__container-blog">
+                        <div class="header__container-ring">
+                            <img class="header__container-ring-foto" src="image-home/ring.png" alt="">
+                        </div>
+                        <div class="header__container-name">
+                            <img class="header__container-foto-size" src="image-home/Image.png"alt="">
+                            <div class="header__container-name-man">
+                                <div class="header__container-name-name">
+                                    <span class="header__container-imya">Александр</span>
+                                    <div class="header__container-stars">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Starblack.png" alt="">
+                                        <img src="image-home/Starblack.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__container-bag">
+                                <img class="header__container-bag-img" src="image-home/Group1000001080.png" alt="">
+                                <span class="header__container-bag-span">45</span>
+                            </div>
+                        </div>
+                        <button class="header__container-menu">
+                            <img onclick="openBurger()" src="image-home/menu.png" alt="">
+                        </button>
+                    </div>
+                    <!-- <img class="header__spiral" src="image-home/spirali.png" alt=""> -->
+                </div>
+                <div class="hmobil">
+                    <div class="container">
+                        <div class="hmobil__container">
+                            <div class="hmobil__container-logo">
+                                <div class="hmobil__container-logo-left">
+                                    <span class="hmobil__container-logo-title">World Stars</span>
+                                    <span class="hmobil__container-logo-title">мировые звезды brics</span>
+                                </div>
+                                <div class="hmobil__container-logo-right">
+                                    <img class="hmobil__container-logo-search" src="image-home/lupamobil.png" alt="">
+                                    <img src="image-home/ringmobil.png" alt="">
+                                    <button class="hmobil__container-logo-menu">
+                                        <img onclick="openBurger()" src="image-home/menumobil.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hmobil__container-name">
+                                <img class="hmobil__container-foto-size" src="image-home/mobImage.png"alt="">
+                                <div class="hmobil__container-name-man">
+                                    <div class="hmobil__container-name-name">
+                                        <span class="hmobil__container-imya">Александр</span>
+                                        <div class="hmobil__container-stars">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Starblack.png" alt="">
+                                            <img src="image-home/Starblack.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hmobil__container-bag">
+                                    <img class="hmobil__container-bag-img" src="image-home/Group1000001080.png" alt="">
+                                    <span class="hmobil__container-bag-span">45</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- burger menu -->
+        <div id="burger" class="burger">
+            <div class="container">
+                <button onclick="closeBurger()" class="burger__arrow">
+                    <img src="image-home/burgerarrow.svg" alt="">
+                </button>
+                <div class="burger__container">
+                    <div class="burger__container-left">
+                        <div class="burger__container-links">
+                            <a href="#" class="burger__container-links-link1">
+                                <img src="image-home/burger1.svg" alt="">
+                                <span>Звездный магазин</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link2">
+                                <img src="image-home/burger2.svg" alt="">
+                                <span>Пиши новости</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link3">
+                                <img src="image-home/burger3.svg" alt="">
+                                <span>Предложи звезду</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link4">
+                                <img src="image-home/burger4.svg" alt="">
+                                <span>Выбирай мировую звезду</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link5">
+                                <img src="image-home/burger5.png" alt="">
+                                <span>Олимп славы</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link6">
+                                <img src="image-home/burger6.svg" alt="">
+                                <span>Кошелек</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link7">
+                                <img src="image-home/burger7.svg" alt="">
+                                <span>Профиль</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link8">
+                                <img src="image-home/burger8.svg" alt="">
+                                <span>Афиша встреч</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="burger__container-right">
+                        <div class="burger__container-right-up">
+                            <img src="image-home/bagheader.png" alt="">
+                            <h3 class="burger__container-right-title">Зарабатывай на сайте! </h3>
+                        </div>
+                        <div class="burger__container-right-images">
+                            <img src="image-home/burgerimage1.png" alt="">
+                            <img src="image-home/burgerimage2.png" alt="">
+                            <img src="image-home/burgerimage2.png" alt="">
+                            <img src="image-home/burgerimage4.png" alt="">
+                            <img src="image-home/burgerimage5.png" alt="">
+                            <img src="image-home/burgerimage6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="shoes">
+            <div class="container">
+                <a href="screen.html">
+                    <button class="pol__arrow"><img src="image-home/arrowscreen.svg" alt=""></button>
+                </a>
+                <div class="pol__container">
+                    <button class="pol__container-btn">Мужские</button>
+                    <button class="pol__container-btn">Женские</button>
+                    <button class="pol__container-btn">Детские</button>
+                </div>
+
+                <div class="pol__search">
+                    <img src="image-home/lupamobil.png" alt="">
+                    <!-- <input class="form__container-up-text" type="text" placeholder="Я ИЩУ ..."> -->
+                    <input class="form__container-up-text" type="search" placeholder="Я ИЩУ ...">
+                </div>
+
+                <h2 class="shoes__title">КРОСОВКИ NIKE МОДЕЛЬ 3256 </h2>
+                <div class="shoes__container">
+                    <img src="image-home/shoesbig.png" alt="">
+                    <div class="shoes__container-image">
+                        <div class="shoes__container-img">
+                            <img src="image-home/shoessmall.png" alt="">
+                        </div>
+                        <div class="shoes__container-img">
+                            <img src="image-home/shoessmall.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="choes__container-center">
+                    <div class="shoes__container-center-ellipsis">
+                        <button class="shoes__container-center-ellips1"></button>
+                        <button class="shoes__container-center-ellips2"></button>
+                        <button class="shoes__container-center-ellips3"></button>
+                    </div>
+                    <button class="choes__container-center-btn">КУПИТЬ</button>
+                </div>
+
+                <h2 class="choes__container-price">14 999Р.</h2>
+
+                <div class="choes__container-size">
+                    <div class="choes__container-country">
+                        <span>RUS</span>
+                        <span>UK</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                    <div class="choes__container-size-size">
+                        <span>35.5</span>
+                        <span>3.5</span>
+                    </div>
+                </div>
+
+                <div class="choes__container-line"></div>
+
+                <div class="choes__container-about">
+                    <h2 class="choes__container-title">ОПИСАНИЕ<br>
+                        Кроссовки выполнены из ткани рипстоп и синтетической замши. Детали: шнуровка, резиновая подошва обеспечивает достаточное сцепление. Гладкая внутренняя поверхность из текстиля помогает предотвратить истирание.</h2>
+
+                        <div class="choes__container-about-description">
+                            <span>Материал верха. . . . . . . . . . . . . . . . . . . . . . . . Полимер, текстиль</span>
+                            <span>Внутренний материал. . . . . . . . . . . . . . . . . . .  . .Текстиль</span>
+                            <span>Материал подошвы . . . . . . . . . . . . . . . . . . . . . . Резина</span>
+                            <span>Материал стельки. . . . . . . . . . .  . . . . . . . . . . . Текстиль</span>
+                            <span>Сезон . . . . . . . . . . . . . . . . . . . . . . . . . . . . Мульти</span>
+                            <span>Цвет. . . . . . . . . . . . . . . . . . . . . . . . . . . . . Голубой</span>
+                            <span>Вид спорта. .  . . . . . . . . . . . . . . . . . . . . . . . . Спорт стиль</span>
+                            <span>Артикул.. . . . . . . . . . . . . . . . . . . . . . . . . . . .RTLACY613801</span>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="interest">
+            <div class="container">
+                <div class="interest__container">
+                    <div class="interest__container-left">
+                        <h4 class="interest__container-left-title">Это интересно!</h4>
+                        <p class="interest__container-left-description">Смотрите  самые свежие новости о любимых спортсменах, музыкантах,  актерах,  моделях, дизайнерах и других. Приходи на встречи с мировыми звездами, дружи  с теми кто любит таких же  звезд!</p>
+                    </div>
+                    <div class="interest__container-right">
+                        <img class="interest__container-right-size" src="image-home/interestboy.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="container">
+                <div class="video__container">
+                    <!-- <video class="video" src="/image/sample-5s.mp4" autoplay loop></video> -->
+                    <iframe width="1190" height="822" iframe width="0" height="0" src="https://www.youtube.com/embed/gD_eoFaITqc" title="LEONISA #2 Spring 2017 COLOMBIAMODA - Fashion Channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- <img class="video__container-play" src="/image-home/video play.png" alt=""> -->
+                    <div class="video__container-button">
+                        <button class="video__container-btn1">Мода</button>
+                        <button class="video__container-btn2">Спорт</button>
+                        <button class="video__container-btn3">Кино</button>
+                        <button class="video__container-btn4">Музыка</button>
+                        <button class="video__container-btn5">Танцы</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- блок video для мобилы -->
+
+        <div class="videomobil">
+            <div class="container">
+                <div class="videomobil__container">
+                    <!-- <video class="video" src="/image/sample-5s.mp4" autoplay loop></video> -->
+                    <iframe width="360" height="297" iframe width="0" height="0" src="https://www.youtube.com/embed/gD_eoFaITqc" title="LEONISA #2 Spring 2017 COLOMBIAMODA - Fashion Channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- <img class="video__container-play" src="/image-home/video play.png" alt=""> -->
+                    <div class="videomobil__container-button">
+                        <button class="videomobil__container-btn1">Мода</button>
+                        <button class="videomobil__container-btn2">Спорт</button>
+                        <button class="videomobil__container-btn3">Кино</button>
+                        <button class="videomobil__container-btn4">Музыка</button>
+                        <button class="videomobil__container-btn5">Танцы</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   
+
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+           <div class="footer_lists">
+            <ul class="footer_row">
+                <li><a href="#"><span class ='footer_logo_link'>World Stars</span><br> <span>мировые звезды brics</span> </a></li>
+                <li><a href="#"><span>О нас</span></a></li>
+                <li><a href="#"><span>Словарь сайта</span></a></li>
+                <li><a href="#"><span>Встреси со звёздами</span></a></li>
+                <li><a href="#"><span>Знакомься дружи</span></a></li>
+            </ul>
+            <ul class="footer_row">
+                <li><a href="#"><span>Главная</span></a></li>
+                <li><a href="#"><span>Звезды кино</span></a></li>
+                <li><a href="#"><span>Мода</span></a></li>
+                <li><a href="#"><span>Спорт</span></a></li>
+                <li><a href="#"><span>Музыка</span></a></li>
+                <li><a href="#"><span>Танцы</span></a></li>
+            </ul>
+            <ul class="footer_row">
+                <li><a href="#"><span>Поддержка</span> </a></li>
+                <li><a href="#"><span>Политика конфиденциальности</span></a></li>
+                <li><a href="#"><span>Term of service</span></a></li>
+                <li><a href="#"><span>Social Media</span></a></li>
+                <li><a href="#"><span>Контакты</span></a></li>
+                <div class="footer_row_contact">
+                    <div class="circlestar">
+                        <img src="../assets/images/footer/footerstar.svg" alt="footerstar">
+                    </div>
+                    <img src="../assets/images/footer/WhatsApp Inc. svg (1).png" alt="WhatsApp">
+                    <img src="../assets/images/footer/social icons.png" alt="social">
+                    <img src="../assets/images/footer/Telegram_2019_Logo.png" alt="Telegram_2019_Logo">
+                    <img src="../assets/images/footer/App Icon.svg" alt="App">
+                </div>
+            </ul>
+           </div>
+        </div>
+        <div class="footerMobile container_fluid">
+            <div class="footerMobile_content">
+              <h2><span>World Stars</span><br> мировые звезды brics</h2>
+              <div class="footerMobile_content_links">
+              <ul>
+                <li style="font-weight: 700;">О нас</li>
+                <li>Словарь сайта</li>
+                <li>Контакты</li>
+                <li style="font-weight: 700;">Поддержка</li>
+                <li>Term of service</li>
+                <li style="font-weight: 700;">Social Media</li>
+              </ul>
+              <ul>
+                <li style="font-weight: 700;">Главная</li>
+                <li>Звезды кино</li>
+                <li>Мода</li>
+                <li>Спорт</li>
+                <li>Музыка</li>
+                <li>Танцы</li>
+                <li>Встречи со звездами</li>
+                <li>Знакомься дружи</li>
+              </ul>
+              </div>
+              <p class="footerMobile_content_rules">Политика конфиденциальности</p>
+               <div class="footer_row_contact">
+                 <div class="circlestar">
+                     <img src="../assets/images/footer/footerstar.svg" alt="footerstar">
+                 </div>
+                 <img src="../assets/images/footer/WhatsApp Inc. svg (1).png" alt="WhatsApp">
+                 <img src="../assets/images/footer/social icons.png" alt="social">
+                 <img src="../assets/images/footer/Telegram_2019_Logo.png" alt="Telegram_2019_Logo">
+                 <img src="../assets/images/footer/App Icon.svg" alt="App">
+               </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

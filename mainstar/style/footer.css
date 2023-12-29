@@ -1,0 +1,300 @@
+
+.footer {
+	display: grid;
+	grid-template-columns: 1200px;
+	justify-items: center;
+
+	width: 100%;
+	overflow: hidden;
+	place-content: center;
+}
+
+.footer-background {
+	width: 2120px;
+	height: 540px;
+	background-color: #000;
+
+	display: grid;
+	grid-template-columns: repeat(3, 385px);
+	place-content: center;
+	gap: 50px;
+}
+
+.footer__column {
+	display: grid;
+	gap: 33px;
+	grid-auto-rows: max-content;
+}
+
+.footer__text {
+	color: white;
+
+	color: #FFF;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	font-family: Montserrat;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.footer__text-center {
+	text-align: center;
+}
+
+.footer__logo-text {
+	color: #FFF;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	font-family: Montserrat;
+	font-size: 55px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 130%;
+}
+
+.footer__column__text-padding {
+	margin-left: 150px;
+}
+
+.footer__column-logo-shift {
+	position: relative;
+	top: -40px;
+}
+
+.footer__column--tree {
+	grid-auto-rows: max-content;
+}
+
+
+/*  */
+.footer {
+	background-color: #000;
+}
+
+.footermobil {
+	display: none;
+}
+
+.footer__container {
+	display: flex;
+	gap: 150px;
+}
+
+.footer__container-logo {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 85px;
+	width: 336px;
+}
+
+.footer__container-links {
+	display: flex;
+	align-items: baseline;
+	gap: 100px;
+	margin-top: 63px;
+}
+
+.footer__container-logo-world {
+	display: block;
+	margin-bottom: 0;
+	margin-top: 54px;
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 55px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 130%;
+}
+
+.footer__container-logo-stars {
+	display: block;
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+
+	color: #FFF;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+
+	position: relative;
+	top: -16px;
+	left: 15px;
+}
+
+.footer__container-menu1 {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding-left: 0;
+}
+
+.footer__container-menu2 {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.footer__container-menu3 {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.footer__container-links-link {
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+
+	color: #FFF;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	font-family: Montserrat;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.footer__container-links-link1 {
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.footer__container-social {
+	display: flex;
+	justify-content: end;
+	padding-bottom: 104px;
+	padding-right: 110px;
+
+}
+
+.footer__container-social-container {
+	display: flex;
+	gap: 15px;
+}
+
+.footer__container-links-link--Contacts{
+	position: relative;
+	top: 25px;
+	cursor: pointer;
+}
+
+
+.footermobil{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        display: none;
+    }
+    
+    .footermobil {
+        width: 100%;
+        /* display: block; */
+        background-color: #000;
+        display: grid;
+        justify-items: center;
+    }
+    
+    .footermobil__container-logo {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        width: 243px;
+    
+        align-content:flex-start;
+        /* margin: 0 auto; */
+    
+    }
+    
+    .footer__container-logo-world {
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 140%;
+        width: 244px;
+    }
+    
+    .footer__container-logo-stars {
+        display: block;
+        font-size: 20px;
+        width: 239px;
+    }
+    
+    
+    .footermobil__container-wrapper {
+        display: flex;
+    }
+    
+    .footermobil__container-left {
+        display: flex;
+        flex-direction: column;
+        width: 120px;
+    }
+    
+    .footer__container-menu3 {
+        padding-left: 0;
+    }
+    
+    .footermobil__container-social-image {
+        display: block;
+        width: 30px;
+        height: 32px;
+    }
+    
+    /* .footermobil__container-right {} */
+    
+    .footer__container-menu1 {
+        padding: 0;
+    }
+    
+    .footer__container-links-link1 {
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 700;
+    
+    }
+    
+    .footer__container-links-link {
+        font-size: 14px;
+        font-family: Montserrat;
+    }
+    
+    .footermobil__container-social {
+        padding-bottom: 30px;
+    }
+    
+    .footermobil__container-social ul {
+        padding-left: 0;
+    }
+    
+    .footer__container-links-link {
+        font-size: 14px;
+        font-family: Montserrat;
+        width: 168px;
+        display: block;
+    }
+    
+    .footermobil__container-social-container {
+        display: flex;
+        gap: 11px;
+        align-items: center;
+    }
+}

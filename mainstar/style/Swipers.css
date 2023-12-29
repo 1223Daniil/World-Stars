@@ -1,0 +1,62 @@
+/* Первый слайдер */
+.slider__wrapper {
+	max-width: 1200px;
+	height: 327px;
+	position: relative;
+}
+
+@media (max-width: 1250px) {
+	.slider__wrapper {
+		width: 500px;
+	}
+
+	.swiper-next{
+		right: -5% !important;
+	}
+	
+	.swiper-prev{
+		left: -5% !important;
+	}
+}
+
+@media (max-width: 800px) {
+	.slider__wrapper {
+		width: 215px;
+	}
+	.swiper-next{
+		right: -10% !important;
+	}
+	
+	.swiper-prev{
+		left: -10% !important;
+	}
+	.swiper-slide-active {
+		display: grid !important;
+		justify-items: center !important;
+	}
+}
+
+
+
+
+.indexSliderProduct {
+	text-align: center;
+}
+
+.swiper-slide-active {
+	/* display: grid !important;
+	justify-items: center !important; */
+}
+
+
+.swiper-next{
+	position: absolute;
+	top: 45%;
+	right: -2%;
+}
+
+.swiper-prev{
+	position: absolute;
+	top: 45%;
+	left: -2%;
+}

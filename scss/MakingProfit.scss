@@ -51,7 +51,7 @@
 .SortButton {
   h1 {
     font-family: Montserrat;
-    font-size: 55px;
+    font-size: 3.438rem;
     font-weight: 600;
     line-height: 130%; /* 71.5px */
     text-align: center;
@@ -60,10 +60,10 @@
       font-size: 3rem;
     }
     @include middle-screen {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
     @include small-screen {
-      font-size: 0.875rem;
+      font-size: 1.3rem;
     }
   }
   &_button_country {
@@ -85,7 +85,7 @@
     font-family: Montserrat;
     font-size: 1.25rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
     display: flex;
     align-items: center;
@@ -128,9 +128,18 @@
   h2 {
     color: #000;
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 400;
     line-height: 98.5%; /* 49.25px */
+    @include middle-screen {
+      font-size: 2.7rem;
+    }
+    @include small-screen {
+      font-size: 2rem;
+    }
+    @include very-small-screen {
+      font-size: 1.5rem;
+    }
   }
   &_content {
     border-radius: 20px;
@@ -141,25 +150,42 @@
     justify-content: center;
     margin-bottom: 177px;
     align-items: center;
+    @include middle-screen {
+      background: none;
+    }
     &_categories {
       display: flex;
       gap: 11px;
       flex-wrap: wrap;
       padding: 15px 0px;
       box-shadow: 0px 20px 30px 0px rgba(71, 169, 255, 0.3);
+      @include middle-screen {
+        background-color: #fff;
+        border-radius: 20px;
+        justify-content: center;
+      }
       &_item {
         border: 1px solid #00a8fc;
         display: flex;
         flex-direction: column;
         border-radius: 15px;
-        padding: 10px 5px;
         max-width: 185px;
+        max-height: 174px;
+        padding: 10px 5px;
         justify-content: center;
+        @include small-screen {
+          width: 145px;
+          max-height: 134px;
+        }
         &_title {
           text-align: center;
           font-size: 15px;
           font-weight: 700;
           line-height: 20px;
+
+          @include small-screen {
+            font-size: 10px;
+          }
         }
         div {
           display: flex;
@@ -174,6 +200,9 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            @include small-screen {
+              font-size: 10px;
+            }
           }
         }
       }
@@ -183,6 +212,9 @@
       gap: 15px;
       margin: 45px 0px 30px 0px;
       justify-content: center;
+      @include middle-screen {
+        flex-wrap: wrap;
+      }
       span {
         font-size: 36px;
         font-weight: 400;
@@ -197,6 +229,10 @@
         font-weight: 400;
         border-radius: 9.676px;
         padding: 12px 22px;
+        @include small-screen {
+          padding: 12px 22px;
+          font-size: 15px;
+        }
       }
     }
     &_history {
@@ -215,6 +251,11 @@
           grid-template-columns: 1fr 1fr;
           gap: 50px;
           max-width: 538px;
+          @include middle-screen {
+            gap: 10px;
+            justify-content: space-between;
+            border: 0px solid #ff2c15;
+          }
           &_item {
             display: flex;
             flex-direction: column;
@@ -224,6 +265,9 @@
               font-size: 20px;
               font-weight: 400;
               line-height: 22px;
+              @include middle-screen {
+                font-size: 15px;
+              }
             }
           }
         }

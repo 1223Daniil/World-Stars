@@ -1,0 +1,126 @@
+.club {
+    margin-bottom: 62px;
+}
+
+.choice__image-left {
+    position: relative;
+    top: 30px;
+    left: 53px;
+    z-index: 1;
+}
+
+.choice__image-star0 {
+    position: relative;
+    left: 355px;
+}
+
+.choice__image-star1 {
+    position: relative;
+    bottom: 159px;
+    right: -96px;
+
+}
+
+.choice__image-star2 {
+    position: relative;
+    bottom: 261px;
+    left: 170px;
+}
+
+.choice__image-star3 {
+    position: relative;
+    bottom: 261px;
+    left: 226px;
+}
+
+.choice__image-star4 {
+    position: relative;
+    bottom: 240px;
+    left: -58px;
+    z-index: 1;
+}
+
+.choice__image-starbig0 {
+    position: relative;
+    bottom: 220px;
+    right: 50px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.choice__image-starbig1 {
+    position: relative;
+    bottom: 352px;
+    right: 120px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.choice__image-starbig2 {
+    position: relative;
+    bottom: 290px;
+    right: -96px;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+.choice__image-starbig3 {
+    position: relative;
+    right: 271px;
+    bottom: 94px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.club__container {
+    display: flex;
+}
+
+.club__container-left {
+
+}
+
+.club__container-title {
+    color: #000;
+        font-family: Montserrat;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        margin-bottom: 38px;
+        margin-top: 0;
+}
+
+.club__container-description {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    width: 434px;
+}
+
+.club__container-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.club__container-name span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    text-align: center;
+    display: block;
+    margin-bottom: 26px;
+    width: 360px;
+}
+
+.club__container-image {
+
+}

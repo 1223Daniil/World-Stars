@@ -1,0 +1,516 @@
+.friends {
+    /* margin-top: -84px; */
+    /* margin-bottom: 40px; */
+}
+
+.friendsmobil__grid {
+    display: none;
+}
+
+.friends__carts-page {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* margin-bottom: 90px; */
+}
+
+.friends__carts-page-span {
+    position: relative;
+    display: block;
+    bottom: 40px;
+    left: 12px;
+}
+
+.friends__carts-page-desc {
+    display: block;
+    margin-top: 7px;
+}
+
+.friends__star1 {
+    position: relative;
+    z-index: -1;
+    left: 250px;
+    top: 104px;
+    opacity: 0.6;
+}
+
+.friends__star2 {
+    position: relative;
+    left: 494px;
+    top: 150px;
+    opacity: 0.6;
+}
+
+.friends__star3 {
+    position: relative;
+    top: 528px;
+    left: -230px;
+    opacity: 0.6;
+}
+
+.friends__title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 21px;
+}
+
+
+.friends__grid {
+    display: grid;
+    grid-template-columns: repeat(5, min-content);
+    gap: 25px;
+    justify-content: center;
+    /* padding-left: 10px; */
+    margin-bottom: 24px;
+}
+
+.friends__grid-item {
+    display: flex;
+    flex-direction: column;
+    width: 214px;
+    height: 304px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.friends__grid-item-last {
+    display: flex;
+    flex-direction: column;
+    width: 214px;
+    height: 304px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.friends__grid-basket {
+    width: 23px;
+    height: 24px;
+    padding-left: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.friends__grid-name {
+    display: block;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 10px;
+}
+
+.friends__grid-image {
+    margin-left: 17px;
+    width: 181px;
+    height: 176px;
+    cursor: pointer;
+    margin-bottom: 13px;
+}
+
+.friends__grid-image-last {
+    margin-left: 17px;
+    width: 181px;
+    height: 146px;
+    cursor: pointer;
+    margin-bottom: 13px;
+}
+
+.friends__grid-image:hover {
+    border: 2px solid #FF2C15;
+    /* border: 22px solid #fb15ff; */
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+    width: 177px;
+    height: 172px;
+    border-radius: 10px;
+}
+
+.friends__grid-image-selected{
+    border: 2px solid #FF2C15;
+    /* border: 22px solid #fb15ff; */
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+    width: 177px;
+    height: 172px;
+    border-radius: 10px;
+}
+
+
+
+
+.friends__grid-image-last:hover {
+    border: 2px solid #FF2C15;
+    width: 179px;
+    height: 144px;
+    border-radius: 10px;
+}
+
+.friends__grid-numbers {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.friends__grid-btn {
+    cursor: pointer;
+    border-radius: 0px 0px 15px 15px;
+    background: linear-gradient(253deg, #F00 -14.77%, #FFD466 103.16%);
+    border: none;
+    height: 60px;
+}
+
+.friends__pagination {
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.friends__pagination-left {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+}
+
+.friends__pagination-right {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 2px solid var(--, #FF2C15);
+        background: #FFF;
+}
+
+/* .friends__fon {
+    position: relative;
+    width: 1600px;
+    height: 3600px;
+    z-index: -1;
+    bottom: 2378px;
+    right: 82px;
+} */
+
+@media (max-width: 360px) {
+    .friends {
+        display: none;
+    }
+
+    .friendsmobil__grid {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .friendsmobile__title {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5% 
+    }
+
+    .friendsmobil__carts-page {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        /* margin-bottom: 90px; */
+    }
+    
+    .friendsmobil__carts-page-span {
+        position: relative;
+        display: block;
+        bottom: 40px;
+        left: 12px;
+    }
+    
+    .friends__carts-page-desc {
+        display: block;
+        margin-top: 7px;
+    }
+
+    .friendsmobil__grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+    
+    .friendsmobil__grid-item {
+        width: 159px;
+        height: 224px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 15px;
+        background: #FFF;
+    }
+    
+    .friendsmobil__grid-basket {
+        width: 15px;
+        height: 14px;
+        padding-left: 15px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+    
+    .friendsmobil__grid-name {
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    
+    .friendsmobil__grid-image {
+        margin-left: 15px;
+        width: 129px;
+        height: 113px;
+        cursor: pointer;
+        margin-bottom: 13px;
+    }
+    
+    .friendsmobil__grid-image:hover {
+        border: 6px solid #FF2C15;
+        background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+        width: 197px;
+        height: 147px;
+        border-radius: 15px;
+    }
+    
+    .friendsmobil__grid-numbers {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    
+    .friendsmobil__grid-btn {
+        cursor: pointer;
+        border-radius: 0px 0px 15px 15px;
+        background: linear-gradient(253deg, #F00 -14.77%, #FFD466 103.16%);
+        border: none;
+        height: 60px;
+    }
+
+    .friendsmobil__pagination {
+        display: flex;
+        gap: 11px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .friendsmobil__pagination-left {
+        width: 26px;
+        height: 27px;
+        border-radius: 25px;
+        cursor: pointer;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    }
+    
+    .friendsmobil__pagination-right {
+        width: 24px;
+        height: 25px;
+        border-radius: 25px;
+        border: 2px solid #FF2C15;
+        background: #FFF;
+        cursor: pointer;
+    }
+
+    /* .friendsmobil__grid-arrow {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .friendsmobil__grid-arrow-left {
+        cursor: pointer;
+    }
+
+    .friendsmobil__grid-arrow-right {
+        cursor: pointer;
+    } */
+
+}
+
+
+
+
+
+
+
+
+
+/* 
+@media (max-width: 360px) {
+    .friends {
+        margin-top: -170px;
+        margin-bottom: 30px;
+    }
+    
+    .friends__star1 {
+        display: none;
+    }
+    
+    .friends__star2 {
+        display: none;
+    }
+    
+    .friends__star3 {
+        display: none;
+    }
+
+    .friends__pagination {
+        display: none;
+    }
+
+    .friends__title {
+        display: none;
+    }
+    
+    .friendsmobile__title {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5% 
+}
+
+
+    .friends__grid {
+        display: none;
+    }
+
+    .friendsmobil__grid {
+        display: block;
+        margin-top: 920px;
+    }
+    
+    
+    .friendsmobil__grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+    
+    .friendsmobil__grid-item {
+        width: 159px;
+        height: 224px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 15px;
+        background: #FFF;
+    }
+    
+    .friendsmobil__grid-basket {
+        width: 15px;
+        height: 14px;
+        padding-left: 15px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+    
+    .friendsmobil__grid-name {
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    
+    .friendsmobil__grid-image {
+        margin-left: 15px;
+        width: 129px;
+        height: 113px;
+        cursor: pointer;
+        margin-bottom: 13px;
+    }
+    
+    .friendsmobil__grid-image:hover {
+        border: 6px solid #FF2C15;
+        background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+        width: 197px;
+        height: 147px;
+        border-radius: 15px;
+    }
+    
+    .friendsmobil__grid-numbers {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    
+    .friendsmobil__grid-btn {
+        cursor: pointer;
+        border-radius: 0px 0px 15px 15px;
+        background: linear-gradient(253deg, #F00 -14.77%, #FFD466 103.16%);
+        border: none;
+        height: 60px;
+    }
+    
+    .friendsmobil__pagination {
+        display: flex;
+        gap: 11px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .friendsmobil__pagination-left {
+        width: 26px;
+        height: 27px;
+        border-radius: 25px;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    }
+    
+    .friendsmobil__pagination-right {
+        width: 24px;
+        height: 25px;
+        border-radius: 25px;
+        border: 2px solid #FF2C15;
+        background: #FFF;
+    }
+} */

@@ -1,0 +1,118 @@
+/* header */
+.header {
+	width: 100%;
+	height: 190px;
+
+	display: grid;
+	justify-items: center;
+	background-color: black;
+	color: white;
+}
+
+.header__wrapper {
+	width: 1200px;
+	display: grid;
+	grid-template-columns: 250px 1fr 56px;
+	justify-content: space-between;
+}
+
+.logo img {
+	position: relative;
+	top: 23px;
+}
+
+/* Каротчка автора в хедере */
+.author__card {
+	display: grid;
+	/* колокольчик аватарка звезды WS рейтинг */
+	grid-template-columns: 39px 39px 140px 55px 50px;
+	justify-content: end;
+	justify-items: center;
+	align-items: end;
+	position: relative;
+	top: -30px;
+}
+
+.author__card__bell--wrapper {
+	height: 33px;
+	width: 30px;
+	position: relative;
+}
+
+.bell {
+	position: relative;
+	z-index: 2;
+}
+
+.redCircle {
+	position: absolute;
+	z-index: 1;
+}
+
+/* аватар хедер */
+.header__avatar {
+	width: 39px;
+	height: 39px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.avatar-wrapper {
+	position: relative;
+	top: -9px;
+}
+
+.bag {
+	margin-right: 10px;
+}
+
+/* Бургер меню */
+.header__burger__menu {
+	display: inline-block;
+	cursor: pointer;
+	justify-self: center;
+	align-self: end;
+	position: relative;
+	top: -30px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+	height: 5px;
+	width: 42px;
+	background-color: white;
+	margin: 7px 0;
+}
+
+.header__reiting {
+	width: 73px;
+	height: 39px;
+
+	
+	text-align: left;
+	color: var(--, #FFF);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%;
+}
+
+.header__reiting--wrapper {
+	padding-top: 8px;
+}
+
+/* Стрелка назад */
+.arrowback {
+	margin-top: 35px;
+	width: 1200px;
+	justify-content: start;
+}
+
+.arrowback img {
+	cursor: pointer;
+}
+
+

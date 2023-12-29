@@ -1,0 +1,102 @@
+/* Секция Автор и лайки справа */
+.section-author-info {
+	width: 1200px;
+	display: grid;
+	grid-template-columns: 332px 220px;
+	justify-content: space-between;
+}
+
+.section-author-info--container {
+	color: #000;
+	margin-top: 25px;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.author__info__ava__wrapper {
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: 121px 182px;
+	gap: 7px;
+}
+
+.author__info__ava__wrapper img {
+	border-radius: 15px;
+}
+
+.stars-and-news-number {
+	display: grid;
+	align-content: space-around;
+	gap: 10px;
+}
+
+.stars-gap {
+	gap: 10px;
+}
+
+.author__info__stars-wrapper {
+	height: 25px;
+	display: flex;
+}
+
+
+/* лайки */
+.section-author-info__likes {
+	margin-top: 21px;
+	display: grid;
+	/* justify-items: center; */
+	/* justify-content: center; */
+	grid-template-columns: 71px 125px;
+	grid-template-rows: 71px 33px;
+	gap: 20px;
+}
+
+.likes-mini-Avatars {
+	height: 57px;
+	display: flex;
+	position: relative;
+	left: -10px;
+}
+
+.likes-mini-Avatars .two {
+	position: relative;
+	left: -25%;
+}
+
+.likes-mini-Avatars .three {
+	position: relative;
+	left: -50%;
+}
+
+.likes-mini-Avatars .four {
+	position: relative;
+	left: -75%;
+}
+
+.heart__Counter {
+	display: grid;
+	grid-template-columns: 45px 45px;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+
+	/* text */
+	color: #000;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.heart__Counter__redHeart {
+	position: relative;
+	left: -10px;
+}
+.avatar-user-main{
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+

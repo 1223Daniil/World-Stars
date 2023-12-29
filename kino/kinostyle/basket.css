@@ -1,0 +1,242 @@
+.basket {
+    margin-bottom: 85px;
+}
+
+.basketmobil {
+    display: none;
+}
+
+.basket__container {
+    
+}
+
+.basket__container-btn {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 14px;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    width: 213px;
+    height: 62px;
+    margin-bottom: 60px;
+}
+
+.basket__container-up {
+    display: flex;
+    gap: 10px;
+}
+
+.basket__container-up-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+}
+
+.basket__container-up-image {
+}
+
+.basket__container-wrapper {
+    display: flex;
+    gap: 48px;
+}
+
+.basket__container-wrapp {
+   display: flex;
+   flex-direction: column;
+}
+
+.basket__container-wrapp-item {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 383px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.basket__container-wrapp-basket {
+    display: block;
+    width: 25px;
+    height: 28px;
+    position: relative;
+    left: 337px;
+    top: 20px;
+}
+
+.basket__container-wrapp-foto1 {
+    display: block;
+    margin: 0 auto;
+    width: 272px;
+    height: 250px;
+    padding-bottom: 33px;
+}
+
+.basket__container-wrapp-btn {
+    border-top: 1px solid #000;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 65px;
+}
+
+.basket__container-wrapp-btn:hover {
+    color: #FFF;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    border-radius: 0 0 10px 10px;
+
+}
+
+.basket__container-wrapp-name {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.basket__container-wrapp-price {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.basket__container-wrapp-foto2 {
+    margin: 0 auto;
+    width: 112px;
+    height: 250px;
+    padding-bottom: 34px;
+}   
+
+.basket__container-wrapp-foto3 {
+    margin: 0 auto;
+    width: 235px;
+    height: 250px;
+    padding-bottom: 35px;
+}
+
+@media (max-width: 360px) {
+    .basket {
+        display: none;
+    }
+
+    .basketmobil {
+        display: block;
+        margin-bottom: 75px;
+    }
+
+    .basketmobil__title {
+        color: #000;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    .basketmobil__container-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    
+    .basketmobil__container-wrapp {
+       display: flex;
+       flex-direction: column;
+    }
+    
+    .basketmobil__container-wrapp-item {
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: auto;
+        height: 268px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .basketmobil__container-wrapp-basket {
+        display: block;
+        width: 25px;
+        height: 28px;
+        position: relative;
+        left: 287px;
+        top: 20px;
+    }
+    
+    .basketmobil__container-wrapp-foto1 {
+        display: block;
+        margin: 0 auto;
+        width: 196px;
+        height: 177px;
+        padding-bottom: 13px;
+    }
+    
+    .basketmobil__container-wrapp-btn {
+        border-top: 1px solid #000;
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        height: 65px;
+    }
+    
+    .basketmobil__container-wrapp-btn:hover {
+        color: #FFF;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+        border-radius: 0 0 10px 10px;
+    
+    }
+    
+    .basketmobil__container-wrapp-name {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .basketmobil__container-wrapp-price {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+    
+    .basketmobil__container-wrapp-foto2 {
+        margin: 0 auto;
+        width: 110px;
+        height: 184px;
+    }   
+    
+    .basketmobil__container-wrapp-foto3 {
+        margin: 0 auto;
+        width: 180px;
+        height: 165px;
+        padding-bottom: 15px;
+    }
+}

@@ -1,0 +1,33 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url('/sticers/image-stikers/fonsticers.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   box-sizing: border-box;
+   
+}
+
+.container {
+   max-width: 625px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.container-form {
+   max-width: 474px;
+   margin: 0 auto;
+}
+
+/* @media (max-width: 360px) {
+   .container {
+      max-width: 328px;
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   .fon__image {
+      display: none;
+   }
+ } */

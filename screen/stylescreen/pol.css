@@ -1,0 +1,246 @@
+.pol {
+
+}
+
+.pol__arrow {
+    margin-bottom: 43px;
+}
+
+.pol__container {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 63px;
+}
+
+.pol__container-btn {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 5px;
+    border: 2.5px solid #FF2C15;
+    background: #FFF;
+    max-width: 246px;
+    width: 100%;
+    height: 61px;
+}
+
+.pol__container-btn:hover {
+    color: #FFF;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+}
+
+.pol__search input {
+    border-radius: 15px;
+    background: #FFF;
+    max-width: 265px;
+    width: 100%;
+    height: 44px;
+    border: none;
+    margin-bottom: 54px;
+}
+
+.pol__search img {
+    position: relative;
+    left: 35px;
+    top: 5px;
+}
+
+.form__container-up-text {
+    text-align: center;
+}
+
+.pol__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    margin-bottom: 24px;
+justify-content: space-between;
+}
+
+.pol__wrapper-item {
+    /* max-width: 279px;
+    width: 100%; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 27px;
+}
+
+.pol__wrapper-item-kros {
+    width: 279px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.pol__wrapper-item-kros:hover {
+    width: 275px;
+    height: 234px;
+    border: 2px solid #FF2C15;
+}
+
+.pol__wrapper-item-kros img {
+    margin: 0 auto;
+    display: block;
+}
+
+.pol__wrapper-item-desc {
+    display: flex;
+}
+
+.pol__wrapper-item-title {
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: capitalize;
+    display: block;
+    margin-top: 5px;
+}
+
+.pol__wrapper-item-ellipsis {
+    display: flex;
+    gap: 3px;
+    margin-top: 8px;
+}
+
+.pol__wrapper-item-ellips1 {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #06F;
+}
+
+.pol__wrapper-item-ellips2 {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #F00;
+}
+
+.pol__wrapper-item-ellips3 {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+}
+
+.pol__wrapper-item-price {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    display: block;
+}
+
+
+.pol__page {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* margin-bottom: 90px; */
+}
+
+.pol__page-span {
+    position: relative;
+    display: block;
+    bottom: 40px;
+    left: 12px;
+}
+
+.pol__page-desc {
+    display: block;
+    margin-top: 7px;
+}
+
+
+.pol__page-pagination {
+    display: flex;
+    gap: 15px;
+    width: 60px;
+    height: 40px;
+    border-radius: 5.882px;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    cursor: pointer;
+}
+
+.pol__page-pagination img {
+    width: 7px;
+    height: 7px;
+    padding-top: 17px;
+    padding-left: 9px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 360px) {
+    .pol__page {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        /* margin-bottom: 90px; */
+    }
+    
+    .pol__page-span {
+        position: relative;
+        display: block;
+        bottom: 40px;
+        left: 12px;
+    }
+    
+    .pol__page-desc {
+        display: block;
+        margin-top: 7px;
+    }
+    
+    .pol__page-pagination {
+        display: flex;
+        gap: 15px;
+        width: 60px;
+        height: 40px;
+        border-radius: 5.882px;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+        cursor: pointer;
+    }
+    
+    .pol__page-pagination img {
+        width: 7px;
+        height: 7px;
+        padding-top: 17px;
+        padding-left: 9px;
+        cursor: pointer;
+    }
+}

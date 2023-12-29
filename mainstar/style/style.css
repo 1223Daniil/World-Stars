@@ -1,0 +1,44 @@
+body {
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(180deg, #FDDFA1 0%, #FFB959 55.21%, #FF997E 100%);
+}
+
+.grid {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-items: center;
+   /* gap: 0; */
+   /* justify-content: center; */
+}
+
+.wallpaper {
+   background-image: url(../wallpaper/compresserdWall.jpg);
+   background-size: cover;
+   background-size: auto auto;
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-position: top -2px center;
+}
+
+
+
+
+
+
+
+/* ссылки */
+a.text:active, 
+a.text:hover,  
+a.text {
+  text-decoration: none;
+  color: inherit;
+}
+a:active, 
+a:hover,  
+a {
+  text-decoration: none;
+  color: inherit;
+}

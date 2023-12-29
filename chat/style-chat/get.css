@@ -1,0 +1,136 @@
+.get {
+    margin-bottom: 80px;
+}
+
+.get__wrapper {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 24px 0px rgba(178, 178, 178, 0.25);
+}
+
+.get__title {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    padding-top: 33px;
+    margin-bottom: 15px;
+}
+
+.get__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.get__container-item1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get__container-item1-img {
+    margin-bottom: 15px;
+}
+
+.get__container-item1-span {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+.get__container-item1-btn {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 18px 25px;
+    cursor: pointer;
+
+}
+.get__container__Confirm{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 18px 25px;
+    cursor: pointer;
+}
+
+.get__container-item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 74px;
+    padding-bottom: 54px;
+}
+
+.get__container-item2-img {
+    margin-bottom: 55px;
+}
+
+.get__container-item2-btn {
+    cursor: pointer;
+}
+
+.get__container-item2-span {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    width: 332px;
+    height: 60px;
+}
+
+.get__container-item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get__container-item3-img {
+    margin-bottom: 15px;
+}
+
+.get__container-item3-span {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+.get__container__Confirm.active{
+    border-radius: 10px;
+    background: linear-gradient(253deg, #F00 -14.77%, #FFD466 103.16%);
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 18px 25px;
+    cursor: pointer;
+    border: none;
+}

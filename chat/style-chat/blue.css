@@ -1,0 +1,52 @@
+.blue {
+    background: linear-gradient(180deg, #11C4FF 0%, #2D4EF5 100%);
+    margin-bottom: 50px;
+}
+
+.blue__container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.blue__container-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    width: 692px;
+}
+
+.blue__container-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.blue__container-tony {
+    display: block;
+    width: 186px;
+    height: 186px;
+}
+
+.blue__container-heart {
+    display: block;
+    width: 133px;
+    height: 133px;
+    padding-top: 120px;
+}
+
+.blue__container-content-btn {
+    border-radius: 10px;
+    border: 2px solid #FF2C15;
+    background: #FFF;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 263px;
+    height: 58px;
+}

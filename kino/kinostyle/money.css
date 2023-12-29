@@ -1,0 +1,87 @@
+.money {
+    margin-bottom: 68px;
+}
+
+.moneymobil {
+    display: none;
+}
+
+.money__container {
+    border-radius: 20px;
+    background: linear-gradient(91deg, #11C4FF 1.09%, #2D4EF5 102.52%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1198px;
+    margin-left: 25px;
+}
+
+.money__container-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    max-width: 478px;
+    width: 100%;
+}
+
+.money__container-ws {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    border: 1.5px solid #FF2C15;
+    background: #FFF;
+    padding: 8px 18px;
+}
+
+@media (max-width: 360px) {
+    .money {
+        display: none;
+    }
+
+    .moneymobil {
+        display: block;
+        background: linear-gradient(91deg, #11C4FF 1.09%, #2D4EF5 102.52%);
+    }
+
+    .moneymobil__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .moneymobil__container img {
+        position: relative;
+        left: 16px;
+    }
+
+    .moneymobil__container-title {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+    }
+
+    .moneymobil__container-ws {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5%;
+        border: 1.5px solid #FF2C15;
+        background: #FFF;
+        width: 93px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

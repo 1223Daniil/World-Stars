@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(180deg, #FDDFA1 0%, #FFB959 55.21%, #FF997E 100%); */
+    background-image: url('/image-home/fonoffer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ .container {
+    max-width: 1190px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+ }
+
+ @media (max-width: 360px) {
+   .container {
+      max-width: 328px;
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+ }

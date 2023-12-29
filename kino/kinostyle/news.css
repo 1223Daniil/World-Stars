@@ -1,0 +1,198 @@
+.news {
+    background-color: #fff;
+    margin-bottom: 24px;
+}
+
+.newsmobil {
+    display: none;
+}
+
+.news__container {
+    display: flex;
+}
+
+.news__title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    width: 829px;
+}
+
+.news__image {
+    position: relative;
+    top: 149px;
+}
+
+.news__button {
+    display: flex;
+    justify-content: end;
+    gap: 72px;
+    padding-bottom: 82px;
+}
+
+.news__button-left {
+    display: inline-flex;
+    padding: 19px 43px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 14px;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.news__button-right {
+    border-radius: 14px;
+    border: 2.5px solid #FF2C15;
+    background: #FFF;
+    display: inline-flex;
+    padding: 19px 43px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--, #000);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+/* @media (max-width: 360px) {
+    .news__container {
+        display: none;
+    }
+    
+    .news__title {
+        color: #000;
+        font-size: 14px;
+    }
+    
+    .news__image {
+        width: 150px;
+        height: 106px;
+        top: 50px;
+    }
+    
+    .news__button {
+        flex-direction: column;
+        gap: 25px;
+        padding-bottom: 40px;
+        margin-left: 50px;
+    }
+    
+    .news__button-left {
+        display: inline-flex;
+        padding: 19px 43px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 14px;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+        border: none;
+        color: #FFF;
+        font-size: 16px;
+        width: 173px;
+        height: 39px;
+        font-size: 16px;
+        padding: 9px;
+    }
+    
+    .news__button-right {
+        border-radius: 14px;
+        border: 2.5px solid #FF2C15;
+        background: #FFF;
+        display: inline-flex;
+        padding: 19px 23px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--, #000);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+        width: 173px;
+        height: 39px;
+        font-size: 16px;
+        padding: 9px;
+    }
+} */
+
+@media (max-width: 360px) {
+    .news {
+        display: none;
+    }
+
+    .newsmobil {
+        display: block;
+        background-color: #fff;
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+    
+    .newsmobil__container-title {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        width: 216px;
+        margin-bottom: 25px;
+        margin-left: 110px;
+    }
+
+    .newsmobil__container-wrapper {
+        display: flex;
+        padding-bottom: 40px;
+    }
+
+    .newsmobil__container-wrapper-image {
+
+    }
+
+    .newsmobil__button {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .newsmobil__button-left {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        border-radius: 14px;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+        padding: 9px 12px;
+    }
+
+    .newsmobil__button-right {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 14px;
+        border: 2.5px solid #FF2C15;
+        background: #FFF;
+        padding: 9px 7px;
+    }
+}

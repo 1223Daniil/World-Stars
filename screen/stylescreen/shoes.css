@@ -1,0 +1,170 @@
+.shoes {
+    margin-bottom: 210px;
+}
+
+.shoes__title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+}
+
+.shoes__container {
+    display: flex;
+    gap: 10px;
+}
+
+.shoes__container-image {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.shoes__container-img {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 328px;
+    height: 272px;
+}
+
+.choes__container-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shoes__container-center-ellipsis {
+    display: flex;
+    gap: 5px;
+}
+
+.shoes__container-center-ellips1 {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #06F;
+}
+
+.shoes__container-center-ellips2 {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: #F00;
+}
+
+.shoes__container-center-ellips3 {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+}
+
+.choes__container-center-btn {
+    color: #FFF;
+    max-width: 238px;
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    border-radius: 14px;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    margin-top: 48px;
+}
+
+.choes__container-price {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+}
+
+.choes__container-size {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 74px;
+}
+
+.choes__container-country {
+    display: flex;
+    flex-direction: column;
+}
+
+.choes__container-country span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    text-align: center;
+    display: block;
+}
+
+.choes__container-size-size {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+}
+
+.choes__container-size-size:hover {
+    border: 1px solid #FF2C15;
+    width: 42px;
+    height: 69px;
+}
+
+.choes__container-size-size span {
+    display: block;
+}
+
+.choes__container-line {
+    height: 2px;
+    background: #000;
+    width: 100%;
+    margin-bottom: 68px;
+}
+
+.choes__container-about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.choes__container-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    display: block;
+}
+
+.choes__container-about-description {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.choes__container-about-description span {
+    display: block;
+    margin-bottom: 20px;
+}

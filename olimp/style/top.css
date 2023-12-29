@@ -1,0 +1,974 @@
+.top {
+    margin-bottom: 122px;
+}
+
+.topmobil {
+    display: none;
+}
+
+.topmobil__blue {
+    display: none;
+}
+
+.linesmobil-wrapper {
+    display: none;
+}
+
+.topmobil__procent-title {
+    display: none;
+}
+
+.performancemobil__summ {
+    display: none;
+}
+
+.monthmobil {
+    display: none;
+}
+
+.top__title {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 52px;
+}
+
+.top__container {
+    border-radius: 10px;
+    background: #FFF;   
+    box-shadow: 0px 4px 24px 0px rgba(178, 178, 178, 0.25);
+    height: 1619px;
+}
+
+.top__container-title {
+    margin-left: 76px;
+    margin-bottom: 43px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    max-width: 1006px;
+    width: 100%;
+    padding-top: 66px;
+}
+
+.top__container-celi {
+    margin-left: 76px;
+}
+
+
+
+
+.ChekBoxTable {
+	/* width: 334px;
+	height: 262px; */
+	/* flex-shrink: 0; */
+	/* border-radius: 10px;
+	border: 1px solid #FF2C15; */
+	/* background: #FFF; */
+
+	/* display: grid;
+	grid-template-columns: 226px 30px;
+	gap: 16px;
+	grid-auto-rows: 40px;
+	justify-content: center;
+	justify-items: center; */
+
+	/* overflow-y: scroll; */
+    display: flex;
+    flex-direction: column;
+	padding-top: 10px;
+    gap: 26px;
+	margin-bottom: 46px;
+}
+
+.ChekBoxTable-item-container {
+	/* width: 226px;
+	height: 30px; */
+	/* border-bottom: 1px solid black; */
+	/* display: grid;
+	justify-content: start;
+	align-content: center; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ChekBoxTable-checkbox-container {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+.chekbox__table-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.chekbox__table-text span {
+    display: block;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.ChekBoxTable-text {
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0px;
+	/* text-align: left; */
+}
+
+.custon__label-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #F00;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 24px 0px rgba(178, 178, 178, 0.25);
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    width: 130px;
+    height: 60px;
+}
+
+.custom-label {
+	position: relative;
+	width: 42px;
+	height: 39px;
+    /* border-radius: 50%; */
+	display: grid;
+	place-items: center;
+}
+
+.custom-input,
+.custom-checkbox {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border: 0.5px solid black;
+    border-radius: 50%;
+}
+
+.custom-input {
+	display: none;
+}
+
+.custom-checkbox {
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
+
+.custom-checkbox::after {
+	position: absolute;
+	content: url('../image-home/vendettawhite.svg');
+	opacity: 0;
+	/* анимация появления */
+	transform: scale(0,0);
+	transition: transform 0.25s, opacity 0.5s;
+
+	width: 42px;
+	height: 39px;
+    border-radius: 50%;
+	background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.custom-input:checked~.custom-checkbox::after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Scroll */
+/* .ChekBoxTable::-webkit-scrollbar {
+	background: transparent;
+	width: 26px;  9+8+9 пикселей
+}
+
+.ChekBoxTable::-webkit-scrollbar-thumb {
+	background-color: #D9D9D9;
+	border-radius: 20px;
+	height: 84px;
+	Костыль на отступ справа  9 + 8 + 9 пикселей
+	border: 9px solid white;
+}
+
+.ChekBoxTable::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}
+
+.ChekBoxTable::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}
+
+.gradient-wrapper{
+	width: 335px;
+	height: 263px;
+	background: linear-gradient(117.65deg, #FF2C15 -5.25%, #FA931A 98.66%);
+	border-radius: 10px;
+} */
+
+.top__procent {
+    margin-left: 35px;
+    margin-bottom: 45px;
+}
+
+.top__procent-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.lines-wrapper{
+	/* width: 1200px; */
+	width: 1195px;
+}
+
+.lines {
+	width: 1088px;
+	height: 10px;
+	border-radius: 4px;
+	border: 1px solid black;
+}
+
+.color-lines {
+	width: 255px;
+	height: 10px;
+	flex-shrink: 0;
+	border-radius: 12px;
+	background: linear-gradient(253deg, #F00 -14.77%, #FFB800 103.16%), #D9D9D9;
+}
+
+/*  */
+.lines-lable-top {
+	width: 1191px;
+	position: relative;
+	left: -40px;
+	display: grid;
+	grid-template-columns: 20px repeat(10, auto);
+	grid-template-columns: repeat(11, auto);
+	justify-items: center;
+}
+
+.lines-lable-bottom {
+	width: 1191px;
+	position: relative;
+	left: -40px;
+	display: grid;
+	grid-template-columns: 20px repeat(10, auto);
+	grid-template-columns: repeat(11, auto);
+	justify-items: center;
+}
+
+.lines-text {
+	color: #000;
+	/* Мелкий доп шрифт */
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+
+
+
+
+
+
+.performance {
+
+}
+
+.performance__title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    margin-left: 68px;
+    margin-bottom: 25px;
+}
+
+.performance__summ {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+
+.performance__summ-up {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.performance__summ-up input {
+    width: 130px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.performance__summ-up span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+}
+
+.performance__summ-up-btn {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 14px;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 207px;
+    height: 62px;
+}
+
+.performance__summ-up-btn2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 14px;
+    border-radius: 14px;
+    border: 2.5px solid #FF2C15;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 207px;
+    height: 62px;
+}
+
+.performance__summ-down {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.performance__summ-down input {
+    width: 130px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.performance__summ-down span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+}
+
+
+.month {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.month-wrapper-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.month-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.month-select {
+	width: 190.684px;
+	height: 60px;
+	border-radius: 10px;
+	border: 1px solid #000;
+	flex-shrink: 0;
+	padding: 20px 0px 16px 22px;
+	color: #000;
+
+	/* Мелкий доп шрифт */
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	position: relative;
+
+	background: url('../image-home/down-arrow-select.svg') no-repeat right #ffffff;
+	appearance: none;
+	-moz-appearance: none;
+	/* Firefox */
+	-webkit-appearance: none;
+	/* Safari and Chrome */
+	background-position-x: 148px;
+}
+
+.month-select-text {
+	color: #000;
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Подзаголвок */
+	font-family: Montserrat;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 98.5%;
+	/* 35.46px */
+    cursor: pointer;
+}
+
+.month-select-text:hover {
+	color: red;
+}
+
+.month-select-text:checked {
+	color: red;
+}
+
+.month-days {
+	display: flex;
+	gap: 10px;
+}
+
+
+.top__blue {
+    display: flex;
+    align-items: center;
+    height: 156px;
+    border-radius: 20px;
+    background: linear-gradient(91deg, #11C4FF 1.09%, #2D4EF5 102.52%);
+    margin-bottom: 35px;
+}
+
+.top__blue-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    display: block;
+    margin-left: 78px;
+}
+
+.top__red {
+    border-radius: 10px;
+    background: #FF6060;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top__red-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    display: block;
+}
+
+@media (max-width: 360px) {
+    /* .top {
+        display: none;
+    } */
+
+    .top {
+        margin-bottom: 27px;
+    }
+
+    .top__procent {
+        display: none;
+    }
+
+    .top__blue {
+        display: none;
+    }
+
+    .performance {
+        /* display: none; */
+    }
+
+    .top__title {
+        font-size: 14px;
+        width: 278px;
+        margin: 0 auto;
+        margin-bottom: 18px;
+    }
+
+    .top__container {
+        height: 1450px;
+    }
+
+    .top__container-title {
+        font-size: 14px;
+        padding-top: 23px;
+        width: 260px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    .top__container-celi {
+        margin: 0;
+    }
+
+    .topmobil {
+        display: block;
+    }
+
+    .ChekBoxTable {
+        display: none;
+    }
+
+
+    .ChekBoxTable__mobil {
+        gap: 26px;
+        margin-bottom: 21px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    
+    .ChekBoxTable-item-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .ChekBoxTable-checkbox-container {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .chekbox__table-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .chekbox__table-text span {
+        font-size: 14px;
+    }
+    
+    .ChekBoxTable-text {
+        font-size: 14px;
+        display: block;
+        width: 183px;
+    }
+    
+    .custon__label-div {
+        font-size: 14px;
+        width: 90px;
+        height: 49px;
+    }
+    
+    .custom-label1 {
+        width: 22px;
+        height: 20px;
+    }
+
+    .custom-label2 {
+        width: 22px;
+        height: 20px;
+    }
+
+    .custom-label3 {
+        width: 22px;
+        height: 20px;
+    }
+
+    .custom-label4 {
+        width: 22px;
+        height: 20px;
+    }
+
+    .custom-label5 {
+        width: 22px;
+        height: 20px;
+    }
+    
+    .custom-input,
+    .custom-checkbox {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        border: 0.5px solid black;
+        border-radius: 50%;
+    }
+    
+    .custom-input {
+        display: none;
+    }
+    
+    .custom-checkbox {
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+    }
+    
+    .custom-checkbox::after {
+        width: 22px;
+        height: 20px;
+    }
+    
+    .custom-input:checked~.custom-checkbox::after {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .topmobil__procent {
+        margin-bottom: 18px;
+    }
+
+    .topmobil__procent-title {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+
+    .linesmobil-wrapper{
+        display: block;
+        width: 328px;
+    }
+    
+    .linesmobil {
+        width: 328px;
+        height: 10px;
+        border-radius: 4px;
+        border: 1px solid black;
+    }
+    
+    .colormobil-lines {
+        width: 155px;
+        height: 10px;
+        background: linear-gradient(253deg, #F00 -14.77%, #FFB800 103.16%), #D9D9D9;
+    }
+    
+    .linesmobil-lable-top {
+        width: 418px;
+        left: 0;
+        position: relative;
+        display: grid;
+        grid-template-columns: 20px repeat(10, auto);
+        grid-template-columns: repeat(9, auto);
+        justify-items: center;
+    }
+
+    .linesmobil-lable-top span {
+        font-size: 14px;
+    }
+    
+    .linesmobil-lable-bottom {
+        width: 480px;
+        position: relative;
+        left: 0;
+        display: grid;
+        grid-template-columns: 20px repeat(10, auto);
+        grid-template-columns: repeat(11, auto);
+        justify-items: center;
+    }
+
+    .linesmobil-lable-bottom span {
+        font-size: 14px;
+    }
+    
+    .linesmobil-text {
+        font-size: 14px;
+    }
+
+
+
+
+    .performance {
+        display: none;
+    }
+
+    .performancemobil__summ {
+        display: block;
+    }
+    
+    .performancemobil__title {
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .performancemobil__summ {
+        display: flex;
+        flex-direction: column;
+        padding-left: 19px;
+        margin-bottom: 31px;
+    }
+
+    .performancemobil__summ-up {
+        display: flex;
+        gap: 23px;
+        margin-bottom: 36px;
+    }
+
+    .performancemobil__summ-up span {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .performancemobil__summ-up input {
+        border-radius: 10px;
+        border: 2px solid #F00;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 104px;
+        height: 31px;
+        text-align: center;
+    }
+
+    .performancemobil__summ-up-btn {
+        border-radius: 14px;
+        border: 2.5px solid #FF2C15;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 120px;
+        height: 37px;
+    }
+
+    .performancemobil__summ-up-btn:hover {
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    }
+
+    .performancemobil__summ-down {
+        display: flex;
+        gap: 23px;
+        margin-bottom: 16px;
+    }
+
+    .performancemobil__summ-down input {
+        border-radius: 10px;
+        border: 2px solid #F00;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 104px;
+        height: 31px;
+        text-align: center;
+    }
+
+    .performancemobil__summ span {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 19px;
+    }
+
+    .performancemobil__summ-up-btn2 {
+        border-radius: 14px;
+        border: 2.5px solid #FF2C15;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 120px;
+        height: 37px;
+    }
+
+    .performancemobil__summ-up-btn2:hover {
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    }
+
+
+
+
+    .monthmobil {
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    .monthmobil-wrapper-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 29px;
+    }
+    
+    .monthmobil-text {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        margin-bottom: 26px;
+        padding-left: 10px;
+    }
+    
+    .monthmobil-select {
+        width: 190.684px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        flex-shrink: 0;
+        padding: 15px 0px 11px 17px;
+        color: #000;
+    
+        /* Мелкий доп шрифт */
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+    
+        background: url('../image-home/down-arrow-select.svg') no-repeat right #ffffff;
+        appearance: none;
+        -moz-appearance: none;
+        /* Firefox */
+        -webkit-appearance: none;
+        /* Safari and Chrome */
+        background-position-x: 148px;
+    }
+    
+    .monthmobil-select-text {
+        color: #000;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+    
+        /* Подзаголвок */
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5%;
+        /* 35.46px */
+        cursor: pointer;
+    }
+    
+    .monthmobil-select-text:hover {
+        color: red;
+    }
+    
+    .monthmobil-select-text:checked {
+        color: red;
+    }
+    
+    .monthmobil-days {
+        display: flex;
+        gap: 7px;
+        overflow-x: auto;
+    }
+
+
+
+    .topmobil__blue {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background: linear-gradient(91deg, #11C4FF 1.09%, #2D4EF5 102.52%);
+        width: 293px;
+        height: 119px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .topmobil__blue img {
+        display: block;
+        width: 90px;
+        height: 87px;
+    }
+    
+    .topmobil__blue-title {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5%;
+        display: block;
+        width: 150px;
+    }
+
+
+    .top__red {
+        width: 295px;
+        height: 65px;
+        border-radius: 10px;
+        background: #FF6060;
+        margin: 0 auto;
+    }
+    
+    .top__red-title {
+        font-size: 14px;
+        display: block;
+        width: 263px;
+        margin: 0 auto;
+    }
+}

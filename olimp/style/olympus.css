@@ -1,0 +1,279 @@
+.olympus {
+    
+    /* background: linear-gradient(256deg, #F00 -43.56%, #FFD466 103.14%); */
+    background-image: url('/image-home/fonolimp.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /* height: 1351px;
+     */
+}
+
+.olympusmobil__container {
+    display: none;
+}
+
+
+
+/* .olympus__image {
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+}  */
+
+/* .olympus__image-left {
+    position: relative;
+z-index: 2;
+}
+
+.olympus__image-center {
+    position: relative;
+    bottom: 818px;
+    left: 130px;
+}
+
+.olympus__image-right {
+    z-index: 1;
+    position: relative;
+    left: 960px;
+    bottom: 12px;
+} */
+
+.olympus__image-kubok {
+    position: relative;
+    display: block;
+    width: 482px;
+    height: 489px;
+    z-index: 2;
+    left: 960px;
+}
+
+.olympus__container {
+    /* position: relative;
+    bottom: 800px; */
+    display: flex;
+    padding-top: 281px;
+    flex-direction: column;
+}
+
+.olympus__container-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.olympus__container-slider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.olympus__container-down {
+    display: flex;
+    /* position: relative; */
+    justify-content: center;
+    /* bottom: 800px; */
+    gap: 27px;
+    margin-bottom: 112px;
+}
+
+.olympus__container-down-left {
+    border-radius: 15px;
+    background: #FFF;
+    width: 816px;
+    height: 101px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.olympus__container-down-name {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+}
+
+.olympus__container-down-stars {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.olympus__container-down-right {
+    border-radius: 15px;
+    background: #FFF;
+    width: 282px;
+    height: 101px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.olympus__container-down-balance {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    display: block;
+}
+
+.olympus__container-down-numbers {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    display: block;
+}
+
+
+@media (max-width: 360px) {
+    .olympus {
+        margin-top: -20px;
+    }
+
+    .olympus__container {
+        display: none;
+    }
+
+    .olympus__container-down {
+        display: none;
+    }
+
+    .olympusmobil__container {
+        display: block;
+    }
+
+    
+    .olympusmobil__container-title {
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        padding-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    .olympusmobil__container-description {
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        display: block;
+        width: 267px;
+        margin: 0 auto;
+    }
+
+    .olympusmobil__container-wrapper1 {
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        gap: 14px;
+        margin-bottom: 30px;
+    }
+
+    .olympusmobil__container-item {
+
+    }
+
+    .olympusmobil__container-item:first-child {
+        z-index: -1;
+    }
+
+    .olympusmobil__container-item:nth-child(3) {
+        z-index: -1;
+    }
+
+
+    .olympusmobil__container-item-name {
+        color: #000;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .olympusmobil__container-wrapper2 {
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        gap: 14px;
+        margin-bottom: 32px;
+    }
+
+    .olympusmobil__container-down {
+        background-color: #fff;
+        height: 92px;
+        margin-bottom: 38px;
+    }
+
+    .olympusmobil__container-down-left {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+        padding-left: 44px;
+        padding-top: 15px;
+    }
+
+    .olympusmobil__container-down-name {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5%;
+        display: block;
+    }
+
+    .olympusmobil__container-down-stars {
+        display: flex;
+        gap: 4px;
+    }
+
+    .olympusmobil__container-down-stars img {
+        display: block;
+        width: 14px;
+        height: 14px;
+    }
+
+    .olympusmobil__container-down-right {
+        padding-left: 44px;
+    }
+
+    .olympusmobil__container-down-balance {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5%;
+    }
+
+    .olympusmobil__container-down-numbers {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5%;
+    }
+}

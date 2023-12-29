@@ -1,0 +1,544 @@
+.choice {
+    margin-bottom: 50px;
+}
+
+.choice__container {
+    height: 170px;
+}
+
+.chomobil {
+    display: none;
+}
+
+.choicemobil {
+    display: none;
+}
+
+.chomobil__wrapper-country {
+    display: none;
+}
+
+
+.choice__wrapper-hobbies {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 50px;
+}
+
+.choice__wrapper-hobbies-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    display: block;
+    width: 408px;
+}
+
+.choice__wrapper-hobbies-item {
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    width: 152px;
+    height: 55px;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.choice__wrapper-hobbies-item {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    width: auto;
+    /* height: 58px; */
+    padding: 12px 34px;
+    text-align: center;
+    color: #212121;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.choice__wrapper-hobbies-item:hover {
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+    color: #fff;
+}
+
+/* .choice__wrapper-hobbies-item :hover {
+    border: 1px solid #FF2C15;
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+} */
+
+.choice__wrapper-hobbies-item1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    width: 152px;
+    height: 55px;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.choice__wrapper-hobbies-item1 span {
+    display: block;
+}
+
+.choice__wrapper-hobbies-item1:hover {
+    border: 1px solid #FF2C15;
+    border-radius: 5px;
+    color: #FFF;
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+}
+
+.choice__wrapper-country-item1:hover {
+    border: 1px solid #FF2C15;
+    border-radius: 5px;
+    color: #FFF;
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+}
+
+/* .choice__wrapper-hobbies-item-active {
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    width: 152px;
+    height: 55px;
+    cursor: pointer;
+    border: 1px solid #FF2C15;
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+} */
+
+
+
+/* .choice__wrapper-hobbies-item-active span {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+} */
+
+
+
+.choice__wrapper-hobbies-item1 img {
+    width: 11px;
+    height: 12px;
+    padding-top: 20px;
+}
+
+.choice__wrapper-country {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px 26px;
+    width: 1190px;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.choice__wrapper-country-down {
+    display: flex;
+    gap: 26px 26px;
+    width: 1190px;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.choice__wrapper-country-item {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    width: auto;
+    /* height: 58px; */
+    padding: 12px 34px;
+    text-align: center;
+    color: #212121;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.choice__wrapper-country-item-acive {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    width: auto;
+    /* height: 58px; */
+    padding: 12px 34px;
+    text-align: center;
+    color: #212121;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    border: 1px solid #FF2C15;
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+}
+
+.choice__wrapper-country-item img {
+    cursor: pointer;
+}
+
+.choice__wrapper-country-item:hover {
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+    color: #fff;
+}
+
+
+.choice__wrapper-country-item0 {
+    border-radius: 5px;
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+    display: block;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+    width: auto;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 13px;
+    text-align: center;
+}
+
+.choice__wrapper-country-search {
+    display: flex;
+    gap: 10px;
+}
+
+.choice__wrapper-country-item1 {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    width: auto;
+    /* height: 58px; */
+    padding: 12px 30px;
+    text-align: center;
+    color: #212121;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+
+@media (max-width: 360px) {
+
+    .choice {
+        display: none;
+    }
+
+    .chomobil {
+        display: block;
+    }
+
+
+
+    /* choicemobil */
+
+    .choicemobil {
+        display: block;
+        margin-bottom: 34px;
+    }
+
+    .choicemobil__wrapper {
+        margin-bottom: 25px;
+    }
+
+    .choicemobil__title {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    .choicemobil__wrapper-hobbies {
+        display: flex;
+        /* gap: 4px; */
+        justify-content: space-between;
+    }
+
+    /* .choicemobil__wrapper-hobbies-item1 {
+        text-align: center;
+        font-family: Roboto;
+        display: flex;
+        gap: 10px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background-color: #fff;
+        padding: 4px 8px;
+        cursor: pointer;
+        align-items: center;
+    } */
+
+    .choicemobil__wrapper-hobbies-item1 img {
+        width: 11px;
+        height: 11px;
+    }
+
+
+    
+    /* .choicemobil__wrapper-hobbies-item-active {
+        border-radius: 5px;
+        border: 1px solid #000;
+        padding: 4px 8px;
+        cursor: pointer;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+
+    } */
+
+    /* .choicemobil__wrapper-hobbies-item-active span {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+    } */
+    .choicemobil__wrapper-hobbies-item {
+        border-radius: 5px;
+        border: 1px solid #000;
+        background-color: #fff;
+        width: 142px;
+        height: 35px;
+        cursor: pointer;
+        padding-left: 0;
+        padding-right: 0;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .choicemobil__wrapper-hobbies-item {
+        display: flex;
+        flex-shrink: 0;
+        padding: 4px 6px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background: #fff;
+        width: auto;
+        text-align: center;
+        color: #212121;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .choicemobil__wrapper-hobbies-item:hover {
+        background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+        color: #fff;
+    }
+    
+    /* .choice__wrapper-hobbies-item :hover {
+        border: 1px solid #FF2C15;
+        background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+    } */
+    
+    .choicemobil__wrapper-hobbies-item1 {
+        text-align: center;
+        font-family: Roboto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background-color: #fff;
+        padding: 4px 6px;
+        cursor: pointer;
+        align-items: center;
+    }
+    
+    .choicemobil__wrapper-hobbies-item1 span {
+        display: block;
+    }
+    
+    .choicemobil__wrapper-hobbies-item1:hover {
+        border: 1px solid #FF2C15;
+        border-radius: 5px;
+        color: #FFF;
+        background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+    }
+    
+
+
+
+
+    
+    /* .choicemobil__wrapper-hobbies-item {
+        border-radius: 5px;
+        border: 1px solid #000;
+        background-color: #fff;
+        padding: 4px 8px;
+        cursor: pointer;
+    }
+
+    .choicemobil__wrapper-hobbies-item span {
+        color: #2E2C2C;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+    } */
+
+/* .chomobil */
+    .chomobil__wrapper-country {
+        display: grid;
+        grid-template-columns: repeat(4, min-content);
+        gap: 8px;
+        margin-bottom: 20px;
+
+    }
+
+    .chomobil__wrapper-country-item {
+        width: 76px;
+        padding: 8px 6px;
+        font-size: 13px;
+        text-align: center;
+        display: block;
+        color: #000;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background: #FFF;
+    }
+
+    /* .chomobil__pagination {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .chomobil__pagination-left {
+        width: 20px;
+        height: 20px;
+        border-radius: 25px;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    }
+    
+    .chomobil__pagination-right {
+        width: 20px;
+        height: 20px;
+        border-radius: 25px;
+        border: 2px solid var(--, #FF2C15);
+            background: #FFF;
+    }
+     */
+
+     .chomobil__wrapper-country-item:hover {
+        background: linear-gradient(253deg, #F00 -14.77%, #FFB800 103.16%);
+        color: #FFF;
+     }
+
+     .choicemobil__search {
+        display: flex;
+        height: 40px;
+    }
+
+    .choicemobil__title-title {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98.5%;
+        display: block;
+        margin-top: 0;
+    }
+
+    .chomobil__wrapper-country-search {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .chomobil__wrapper-country-search input {
+        border-radius: 5px;
+        border: 1px solid #000;
+        width: 127px;
+        height: 26px;
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .chomobil__wrapper-lupa {
+        position: relative;
+        bottom: 22px;
+        left: 10px; 
+    }
+
+
+}

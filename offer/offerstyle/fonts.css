@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-display: swap;
+    src: local(Montserrat),
+        url('../fonts/static/Montserrat-Regular.ttf') format('ttf'),
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-display: swap;
+    src: local(Montserrat),
+        url('../fonts/static/Montserrat-Medium.ttf') format('ttf'),
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-display: swap;
+    src: local(Montserrat),
+        url('../fonts/static/Montserrat-SemiBold.ttf') format('ttf'),
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 700;
+    /* font-display: swap; */
+    src: local(Montserrat),
+        url('../fonts/static/Montserrat-Bold.ttf') format('ttf'),
+}
+
+
+
+@font-face {
+    font-family: Roboto;
+    font-weight: 400;
+    font-display: swap;
+    src: local(Roboto),
+        url('../fonts/Roboto-Regular.ttf') format('ttf'),
+}
+
+@font-face {
+    font-family: Roboto;
+    font-weight: 700;
+    font-display: swap;
+    src: local(Roboto),
+        url('../fonts/Roboto-Bold.ttf') format('ttf'),
+}

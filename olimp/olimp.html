@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/burger.css">
+    <link rel="stylesheet" href="style/line.css">
+    <link rel="stylesheet" href="style/olympus.css">
+    <link rel="stylesheet" href="style/top.css">
+    <link rel="stylesheet" href="style/level.css">
+    <link rel="stylesheet" href="style/interest.css">
+    <link rel="stylesheet" href="style/video.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body class="fon">
+    <section class="olimp">
+        <div class="header">
+            <div class="container">
+                <div class="header__container">
+                    <div class="header__container-logo">
+                        <img class="header__logo" src="image-home/logo.png" alt="">
+                    </div>
+                    <div class="header__container-blog">
+                        <div class="header__container-ring">
+                            <img class="header__container-ring-foto" src="image-home/ring.png" alt="">
+                        </div>
+                        <div class="header__container-name">
+                            <img class="header__container-foto-size" src="image-home/Image.png"alt="">
+                            <div class="header__container-name-man">
+                                <div class="header__container-name-name">
+                                    <span class="header__container-imya">Александр</span>
+                                    <div class="header__container-stars">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Starblack.png" alt="">
+                                        <img src="image-home/Starblack.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__container-bag">
+                                <img class="header__container-bag-img" src="image-home/Group1000001080.png" alt="">
+                                <span class="header__container-bag-span">45</span>
+                            </div>
+                        </div>
+                        <button class="header__container-menu">
+                            <img onclick="openBurger()" src="image-home/menu.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="hmobil">
+                    <div class="container">
+                        <div class="hmobil__container">
+                            <div class="hmobil__container-logo">
+                                <div class="hmobil__container-logo-left">
+                                    <span class="hmobil__container-logo-title">World Stars</span>
+                                    <span class="hmobil__container-logo-title">мировые звезды brics</span>
+                                </div>
+                                <div class="hmobil__container-logo-right">
+                                    <!-- <img class="hmobil__container-logo-search" src="image-home/lupamobil.png" alt=""> -->
+                                    <img src="image-home/ringmobil.png" alt="">
+                                    <button class="hmobil__container-logo-menu">
+                                        <img onclick="openBurger()" src="image-home/menumobil.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hmobil__container-name">
+                                <img class="hmobil__container-foto-size" src="image-home/mobImage.png"alt="">
+                                <div class="hmobil__container-name-man">
+                                    <div class="hmobil__container-name-name">
+                                        <span class="hmobil__container-imya">Александр</span>
+                                        <div class="hmobil__container-stars">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Starblack.png" alt="">
+                                            <img src="image-home/Starblack.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hmobil__container-bag">
+                                    <img class="hmobil__container-bag-img" src="image-home/Group1000001080.png" alt="">
+                                    <span class="hmobil__container-bag-span">45</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- burger menu -->
+        <div id="modal_menu" class="modal_menu">
+            <div class="modal-content_menu">
+               <div class="container">
+                  <div class="modal_container">
+                       <div class="modal_nav">
+                     <div class="modal_out_cont">
+                         <div class="modal_nav_cont">
+                             <img id="showMenuArrow" src="../assets/images/auction/backarrow.svg" alt="arrow left" style="margin-bottom: 40px; cursor: pointer;">
+                              <a href="./sign-in.html" class ="modal_nav_el">
+                               <img src="../assets/image/m1.svg">
+                               <span>Звездный магазин</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m2.svg">
+                               <span>Смотри и пиши новости</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m3.svg">
+                               <span>Предложи звезду</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m4.svg">
+                               <span>Выбирай мировую звезду</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m5.png" style="align-self: center;">
+                               <span>Олимп славы</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el ">
+                              <img src="../assets/image/m6.svg">
+                               <span>Афиша встреч </span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m7.svg">
+                               <span>Профиль</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                           <a href="./sign-in.html" class ="modal_nav_el">
+                              <img src="../assets/image/m8.svg">
+                               <span>Кошелек</span>
+                               <img class="modal_arrow" src="../assets/image/arrow.svg">
+                           </a>
+                               
+                        </div>
+                     </div>
+                    </div>
+                    <span class ="modal_nav_el" id="modal_nav_el_dop">Дополнительно</span>
+                    <div class="modal_blocks">
+                      <div class="modal_nav_last">
+                         <a class ="modal_nav_el modal_last_el">
+                           <img src="../assets/image/bag_ws.png" style="align-self: center;">
+                            <span>Зарабатывай на сайте</span>
+                        </a>
+                     </div>
+                       <div class="modal_blocks_cont_first">
+                           <div class="modal_blocks_cont1">
+                                <div class="modal_block">
+                                    <p>ЗАРАБОТАЙ КЕШБЕК НА РЕКЛАМНОЙ НОВОСТИ</p>
+                                    <img class="modal_block_img" src="../assets/image/mb1.svg">
+                                </div>
+                                <div class="modal_block">
+                                    <p>ЗАРАБОТАТЬ НА СТИКЕРАХ И СМАЙЛИКАХ</p>
+                                    <img class="modal_block_img" src="../assets/image/mb2.svg">
+                                </div>
+                            </div>
+                                <div class="modal_blocks_cont2">
+                                    <div class="modal_block">
+                                        <p>ЗАРАБОТАТЬ НА КОЛЕСЕ УДАЧИ</p>
+                                        <img class="modal_block_img1" src="../assets/image/mb3.svg">
+                                    </div>
+                                    <div class="modal_block">
+                                        <p>ПОЛУЧИ КЕШБЕК НА ВСТРЕЧАХ С МИРОВЫМИ ЗВЕЗДАМИ</p>
+                                        <img class="modal_block_img" src="../assets/image/mb4.svg">
+                                    </div> 
+                                </div>
+                    </div>
+                        <div class="modal_blocks_cont3">
+                            <div class="modal_block">
+                                <p>ЗАРАБАТЫВАТЬ МОДЕРАТОРОМ</p>
+                                <img class="modal_block_img" src="../assets/image/mb5.svg">
+                            </div>
+                            <div class="modal_block">
+                                <p>ЗАРАБАТЫВАТЬ  НА 100% ЗАПОЛНЕНИИ ПРОФИЛЯ</p>
+                                <img class="modal_block_img" src="../assets/image/mb6.svg">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="container"></div>
+            <img class="olympus__image-kubok" src="image-home/kubok.png" alt="">
+        </div>
+
+        <div class="olympus">
+                <!-- <img class="olympus__image-left" src="image-home/olimpleft.png" alt=""> -->
+                <!-- <img class="olympus__image-right" src="image-home/olimpright.png" alt=""> -->
+                <!-- <img class="olympus__image-center" src="image-home/olimpcenter.png" alt=""> -->
+            <div class="container">
+                <div class="olympus__container">
+                    <h2 class="olympus__container-title">Олимп славы</h2>
+                    <h2 class="olympus__container-title">ТОП ОЛИПИЙЦЕВ WORLD STARS</h2>
+                    <div class="olympus__container-slider">
+                        <img src="image-home/arrowolimpprev.svg" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/arrowolimpnext.svg" alt="">
+                    </div>
+
+                    <h2 class="olympus__container-title">ТОП ОЛИПИЙЦЕВ В СОЦ. СЕТЯХ</h2>
+                    <div class="olympus__container-slider">
+                        <img src="image-home/arrowolimpprev.svg" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/messi.png" alt="">
+                        <img src="image-home/arrowolimpnext.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="olympus__container-down">
+                    <div class="olympus__container-down-left">
+                        <img src="image-home/olympusname.png" alt="">
+                        <span class="olympus__container-down-name">Александр</span>
+                        <div class="olympus__container-down-stars">
+                            <img src="image-home/olimpstarellow.svg" alt="">
+                            <img src="image-home/olimpstarellow.svg" alt="">
+                            <img src="image-home/olimpstarellow.svg" alt="">
+                            <img src="image-home/olimpstargrey.svg" alt="">
+                            <img src="image-home/olimpstargrey.svg" alt="">
+                            <img src="image-home/olimpstargrey.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="olympus__container-down-right">
+                        <span class="olympus__container-down-balance">Баланс:</span>
+                        <span class="olympus__container-down-numbers">45 WS</span>
+                    </div>
+                </div>
+
+                <div class="olympusmobil__container">
+                    <h2 class="olympusmobil__container-title">Олимп славы</h2>
+                    <h3 class="olympusmobil__container-description">Топ 100 олимпийцев  WorldStars  в августе</h3>
+
+                    <div class="olympusmobil__container-wrapper1">
+
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+
+                    </div>
+                    <h3 class="olympusmobil__container-description">Топ 100 олимпийцев  WorldStars  в соц. сетях</h3>
+
+                    <div class="olympusmobil__container-wrapper2">
+
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                        <div class="olympusmobil__container-item">
+                            <img src="image-home/volodia.png" alt="">
+                            <span class="olympusmobil__container-item-name">Владимир</span>
+                        </div>
+                    </div>
+
+                    <div class="olympusmobil__container-down">
+                        <div class="olympusmobil__container-down-left">
+                            <!-- <img src="image-home/olympusname.png" alt=""> -->
+                            <span class="olympusmobil__container-down-name">Александр</span>
+                            <div class="olympusmobil__container-down-stars">
+                                <img src="image-home/olimpstarellow.svg" alt="">
+                                <img src="image-home/olimpstarellow.svg" alt="">
+                                <img src="image-home/olimpstarellow.svg" alt="">
+                                <img src="image-home/olimpstargrey.svg" alt="">
+                                <img src="image-home/olimpstargrey.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="olympusmobil__container-down-right">
+                            <span class="olympusmobil__container-down-balance">Баланс:</span>
+                            <span class="olympusmobil__container-down-numbers">45 WS</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="top">
+            <div class="container">
+                <h2 class="top__title">ВОЙДИ В ТОП ОЛИМПИЙЦЕВ
+                    ПОЛУЧАЙ ПОДАРКИ ОТ КОМАНДЫ WORLD STARS</h2>
+                    <div class="top__container">
+                        
+                        <h2 class="top__container-title">Список моих целей для восхождения на олимп 
+                            World Stars для выполнения за  30 дней!</h2>
+
+                        <div class="top__container-celi">
+
+                            <div class="ChekBoxTable">
+                                
+                                <div class="ChekBoxTable-item-container">
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                    <div class="custon__label-div">2 000 WS </div>
+                                    <label for class="ChekBoxTable-text">Моя поставленная цель:</label>
+                                </div>
+                                
+                                <div class="ChekBoxTable-item-container">
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                    <div class="custon__label-div">140</div>
+                                    <div class="chekbox__table-text">
+                                        <label for class="ChekBoxTable-text">Мой звзедный стиль</label>
+                                    <span>количество покупок</span>
+                                    </div>
+                                </div>
+                                
+    
+                                <div class="ChekBoxTable-item-container">
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                    <div class="custon__label-div">60</div>
+                                    <div class="chekbox__table-text">
+                                        <label for class="ChekBoxTable-text">Мои встречи с Мировыми Звездами </label>
+                                    <span>количество встреч</span>
+                                    </div>
+                                    
+                                </div>
+                                
+    
+                                <div class="ChekBoxTable-item-container">
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                    <div class="custon__label-div">0</div>
+                                    <div class="chekbox__table-text">
+                                        <label for class="ChekBoxTable-text">Мои новые публикации</label>
+                                    <span>количество новых публикаций</span>
+                                    </div>
+                                    
+                                </div>
+                                
+
+                                <div class="ChekBoxTable-item-container">
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                    <div class="custon__label-div">2 000 WS</div>
+                                    <label for class="ChekBoxTable-text">Моя цель получить</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="topmobil">
+
+                            <div class="ChekBoxTable__mobil">
+                                
+                                <div class="ChekBoxTable-item-container">
+                                    <label class='custom-label1'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                    <div class="custon__label-div">2 000 WS </div>
+                                    <label for class="ChekBoxTable-text">Моя поставленная цель:</label>
+                                </div>
+                                
+                                <div class="ChekBoxTable-item-container">
+                                    <label class='custom-label2'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                    <div class="custon__label-div">140</div>
+                                    <div class="chekbox__table-text">
+                                        <label for class="ChekBoxTable-text">Мой звзедный стиль</label>
+                                    <span>количество покупок</span>
+                                    </div>
+                                </div>
+                                
+    
+                                <div class="ChekBoxTable-item-container">
+                                    <label class='custom-label3'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                    <div class="custon__label-div">60</div>
+                                    <div class="chekbox__table-text">
+                                        <label for class="ChekBoxTable-text">Мои встречи с Мировыми Звездами </label>
+                                    <span>количество встреч</span>
+                                    </div>
+                                    
+                                </div>
+                                
+    
+                                <div class="ChekBoxTable-item-container">
+                                    <label class='custom-label4'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                    <div class="custon__label-div">0</div>
+                                    <div class="chekbox__table-text">
+                                        <label for class="ChekBoxTable-text">Мои новые публикации</label>
+                                    <span>количество новых публикаций</span>
+                                    </div>
+                                    
+                                </div>
+                                
+
+                                <div class="ChekBoxTable-item-container">
+                                    <label class='custom-label5'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                    <div class="custon__label-div">2 000 WS</div>
+                                    <label for class="ChekBoxTable-text">Моя цель получить</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top__procent">
+                            <h2 class="top__procent-title">Процент выйгрыша зависит от ставки </h2>
+                            <div class="lines-wrapper">
+                                <div class="lines-lable-top lines-text">
+                                    <span >1%</span>
+                                    <span>5%</span>
+                                    <span>10%</span>
+                                    <span>15%</span>
+                                    <span>20%</span>
+                                    <span>25%</span>
+                                    <span>30%</span>
+                                    <span>35%</span>
+                                    <span>40%</span>
+                                    <span>45%</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="lines" id="lines">
+                                    <div class="color-lines" id="color-lines">
+                                    </div>
+                                </div>
+                                <div class="lines-lable-bottom linesmobil-text">
+                                    <span>200WS</span>
+                                    <span>1000WS</span>
+                                    <span>2000WS</span>
+                                    <span>3000WS</span>
+                                    <span>4000WS</span>
+                                    <span>5000WS</span>
+                                    <span>6000WS</span>
+                                    <span>7000WS</span>
+                                    <span>8000WS</span>
+                                    <span>9000WS</span>
+                                    <span>10 000WS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="topmobil__procent">
+                            <h2 class="topmobil__procent-title">Процент выйгрыша зависит от ставки </h2>
+
+                            <div class="linesmobil-wrapper">
+                                <div class="linesmobil-lable-top lines-text">
+                                    <span >1%</span>
+                                    <span>5%</span>
+                                    <span>10%</span>
+                                    <span>15%</span>
+                                    <span>20%</span>
+                                    <span>25%</span>
+                                </div>
+                                <div class="linesmobil" id="linesmobil">
+                                    <div class="color-lines" id="colormobil-lines">
+                                    </div>
+                                </div>
+                                <div class="linesmobil-lable-bottom lines-text">
+                                    <span>200WS</span>
+                                    <span>2000WS</span>
+                                    <span>4000WS</span>
+                                    <span>6000WS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="performance">
+                            <h2 class="performance__title">При выполнении поставленных целей 
+                                мой выигрыш составит  10% WS  </h2>
+
+                                <div class="performance__summ">
+                                    <div class="performance__summ-up">
+                                        <span>Сумма ставки:</span>
+                                        <input id="number" type="text">
+                                        <button class="performance__summ-up-btn">ОПЛАТИТЬ</button>
+                                    </div>
+
+                                    <div class="performance__summ-down">
+                                        <span>Сумма выигрыша:</span>
+                                        <input type="text">
+                                        <button class="performance__summ-up-btn2">ПОЛУЧИТЬ</button>
+                                        <span>после выполнения поставленых целей</span>
+                                    </div>
+                                </div>
+
+                                <div class="month">
+                                    <div class="month-wrapper">
+                                        <div class="month-wrapper-container">
+                                            <div class="month-text">
+                                                <span>Период выполнения <br>поставленнной цели один месяц</span>
+                                            </div>
+                                            <div>
+                                                <p><select class="month-select" id="month-select" name="month">
+                                                    <option value="1">Январь</option>
+                                                    <option value="2">Февраль</option>
+                                                    <option value="3">Март</option>
+                                                    <option value="4">Апрель</option>
+                                                    <option value="5">Май</option>
+                                                    <option value="6">Июнь</option>
+                                                    <option value="7">Июль</option>
+                                                    <option value="8">Август</option>
+                                                    <option value="9">Сентябрь</option>
+                                                    <option value="10">Октябрь</option>
+                                                    <option value="11">Ноябрь</option>
+                                                    <option value="12">Декабрь</option>
+                                                    </select></p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="month-days" id="month-days">
+                                            <span class="month-select-text">1</span>
+                                            <span class="month-select-text">2</span>
+                                            <span class="month-select-text">3</span>
+                                            <span class="month-select-text">4</span>
+                                            <span class="month-select-text">5</span>
+                                            <span class="month-select-text">6</span>
+                                            <span class="month-select-text">7</span>
+                                            <span class="month-select-text">8</span>
+                                            <span class="month-select-text">9</span>
+                                            <span class="month-select-text">10</span>
+                                            <span class="month-select-text">11</span>
+                                            <span class="month-select-text">12</span>
+                                            <span class="month-select-text">13</span>
+                                            <span class="month-select-text">14</span>
+                                            <span class="month-select-text">15</span>
+                                            <span class="month-select-text">16</span>
+                                            <span class="month-select-text">17</span>
+                                            <span class="month-select-text">18</span>
+                                            <span class="month-select-text">19</span>
+                                            <span class="month-select-text">20</span>
+                                            <span class="month-select-text">21</span>
+                                            <span class="month-select-text">22</span>
+                                            <span class="month-select-text">23</span>
+                                            <span class="month-select-text">24</span>
+                                            <span class="month-select-text">25</span>
+                                            <span class="month-select-text">26</span>
+                                            <span class="month-select-text">27</span>
+                                            <span class="month-select-text">28</span>
+                                            <span class="month-select-text">29</span>
+                                            <span class="month-select-text">30</span>
+                                            <span class="month-select-text">31</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </div>
+
+                        <div class="performancemobil__summ">
+                            <h2 class="performancemobil__title">При выполнении поставленных целей 
+                                мой выигрыш составит  10% WS  </h2>
+
+                                <div class="performancemobil__summ">
+                                    <span>Сумма ставки:</span>
+                                    <div class="performancemobil__summ-up">
+                                        <input id="numbers" type="text">
+                                        <button class="performancemobil__summ-up-btn">ОПЛАТИТЬ</button>
+                                    </div>
+
+                                    <span>Сумма выигрыша:</span>
+                                    <div class="performancemobil__summ-down">
+                                        <input type="text">
+                                        <button class="performancemobil__summ-up-btn2">ПОЛУЧИТЬ</button>
+                                    </div>
+                                    <span>после выполнения поставленых целей</span>
+                                </div>
+                        </div>
+
+                        <div class="monthmobil">
+                            <h3 class="monthmobil-text">Период выполнения поставленнной цели один месяц</h3>
+                            <div class="monthmobil-wrapper">
+                                <div class="monthmobil-wrapper-container">
+                                    <div>
+                                        <p><select class="monthmobil-select" id="monthmobil-select" name="monthmobil">
+                                            <option value="1">Январь</option>
+                                            <option value="2">Февраль</option>
+                                            <option value="3">Март</option>
+                                            <option value="4">Апрель</option>
+                                            <option value="5">Май</option>
+                                            <option value="6">Июнь</option>
+                                            <option value="7">Июль</option>
+                                            <option value="8">Август</option>
+                                            <option value="9">Сентябрь</option>
+                                            <option value="10">Октябрь</option>
+                                            <option value="11">Ноябрь</option>
+                                            <option value="12">Декабрь</option>
+                                            </select></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="monthmobil-days" id="monthmobil-days">
+                                    <span class="monthmobil-select-text">1</span>
+                                    <span class="monthmobil-select-text">2</span>
+                                    <span class="monthmobil-select-text">3</span>
+                                    <span class="monthmobil-select-text">4</span>
+                                    <span class="monthmobil-select-text">5</span>
+                                    <span class="monthmobil-select-text">6</span>
+                                    <span class="monthmobil-select-text">7</span>
+                                    <span class="monthmobil-select-text">8</span>
+                                    <span class="monthmobil-select-text">9</span>
+                                    <span class="monthmobil-select-text">10</span>
+                                    <span class="monthmobil-select-text">11</span>
+                                    <span class="monthmobil-select-text">12</span>
+                                    <span class="monthmobil-select-text">13</span>
+                                    <span class="monthmobil-select-text">14</span>
+                                    <span class="monthmobil-select-text">15</span>
+                                    <span class="monthmobil-select-text">16</span>
+                                    <span class="monthmobil-select-text">17</span>
+                                    <span class="monthmobil-select-text">18</span>
+                                    <span class="monthmobil-select-text">19</span>
+                                    <span class="monthmobil-select-text">20</span>
+                                    <span class="monthmobil-select-text">21</span>
+                                    <span class="monthmobil-select-text">22</span>
+                                    <span class="monthmobil-select-text">23</span>
+                                    <span class="monthmobil-select-text">24</span>
+                                    <span class="monthmobil-select-text">25</span>
+                                    <span class="monthmobil-select-text">26</span>
+                                    <span class="monthmobil-select-text">27</span>
+                                    <span class="monthmobil-select-text">28</span>
+                                    <span class="monthmobil-select-text">29</span>
+                                    <span class="monthmobil-select-text">30</span>
+                                    <span class="monthmobil-select-text">31</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="top__blue">
+                            <h3 class="top__blue-title">Команда World Stars поздравляет
+                                тебя с выполнением цели</h3>
+                            <audio><source type="audio/mp3" src="audio/eralash.mp3"></audio><button onclick="this.previousSibling.play()">
+                                <img src="image-home/audio.svg" alt="">
+                            </button>
+                            <img src="image-home/cel.png" alt="">
+                        </div>
+
+                        <div class="topmobil__blue">
+                            <h3 class="topmobil__blue-title">Команда World Stars поздравляет
+                                тебя с выполнением цели</h3>
+                                <audio><source type="audio/mp3" src="audio/eralash.mp3"></audio><button class="topmobil__blue-audio" onclick="this.previousSibling.play()">
+                                    <img src="image-home/audio.svg" alt="">
+                                </button>
+                        </div>
+
+                        <div class="top__red">
+                            <h3 class="top__red-title">При невыполнении моей поставленной цели, сумма ставки сгорает!</h3>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="level">
+            <div class="container">
+                <h2 class="level__title">Повышай свой уровень 
+                    успеха и получай подарки</h2>
+                    <div class="level__container-up">
+                        <span class="level__container-up-left">Твой рейтинг</span>
+                        <span class="level__container-up-right">Призы</span>
+                    </div>
+                <div class="level__container">
+                    
+                    <div class="level__container-item1">
+                        <div class="level__container-item1-left">
+                            <img class="level__container-item1-stars" src="image-home/Starlevel.svg" alt="">
+                            <div class="level__container-item1-stolb">
+                                <img class="level__container-item1-jump" src="image-home/levelone.png" alt="">
+                                <!-- <img src="image-home/levelone.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="level__container-item1-right">
+                            <h3 class="level__container-item1-free">Получи 3 бесплатных стикера</h3>
+                            <span class="level__container-item1-ws">на 45 WS</span>
+                            <div class="level__container-item1-stics">
+                                <div class="level__container-item1-stic"><img src="image-home/stic1.png" alt=""></div>
+                                <div class="level__container-item1-stic"><img src="image-home/stic2.png" alt=""></div>
+                                <div class="level__container-item1-stic"><img src="image-home/stic3.png" alt=""></div>
+                            </div>
+                            <div class="level__container-item1-buttons">
+                                <button class="level__container-item1-btn1">ХОЧУ С ТОБОЙ ПОЗНАКОМИТЬСЯ</button>
+                                <button class="level__container-item1-btn2">ПОЛУЧИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="level__container-item2">
+                        <div class="level__container-item2-left">
+                            <div class="level__container-item2-stars">
+                                <img class="level__container-item2-stars" src="image-home/Starlevel.svg" alt="">
+                                <img class="level__container-item2-stars" src="image-home/Starlevel.svg" alt="">
+                            </div>
+                            <div class="level__container-item2-stolb">
+                                <img class="level__container-item2-jump" src="image-home/leveltwoo.png" alt="">
+                                <!-- <img src="image-home/wslevel2.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="level__container-item2-right">
+                            <h3 class="level__container-item2-free">Получи 3 бесплатных стикера</h3>
+                            <span class="level__container-item2-ws">на 60 WS</span>
+                            <div class="level__container-item2-stics">
+                                <div class="level__container-item2-stic"><img src="image-home/stic4.png" alt=""></div>
+                                <div class="level__container-item2-stic"><img src="image-home/stic5.png" alt=""></div>
+                                <div class="level__container-item2-stic"><img src="image-home/stic6.png" alt=""></div>
+                            </div>
+                            <div class="level__container-item2-buttons">
+                                <button class="level__container-item2-btn1">ХОЧУ С ТОБОЙ ПОЗНАКОМИТЬСЯ</button>
+                                <button class="level__container-item2-btn2">ПОЛУЧИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="level__container-item3">
+                        <div class="level__container-item3-left">
+                            <div class="level__container-item3-stars">
+                                <img class="level__container-item3-stars" src="image-home/Starlevel.svg" alt="">
+                                <img class="level__container-item3-stars" src="image-home/Starlevel.svg" alt="">
+                                <img class="level__container-item3-stars" src="image-home/Starlevel.svg" alt="">
+                            </div>
+                            <div class="level__container-item3-stolb">
+                                <img class="level__container-item3-jump" src="image-home/Runninglevel.png" alt="">
+                                <img src="image-home/ws1level3.png" alt="">
+                                <img class="level__container-item3-ws1000" src="image-home/ws1000.png" alt="">
+                            </div>
+                        </div>
+                        <div class="level__container-item3-right">
+                            <h3 class="level__container-item3-free">Получи 3 бесплатных стикера</h3>
+                            <span class="level__container-item3-ws">на 75 WS</span>
+                            <div class="level__container-item3-stics">
+                                <div class="level__container-item3-stic"><img src="image-home/stic7.png" alt=""></div>
+                                <div class="level__container-item3-stic"><img src="image-home/stic8.png" alt=""></div>
+                                <div class="level__container-item3-stic"><img src="image-home/stic9.png" alt=""></div>
+                            </div>
+                            <div class="level__container-item3-buttons">
+                                <button class="level__container-item3-btn1">ТЫ МНЕ НРАВИШЬСЯ <img src="image-home/likelevel.svg" alt=""></button>
+                                <button class="level__container-item3-btn2">ПОЛУЧИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="level__container-item4">
+                        <div class="level__container-item4-left">
+                            <div class="level__container-item4-stars">
+                                <img class="level__container-item4-stars" src="image-home/Starlevel.svg" alt="">
+                                <img class="level__container-item4-stars" src="image-home/Starlevel.svg" alt="">
+                                <img class="level__container-item4-stars" src="image-home/Starlevel.svg" alt="">
+                                <img class="level__container-item4-stars" src="image-home/Starlevel.svg" alt="">
+                            </div>
+                            <div class="level__container-item4-stolb">
+                                <img class="level__container-item4-jump" src="image-home/staylavel.png" alt="">
+                                <img src="image-home/wslevel4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="level__container-item4-right">
+                            <h3 class="level__container-item4-free">Получи 3 бесплатных стикера</h3>
+                            <span class="level__container-item4-ws">на 90 WS</span>
+                            <div class="level__container-item4-stics">
+                                <div class="level__container-item4-stic"><img src="image-home/stic10.png" alt=""></div>
+                                <div class="level__container-item4-stic"><img src="image-home/stic11.png" alt=""></div>
+                                <div class="level__container-item4-stic"><img src="image-home/stic12.png" alt=""></div>
+                            </div>
+                            <div class="level__container-item4-buttons">
+                                <button class="level__container-item4-btn1">ПОСЫЛАЮ ТЕБЕ <img src="image-home/heartlevel.svg" alt=""></button>
+                                <button class="level__container-item4-btn2">ПОЛУЧИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="level__container-item5">
+                        <div class="level__container-item5-left">
+                            <div class="level__container-item5-stars">
+                                <img class="level__container-item5-stars" src="image-home/Starlevel.svg" alt="">
+                                <img class="level__container-item5-stars" src="image-home/Starlevel.svg" alt="">
+                                <img class="level__container-item5-stars" src="image-home/Starlevel.svg" alt="">
+                                <img class="level__container-item5-stars" src="image-home/Starlevel.svg" alt="">
+                                <img class="level__container-item5-stars" src="image-home/Starlevel.svg" alt="">
+                                <span>м</span>
+                            </div>
+                            <div class="level__container-item5-stolb">
+                                <img class="level__container-item5-jump" src="image-home/kuboklevel.png" alt="">
+                                <img src="image-home/ws2000.png" alt="">
+                            </div>
+                        </div>
+                        <div class="level__container-item5-right">
+                            <h3 class="level__container-item5-free">Получи 5 бесплатных стикеров</h3>
+                            <div class="level__container-item5-stics1">
+                                <div class="level__container-item5-stic"><img src="image-home/stic10.png" alt=""></div>
+                                <div class="level__container-item5-stic"><img src="image-home/stic10.png" alt=""></div>
+                                <div class="level__container-item5-stic"><img src="image-home/stic10.png" alt=""></div>
+                            </div>
+                            <div class="level__container-item5-stics2">
+                                <div class="level__container-item5-stic"><img src="image-home/stic11.png" alt=""></div>
+                                <div class="level__container-item5-stic"><img src="image-home/stic12.png" alt=""></div>
+                            </div>
+                            <div class="level__container-item5-buttons1">
+                                <button class="level__container-item5-btn1">СТАТУС и КАБИНЕТ МОДЕРАТОРА<img src="image-home/ellipsm.svg" alt=""></button>
+                                <button class="level__container-item5-btn2">ПОЛУЧИТЬ</button>
+                            </div>
+                            <div class="level__container-item5-buttons2">
+                                <button class="level__container-item5-btn3">СТАТУС и КАБИНЕТ МОДЕРАТОРА</button>
+                                <button class="level__container-item5-btn4">ПОЛУЧИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="levelmobil__container">
+
+                    <div class="levelmobil__container-item1">
+                        <h2 class="levelmobil__container-item1-title" >РЕЙТИНГ 1 УРОВЕНЬ</h2>
+                        <h3 class="levelmobil__container-item1-free">Получи 3 бесплатных стикера</h3>
+
+                        <div class="levelmobil__container-item1-stars">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevelzero.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevelzero.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevelzero.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevelzero.svg" alt="">
+                        </div>
+
+                        <span class="levelmobil__container-item1-ws">на 45 WS</span>
+                            <div class="levelmobil__container-item1-stolb">
+                                <img class="levelmobil__container-item1-image" src="image-home/ws1level.png" alt="">
+                            </div>
+                        
+                        <div class="levelmobil__container-item1-right">
+                            <h3 class="levelmobil__container-item1-free2"><span>Жми</span> на стикер И ОТПРАВЛЯЙ В ЧАТ СВОИМ ДРУЗЬЯМ бесплатно</h3>
+                            <span class="levelmobil__container-item1-free2-span">обрати внимание</span>
+                            
+                            <div class="levelmobil__container-item1-stics">
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/stic1.png" alt=""></div>
+                                <!-- <div class="levelmobil__container-item1-stic"><img src="image-home/stic2.png" alt=""></div>
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/stic3.png" alt=""></div> -->
+                            </div>
+                            <div class="levelmobil__container-item1-buttons">
+                                <!-- <button class="levelmobil__container-item1-btn1">ХОЧУ С ТОБОЙ ПОЗНАКОМИТЬСЯ</button> -->
+                                <button class="levelmobil__container-item1-btn2">ПОЛУЧИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="levelmobil__container-item1">
+                        <h2 class="levelmobil__container-item1-title1">уровень 2</h2>
+                        <h2 class="levelmobil__container-item1-title2" >РЕЙТИНГ 2 УРОВЕНЬ</h2>
+                        <h3 class="levelmobil__container-item1-free">Получи 3 бесплатных стикера в подарок</h3>
+
+                        <div class="levelmobil__container-item1-stars">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevelzero.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevelzero.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevelzero.svg" alt="">
+                        </div>
+
+                        <span class="levelmobil__container-item1-ws">на 60 WS</span>
+                            <div class="levelmobil__container-item1-stolb">
+                                <img class="levelmobil__container-item1-image" src="image-home/ws2.png" alt="">
+                            </div>
+                        
+                        <div class="levelmobil__container-item1-right">
+                            <h3 class="levelmobil__container-item1-free2"><span>Жми</span> на стикер И ОТПРАВЛЯЙ В ЧАТ СВОИМ ДРУЗЬЯМ бесплатно</h3>
+                            <span class="levelmobil__container-item1-free2-span">ХОЧУ С ТОБОЙ ПОЗНАКОМИТЬСЯ!</span>
+                            
+                            <div class="levelmobil__container-item1-stics">
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/stic5.png" alt=""></div>
+                                <!-- <div class="levelmobil__container-item1-stic"><img src="image-home/stic4.png" alt=""></div>
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/stic6.png" alt=""></div> -->
+                            </div>
+                            <div class="levelmobil__container-item1-buttons">
+                                <!-- <button class="levelmobil__container-item1-btn1">ХОЧУ С ТОБОЙ ПОЗНАКОМИТЬСЯ</button> -->
+                                <button class="levelmobil__container-item1-btn2">ПОЛУЧИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="levelmobil__container-item1">
+                        <h2 class="levelmobil__container-item1-title1">уровень 3</h2>
+                        <h2 class="levelmobil__container-item1-title2" >РЕЙТИНГ 3 УРОВЕНЬ</h2>
+                        <h3 class="levelmobil__container-item1-free">Получи 3 бесплатных стикера в подарок</h3>
+
+                        <div class="levelmobil__container-item1-stars">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevelzero.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevelzero.svg" alt="">
+                        </div>
+
+                        <span class="levelmobil__container-item1-ws">на 70 WS</span>
+                            <div class="levelmobil__container-item1-stolb">
+                                <img class="levelmobil__container-item1-image" src="image-home/ws3.png" alt="">
+                            </div>
+                        
+                        <div class="levelmobil__container-item1-right">
+                            <h3 class="levelmobil__container-item1-free2"><span>Жми</span> на стикер И ОТПРАВЛЯЙ В ЧАТ СВОИМ ДРУЗЬЯМ бесплатно</h3>
+                            <div class="levelmobil__container-item1-posil">
+                                <span class="levelmobil__container-item1-free2-span">посылаю тебе</span>
+                            <img src="image-home/papic.svg" alt="">
+                            </div>
+                            
+                            <div class="levelmobil__container-item1-stics">
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/stic8.png" alt=""></div>
+                                <!-- <div class="levelmobil__container-item1-stic"><img src="image-home/stic7.png" alt=""></div>
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/stic9.png" alt=""></div> -->
+                            </div>
+                            <div class="levelmobil__container-item1-buttons">
+                                <!-- <button class="levelmobil__container-item1-btn1">ХОЧУ С ТОБОЙ ПОЗНАКОМИТЬСЯ</button> -->
+                                <button class="levelmobil__container-item1-btn2">ПОЛУЧИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="levelmobil__container-item1">
+                        <h2 class="levelmobil__container-item1-title1">уровень 4</h2>
+                        <h2 class="levelmobil__container-item1-title2" >РЕЙТИНГ 4 УРОВЕНЬ</h2>
+                        <h3 class="levelmobil__container-item1-free">Получи 3 бесплатных стикера в подарок</h3>
+
+                        <div class="levelmobil__container-item1-stars">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/starlevelzero.svg" alt="">
+                        </div>
+
+                        <span class="levelmobil__container-item1-ws">на 90 WS</span>
+                            <div class="levelmobil__container-item1-stolb">
+                                <img class="levelmobil__container-item1-image" src="image-home/ws4.png" alt="">
+                            </div>
+                        
+                        <div class="levelmobil__container-item1-right">
+                            <h3 class="levelmobil__container-item1-free2"><span>Жми</span> на стикер И ОТПРАВЛЯЙ В ЧАТ СВОИМ ДРУЗЬЯМ бесплатно</h3>
+                            <div class="levelmobil__container-item1-posil">
+                                <span class="levelmobil__container-item1-free2-span">посылаю тебе</span>
+                            <img src="image-home/papic.svg" alt="">
+                            </div>
+                            
+                            <div class="levelmobil__container-item1-stics">
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/stic11.png" alt=""></div>
+                                <!-- <div class="levelmobil__container-item1-stic"><img src="image-home/stic10.png" alt=""></div>
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/stic12.png" alt=""></div> -->
+                            </div>
+                            <div class="levelmobil__container-item1-buttons">
+                                <!-- <button class="levelmobil__container-item1-btn1">ХОЧУ С ТОБОЙ ПОЗНАКОМИТЬСЯ</button> -->
+                                <button class="levelmobil__container-item1-btn2">ПОЛУЧИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="levelmobil__container-item1">
+                        <h2 class="levelmobil__container-item1-title1">уровень 5</h2>
+                        <h2 class="levelmobil__container-item1-title2" >РЕЙТИНГ 5 УРОВЕНЬ</h2>
+                        <h3 class="levelmobil__container-item1-free">Получи 5 бесплатных стикеров в подарок</h3>
+
+                        <div class="levelmobil__container-item1-stars">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                            <img class="levelmobil__container-item1-star" src="image-home/Starlevel.svg" alt="">
+                        </div>
+
+                        <span class="levelmobil__container-item1-ws">на 100 WS</span>
+                            <div class="levelmobil__container-item1-stolb">
+                                <img class="levelmobil__container-item1-image" src="image-home/ws5.png" alt="">
+                            </div>
+                        
+                        <div class="levelmobil__container-item1-right">
+                            <h3 class="levelmobil__container-item1-free2"><span>Жми</span> на стикер И ОТПРАВЛЯЙ В ЧАТ СВОИМ ДРУЗЬЯМ бесплатно</h3>
+                            <div class="levelmobil__container-item1-posil">
+                                <span class="levelmobil__container-item1-free2-span">посылаю тебе</span>
+                            <img src="image-home/papic.svg" alt="">
+                            </div>
+                            
+                            <div class="levelmobil__container-item1-sticsi">
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/sticone.png" alt=""></div>
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/stictwo.png" alt=""></div>
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/sticthree.png" alt=""></div>
+                                <div class="levelmobil__container-item1-stic"><img src="image-home/sticfour.png" alt=""></div>
+                            </div>
+                            <div class="levelmobil__container-item1-stic0"><img src="image-home/sticfive.png" alt=""></div>
+                            <div class="levelmobil__container-item1-buttons">
+                                <div class="levelmobil__container-item1-new">
+                                    <button class="levelmobil__container-item1-button"><span>СТАТУС и КАБИНЕТ МОДЕРАТОРА </span><img src="image-home/m.svg" alt=""></button>
+                                </div>
+                                <button class="levelmobil__container-item1-btn2">ПОЛУЧИТЬ</button>
+                                <button class="levelmobil__container-item1-button0">2 СПИНА НА КОЛЕСЕ ФАРТУНЫ</button>
+                                <button class="levelmobil__container-item1-btn2">ПОЛУЧИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="interest">
+            <div class="container">
+                <div class="interest__container">
+                    <div class="interest__container-left">
+                        <h4 class="interest__container-left-title">Это интересно!</h4>
+                        <p class="interest__container-left-description">Смотрите  самые свежие новости о любимых спортсменах, музыкантах,  актерах,  моделях, дизайнерах и других. Приходи на встречи с мировыми звездами, дружи  с теми кто любит таких же  звезд!</p>
+                    </div>
+                    <div class="interest__container-right">
+                        <img class="interest__container-right-size" src="image-home/interestboy.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="container">
+                <div class="video__container">
+                    <!-- <video class="video" src="/image/sample-5s.mp4" autoplay loop></video> -->
+                    <iframe width="1190" height="822" iframe width="0" height="0" src="https://www.youtube.com/embed/gD_eoFaITqc" title="LEONISA #2 Spring 2017 COLOMBIAMODA - Fashion Channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- <img class="video__container-play" src="/image-home/video play.png" alt=""> -->
+                    <div class="video__container-button">
+                        <button class="video__container-btn1">Мода</button>
+                        <button class="video__container-btn2">Спорт</button>
+                        <button class="video__container-btn3">Кино</button>
+                        <button class="video__container-btn4">Музыка</button>
+                        <button class="video__container-btn5">Танцы</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- блок video для мобилы -->
+
+        <div class="videomobil">
+            <div class="container">
+                <div class="videomobil__container">
+                    <!-- <video class="video" src="/image/sample-5s.mp4" autoplay loop></video> -->
+                    <iframe width="360" height="297" iframe width="0" height="0" src="https://www.youtube.com/embed/gD_eoFaITqc" title="LEONISA #2 Spring 2017 COLOMBIAMODA - Fashion Channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- <img class="video__container-play" src="/image-home/video play.png" alt=""> -->
+                    <div class="videomobil__container-button">
+                        <button class="videomobil__container-btn1">Мода</button>
+                        <button class="videomobil__container-btn2">Спорт</button>
+                        <button class="videomobil__container-btn3">Кино</button>
+                        <button class="videomobil__container-btn4">Музыка</button>
+                        <button class="videomobil__container-btn5">Танцы</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    </section>
+    <footer class="footer">
+        <div class="container">
+           <div class="footer_lists">
+            <ul class="footer_row">
+                <li><a href="#"><span class ='footer_logo_link'>World Stars</span><br> <span>мировые звезды brics</span> </a></li>
+                <li><a href="#"><span>О нас</span></a></li>
+                <li><a href="#"><span>Словарь сайта</span></a></li>
+                <li><a href="#"><span>Встреси со звёздами</span></a></li>
+                <li><a href="#"><span>Знакомься дружи</span></a></li>
+            </ul>
+            <ul class="footer_row">
+                <li><a href="#"><span>Главная</span></a></li>
+                <li><a href="#"><span>Звезды кино</span></a></li>
+                <li><a href="#"><span>Мода</span></a></li>
+                <li><a href="#"><span>Спорт</span></a></li>
+                <li><a href="#"><span>Музыка</span></a></li>
+                <li><a href="#"><span>Танцы</span></a></li>
+            </ul>
+            <ul class="footer_row">
+                <li><a href="#"><span>Поддержка</span> </a></li>
+                <li><a href="#"><span>Политика конфиденциальности</span></a></li>
+                <li><a href="#"><span>Term of service</span></a></li>
+                <li><a href="#"><span>Social Media</span></a></li>
+                <li><a href="#"><span>Контакты</span></a></li>
+                <div class="footer_row_contact">
+                    <div class="circlestar">
+                        <img src="../assets/images/footer/footerstar.svg" alt="footerstar">
+                    </div>
+                    <img src="../assets/images/footer/WhatsApp Inc. svg (1).png" alt="WhatsApp">
+                    <img src="../assets/images/footer/social icons.png" alt="social">
+                    <img src="../assets/images/footer/Telegram_2019_Logo.png" alt="Telegram_2019_Logo">
+                    <img src="../assets/images/footer/App Icon.svg" alt="App">
+                </div>
+            </ul>
+           </div>
+        </div>
+        <div class="footerMobile container_fluid">
+            <div class="footerMobile_content">
+              <h2><span>World Stars</span><br> мировые звезды brics</h2>
+              <div class="footerMobile_content_links">
+              <ul>
+                <li style="font-weight: 700;">О нас</li>
+                <li>Словарь сайта</li>
+                <li>Контакты</li>
+                <li style="font-weight: 700;">Поддержка</li>
+                <li>Term of service</li>
+                <li style="font-weight: 700;">Social Media</li>
+              </ul>
+              <ul>
+                <li style="font-weight: 700;">Главная</li>
+                <li>Звезды кино</li>
+                <li>Мода</li>
+                <li>Спорт</li>
+                <li>Музыка</li>
+                <li>Танцы</li>
+                <li>Встречи со звездами</li>
+                <li>Знакомься дружи</li>
+              </ul>
+              </div>
+              <p class="footerMobile_content_rules">Политика конфиденциальности</p>
+               <div class="footer_row_contact">
+                 <div class="circlestar">
+                     <img src="../assets/images/footer/footerstar.svg" alt="footerstar">
+                 </div>
+                 <img src="../assets/images/footer/WhatsApp Inc. svg (1).png" alt="WhatsApp">
+                 <img src="../assets/images/footer/social icons.png" alt="social">
+                 <img src="../assets/images/footer/Telegram_2019_Logo.png" alt="Telegram_2019_Logo">
+                 <img src="../assets/images/footer/App Icon.svg" alt="App">
+               </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+/* Статья  с фото и слайдером*/
+
+.article {
+	width: 1200px;
+
+	display: grid;
+	grid-template-columns: 665px 467px;
+	gap: 73px;
+}
+
+.article__text__left {
+	display: grid;
+	padding-top: 40px;
+	gap: 40px;
+	grid-template-rows: 114px 1fr;
+
+	color: #000;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Подзаголвок */
+	/* font-family: Montserrat; */
+
+}
+
+.article__text__left--h1 {
+
+	/* height: 114px; */
+	height: 95px;
+
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 98.5%;
+	/* 35.46px */
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+	padding-top: 19px;
+	padding-left: 21px;
+}
+
+
+.article__text__left--text {
+
+	padding: 22px 11px 22px 22px;
+	/* padding: 22px 22px 22px 22px ; */
+
+
+	/* display: grid; */
+
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+	color: #000;
+	font-feature-settings: 'clig' off, 'liga' off;
+	/* Основной текст */
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	/* 26.4px */
+}
+
+.article__text__left__button-next {
+	margin-top: 10px;
+	margin-left: 70%;
+	cursor: pointer;
+}
+.text-arrow-next{
+	position: relative;
+	top: 4px;
+}
+
+/* Заголовок и фото с права */
+.article__text__right {
+	text-align: center;
+}
+
+/* Первый слайдер */
+.slider__wrapper {
+	padding-top: 34px;
+	width: 1200px;
+	height: 252px;
+
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.slider-title {
+	width: 1200px;
+}
+
+/* padding-left: 200px; */
+.leftPaddingFirstFoto {
+	margin-left: 5px;
+}
+
+/* выбранное фото сладер 1 */
+#slider1-main-foto {
+	width: 458px;
+	height: 434px;
+	object-fit: cover;
+	border-radius: 15px;
+	margin: 5px;
+}
+
+.slider1-main-foto--background {
+	width: 468px;
+	height: 444px;
+
+	border-radius: 15px;
+	/* Цвет рамки выбранного фото */
+	background: linear-gradient(265deg, #F00 -74.64%, #FFD466 112.9%);
+}
+
+.swiper-slide {
+	/* margin: -5px; */
+	cursor: pointer;
+}
+
+.swiper-slide img {
+	width: 177px;
+	height: 162px;
+	object-fit: contain;
+	border-radius: 15px;
+}
+
+.swiper-slide--background {
+	width: 177px;
+	height: 162px;
+	border-radius: 15px;
+	padding: 5px;
+	background: transparent;
+}
+
+
+
+.swiper-slide--background-color {
+	background: linear-gradient(265deg, #F00 -74.64%, #FFD466 112.9%);
+}
+
+.slider__wrapper--button-next {
+	margin-top: 15px;
+	width: 1200px;
+	text-align: end;
+	cursor: pointer;
+}
+
+
+
+/* Карьера награды */
+.triple___article--title {
+	width: 1200px;
+}
+
+.triple___article {
+	display: grid;
+	grid-template-columns: repeat(3, 385px);
+	gap: 10px 22.5px;
+	/* поправить */
+	grid-template-areas: "a b c" ". . e";
+	background-color: white;
+	border-radius: 22.5px;
+
+
+	width: 1200px;
+	height: 332px;
+	/* justify-content: center; */
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.triple___article span {
+	font-family: "Montserrat";
+	font-weight: medium;
+	font-size: 22px;
+
+	/* отступы текстов */
+	/* margin: 10px; */
+	margin-top: 12px;
+	margin-left: 16px;
+}
+
+.triple___article--button {
+	grid-area: e;
+	justify-self: end;
+	cursor: pointer;
+
+	position: relative;
+	top: -30px;
+	right: 20px;
+}

@@ -1,0 +1,27 @@
+.poster_header_up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10px 30px 10px;
+    
+  }
+  .poster_nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+    
+   
+  }
+  /* .header_prof_card {
+    align-items: center;
+    @include very-small-screen {
+      display: none;
+    }
+  }
+  .menu-container {
+    @include very-small-screen {
+      position: static;
+      margin-left: 15px;
+    }
+  } */

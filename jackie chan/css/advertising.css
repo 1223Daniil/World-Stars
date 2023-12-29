@@ -1,0 +1,71 @@
+
+.advertising {
+	display: grid;
+	grid-template-columns: 1200px;
+	justify-items: center;
+	place-content: center;
+	width: 1600px;
+	overflow: hidden;
+}
+
+.advertising-background {
+	width: 2120px;
+	height: 525px;
+	border-radius: 15px;
+	/* background: linear-gradient(265deg, #F00 -74.64%, #FFD466 112.9%); */
+	background: linear-gradient(132deg, #F00 -74.64%, #FFD466 112.9%);
+	/* Развернутый градиент */
+}
+
+.advertising-wrapper {
+	display: grid;
+	grid-template-columns: 1200px;
+	justify-content: center;
+	/* justify-items: center; */
+
+	grid-auto-rows: max-content;
+	gap: 51px;
+	padding-top: 51px;
+
+}
+
+.advertising__title {
+	color: #FFF;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* ЗАГОЛОВОК */
+	/* font-family: Montserrat; */
+	font-size: 55px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 130%;
+	/* 71.5px */
+}
+
+.advertising__text {
+
+	width: 520px;
+
+	color: #FFF;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Основной текст */
+	/* font-family: Montserrat; */
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	/* 26.4px */
+}
+
+.advertising__picture {
+	position: relative;
+}
+
+.advertising__picture--position {
+	position: absolute;
+	top: -265px;
+	left: 650px;
+}
+
+

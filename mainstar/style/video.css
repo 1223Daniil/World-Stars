@@ -1,0 +1,120 @@
+.bottom-video-wrapper {
+    display: grid;
+    grid-template-columns: minmax(360px, 1200px);
+    /* grid-template-rows: 1fr 0px; */
+    justify-items: center;
+    justify-content: center;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0px;
+    justify-items: end;
+    grid-auto-rows: auto;
+    position: relative;
+}
+
+.bottom-video-menu {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    position: relative;
+    /* position: absolute; */
+    top: -50px;
+}
+
+.bottom-video-menu__button {
+    border: 1px solid #000;
+    padding: 10px 8px 9px 8px;
+    border-radius: 7px;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+
+    transition-property: padding;
+    transition-duration: 0.2s;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    cursor: pointer;
+}
+
+.sected-video {
+    display: grid;
+    justify-items: center;
+}
+
+.bottom-video-menu__button--selected {
+    /* 18px */
+    padding: 17px 8px 16px 8px;
+}
+
+.bottom-video-menu__button:hover {
+    padding: 17px 8px 16px 8px;
+
+}
+
+.bottom-video-menu__button-color1 {
+    background-color: #C9B6FF;
+}
+
+.bottom-video-menu__button-color2 {
+    background-color: #B9F5DB;
+}
+
+.bottom-video-menu__button-color3 {
+    background-color: #FF9D4C;
+}
+
+.bottom-video-menu__button-color4 {
+    background-color: #8DDAED;
+}
+
+.bottom-video-menu__button-color5 {
+    background: linear-gradient(123deg, #FCD1EB -9.2%, #FA9FB4 95.88%, #C555C7 97.67%, #9A1CF5 139.38%, #F39097 165.24%);
+}
+
+@media (max-width: 1200px) {
+    #footer-video-selected {
+        width: 800px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 800px) {
+    #footer-video-selected {
+        width: 360px;
+        height: 200px;
+    }
+
+    .bottom-video-menu__button {
+        border: 1px solid #000;
+        padding: 5px 9px 8px 5px;
+        border-radius: 7px;
+        box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+
+        color: var(--, #000);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        /* 16.8px */
+
+        cursor: pointer;
+    }
+
+    .bottom-video-menu__button--selected {
+        /* 18px */
+        padding: 10px 8px 10px 8px;
+    }
+
+    .bottom-video-menu__button:hover {
+        padding: 10px 8px 10px 8px;
+
+    }
+}

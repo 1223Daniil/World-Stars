@@ -1,0 +1,355 @@
+.choice {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* mob */
+.chomobil {
+    display: none;
+}
+
+.choicemobil {
+    display: none;
+}
+
+.chomobil__wrapper-country {
+    display: none;
+}
+
+/* mob end */
+
+.choice__title {
+    margin: 26px 0 24px 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+
+.choice__wrapper-hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-bottom: 50px;
+}
+
+.choice__wrapper-hobbies-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #fff;
+
+    width: auto;
+    height: 58px;
+    padding: 12px 34px;
+
+    text-align: center;
+    color: #212121;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.choice__wrapper-hobbies-item:hover {
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+    color: #fff;
+}
+
+
+.choice__wrapper-hobbies-item1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    width: 152px;
+    height: 55px;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.choice__wrapper-hobbies-item1 span {
+    display: block;
+}
+
+.choice__wrapper-hobbies-item1:hover {
+    border: 1px solid #FF2C15;
+    border-radius: 5px;
+    color: #FFF;
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+}
+
+.choice__wrapper-hobbies-item1 img {
+    width: 11px;
+    height: 12px;
+}
+
+.choice__wrapper-country {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px 26px;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.choice__wrapper-country-item {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    width: auto;
+    height: 58px;
+    padding: 16px 28px 16px 28px;
+    text-align: center;
+    color: #212121;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+
+
+.choice__wrapper-country-item img {
+    cursor: pointer;
+}
+
+.choice__wrapper-country-item:hover {
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+    color: #fff;
+}
+
+
+
+.choice__wrapper-country-search {
+    display: flex;
+    gap: 10px;
+}
+
+
+@media (max-width: 360px) {
+
+    .choice {
+        display: none;
+    }
+
+    .chomobil {
+        display: block;
+    }
+
+    /* choicemobil */
+
+    .choicemobil {
+        display: block;
+        margin-bottom: 34px;
+    }
+
+    .choicemobil__title {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    .choicemobil__wrapper-hobbies {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .choicemobil__wrapper-hobbies-item {
+        border-radius: 5px;
+        border: 1px solid #000;
+        background-color: #fff;
+        width: 142px;
+        height: 35px;
+        cursor: pointer;
+        padding-left: 0;
+        padding-right: 0;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .choicemobil__wrapper-hobbies-item {
+        display: flex;
+        flex-shrink: 0;
+        padding: 4px 6px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background: #fff;
+        width: auto;
+        text-align: center;
+        color: #212121;
+        text-align: center;
+
+        cursor: pointer;
+    }
+
+    .choicemobil__wrapper-hobbies-item:hover {
+        background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+        color: #fff;
+    }
+
+    /* .chomobil */
+    .chomobil__wrapper-country {
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        gap: 25px;
+        justify-content: center;
+        margin-bottom: 20px;
+
+    }
+
+    .choice__wrapper-country-item {
+        width: 109px;
+        padding: 8px 16px;
+        font-size: 13px;
+        text-align: center;
+        display: block;
+    }
+
+    .chomobil__pagination {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .chomobil__pagination-left {
+        width: 20px;
+        height: 20px;
+        border-radius: 25px;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    }
+
+    .chomobil__pagination-right {
+        width: 20px;
+        height: 20px;
+        border-radius: 25px;
+        border: 2px solid var(--, #FF2C15);
+        background: #FFF;
+    }
+}
+
+
+.choicemobil__wrapper-hobbies-item1 {
+    text-align: center;
+    font-family: Roboto;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 4px 6px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.choicemobil__wrapper-hobbies-item1 span {
+    display: block;
+}
+
+.choicemobil__wrapper-hobbies-item1:hover {
+    border: 1px solid #FF2C15;
+    border-radius: 5px;
+    color: #FFF;
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+}
+
+
+
+
+/* select */
+
+.choice__wrapper-hobbies-item1 {
+    position: relative;
+
+}
+
+.select-sport {
+    display: none;
+}
+
+.select-sport--open {
+    position: absolute;
+    top: 55px;
+    display: grid;
+    grid-template-columns: 152px;
+    grid-template-rows: repeat(5, 55px);
+    display: grid;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.select-sport-item {
+
+    color: #000;
+    text-align: center;
+
+    padding: 4px 6px;
+    cursor: pointer;
+    align-items: center;
+
+    display: grid;
+    align-items: center;
+
+    color: var(--, #000);
+    text-align: center;
+
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.select-sport-item:hover {
+    border: 1px solid #FF2C15;
+    border-radius: 5px;
+    color: #FFF;
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+}
+
+.start--button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}

@@ -1,0 +1,151 @@
+.offers {
+    /* margin-bottom: 69px; */
+}
+
+.offersmobil {
+    display: none;
+}
+
+.offers__container {
+    display: flex;
+    gap: 80px;
+    height: 340px;
+}
+
+.offers__container-left {
+
+}
+
+.offers__container-left-title {
+    display: block;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    max-width: 408px;
+    width: 100%;
+    margin-bottom: 46px;
+}
+
+.offers__container-left-description {
+    display: block;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    max-width: 588px;
+    width: 100%;
+}
+
+.offers__container-right {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 90px;
+    right: -50px;
+}
+
+
+.offers__container-foto {
+    position: relative;
+    
+}
+
+.offers__container-right-down {
+    display: flex;
+    width: 463px;
+}
+
+.offers__container-right-text {
+    color: #000;
+    /* text-align: center; */
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.offers__container-right-numbers {
+    display: block;
+    padding-top: 6px;
+    width: 52px;
+    max-height: 46px;
+    background-color: #fff;
+    color: #FF0606;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 1px solid #FF2C15;
+}
+
+
+@media (max-width: 360px) {
+    .offers {
+        display: none;
+    }
+
+    .offersmobil {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .offersmobil__container {
+
+    }
+
+    .offersmobil__container img {
+        width: 18px;
+        height: 15px;
+    }
+
+    .offersmobil__container-left-description {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    .offersmobil__container-right-down {
+        display: flex;
+        justify-content: center;
+    }
+
+    .offers__container-right-text {
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .offersmobil__container-right-numbers {
+        display: block;
+        padding-top: 3px;
+        width: 52px;
+        max-height: 46px;
+        background-color: #fff;
+        color: #FF0606;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: 1px solid #FF2C15;
+    }
+}

@@ -1,0 +1,146 @@
+.stickers {
+    margin-bottom: 96px;
+}
+
+.stickers__container {
+
+}
+
+.stickers__container-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+}
+
+.stickers__container-wrapper {
+    display: flex;
+    gap: 52px;
+}
+
+.stickers__container-item {
+    border-radius: 15px;
+    background: #FFF;
+    width: 255px;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stickers__container-item img{
+    display: block;
+    width: 180px;
+    height: 132px;
+}
+
+.stickers__container-item-up {
+    color: #FFF;
+    text-align: center;
+    padding: 6px 15px;
+    font-family: Montserrat;
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    border-radius: 10px;
+    background: linear-gradient(253deg, #F00 -35.18%, #FFD466 103.15%);
+    width: 220px;
+    cursor: pointer;
+}
+
+.stickers__container-item-up1 {
+    color: #FFF;
+    text-align: center;
+    padding: 6px 15px;
+    font-family: Montserrat;
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    border-radius: 10px;
+    background: linear-gradient(253deg, #F00 -35.18%, #FFD466 103.15%);
+    cursor: pointer;
+}
+
+.stickers__container-description {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.stickers__container-down {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 16px 70px;
+    line-height: normal;
+    border-radius: 0px 0px 15px 15px;
+    background: linear-gradient(119deg, #F00 -14.77%, #FFD466 103.16%);
+    cursor: pointer;
+}
+
+.stickers__container-down1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 16px 41px;
+    line-height: normal;
+    border-radius: 0px 0px 15px 15px;
+    background: linear-gradient(119deg, #F00 -14.77%, #FFD466 103.16%);
+    cursor: pointer;
+}
+
+.stickers__container-item1 {
+    border-radius: 15px;
+    background: #FFF;
+    width: 255px;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stickers__container-offer {
+    color: #FF0606;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: capitalize;
+}
+
+.stickers__container-description1 {
+
+}
+
+.stickers__container-news {
+    color: #FF0606;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: capitalize;
+}

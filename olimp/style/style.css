@@ -1,0 +1,18 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url('/image-home/fonolympus.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+ .container {
+   max-width: 1190px;
+   margin: 0 auto;
+ }
+
+ @media (max-width: 360px) {
+   .container {
+      max-width: 328px;
+   }
+ }

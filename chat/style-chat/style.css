@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #FDDFA1 0%, #FFB959 55.21%, #FF997E 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+ .container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+
+ .fon__image {
+   position: absolute;
+   z-index: -1;
+}
+
+.header__losso {
+   position: relative;
+   left: -20px;
+   bottom: 170px;
+}
+.chat__friends__bt.active{
+   border: 2.5px solid #FF2C15;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    color: #fff;
+}
+.spirali {
+   position: relative;
+   left: 200px;
+   top: 50px;
+}
+
+.spiraliniz {
+   position: relative;
+   left: 715px;
+   top: 800px;
+}
+
+ @media (max-width: 360px) {
+   .container {
+      max-width: 328px;
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   .fon__image {
+      display: none;
+   }
+ }

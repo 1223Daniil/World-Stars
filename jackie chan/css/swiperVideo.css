@@ -1,0 +1,42 @@
+
+/* Видер от слайдера */
+#selected-video {
+	border-radius: 15px;
+
+}
+
+.slider-title {
+	color: #000;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Подзаголвок */
+	font-family: Montserrat;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 98.5%;
+	/* 35.46px */
+}
+
+.next-video-button {
+	margin-top: 33px;
+	margin-bottom: 114px;
+	cursor: pointer;
+
+	color: #000;
+	/* text-align: center; */
+
+	/* Для раскрытия фото/ви део */
+	/* font-family: Montserrat; */
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.slider-sected-video{
+	width: 1200px;
+	height: 832px;
+	background-color: green;
+	border-radius: 15px;
+}

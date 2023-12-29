@@ -1,0 +1,432 @@
+.chat__friends {
+    margin-bottom: 65px;
+    display: flex;
+    gap: 47px;
+}
+
+.chat__friends-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat__friends-one-item {
+    /* border-radius: 4px;
+    border: 2px solid #000; */
+    background: #FFF;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 14px;
+    border: 2.5px solid #FF2C15;
+    background:  #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    max-width: 225px;
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    margin-bottom: 17px;
+    /* padding-left: 20px;
+    padding-top: 20px; */
+}
+
+.chat__friends-down-image {
+    display: block;
+    width: 175px;
+    height: 146px;
+    margin-bottom: 10px;
+}
+
+.chat__friends-down-one1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat__container-stars {
+    width: 167px;
+    height: 26px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat__container-stars span {
+    /* margin-bottom: 15px; */
+    display: block;
+}
+
+.chat__friends-down-profil {
+    color: #000;
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+.chat__friends-down-profil img {
+    display: block;
+}
+
+.chat__friends-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat__friends-down-two {
+    width: 204px;
+    height: 200px;
+    border-radius: 15px;
+    border: 3px solid #FF2C15;
+    background: #FFF;
+    margin-bottom: 13px;
+}
+
+.chat__friends-up-item0 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    height: 64px;
+    border-radius: 14px;
+    border: 2.5px solid #FF2C15;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 17px;
+}
+
+.chat__friends-down-span {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.chat__friends-down-span1 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.chat__friends-down-span2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 38px;
+    border: 1px solid #FF2C15;
+    background: #FFF;
+}
+
+.chat__friends-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat__friends-three span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+}
+
+.form-check {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    width: 120px;
+}
+
+.chat__friends-up-item1 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    width: 528px;
+    height: 64px;
+    border-radius: 14px;
+    border: 2.5px solid #FF2C15;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 17px;
+}
+
+.chat__friends-down-three {
+    border-radius: 9.747px;
+    border: 1px solid #FF2C15;
+    background: #FFF;
+    width: 334px;
+    height: 248px;
+}
+
+
+
+
+.chat__friends-up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+
+.chat__friends-down {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.chat__friends-down-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.chat__friends-down-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat__friends-down-news {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.chat__friends-down-btn1 {
+    border-radius: 14px;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    display: block;
+    padding: 19px 43px;
+    width: 248px;
+    height: 62px;
+    cursor: pointer;
+}
+
+.chat__friends-down-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat__friends-down-two2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: 3px solid #FF2C15;
+    background: #FFF;
+    margin-bottom: 20px;
+    width: 204px;
+}
+
+.chat__friends-down-two2 img {
+    width: 118px;
+    height: 82px;
+    display: block;
+}
+
+/* .chat__friends-down-span {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+} */
+
+/* .chat__friends-down-btn2 {
+    border-radius: 14px;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+} */
+
+.chat__friends-down-btn2 {
+    border-radius: 14px;
+    border: 2.5px solid #FF2C15;
+    background: #FFF;
+    padding: 19px 43px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 277px;
+    display: block;
+    cursor: pointer;
+}
+
+
+.ChekBoxTable {
+	width: 334px;
+	height: 262px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	border: 1px solid #FF2C15;
+	background: #FFF;
+
+	display: grid;
+	grid-template-columns: 226px 30px;
+	gap: 16px;
+	grid-auto-rows: 40px;
+	justify-content: center;
+	justify-items: center;
+
+	overflow-y: scroll;
+	padding-top: 10px;
+	
+}
+
+.ChekBoxTable-item-container {
+	width: 226px;
+	height: 30px;
+	border-bottom: 1px solid black;
+	display: grid;
+	justify-content: start;
+	align-content: center;
+}
+
+.ChekBoxTable-checkbox-container {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+.ChekBoxTable-text {
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
+
+}
+
+.custom-label {
+	position: relative;
+	width: 30px;
+	height: 22px;
+	display: grid;
+	place-items: center;
+}
+
+.custom-input,
+.custom-checkbox {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border: 0.5px solid black;
+}
+
+.custom-input {
+	display: none;
+}
+
+.custom-checkbox {
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
+
+.custom-checkbox::after {
+	position: absolute;
+	content: url('../image-home/vendetta.svg');
+	opacity: 0;
+	/* анимация появления */
+	transform: scale(0,0);
+	transition: transform 0.25s, opacity 0.5s;
+
+	width: 30px;
+	height: 22px;
+	background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+	display: grid;
+	justify-content: center;
+	align-content: end;
+}
+
+.custom-input:checked~.custom-checkbox::after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Scroll */
+.ChekBoxTable::-webkit-scrollbar {
+	background: transparent;
+	width: 26px;  /* 9+8+9 пикселей */
+}
+
+.ChekBoxTable::-webkit-scrollbar-thumb {
+	background-color: #D9D9D9;
+	border-radius: 20px;
+	height: 84px;
+	/* Костыль на отступ справа  9 + 8 + 9 пикселей */
+	border: 9px solid white;
+}
+
+.ChekBoxTable::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}
+
+.ChekBoxTable::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}
+
+.gradient-wrapper{
+	width: 335px;
+	height: 263px;
+	background: linear-gradient(117.65deg, #FF2C15 -5.25%, #FA931A 98.66%);
+	border-radius: 10px;
+}
+
+/* Свойства скроллбара */
+/* ::-webkit-scrollbar              {  } */
+/* ::-webkit-scrollbar-button       {  } */
+/* ::-webkit-scrollbar-track        {  } */
+/* ::-webkit-scrollbar-track-piece  {  } */
+/* ::-webkit-scrollbar-thumb        {  } */
+/* ::-webkit-scrollbar-corner       {  } */
+/* ::-webkit-resizer                {  } */

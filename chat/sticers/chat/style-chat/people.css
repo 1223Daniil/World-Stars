@@ -1,0 +1,50 @@
+.people {
+    margin-bottom: 24px;
+}
+
+.people__container {
+
+}
+
+.slider__wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 18px;
+}
+
+.slider__wrapper-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider__wrapper-sticers {
+    display: flex;
+    gap: 8px;
+
+}
+
+.slider__wrapper-sticers-left {
+
+}
+
+.slider__wrapper-sticers-right {
+
+}
+
+.slider__wrapper-image {
+
+}
+
+.slider__wrapper-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.slider__wrapper-friends {
+    
+}

@@ -1,0 +1,235 @@
+.stylesmobil {
+    display: none;
+}
+
+
+.styles__stars-one {
+    position: relative;
+    left: 850px;
+    top: 80px;
+}
+
+.styles__stars-twoo {
+    position: relative;
+    left: 730px;
+    top: 130px;
+}
+
+.styles__stars-three {
+    position: relative;
+    left: 800px;
+    top: 240px;
+}
+
+.styles__stars-four {
+    position: relative;
+    left: 1050px;
+    top: 270px;
+}
+
+.styles__container-up {
+    display: flex;
+}
+
+.styles__container-up-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    width: 472px;
+    margin-right: 270px;
+}
+
+.styles__container-up-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 14px;
+    background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+    width: 266px;
+    height: 62px;
+    margin-bottom: 50px;
+}
+
+.styles__container-up-btn {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.styles__container-wrapper {
+    display: flex;
+    gap: 52px;
+}
+
+.styles__container-wrapp {
+    display: flex;
+    flex-direction: column;
+}
+
+.styles__container-wrapper-item {
+    border-radius: 10px;
+    background: #FFF;
+    width: 383px;
+    height: 528px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.styles__container-wrapper-image1 {
+    display: block;
+    width: 342px;
+    height: 372px;
+
+}
+.styles__container-wrapper-image2 {
+    display: block;
+    width: 342px;
+    height: 320px;
+    margin-bottom: 53px;
+}
+.styles__container-wrapper-image3 {
+    display: block;
+    width: 342px;
+    height: 377px;
+}
+
+.styles__container-wrapper-vibor {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 14px;
+    border: 1px solid #000;
+    background: #FFF;
+    width: 338px;
+    height: 56px;
+    margin-top: 24px;
+
+}
+
+.styles__container-wrapper-button {
+    border-radius: 0px 0px 10px 10px;
+    background: #000;
+    height: 77px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.styles__container-wrapper-btn {
+
+}
+
+.styles__container-wrapper-item-down {
+    display: block;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.5%;
+    margin-bottom: 63px;
+}
+
+
+
+@media (max-width: 360px) {
+    .styles {
+        display: none;
+    }
+
+    .styles__stars {
+        display: none;
+    }
+    
+
+    .stylesmobil {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .stylesmobil__container-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .stylesmobil__container-up-title {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+    }
+
+    .stylesmobil__container-up-button {
+        background-color: transparent;
+    }
+
+    select {
+        width: 141px;
+        /* height: auto; */
+        /* border: 1px solid #999; */
+        border: none;
+        /* color: #000; */
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        color: #000;
+        border-radius: 14px;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+        width: 147px;
+        height: 36px;
+        padding-left: 10px;
+        z-index: 2;
+    }
+
+    .stylesmobil__container-wrapp {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .stylesmobil__container-wrapper {
+        border-radius: 23px;
+        border: 1px solid #F00;
+        background: #FFF;
+        box-shadow: 0px 0px 30px 0px #F1F4F5;
+        width: auto;
+        height: 186px;
+    }
+
+    .stylesmobil__container-wrapper-title {
+        color: #000;
+        font-family: Roboto;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        margin-left: 23px;
+        margin-top: 10px;
+    }
+
+    .stylesmobil__container-wrapper-wrap {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

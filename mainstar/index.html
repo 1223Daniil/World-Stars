@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World star new</title>
+        <!-- Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+
+            <link rel="stylesheet" href="../css/main.min.css" />
+            <link rel="stylesheet" href="../css/mainStyle.css">
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/fonts.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/burger.css">
+        <link rel="stylesheet" href="style/choice.css">
+        <link rel="stylesheet" href="style/carts.css">
+        <link rel="stylesheet" href="style/friends.css">
+        <link rel="stylesheet" href="style/news.css">
+        <link rel="stylesheet" href="style/communication.css">
+        <link rel="stylesheet" href="style/interest.css">
+        <link rel="stylesheet" href="style/video.css">
+        <link rel="stylesheet" href="style/footer.css">
+
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="style/Swipers.css">
+        <link rel="stylesheet"
+            href="./swiper/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
+
+    </head>
+
+    <body>
+        <header class="header_main">
+            <div class="container">
+                <div class="poster_header_up">
+                    <a class="logo_link"><img src="../assets/image/logo.svg"></a>
+                    <div class="poster_nav">
+                        <div class="bell">
+                            <a href="#">
+                                <img src="../assets/image/bell.png" alt="Notifications">
+                            </a>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="header_prof_card">
+                            <img style="border-radius: 50%;" src="../assets/image/Bitmap (1).png" alt="image">
+                            <div class="name">
+                                <div class="stars">
+                                    <img src="../assets/image/header_stars.png" alt="Stars">
+                                </div>
+                            </div>
+                            <div class="header_bag">
+                                <img src="../assets/image/bag_ws.png" alt="Shopping Bag" >
+                            </div>
+                            <div class="header_num">
+                                25
+                            </div>
+                        </div>
+                        <div class="menu-container">
+                            <img src="../assets/image/menu.svg" id="menuButton">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wallpaper grid">
+           
+            <!-- burger menu -->
+            <div id="burger" class="burger">
+                <div class="container">
+                    <button onclick="burgerToggle()" class="burger__arrow">
+                        <img src="image-home/burgerarrow.svg" alt>
+                    </button>
+                    <div class="burger__container">
+                        <div class="burger__container-left">
+                            <div class="burger__container-links">
+                                <a href="#"
+                                    class="burger__container-links-link1">
+                                    <img src="image-home/burger1.svg" alt>
+                                    <span>Звездный магазин</span>
+                                    <img class="burger__container-links-img"
+                                        src="image-home/arrowburger.svg" alt>
+                                </a>
+                                <a href="#"
+                                    class="burger__container-links-link2">
+                                    <img src="image-home/burger2.svg" alt>
+                                    <span>Пиши новости</span>
+                                    <img class="burger__container-links-img"
+                                        src="image-home/arrowburger.svg" alt>
+                                </a>
+                                <a href="#"
+                                    class="burger__container-links-link3">
+                                    <img src="image-home/burger3.svg" alt>
+                                    <span>Предложи звезду</span>
+                                    <img class="burger__container-links-img"
+                                        src="image-home/arrowburger.svg" alt>
+                                </a>
+                                <a href="#"
+                                    class="burger__container-links-link4">
+                                    <img src="image-home/burger4.svg" alt>
+                                    <span>Выбирай мировую звезду</span>
+                                    <img class="burger__container-links-img"
+                                        src="image-home/arrowburger.svg" alt>
+                                </a>
+                                <a href="./pages/olimp/olimp.html"
+                                    class="burger__container-links-link5">
+                                    <img src="image-home/burger5.png" alt>
+                                    
+                                        <span>Олимп славы</span>
+
+                                    <img class="burger__container-links-img"
+                                        src="image-home/arrowburger.svg" alt>
+                                </a>
+                                <a href="#"
+                                    class="burger__container-links-link6">
+                                    <img src="image-home/burger6.svg" alt>
+                                    <span>Кошелек</span>
+                                    <img class="burger__container-links-img"
+                                        src="image-home/arrowburger.svg" alt>
+                                </a>
+                                <a href="#"
+                                    class="burger__container-links-link7">
+                                    <img src="image-home/burger7.svg" alt>
+                                    <span>Профиль</span>
+                                    <img class="burger__container-links-img"
+                                        src="image-home/arrowburger.svg" alt>
+                                </a>
+                                <a href="#"
+                                    class="burger__container-links-link8">
+                                    <img src="image-home/burger8.svg" alt>
+                                    <span>Афиша встреч</span>
+                                    <img class="burger__container-links-img"
+                                        src="image-home/arrowburger.svg" alt>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="burger__container-right">
+                            <div class="burger__container-right-up">
+                                <img src="image-home/bagheader.png" alt>
+                                <h3 class="burger__container-right-title">Зарабатывай
+                                    на сайте! </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- burger menu END-->
+
+            <!--  -->
+            <section class="choice">
+                <h3 class="choice__title">Выбирай мировых звезд читай и<br>
+                    пиши о них новости
+                </h3>
+
+                <div class="choice__wrapper-hobbies">
+                    <div class="choice__wrapper-hobbies-item1"
+                        onclick="selectSportToggle()">
+                        <div class="start--button">
+                            <span>Спорт</span>
+                            <img src="image-home/choicehobbiesarrow.png" alt>
+                        </div>
+                        <div class="select-sport" id="select-sport"
+                            onclick="selectSportToggle()">
+                            <div class="select-sport-item"
+                                onclick="selectSportToggle()">Футбол</div>
+                            <div class="select-sport-item"
+                                onclick="selectSportToggle()">Волейбол</div>
+                            <div class="select-sport-item"
+                                onclick="selectSportToggle()">Баскетбол</div>
+                            <div class="select-sport-item"
+                                onclick="selectSportToggle()">Хоккей</div>
+                            <div class="select-sport-item"
+                                onclick="selectSportToggle()">Крикет</div>
+                        </div>
+                    </div>
+                    <button class="choice__wrapper-hobbies-item"><a href="./pages/kino/kino.html">
+                        Кино
+                        </a>
+                    </button>
+                    <button class="choice__wrapper-hobbies-item">Музыка</button>
+                    <button class="choice__wrapper-hobbies-item">Мода</button>
+                    <button class="choice__wrapper-hobbies-item">Танцы</button>
+                </div>
+                <div class="choice__wrapper-country">
+                    <button class="choice__wrapper-country-item">Бразилия</button>
+                    <button class="choice__wrapper-country-item">Россия</button>
+                    <button class="choice__wrapper-country-item">Индия</button>
+                    <button class="choice__wrapper-country-item">Китай</button>
+                    <button class="choice__wrapper-country-item">ЮАР</button>
+                    <button class="choice__wrapper-country-item">Аргентина</button>
+                    <button class="choice__wrapper-country-item">Египет</button>
+                    <button class="choice__wrapper-country-item">Эфиопия</button>
+                    <button class="choice__wrapper-country-item">Иран</button>
+                    <button class="choice__wrapper-country-item">Саудовская&nbsp;Аравия</button>
+                    <button class="choice__wrapper-country-item">ОАЭ</button>
+                    <button class="choice__wrapper-country-item">другие</button>
+                    <button class="choice__wrapper-country-item">
+                        <img src="./image-home/lupamobil.png"
+                            alt>Поиск звезды
+                    </button>
+                </div>
+            </section>
+            <!--  -->
+
+            <!-- Мобильный выбор кино музыка моды танцы -->
+            <div class="choicemobil">
+                <div class="container">
+                    <h3 class="choicemobil__title">Выбери мировую звезду кино и
+                        смотри о ней новости
+                    </h3>
+                    <div class="choicemobil__wrapper">
+                        <div class="choicemobil__wrapper-hobbies">
+                            <button class="choicemobil__wrapper-hobbies-item1">
+                                <span>Спорт</span>
+                                <!-- <img src="image-home/choicehobbiesarrow.png" alt=""> -->
+                            </button>
+                            <button class="choicemobil__wrapper-hobbies-item">Кино</button>
+                            <button class="choicemobil__wrapper-hobbies-item">Музыка</button>
+                            <button class="choicemobil__wrapper-hobbies-item">Мода</button>
+                            <button class="choicemobil__wrapper-hobbies-item">Танцы</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chomobil">
+                <div class="container">
+                    <div class="chomobil__wrapper-country">
+                        <!-- сюда воткнуть слайдер -->
+                        <button class="choice__wrapper-country-item">Бразилия</button>
+                        <button class="choice__wrapper-country-item">Россия</button>
+                        <button class="choice__wrapper-country-item">ЮАР</button>
+                        <button class="choice__wrapper-country-item">Аргентина</button>
+                        <button class="choice__wrapper-country-item">Египет</button>
+                        <button class="choice__wrapper-country-item">Индия</button>
+                    </div>
+                    <div class="chomobil__pagination">
+                        <div class="chomobil__pagination-left"></div>
+                        <div class="chomobil__pagination-right"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Мобильный выбор кино музыка моды танцы END -->
+
+            <div class="friends">
+                <div class="container">
+                    <h3 class="friends__title">Переходи в чат по выбранным
+                        мировым звездам!</h3>
+                    <div class="friends__carts-page">
+                        <span class="carts__page-desc">Выбрано</span>
+                        <div class="carts__page-kvadrat">
+                            <img src="image-home/whitekvadrat.png" alt>
+                            <span class="carts__page-span"
+                                id="carts__page--selected">0</span>
+                        </div>
+                        <span class="carts__page-desc">из 17</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="slider__wrapper">
+                <div class="swiper-prev">
+                    <img src="./image/swiper/left.svg" alt>
+                </div>
+                <div class="swiper-next">
+                    <img src="./image/swiper/right.svg" alt>
+                </div>
+                <!-- Блок слайдера! -->
+                <div class="swiper indexSliderProduct">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper" id="swiperChat">
+                        <!-- Slides -->
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+
+                                <button class="friends__grid-btn">
+                                    <a href="./pages/chat/chat.html">
+                                        Перейти в чат
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class=" friends__grid-item">
+                                <img class="friends__grid-basket"
+                                    src="image-home/basketfriends.png" alt>
+                                <span class="friends__grid-name">Джеки Чан</span>
+                                <img class="friends__grid-image"
+                                    src="image-home/friendsfoto.png"
+                                    onclick="friendsSelect(this)"
+                                    alt>
+                                <span class="friends__grid-numbers">999 999
+                                    участников</span>
+                                <button class="friends__grid-btn">Перейти в чат</button>
+                            </div>
+                        </div>
+
+                        <!-- sllide's end -->
+                    </div>
+                </div>
+            </section>
+
+            <div class="carts">
+                <!-- <h3 class="friends__title">Выбирай любимых мировых звезд</h3> -->
+                <div class="carts__wrapper">
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <a href="./pages/jackie chan/index.html">
+                                <span>Читай новости</span>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                    <div class="carts__wrapper-item">
+                        <span>Джеки Чан</span>
+                        <img class="carts__wrapper-item-image"
+                            src="image-home/cart.png" alt
+                            onclick="redStarSelect(this)">
+                        <img class="carts__wrapper-item-star"
+                            src="image-home/Starcartwhite.png" alt>
+                        <button class="carts__wrapper-news">
+                            <span>Читай новости</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="carts__page">
+                    <span class="carts__page-desc">Страница</span>
+                    <div class="carts__page-kvadrat">
+                        <img src="image-home/redkvadrat.png" alt>
+                        <span class="carts__page-span"
+                            id="carts__page--selected-stars">5</span>
+                    </div>
+                    <span class="carts__page-desc">из 300</span>
+                    <div class="carts__page-pagination">
+                        <div onclick="prevPage()">
+                            <img src="image-home/arrowkvadratprev.png" alt
+                                onclick="prevPage()">
+                        </div>
+                        <div onclick="nextPage()">
+                            <img src="image-home/arrowkvadratnext.png" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="container">
+                    <div class="news__container">
+                        <img class="news__image" src="image-home/newsimage.png"
+                            alt>
+                        <h2 class="news__title">Пиши&nbsp;новости,предлагай на
+                            сайт свою мировую звезду</h2>
+                    </div>
+                    <div class="news__button">
+                        <button class="news__button-left">
+                        <a href="./pages/news/news.html">
+                            ПИШИ НОВОСТИ
+                        </a>
+                        </button>
+                        <button class="news__button-right">
+                            <a href="./pages/offer/offer.html">
+                                ПРЕДЛАГАЙ ЗВЕЗДУ
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- блок news для мобилы -->
+
+            <div class="newsmobil">
+                <div class="container">
+                    <h2 class="newsmobil__container-title">Пиши&nbsp;новости,предлагай
+                        на сайт свою мировую звезду</h2>
+                    <div class="newsmobil__container-wrapper">
+                        <img class="newsmobil__container-wrapper-image"
+                            src="image-home/newsmobil.png" alt>
+                        <div class="newsmobil__button">
+                            <button class="newsmobil__button-left">ПИШИ НОВОСТИ</button>
+                            <button class="newsmobil__button-right">ПРЕДЛАГАЙ
+                                ЗВЕЗДУ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="communication">
+                <div class="communication__container">
+                    <h3 class="communication__title">Знакомься и общайся с
+                        теми,
+                        кто любит таких же, как ты звезд!
+                    </h3>
+
+                    <div class="communication__block">
+                        <img src="./image/pipl/pipl.png" alt>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="interest">
+                <div class="interest__container">
+                    <div class="interest__container-left">
+                        <h4 class="interest__container-left-title">Это
+                            интересно!</h4>
+                        <p class="interest__container-left-description">
+                            Смотрите самые свежие новости о <br>
+                            любимых спортсменах, музыкантах, актерах,<br>
+                            моделях, дизайнерах и других. Приходи на <br>
+                            встречи с мировыми звездами, дружи с <br>
+                            теми кто любит таких же звезд!</p>
+                    </div>
+                    <div class="interest__container-right">
+                        <img class="interest__container-right-size"
+                            src="image-home/interestboy.png" alt>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-video-wrapper">
+                <div class="video-container">
+                    <div class="sected-video">
+                        <iframe id="footer-video-selected" width="1200"
+                            height="822"
+                            src="https://www.youtube.com/embed/WhNcqdZCgPE?si=IdC52uYUwatJlRbA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="bottom-video-menu">
+                        <div
+                            class="bottom-video-menu__button bottom-video-menu__button-color1"
+                            onclick="bottomMenuSelect(this)">
+                            <span>Мода</span>
+                        </div>
+                        <div
+                            class="bottom-video-menu__button bottom-video-menu__button-color2"
+                            onclick="bottomMenuSelect(this)">
+                            <span>Спорт</span>
+                        </div>
+                        <div
+                            class="bottom-video-menu__button bottom-video-menu__button-color3 bottom-video-menu__button--selected"
+                            onclick="bottomMenuSelect(this)">
+                            <a href="./pages/jackie chan/index.html">
+                                <span>Кино</span>
+                            </a>
+                        </div>
+                        <div
+                            class="bottom-video-menu__button bottom-video-menu__button-color4"
+                            onclick="bottomMenuSelect(this)">
+                            <span>Музыка</span>
+                        </div><div
+                            class="bottom-video-menu__button bottom-video-menu__button-color5"
+                            onclick="bottomMenuSelect(this)">
+                            <span>Танцы</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer__container">
+                        <div class="footer__container-logo">
+                            <h2 class="footer__container-logo-world">World Stars</h2>
+                            <span class="footer__container-logo-stars">мировые
+                                звезды brics</span>
+                            <ul class="footer__container-menu1">
+                                <li><a class="footer__container-links-link"
+                                        href="#">О нас</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Словарь сайта</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Встречи со звездами</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Знакомься дружи</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__container-links">
+                            <ul class="footer__container-menu2">
+                                <li><a class="footer__container-links-link1"
+                                        href="#">Главная</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Звезды кино</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Мода</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Спорт</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Музыка</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Танцы</a></li>
+                            </ul>
+                            <ul class="footer__container-menu3">
+                                <li><a class="footer__container-links-link1"
+                                        href="#">Поддержка</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Политика конфиденциальности</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Term of service</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Social Media</a></li>
+                                <li><a
+                                        class="footer__container-links-link footer__container-links-link--Contacts">Контакты</a>
+                                </li>
+                                <li><a class="footer__container-links-link" href></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__container-social">
+                        <div class="footer__container-social-container">
+                            <a href="#"><img
+                                    src="./image/footer/Group 1000002464.png"
+                                    class="footer__container-social-image" alt></a>
+                            <a href="#"><img
+                                    src="./image/footer/WhatsApp Inc. svg.png"
+                                    alt></a>
+                            <a href="#"><img
+                                    src="./image/footer/social icons.png" alt></a>
+                            <a href="#"><img
+                                    src="./image/footer/Telegram_2019_Logo.png"
+                                    alt></a>
+                            <a href="#"><img src="./image/footer/App Icon.png"
+                                    alt></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobil -->
+            <div class="footermobil">
+                <div class="container">
+                    <div class="footermobil__container-logo">
+                        <h2 class="footer__container-logo-world">World Stars</h2>
+                        <span class="footer__container-logo-stars">мировые
+                            звезды brics</span>
+                    </div>
+                    <div class="footermobil__container-wrapper">
+                        <div class="footermobil__container-left">
+                            <ul class="footer__container-menu1">
+                                <li><a class="footer__container-links-link1"
+                                        href="#">О нас</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Словарь сайта</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Контакты</a></li>
+                            </ul>
+                            <ul class="footer__container-menu3">
+                                <li><a class="footer__container-links-link1"
+                                        href="#">Поддержка</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Term of service</a></li>
+                                <li><a class="footer__container-links-link1"
+                                        href="#">Social Media</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footermobil__container-right">
+                            <ul class="footer__container-menu2">
+                                <li><a class="footer__container-links-link1"
+                                        href="#">Главная</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Звезды кино</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Мода</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Спорт</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Музыка</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Танцы</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Встречи со
+                                        звездами</a></li>
+                                <li><a class="footer__container-links-link"
+                                        href="#">Знакомься дружи</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="footermobil__container-social">
+                        <ul>
+                            <li><a class="footer__container-links-link" href="#">Политика
+                                    конфиденциальности</a></li>
+                        </ul>
+                        <div class="footermobil__container-social-container">
+                            <a href="#"><img
+                                    class="footermobil__container-social-image"
+                                    src="image-home/socialmobilstar.svg" alt></a>
+                            <a href="#"><img
+                                    src="image-home/socialmobilwhatsapp.svg" alt></a>
+                            <a href="#"><img src="image-home/socialmobilvk.svg"
+                                    alt></a>
+                            <a href="#"><img
+                                    src="image-home/socialmobiltelegram.svg" alt></a>
+                            <a href="#"><img
+                                    src="image-home/socialmobilsnap.svg" alt></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script
+        src="./swiper/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</html>

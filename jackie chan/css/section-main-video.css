@@ -1,0 +1,92 @@
+/* секция Главное видео */
+.section-main-video {
+	width: 1200px;
+}
+
+#topVideo {
+	width: 1200px;
+	height: 648px;
+	border-radius: 15px;
+}
+
+.section-main-video__title span {
+	color: #FFF;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: 'Montserrat';
+	font-size: 55px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 130%;
+}
+
+.section-main-video--background {
+	width: 1200px;
+	height: 806px;
+	border-radius: 15px;
+	background: linear-gradient(252deg, #FFD466 -54.76%, #F00 103.16%);
+
+}
+
+.section-main-video__player-wrapper {
+	width: 1200px;
+	height: 648px;
+	background-color: green;
+	border-radius: 15px;
+}
+
+.section-main-video__discription {
+	display: grid;
+	grid-template-columns: 876px 231px;
+	justify-content: center;
+	gap: 41px;
+
+	padding-top: 30px;
+}
+
+.section-main-video__discription-background {
+	width: 876px;
+	height: 92px;
+	background-color: white;
+	border-radius: 15px;
+
+	display: grid;
+	justify-content: left;
+	justify-items: center;
+	align-items: center;
+
+	color: black;
+	font-feature-settings: 'clig' off, 'liga' off;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 500;
+	line-height: 98.5%;
+
+	padding-left: 21px;
+}
+
+.section-main-video__discription-views {
+	align-self: end;
+
+	position: relative;
+	top: 20px;
+
+	color: #000;
+	text-align: center;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+/* звезда на видео */
+#section-main-video__star {
+	position: relative;
+	top: -150px;
+	left: 1050px;
+	cursor: pointer;
+}
+
+.main-video__star--hide {
+	display: none;
+}

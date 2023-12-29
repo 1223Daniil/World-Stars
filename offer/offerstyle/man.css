@@ -1,0 +1,251 @@
+.man {
+    margin-bottom: 50px;
+}
+
+.manmobil {
+    display: none;
+}
+
+.man__container {
+    display: flex;
+    gap: 25px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 24px 0px rgba(178, 178, 178, 0.25);
+    padding-top: 63px;
+    padding-bottom: 50px;
+}
+
+.man__container-left {
+    width: 345px;
+    position: relative;
+    bottom: -104px;
+}
+
+.man__container-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.man__container-first {
+    width: 371px;
+}
+
+.man__container-left-description {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133%;
+    text-transform: uppercase;
+    display: block;
+    width: 324px;
+    padding-left: 49px;
+}
+
+.man__container-right {
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: #FFF;
+    width: 312px;
+    max-height: 390px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.man__container-right-btn1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    background: linear-gradient(253deg, #F00 -35.18%, #FFD466 103.15%);
+    padding: 5px 6px 8px 6px;
+    position: relative;
+    top: -20px;
+    right: -90px;
+}
+
+.man__container-right-title {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: capitalize;
+    max-width: 280px;
+    width: 100%;
+}
+
+.man__container-right-hears {
+    border-top: 1px solid #000;
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.man__container-right-hears img {
+    display: block;
+    width: 36px;
+    height: 34px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.man__container-right-m {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding-bottom: 5px;
+}
+
+.man__container-right-btn2 {
+    border-radius: 10px;
+    background: linear-gradient(253deg, #F00 -35.18%, #FFD466 103.15%);
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 15px;
+}
+
+@media (max-width: 360px) {
+    .man {
+        display: none;
+    }
+
+    .manmobil {
+        display: block;
+        margin-bottom: 26px;
+    }
+
+    .manmobil__container-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 328px;
+        height: 317px;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 4px 24px 0px rgba(178, 178, 178, 0.25);
+    }
+    
+    .manmobil__container-left-description {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 133%;
+        text-transform: uppercase;
+        display: block;
+        width: 324px;
+        padding-left: 49px;
+}
+    
+    .manmobil__container-right {
+        border-radius: 15px;
+        border: 1px solid #000;
+        background: #FFF;
+        width: 216px;
+        /* max-height: 233px;
+        height: 100%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 14px;
+        margin-top: 24px;
+
+    }
+
+    .manmobil__container-right img {
+        width: 101px;
+        height: 60px;
+    }
+    
+    .manmobil__container-right-btn1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        border-radius: 10px;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+        position: relative;
+        top: -13px;
+        right: -52px;
+        padding: 5px 13px;
+    }
+    
+    .manmobil__container-right-title {
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        text-transform: capitalize;
+        width: 158px;
+    }
+
+    .manmobil__container-right-hears {
+        border-top: 1px solid #000;
+        width: 100%;
+        height: 46px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .manmobil__container-right-hears img {
+        display: block;
+        width: 25px;
+        height: 17px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .manmobil__container-right-m {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        padding-bottom: 5px;
+    }
+    
+    .manmobil__container-right-btn2 {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        border-radius: 10px;
+        background: linear-gradient(118deg, #FF2C15 -5.25%, #FA931A 98.66%);
+        padding: 5px 13px;
+    }
+}

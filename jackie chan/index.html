@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jackie Chan</title>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet"
+			href="./swiper/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/section-main-video.css">
+		<link rel="stylesheet" href="css/section-author-info.css">
+		<link rel="stylesheet" href="css/article.css">
+		<link rel="stylesheet" href="css/swiperVideo.css">
+		<link rel="stylesheet" href="css/advertising.css">
+		<link rel="stylesheet" href="css/bottom-video.css">
+		<link rel="stylesheet" href="css/footer.css">
+	</head>
+
+	<body class="grid">
+		<div class="main-container grid background" id="background">
+			<header class="header">
+				<div class="header__wrapper">
+					<div class="logo">
+						<img src="./image/Header img/WorldStartLogo.svg" alt="За стеклом"
+							width="250px" height="215px">
+					</div>
+					<div class="author__card">
+						<div class="author__card__bell--wrapper">
+							<img class="redCircle" src="./image/Header img/redCircl.svg" alt>
+							<img class="bell" src="./image/Header img/Bell.svg" alt>
+						</div>
+						<div class="header__avatar">
+							<img class="avatar-wrapper" src="./image/Header img/АВАТРАР header.jpg"
+								alt="avatar">
+						</div>
+						<div class="stars">
+							<div class="avatar__name">Александр</div>
+							<div class="author__info__stars-wrapper">
+								<img src="./image/Header img/FulStar.svg" alt="stars">
+								<img src="./image/Header img/FulStar.svg" alt="stars">
+								<img src="./image/Header img/FulStar.svg" alt="stars">
+								<img src="./image/Header img/emptyStar.svg" alt="stars">
+								<img src="./image/Header img/emptyStar.svg" alt="stars">
+							</div>
+						</div>
+						<div>
+							<img class="bag" src="./image/Header img/Bag.svg" alt="bag">
+						</div>
+						<div class="header__reiting">
+							<div class="header__reiting--wrapper">
+								<span>4523</span>
+							</div>
+						</div>
+					</div>
+					<div class="header__burger__menu">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</div>
+			</header>
+
+			<div class="arrowback">
+				<a href="../../index.html">
+					<img src="./image/arrow/arrowLeft.svg" alt>
+				</a>
+			</div>
+
+			<section class="section-main-video">
+				<div class="section-main-video__title">
+					<span>
+						Джеки Чан
+					</span>
+				</div>
+				<div class="section-main-video--background">
+					<div class="section-main-video__player-wrapper">
+						<iframe id="topVideo" width="1200" height="648"
+							src="https://www.youtube.com/embed/WhNcqdZCgPE?si=IdC52uYUwatJlRbA"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+						<div id="section-main-video__star">
+							<img id="section-main-video__star--img1"
+								src="./image/videoEmptyStart.svg" alt="EmptiStar"
+								onclick="starClick(this)">
+							<img id="section-main-video__star--img2" class="main-video__star--hide"
+								src="./image/videoFullStar.svg" alt="FullStar"
+								onclick="starClick(this)">
+						</div>
+					</div>
+					<div class="section-main-video__discription">
+						<div class="section-main-video__discription-background">
+							<span class="section-main-video__discription-text">Жизнь и карьера
+								любимой
+								звезды!! </span>
+						</div>
+						<span class="section-main-video__discription-views">просмотров <span
+								id="views">
+								100 000</span></span>
+					</div>
+				</div>
+			</section>
+			<section class="section-author-info">
+				<div class="section-author-info--container ">
+					<span class="author__info--text">Автор новости:
+						<span>Александр</span>
+					</span>
+					<div class="author__info__ava__wrapper">
+						<img src="./image/author-ava.jpg" alt>
+						<div class="stars-and-news-number">
+							<div class="author__info__stars-wrapper stars-gap">
+								<img src="./image/FulStar.svg" alt="stars">
+								<img src="./image/FulStar.svg" alt="stars">
+								<img src="./image/FulStar.svg" alt="stars">
+								<img src="./image/emptyStar.svg" alt="stars">
+								<img src="./image/emptyStar.svg" alt="stars">
+							</div>
+							<span> <span>120</span> новостей</span></div>
+					</div>
+				</div>
+				<div class="section-author-info__likes ">
+					<div class="avatar-user-main">
+						<img src="./image/devushki-s-tatuirovkami-107-foto-59 12.jpg"
+							alt="ava">
+					</div>
+					<div class="likes-mini-Avatars">
+						<img class="one" src="./image/mini g.png" alt="ava">
+						<img class="two" src="./image/mini g.png" alt="ava">
+						<img class="three" src="./image/mini g.png" alt="ava">
+						<img class="four" src="./image/mini g.png" alt="ava">
+					</div>
+					<div class="heart__Counter">
+						<span>M</span>
+						<img src="./image/redHeart.svg" alt="heart">
+					</div>
+					<div class="heart__Counter">
+						<span>4</span>
+						<img class="heart__Counter__redHeart" src="./image/redHeart.svg"
+							alt="heart">
+					</div>
+				</div>
+			</section>
+			<section class="article">
+				<div class="article__text__left">
+					<div class="article__text__left--h1">
+						<span>О мировой звезде достигшего славы в кино за 50 лет</span>
+					</div>
+					<!-- <div class="article__textvsFoto--text"></div> -->
+					<div class="article__text__left--text">
+
+						<span>Признаётся одним из лучших
+							футболистов всех времён. Лучший бомбардир
+							в истории чемпионата Испании, «Барселоны» и сборной Аргентины.
+							Семикратный
+							обладатель «Золотого мяча», шестикратный — «Золотой бутсы». Воспитанник
+							академии «Барселоны», вместе с этим клубом выиграл десять титулов
+							чемпиона
+							Испании, четыре Лиги чемпионов УЕФА, семь Кубков Испании, восемь
+							Суперкубков Испании, три Суперкубка Европы и три чемпионата мира среди
+							клубов.
+						</span>
+						<div class="article__text__left__button-next">
+							<span>Читать далее</span>
+							<img class="text-arrow-next" src="./image/textarrowright.svg" alt>
+						</div>
+					</div>
+				</div>
+				<div class="article__text__right">
+
+					<h1>Сотреть фото</h1>
+					<!-- Фото на выбор -->
+					<div>
+						<div class="slider1-main-foto--background">
+							<img id="slider1-main-foto" src="./image/chan max foto.jpg" alt>
+						</div>
+					</div>
+				</div>
+			</section>
+			<h1 class="slider-title">Фото</h1>
+			<section class="slider__wrapper">
+				<!-- Блок слайдера! -->
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper" id="swiperFoto">
+						<!-- Slides -->
+
+						<div class="swiper-slide leftPaddingFirstFoto">
+							<div class="swiper-slide--background">
+								<img class="redBorder" src="./image/chan max foto.jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+							<p>Сылка на фото</p>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<!-- <img src="./image/mini/micro chan 1 - Copy (2).jpg" alt -->
+								<img
+									src="./image/mini/micro chan 1 - Copy (2).jpg"
+									alt
+									onclick="fotoSelect(this)">
+
+								<p>Сылка на фото</p>
+							</div>
+
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (2).jpg" alt
+									onclick="fotoSelect(this)">
+								<p>Сылка на фото</p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+
+								<img id="test" src="./image/mini/micro chan 1 - Copy (3).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (4).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (5).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (6).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (7).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+						</div>
+						<div class="swiper-slide ">
+							<div class="swiper-slide--background">
+								<img class="redBorder" src="./image/chan max foto.jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+							<p>Сылка на фото</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (2).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+							<p>Сылка на фото</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (3).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (4).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (5).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (6).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (7).jpg" alt
+									onclick="fotoSelect(this)">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<div class="slider__wrapper--button-next">
+				<span> смотреть далее</span>
+				<img class="text-arrow-next" src="./image/textarrowright.svg" alt>
+			</div>
+
+			<h1 class="slider-title">Карьера, награды</h1>
+			<article class="triple___article">
+				<span>Признаётся одним из лучших футболистов всех времён. Лучший бомбардир
+					в истории чемпионата Испании, «Барселоны» и сборной Аргентины.
+					Семикратный обладатель «Золотого мяча», шестикратный — «Золотой бутсы».
+					Воспитанник академии «Барселоны», вместе с этим клубом выиграл десять
+					титулов</span>
+				<span>Признаётся одним из лучших футболистов всех времён. Лучший бомбардир
+					в истории чемпионата Испании, «Барселоны» и сборной Аргентины.
+					Семикратный обладатель «Золотого мяча», шестикратный — «Золотой бутсы».
+					Воспитанник академии «Барселоны», вместе с этим клубом выиграл десять
+					титулов</span>
+				<span>Признаётся одним из лучших футболистов всех времён. Лучший бомбардир
+					в истории чемпионата Испании, «Барселоны» и сборной Аргентины.
+					Семикратный обладатель «Золотого мяча», шестикратный — «Золотой бутсы».
+					Воспитанник академии «Барселоны», вместе с </span>
+				<span class="triple___article--button">Читать далее
+					<img class="text-arrow-next" src="./image/textarrowright.svg" alt>
+				</span>
+			</article>
+
+			<h1 class="slider-title">Видео</h1>
+			<div class="slider-sected-video">
+				<iframe id="selected-video" width="1200" height="832"
+					src="https://www.youtube.com/embed/WhNcqdZCgPE?si=IdC52uYUwatJlRbA"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</div>
+
+			<section class="slider__wrapper">
+				<!-- Блок слайдера! -->
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper" id="swiperVideo">
+						<!-- Slides -->
+						<div class="swiper-slide leftPaddingFirstFoto">
+							<div class="swiper-slide--background">
+								<img class="redBorder" src="./image/chan max foto.jpg" alt
+									onclick="videoSelect(this)">
+							</div>
+							<p>Сылка на фото</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img
+									src="./image/mini/micro chan 1 - Copy (2).jpg"
+									alt
+									onclick="videoSelect(this)">
+								<p>Сылка на фото</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (6).jpg" alt
+									onclick="videoSelect(this)">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide--background">
+								<img src="./image/mini/micro chan 1 - Copy (7).jpg" alt
+									onclick="videoSelect(this)">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="slider__wrapper--button-next next-video-button ">
+				<span> смотреть далее</span>
+				<img class="text-arrow-next" src="./image/textarrowright.svg" alt>
+
+			</div>
+
+			<section class="advertising">
+				<div class="advertising-background advertising-wrapper">
+
+					<div class="advertising__title">
+						<span>Это интересно!</span>
+					</div>
+					<div class="advertising__text">
+						<span>Смотрите самые свежие новости о <br>любимых спортсменах, музыкантах,
+							актерах, моделях, дизайнерах и других.
+							Приходи на встречи с мировыми звездами,
+							дружи с теми кто любит таких же звезд! </span>
+					</div>
+					<div class="advertising__picture">
+						<img class="advertising__picture--position" src="./image/man.png" alt>
+					</div>
+				</div>
+			</section>
+
+			<!-- Нижний блок с видео -->
+			<div class="bottom-video-wrapper">
+				<div class="slider-sected-video">
+					<iframe id="footer-video-selected" width="1200" height="822"
+						src="https://www.youtube.com/embed/WhNcqdZCgPE?si=IdC52uYUwatJlRbA"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</div>
+				<div class="bottom-video-menu">
+					<div class="bottom-video-menu__button bottom-video-menu__button-color1"
+						onclick="bottomMenuSelect(this)">
+						<span>Мода</span>
+					</div>
+					<div class="bottom-video-menu__button bottom-video-menu__button-color2"
+						onclick="bottomMenuSelect(this)">
+						<span>Спорт</span>
+					</div>
+					<div
+						class="bottom-video-menu__button bottom-video-menu__button-color3 bottom-video-menu__button--selected"
+						onclick="bottomMenuSelect(this)">
+						<span>Кино</span>
+					</div>
+					<div class="bottom-video-menu__button bottom-video-menu__button-color4"
+						onclick="bottomMenuSelect(this)">
+						<span>Музыка</span>
+					</div><div
+						class="bottom-video-menu__button bottom-video-menu__button-color5"
+						onclick="bottomMenuSelect(this)">
+						<span>Танцы</span>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="footer">
+				<div class="container">
+					<div class="footer__container">
+						<div class="footer__container-logo">
+							<h2 class="footer__container-logo-world">World Stars</h2>
+							<span class="footer__container-logo-stars">мировые звезды brics</span>
+							<ul class="footer__container-menu1">
+								<li><a class="footer__container-links-link" href="#">О нас</a></li>
+								<li><a class="footer__container-links-link" href="#">Словарь сайта</a></li>
+								<li><a class="footer__container-links-link" href="#">Встречи со звездами</a></li>
+								<li><a class="footer__container-links-link" href="#">Знакомься дружи</a></li>
+							</ul>
+						</div>
+						<div class="footer__container-links">
+							<ul class="footer__container-menu2">
+								<li><a class="footer__container-links-link1" href="#">Главная</a></li>
+								<li><a class="footer__container-links-link" href="#">Звезды кино</a></li>
+								<li><a class="footer__container-links-link" href="#">Мода</a></li>
+								<li><a class="footer__container-links-link" href="#">Спорт</a></li>
+								<li><a class="footer__container-links-link" href="#">Музыка</a></li>
+								<li><a class="footer__container-links-link" href="#">Танцы</a></li>
+							</ul>
+							<ul class="footer__container-menu3">
+								<li><a class="footer__container-links-link1" href="#">Поддержка</a></li>
+								<li><a class="footer__container-links-link" href="#">Политика конфиденциальности</a></li>
+								<li><a class="footer__container-links-link" href="#">Term of service</a></li>
+								<li><a class="footer__container-links-link" href="#">Social Media</a></li>
+								<li><a class="footer__container-links-link footer__container-links-link--Contacts" target="0 href="#">Контакты</a></li>
+								<li><a class="footer__container-links-link" href=""></a></li>
+							</ul>
+						</div>
+					</div>
+	
+					<div class="footer__container-social">
+						<div class="footer__container-social-container">
+							<a href="#"><img src="image/socialmobilstar.svg" class="footer__container-social-image"  alt=""></a>
+							<a href="#"><img src="image/socialwhatsapp.svg" alt=""></a>
+							<a href="#"><img src="image/socialvk.svg" alt=""></a>
+							<a href="#"><img src="image/socialtelegramm.svg" alt=""></a>
+							<a href="#"><img src="image/socialsnap.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script
+		src="./swiper/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
+	<script src="index.js"></script>
+</html>

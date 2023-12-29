@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+        <!-- Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style-chat/normalize.css">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="style-chat/style.css">
+        <link rel="stylesheet" href="style-chat/header.css">
+        <link rel="stylesheet" href="style-chat/burger.css">
+        <link rel="stylesheet" href="style-chat/club.css">
+        <link rel="stylesheet" href="style-chat/chatfriends.css">
+        <link rel="stylesheet" href="style-chat/people.css">
+        <link rel="stylesheet" href="style-chat/window.css">
+        <link rel="stylesheet" href="style-chat/stickers.css">
+        <link rel="stylesheet" href="style-chat/blue.css">
+        <link rel="stylesheet" href="style-chat/get.css">
+        <link rel="stylesheet" href="style-chat/footer.css">
+</head>
+<body class="fon">
+    <section class="chat">
+        <div class="fon__image">
+            <img class="header__losso" src="image-home/losso.png" alt="">
+            <img class="spirali" src="image-home/spirali.png" alt="">
+            <img class="spiraliniz" src="image-home/spiralniz.png" alt="">
+        </div>
+        <div class="header">
+            <div class="container">
+                <div class="header__container">
+                    <div class="header__container-logo">
+                        <img class="header__logo" src="image-home/logo.png" alt="">
+                        <!-- <img class="header__losso" src="image-home/losso.png" alt=""> -->
+                    </div>
+                    <div class="header__container-blog">
+                        <div class="header__container-ring">
+                            <img class="header__container-ring-foto" src="image-home/ring.png" alt="">
+                        </div>
+                        <div class="header__container-name">
+                            <img class="header__container-foto-size" src="image-home/Image.png"alt="">
+                            <div class="header__container-name-man">
+                                <div class="header__container-name-name">
+                                    <span class="header__container-imya">Александр</span>
+                                    <div class="header__container-stars">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Starblack.png" alt="">
+                                        <img src="image-home/Starblack.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__container-bag">
+                                <img class="header__container-bag-img" src="image-home/Group1000001080.png" alt="">
+                                <span class="header__container-bag-span">45</span>
+                            </div>
+                        </div>
+                        <button class="header__container-menu">
+                            <img onclick="openBurger()" src="image-home/menu.png" alt="">
+                        </button>
+                    </div>
+                    <!-- <img class="header__spiral" src="image-home/spirali.png" alt=""> -->
+                </div>
+                <!-- мобильная версия -->
+                <div class="hmobil">
+                    <div class="container">
+                        <div class="hmobil__container">
+                            <div class="hmobil__container-logo">
+                                <div class="hmobil__container-logo-left">
+                                    <span class="hmobil__container-logo-title">World Stars</span>
+                                    <span class="hmobil__container-logo-title">мировые звезды brics</span>
+                                </div>
+                                <div class="hmobil__container-logo-right">
+                                    <img class="hmobil__container-logo-search" src="image-home/lupamobil.png" alt="">
+                                    <img src="image-home/ringmobil.png" alt="">
+                                    <button class="hmobil__container-logo-menu">
+                                        <img onclick="openBurger()" src="image-home/menumobil.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hmobil__container-name">
+                                <img class="hmobil__container-foto-size" src="image-home/mobImage.png"alt="">
+                                <div class="hmobil__container-name-man">
+                                    <div class="hmobil__container-name-name">
+                                        <span class="hmobil__container-imya">Александр</span>
+                                        <div class="hmobil__container-stars">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Starblack.png" alt="">
+                                            <img src="image-home/Starblack.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hmobil__container-bag">
+                                    <img class="hmobil__container-bag-img" src="image-home/Group1000001080.png" alt="">
+                                    <span class="hmobil__container-bag-span">45</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- burger menu -->
+        <div id="burger" class="burger">
+            <div class="container">
+                <button onclick="closeBurger()" class="burger__arrow">
+                    <img src="image-home/burgerarrow.svg" alt="">
+                </button>
+                <div class="burger__container">
+                    <div class="burger__container-left">
+                        <div class="burger__container-links">
+                            <a href="#" class="burger__container-links-link1">
+                                <img src="image-home/burger1.svg" alt="">
+                                <span>Звездный магазин</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link2">
+                                <img src="image-home/burger2.svg" alt="">
+                                <span>Пиши новости</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link3">
+                                <img src="image-home/burger3.svg" alt="">
+                                <span>Предложи звезду</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link4">
+                                <img src="image-home/burger4.svg" alt="">
+                                <span>Выбирай мировую звезду</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link5">
+                                <img src="image-home/burger5.png" alt="">
+                                <span>Олимп славы</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link6">
+                                <img src="image-home/burger6.svg" alt="">
+                                <span>Кошелек</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link7">
+                                <img src="image-home/burger7.svg" alt="">
+                                <span>Профиль</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link8">
+                                <img src="image-home/burger8.svg" alt="">
+                                <span>Афиша встреч</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="burger__container-right">
+                        <div class="burger__container-right-up">
+                            <img src="image-home/bagheader.png" alt="">
+                            <h3 class="burger__container-right-title">Зарабатывай на сайте! </h3>
+                        </div>
+                        <div class="burger__container-right-images">
+                            <img src="image-home/burgerimage1.png" alt="">
+                            <img src="image-home/burgerimage2.png" alt="">
+                            <img src="image-home/burgerimage2.png" alt="">
+                            <img src="image-home/burgerimage4.png" alt="">
+                            <img src="image-home/burgerimage5.png" alt="">
+                            <img src="image-home/burgerimage6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="club">
+            <div class="container">
+                <div class="club__container">
+                    <div class="club__container-left">
+                        <h2 class="club__container-title">Клуб&nbsp;звездных знакомств</h2>
+                        <p class="club__container-description">Обсуди свою новость,  предложи  мировую звезду, получи <img src="image-home/redheartclub.png" alt="">м от модератора и<img src="image-home/redheartclub.png" alt=""><img src="image-home/redheartclub.png" alt=""><img src="image-home/redheartclub.png" alt=""><img src="image-home/redheartclub.png" alt="">от друзей </p>
+                    </div>
+
+                    <div class="club__container-name">
+                        <span>Группа:Джеки Чан</span>
+                        <img src="image-home/djekiclub.png" alt="">
+                    </div>
+                    <div class="club__container-image">
+                        <img class="choice__image-star0" src="image-home/star3.png" alt="">
+                        <img class="choice__image-left" src="image-home/imagechoice.png" alt="">
+                        <img class="choice__image-star1" src="image-home/star1.png" alt="">
+                        <img class="choice__image-star2" src="image-home/star2.png" alt="">
+                        <img class="choice__image-star3" src="image-home/star3.png" alt="">
+                        <img class="choice__image-star4" src="image-home/star4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="container">
+                <div class="chat__friends">
+                    <div class="chat__friends-one">
+                        <button class="chat__friends-one-item">Чат с Еленой</button>
+
+                        <div class="chat__friends-down-left">
+                            <div class="chat__friends-down-one">
+                                <img class="chat__friends-down-image" src="image-home/elenahunes.png" alt="">
+                                <div class="chat__friends-down-one1">
+                                    
+                                    <div class="chat__container-stars">
+                                        <span class="chat__friends-down-news">120 новостей</span>
+                                        <div class="chat__container-stars-stars">
+                                            <img src="image-home/starchatorange.png" alt="">
+                                            <img src="image-home/starchatorange.png" alt="">
+                                            <img src="image-home/starchatorange.png" alt="">
+                                            <img src="image-home/starwhite.png" alt="">
+                                            <img src="image-home/starwhite.png" alt="">
+                                        </div>
+                                    </div>
+                                    <button class="chat__friends-down-profil">Смотреть профиль<img src="image-home/arrowchat.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <!-- <button class="chat__friends-down-btn1">ЧАТ С ЕЛЕНОЙ</button> -->
+                        </div>
+                    </div>
+                    
+                    <div class="chat__friends-two">
+                        <button class="chat__friends-up-item0">Чат с твоими друзьями</button>
+
+                        <div class="chat__friends-down-two">
+                            <!-- <div class="chat__friends-down-two2">
+                                <img src="image-home/hends.png" alt="">
+                                <span class="chat__friends-down-span">Подтвержденные знакомства</span>
+                            </div>
+                            <button class="chat__friends-down-btn2">ЧАТ С ДРУЗЬЯМИ</button> -->
+                            <img src="image-home/Bitmap.png" alt="">
+                            <img src="image-home/chatheands.png" alt="">
+                            <span class="chat__friends-down-span">Подтвержденные знакомства</span>
+                        </div>
+                        <span class="chat__friends-down-span1">У тебя<span class="chat__friends-down-span2">3</span>друга</span>
+                    </div>
+
+                    <div class="chat__friends-three">
+                        <button class="chat__friends-up-item1">Выбирай звезду и общайся в группе</button>
+                        
+                        <div class="chat__friends-down-three">
+                            <div class="gradient-wrapper">
+                                <div class="ChekBoxTable">
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Джеки Чан</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Кира Найтли</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Фродо Бэггинс</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Жан-Клод Камиль</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Леонель Месси</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Джеки Чан</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Кира Найтли</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Фродо Бэггинс</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Жан-Клод Ван-Дам</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                    
+                                    <div class="ChekBoxTable-item-container">
+                                        <label for class="ChekBoxTable-text">Леонель Месси</label>
+                                    </div>
+                                    <label class='custom-label'>
+                                        <input type='checkbox' class='custom-input'>
+                                        <span class='custom-checkbox'></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="people">
+            <div class="container">
+                <div class="people__container">
+                    <div class="slider__wrapper">
+                        <div class="slider__wrapper-arrow">
+                            <img src="image-home/peoplearrowleft.svg" alt="">
+                            <img src="image-home/p.svg" alt="">
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <!-- <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <!-- <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <!-- <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="slider__wrapper-item">
+                            <div class="slider__wrapper-sticers">
+                                <img class="slider__wrapper-sticers-left" src="image-home/sticerleft.svg" alt="">
+                                <img class="slider__wrapper-sticers-right" src="image-home/sticerright.svg" alt="">
+                            </div>
+                            <div class="slider__wrapper-image">
+                                <img src="image-home/slideritem.png" alt="">
+                            </div>
+                            <h3 class="slider__wrapper-title">Елена Хуанес Радгигес</h3>
+                            <!-- <div class="slider__wrapper-friends">
+                                <img src="image-home/hends.png" alt="">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window">
+            <div class="container">
+                <div class="window__container">
+                    <div class="window__container-up">
+                        <div class="window__container-up-left">
+                            <img src="image-home/Bitmapwindow.png" alt="">
+                        </div>
+                        <div class="window__container-up-right">
+                            <img class="window__container-up-one" src="image-home/windowfriends.png" alt="">
+                            <img class="window__container-up-two" src="image-home/windowfriends.png" alt="">
+                            <img class="window__container-up-three" src="image-home/windowfriends.png" alt="">
+                        </div>
+                    </div>
+                    <div class="window__container-up-spans">
+                        <span class="window__container-up-span">ЧАТ С ДРУЗЬЯМИ</span>
+                    </div>
+
+                    <div class="window__container-center">
+                        <div class="window__container-center-left">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </div>
+                        <div class="window__container-center-right"></div>
+                    </div>
+
+                    <div class="window__container-down">
+                       <div class="window__container-down-one">
+                        <div class="window__container-down-input">
+                            <input type="text" placeholder="Введите текст">
+                            <button class="window__container-down-stici" >
+                            <img src="image-home/stici.svg" alt="">
+                            </button>
+                            <button class="window__container-down-myfoto">
+                            <img src="image-home/myfoto.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="window__container-down-spans">
+                            <span class="window__container-down-span1">стикеры</span>
+                            <span class="window__container-down-span2">мои фото</span>
+                        </div>
+                       </div>
+
+                       <button class="window__container-down-btn"><img src="image-home/otpravka.png" alt=""></button>
+                    </div>
+                </div>
+                <button class="window__btn">ВЫЙТИ ИЗ ЧАТА</button>
+            </div>
+        </div>
+
+        <div class="stickers">
+            <div class="container">
+                <div class="stickers__container">
+                    <h3 class="stickers__container-title">Выбери стикер с загруженной  новостью или звездой, посылай друзьям для обсуждения! </h3>
+                    <div class="stickers__container-wrapper">
+                        <div class="stickers__container-item">
+                            <button class="stickers__container-item-up">новость&nbsp;загружена</button>
+                            <img src="image-home/sticers1.svg" alt="">
+                            <span class="stickers__container-description">ПРОЧТИ МОЮ НОВОСТЬ О  МИРОВОЙ ЗВЕЗДЕ</span>
+                            <button class="stickers__container-down">Отправить</button>
+                        </div>
+                        <div class="stickers__container-item">
+                            <button class="stickers__container-item-up">текст загружен</button>
+                            <img src="image-home/sticers2.svg" alt="">
+                            <span class="stickers__container-description">ПРОЧТИ МОЕ ПРЕДЛОЖЕНИЕ МИРОВОЙ ЗВЕЗДЫ</span>
+                            <button class="stickers__container-down">Отправить</button>
+                        </div>
+
+
+                        <div class="stickers__container-item1">
+                            <button class="stickers__container-item-up1">текст не  загружен</button>
+                            <span class="stickers__container-offer">ПРЕДЛОЖИ СВОЮ МИРОВУЮ ЗВЕЗДУ</span>
+                            <button class="stickers__container-down1">Загрузить&nbsp;текст</button>
+                        </div>
+                        <div class="stickers__container-item1">
+                            <button class="stickers__container-item-up1">текст не  загружен</button>
+                            <span class="stickers__container-news">НАПИШИ НОВОСТЬ О МИРОВОЙ ЗВЕЗДЕ</span>
+                            <button class="stickers__container-down1">Загрузить&nbsp;текст</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blue">
+            <div class="container">
+                <div class="blue__container">
+                    <h2 class="blue__container-title">Подари участнику 
+                        крутые стикеры бесплатно или создай свой!</h2>
+                    <div class="blue__container-content">
+                        <img class="blue__container-tony" src="image-home/tony.png" alt="">
+                        <button class="blue__container-content-btn">Галерея стикеров</button>
+                    </div>
+                    <img class="blue__container-heart" src="image-home/heart.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="get">
+            <div class="container">
+                <div class="get__wrapper">
+                    <div class="get__title">Получи подтвержденное знакомство! </div>
+                <div class="get__container">
+                    <div class="get__container-item1">
+                        <img class="get__container-item1-img" src="image-home/getgirl.png" alt="">
+                        <span class="get__container-item1-span">125 друзей</span>
+                        <button class="get__container-item1-btn">Подтвердить</button>
+                    </div>
+
+                    <div class="get__container-item2">
+                        <img class="get__container-item2-img" src="image-home/getfriends.png" alt="">
+                        <!-- <button class="get__container-item2-btn"> <img src="image-home/audio.svg" alt=""> <audio src="audio/eralash.mp3"></audio></button> -->
+                        <audio><source type="audio/mp3" src="audio/eralash.mp3"></audio><button onclick="this.previousSibling.play()">
+                            <img src="image-home/audio.svg" alt="">
+                        </button>
+                        <span class="get__container-item2-span">Послушай поздравление
+                            от команды World Stars</span>
+                    </div>
+
+                    <div class="get__container-item3">
+                        <img class="get__container-item3-img" src="image-home/getgirl.png" alt="">
+                        <span class="get__container-item3-span">5 друзей</span>
+                        <button class="get__container-item3-btn">Подтвержден</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__container-logo">
+                        <h2 class="footer__container-logo-world">World Stars</h2>
+                        <span class="footer__container-logo-stars">мировые звезды brics</span>
+                        <ul class="footer__container-menu1">
+                            <li><a class="footer__container-links-link" href="#">О нас</a></li>
+                            <li><a class="footer__container-links-link" href="#">Словарь сайта</a></li>
+                            <li><a class="footer__container-links-link" href="#">Встречи со звездами</a></li>
+                            <li><a class="footer__container-links-link" href="#">Знакомься дружи</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container-links">
+                        <ul class="footer__container-menu2">
+                            <li><a class="footer__container-links-link1" href="#">Главная</a></li>
+                            <li><a class="footer__container-links-link" href="#">Звезды кино</a></li>
+                            <li><a class="footer__container-links-link" href="#">Мода</a></li>
+                            <li><a class="footer__container-links-link" href="#">Спорт</a></li>
+                            <li><a class="footer__container-links-link" href="#">Музыка</a></li>
+                            <li><a class="footer__container-links-link" href="#">Танцы</a></li>
+                        </ul>
+                        <ul class="footer__container-menu3">
+                            <li><a class="footer__container-links-link1" href="#">Поддержка</a></li>
+                            <li><a class="footer__container-links-link" href="#">Политика конфиденциальности</a></li>
+                            <li><a class="footer__container-links-link" href="#">Term of service</a></li>
+                            <li><a class="footer__container-links-link" href="#">Social Media</a></li>
+                            <li><a class="footer__container-links-link" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__container-social">
+                    <div class="footer__container-social-container">
+                        <a href="#"><img class="footer__container-social-image" src="image-home/socialmobilstar.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialwhatsapp.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialvk.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialtelegramm.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialsnap.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footermobil -->
+
+        <div class="footermobil">
+            <div class="container">
+                <div class="footermobil__container-logo">
+                    <h2 class="footer__container-logo-world">World Stars</h2>
+                        <span class="footer__container-logo-stars">мировые звезды brics</span>
+                </div>
+                <div class="footermobil__container-wrapper">
+                    <div class="footermobil__container-left">
+                        <ul class="footer__container-menu1">
+                            <li><a class="footer__container-links-link1" href="#">О нас</a></li>
+                            <li><a class="footer__container-links-link" href="#">Словарь сайта</a></li>
+                            <li><a class="footer__container-links-link" href="#">Контакты</a></li>
+                        </ul>
+                        <ul class="footer__container-menu3">
+                            <li><a class="footer__container-links-link1" href="#">Поддержка</a></li>
+                            <li><a class="footer__container-links-link" href="#">Term of service</a></li>
+                            <li><a class="footer__container-links-link1" href="#">Social Media</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footermobil__container-right">
+                        <ul class="footer__container-menu2">
+                            <li><a class="footer__container-links-link1" href="#">Главная</a></li>
+                            <li><a class="footer__container-links-link" href="#">Звезды кино</a></li>
+                            <li><a class="footer__container-links-link" href="#">Мода</a></li>
+                            <li><a class="footer__container-links-link" href="#">Спорт</a></li>
+                            <li><a class="footer__container-links-link" href="#">Музыка</a></li>
+                            <li><a class="footer__container-links-link" href="#">Танцы</a></li>
+                            <li><a class="footer__container-links-link" href="#">Встречи со звездами</a></li>
+                            <li><a class="footer__container-links-link" href="#">Знакомься дружи</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="footermobil__container-social">
+                    <ul>
+                        <li><a class="footer__container-links-link" href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                    <div class="footermobil__container-social-container">
+                        <a href="#"><img class="footermobil__container-social-image" src="image-home/socialmobilstar.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialmobilwhatsapp.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialmobilvk.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialmobiltelegram.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialmobilsnap.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="index.js"></script>
+</html>

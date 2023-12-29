@@ -1,0 +1,279 @@
+
+.video {
+    width: 1190px;
+    /* height: 822px; */
+    margin: 0 auto;
+ }
+
+ .videomobil {
+    display: none;
+ }
+
+.video__container {
+    cursor: pointer;
+    height: 822px;
+}
+
+.video__container-play {
+    position: relative;
+    bottom: 500px;
+    left: 520px;
+}
+
+.video__container-button {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    position: relative;
+    bottom: 35px;
+    z-index: 1;
+}
+
+.video__container-btn1 {
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #C9B6FF;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    color:#000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    cursor: pointer;
+}
+
+.video__container-btn1:hover {
+    /* transform: scaleY(1.3); */
+    transition-property: padding;
+    transition-duration: 0.2s;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.video__container-btn2 {
+    color:#000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #B9F5DB;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.video__container-btn2:hover {
+    transform: scaleY(1.3);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.video__container-btn3 {
+    color:#000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #FF9D4C;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.video__container-btn3:hover {
+    transform: scaleY(1.3);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.video__container-btn4 {
+    color:#000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #8DDAED;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.video__container-btn4:hover {
+    transform: scaleY(1.3);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.video__container-btn5 {
+    color:#000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: linear-gradient(123deg, #FCD1EB -9.2%, #FA9FB4 95.88%, #C555C7 97.67%, #9A1CF5 139.38%, #F39097 165.24%);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.video__container-btn5:hover {
+    transform: scaleY(1.3);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media (max-width: 360px) {
+    .video {
+        display: none;
+    }
+.videomobil {
+    display: flex;
+    width: 360px;
+    margin-bottom: 40px;
+}
+
+
+.videomobil__container {
+    width: 360px;
+    height: 297px;
+    margin-left: -17px;
+}
+
+.videomobil__container-play {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.videomobil__container-button {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    position: relative;
+    bottom: 35px;
+    z-index: 1;
+    
+}
+
+.videomobil__container-btn1 {
+    font-size: 18px;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #C9B6FF;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    color:#000;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    cursor: pointer;
+}
+
+.videomobil__container-btn1:hover {
+    font-size: 22px;
+    transform: scaleY(1.3);
+    /* transition-property: padding;
+    transition-duration: 0.2s; */
+    font-weight: 600;
+}
+
+.videomobil__container-btn2 {
+    font-size: 18px;
+    color:#000;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #B9F5DB;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.videomobil__container-btn2:hover {
+    font-size: 22px;
+    transform: scaleY(1.3);
+    font-weight: 600;
+}
+
+.videomobil__container-btn3 {
+    font-size: 18px;
+    color:#000;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #FF9D4C;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.videomobil__container-btn3:hover {
+    font-size: 24px;
+    transform: scaleY(1.3);
+    font-weight: 600;
+}
+
+.videomobil__container-btn4 {
+    font-size: 18px;
+    color:#000;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #8DDAED;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.videomobil__container-btn4:hover {
+    font-size: 22px;
+    transform: scaleY(1.3);
+    font-weight: 600;
+}
+
+.videomobil__container-btn5 {
+    font-size: 18px;
+    color:#000;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: linear-gradient(123deg, #FCD1EB -9.2%, #FA9FB4 95.88%, #C555C7 97.67%, #9A1CF5 139.38%, #F39097 165.24%);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04), 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.videomobil__container-btn5:hover {
+    font-size: 22px;
+    transform: scaleY(1.3);
+    font-weight: 600;
+}
+
+}
