@@ -19,19 +19,19 @@
 
             <link rel="stylesheet" href="../css/main.min.css" />
             <link rel="stylesheet" href="../css/mainStyle.css">
-        <link rel="stylesheet" href="style/normalize.css">
-        <link rel="stylesheet" href="style/fonts.css">
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/header.css">
-        <link rel="stylesheet" href="style/burger.css">
-        <link rel="stylesheet" href="style/choice.css">
-        <link rel="stylesheet" href="style/carts.css">
-        <link rel="stylesheet" href="style/friends.css">
-        <link rel="stylesheet" href="style/news.css">
-        <link rel="stylesheet" href="style/communication.css">
-        <link rel="stylesheet" href="style/interest.css">
-        <link rel="stylesheet" href="style/video.css">
-        <link rel="stylesheet" href="style/footer.css">
+        <link rel="stylesheet" href="./style/normalize.css">
+        <link rel="stylesheet" href="./style/fonts.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/header.css">
+        <link rel="stylesheet" href="./style/burger.css">
+        <link rel="stylesheet" href="./style/choice.css">
+        <link rel="stylesheet" href="./style/carts.css">
+        <link rel="stylesheet" href="./style/friends.css">
+        <link rel="stylesheet" href="./style/news.css">
+        <link rel="stylesheet" href="./style/communication.css">
+        <link rel="stylesheet" href="./style/interest.css">
+        <link rel="stylesheet" href="./style/video.css">
+        <link rel="stylesheet" href="./style/footer.css">
 
         <!-- SWIPER -->
         <link rel="stylesheet" href="style/Swipers.css">
@@ -162,34 +162,18 @@
                     пиши о них новости
                 </h3>
 
-                <div class="choice__wrapper-hobbies">
-                    <div class="choice__wrapper-hobbies-item1"
-                        onclick="selectSportToggle()">
-                        <div class="start--button">
-                            <span>Спорт</span>
-                            <img src="image-home/choicehobbiesarrow.png" alt>
-                        </div>
-                        <div class="select-sport" id="select-sport"
-                            onclick="selectSportToggle()">
-                            <div class="select-sport-item"
-                                onclick="selectSportToggle()">Футбол</div>
-                            <div class="select-sport-item"
-                                onclick="selectSportToggle()">Волейбол</div>
-                            <div class="select-sport-item"
-                                onclick="selectSportToggle()">Баскетбол</div>
-                            <div class="select-sport-item"
-                                onclick="selectSportToggle()">Хоккей</div>
-                            <div class="select-sport-item"
-                                onclick="selectSportToggle()">Крикет</div>
-                        </div>
-                    </div>
-                    <button class="choice__wrapper-hobbies-item"><a href="./pages/kino/kino.html">
-                        Кино
-                        </a>
-                    </button>
-                    <button class="choice__wrapper-hobbies-item">Музыка</button>
-                    <button class="choice__wrapper-hobbies-item">Мода</button>
-                    <button class="choice__wrapper-hobbies-item">Танцы</button>
+                <div class="sortDate_button_group" >
+                    <select name="sport" id="sport">
+                        <option value="Football">Футбол</option>
+                        <option value="Volleyball">Волейбол</option>
+                        <option value="Basketball">Баскетбол</option>
+                        <option value="Hockey">Хоккей</option>
+                        <option value="Cricket">Крикет</option>
+                    </select>
+                    <button data-group="Movie">Кино</button>
+                    <button data-group="Music">Музыка</button>
+                    <button data-group="Fashion">Мода</button>
+                    <button data-group="Danse">Танцы</button>
                 </div>
                 <div class="choice__wrapper-country">
                     <button class="choice__wrapper-country-item">Бразилия</button>

@@ -2,6 +2,7 @@ body {
    margin: 0;
    padding: 0;
    background-image: url('/image-home/fonolympus.png');
+   background-image: url('../image-home/fonolympus.png');
    background-size: cover;
    background-repeat: no-repeat;
 }

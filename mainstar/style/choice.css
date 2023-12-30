@@ -132,7 +132,12 @@
     line-height: normal;
     cursor: pointer;
 }
-
+.choice__wrapper-country-item.active {
+    border-radius: 5px;
+   border: 1px solid var(--q, #ff2c15);
+   background: var(--q, linear-gradient(180deg, #ff2c15 0%, #fa9317 100%));
+   color: #fff;
+}
 
 
 .choice__wrapper-country-item img {

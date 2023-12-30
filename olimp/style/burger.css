@@ -1,11 +1,15 @@
 .burger {
-    display: none;
-    
+    height: 0px;
+    overflow: hidden;
+    transition: all;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+    background-image: url('../image-home/burderfon.png');
 }
 
 .burger__open {
-    display: block;
-    background-image: url('../image-home/burderfon.png');
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
     height: 497px;
 }
 
@@ -52,24 +56,31 @@
 .burger__container-links-link1 span:hover {
     color: #FF0606;
 }
+
 .burger__container-links-link2 span:hover {
     color: #FF0606;
 }
+
 .burger__container-links-link3 span:hover {
     color: #FF0606;
 }
+
 .burger__container-links-link4 span:hover {
     color: #FF0606;
 }
+
 .burger__container-links-link5 span:hover {
     color: #FF0606;
 }
+
 .burger__container-links-link6 span:hover {
     color: #FF0606;
 }
+
 .burger__container-links-link7 span:hover {
     color: #FF0606;
 }
+
 .burger__container-links-link8 span:hover {
     color: #FF0606;
 }
@@ -226,7 +237,7 @@
 }
 
 .burger__container-right-images {
-    
+
     display: grid;
     grid-template-columns: repeat(3, min-content);
 
@@ -246,38 +257,38 @@
     .burger__container-left {
         width: 360px;
     }
-    
+
     .burger__container-links {
         gap: 15px;
     }
-    
-    
+
+
     .burger__container-links-link1 span {
         padding-right: 95px;
         font-size: 18px;
     }
-   
-    
+
+
     .burger__container-links-link2 span {
         padding-right: 135px;
         font-size: 18px;
     }
-    
+
     .burger__container-links-link3 span {
         padding-right: 103px;
         font-size: 18px;
     }
-    
+
     .burger__container-links-link4 span {
         padding-right: 22px;
         font-size: 18px;
     }
-    
+
     .burger__container-links-link5 span {
         padding-right: 150px;
         font-size: 18px;
     }
-   
+
     .burger__container-links-link6 span {
         padding-right: 184px;
         font-size: 18px;
@@ -287,7 +298,7 @@
         padding-right: 194px;
         font-size: 18px;
     }
-  
+
     .burger__container-links-link8 span {
         padding-right: 166px;
         font-size: 18px;

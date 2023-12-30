@@ -1,32 +1,40 @@
-const modal_menu = document.getElementById("modal_menu");
-const modalContent = document.querySelector(".modal-content_menu");
-const menuButton = document.getElementById("menuButton");
-
-// Функция открытия и закрытия модального окна
-function toggleModalMenu() {
-  if (modal_menu.style.display === "block") {
-    modal_menu.style.display = "none";
-  } else {
-    modal_menu.style.display = "block";
-  }
+function openBurger() {
+  let burger = document.getElementById("burger");
+  burger.classList.add("burger__open");
+  console.log(burger);
 }
-// modal_nav Добавляем обработчик события для кнопки меню (открытия и закрытия модального окна)
-menuButton.addEventListener("click", toggleModalMenu);
 
-const modalNavElDop = document.getElementById("modal_nav_el_dop");
-const modalBlocks = document.querySelector(".modal_blocks");
-const modalNav = document.querySelector(".modal_nav");
-let isVisible = false; // Флаг для отслеживания видимости блока
+function closeBurger() {
+  document.getElementById("burger").classList.remove("burger__open");
+  console.log(document.getElementById("burger"));
+}
 
-modalNavElDop.addEventListener("click", () => {
-  if (isVisible) {
-    modalBlocks.style.display = "none";
-    modalNav.style.display = "block";
-  } else {
-    modalBlocks.style.display = "block";
-    modalNav.style.display = "none";
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.querySelectorAll(".sortDate_button_group button");
+  let select = document.getElementById("sport");
+
+  function setActive(element) {
+    // Удаление класса "active" у всех элементов
+    buttons.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+    select.classList.remove("active");
+
+    // Добавление класса "active" к текущему элементу
+    element.classList.add("active");
   }
-  isVisible = !isVisible; // Инвертировать флаг видимости
+
+  // Обработчики событий для кнопок
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActive(button);
+    });
+  });
+
+  // Обработчик события для выбора в <select>
+  select.addEventListener("change", function () {
+    setActive(select);
+  });
 });
 
 // let brands = new Map([
@@ -152,3 +160,41 @@ starSelect.addEventListener("click", function (event) {
 //         }
 //     }
 // });
+
+// Swiper
+let Options1 = {
+  direction: "horizontal",
+  loop: false,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: ".slider1-arrow-right",
+    prevEl: ".slider1-arrow-left",
+  },
+  slidesPerView: 1,
+  spaceBetween: 0,
+};
+let Options2 = {
+  direction: "horizontal",
+  loop: false,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: ".slider2-arrow-right",
+    prevEl: ".slider2-arrow-left",
+  },
+  slidesPerView: 1,
+  spaceBetween: 0,
+};
+let Options3 = {
+  direction: "horizontal",
+  loop: false,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: ".slider3-arrow-right",
+    prevEl: ".slider4-arrow-left",
+  },
+  slidesPerView: 1,
+  spaceBetween: 0,
+};
+new Swiper(".swiper1", Options1);
+new Swiper(".swiper2", Options2);
+new Swiper(".swiper3", Options3);

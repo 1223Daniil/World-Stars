@@ -1,0 +1,33 @@
+.olympus__container-slider{
+	width: 100%;
+	max-width: 1195px;
+	position: relative;
+}
+
+.slider1-arrow-left{
+	position: absolute;
+	top: 42%;
+	left: -30px;
+}
+.slider1-arrow-right{
+	position: absolute;
+	top: 42%;
+	right: -30px;
+}
+
+.slider2-arrow-left{
+	position: absolute;
+	top: 42%;
+	left: -30px;
+}
+.slider2-arrow-right{
+	position: absolute;
+	top: 42%;
+	right: -30px;
+}
+
+.olympus__container-slider2{
+	width: 100%;
+	max-width: 1195px;
+	position: relative;
+}

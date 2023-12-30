@@ -14,8 +14,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="../css/main.min.css" />
-        <link rel="stylesheet" href="../css/mainStyle.css">
         <link rel="stylesheet" href="kinostyle/normalize.css">
         <link rel="stylesheet" href="kinostyle/fonts.css">
         <link rel="stylesheet" href="kinostyle/style.css">
@@ -30,137 +28,154 @@
         <link rel="stylesheet" href="kinostyle/interest.css">
         <link rel="stylesheet" href="kinostyle/video.css">
         <link rel="stylesheet" href="kinostyle/footer.css">
+        <link rel="stylesheet" href="style/Swipers.css">
+        <link rel="stylesheet"
+            href="./swiper/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
 </head>
 <body>
-    <header class="header_main">
-        <div class="container">
-            <div class="poster_header_up">
-                <a class="logo_link"><img src="../assets/image/logo.svg"></a>
-                <div class="poster_nav">
-                    <div class="bell">
-                        <a href="#">
-                            <img src="../assets/image/bell.png" alt="Notifications">
-                        </a>
-                        <div class="circle"></div>
+    <section class="kino">
+        <div class="header">
+            <div class="container">
+                <div class="header__container">
+                    <div class="header__container-logo">
+                        <img class="header__logo" src="image-home/logo.png" alt="">
+                        <!-- <img class="header__losso" src="image-home/losso.png" alt=""> -->
                     </div>
-                    <div class="header_prof_card">
-                        <img style="border-radius: 50%; align-self: baseline;" src="../assets/image/Bitmap (1).png" alt="image">
-                        <div class="name">
-                            <div class="stars">
-                                <img src="../assets/image/header_stars.png" alt="Stars">
+                    <div class="header__container-blog">
+                        <div class="header__container-ring">
+                            <img class="header__container-ring-foto" src="image-home/ring.png" alt="">
+                        </div>
+                        <div class="header__container-name">
+                            <img class="header__container-foto-size" src="image-home/Image.png"alt="">
+                            <div class="header__container-name-man">
+                                <div class="header__container-name-name">
+                                    <span class="header__container-imya">Александр</span>
+                                    <div class="header__container-stars">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Staryellow.png" alt="">
+                                        <img src="image-home/Starblack.png" alt="">
+                                        <img src="image-home/Starblack.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__container-bag">
+                                <img class="header__container-bag-img" src="image-home/Group1000001080.png" alt="">
+                                <span class="header__container-bag-span">45</span>
                             </div>
                         </div>
-                        <div class="header_bag">
-                            <img src="../assets/image/bag_ws.png" alt="Shopping Bag" >
-                        </div>
-                        <div class="header_num">
-                            25
-                        </div>
+                        <button class="header__container-menu">
+                            <img onclick="openBurger()" src="image-home/menu.png" alt="">
+                        </button>
                     </div>
-                    <div class="menu-container">
-                        <img src="../assets/image/menu.svg" id="menuButton">
+                    <!-- <img class="header__spiral" src="image-home/spirali.png" alt=""> -->
+                </div>
+                <div class="hmobil">
+                    <div class="container">
+                        <div class="hmobil__container">
+                            <div class="hmobil__container-logo">
+                                <div class="hmobil__container-logo-left">
+                                    <span class="hmobil__container-logo-title">World Stars</span>
+                                    <span class="hmobil__container-logo-title">мировые звезды brics</span>
+                                </div>
+                                <div class="hmobil__container-logo-right">
+                                    <!-- <img class="hmobil__container-logo-search" src="image-home/lupamobil.png" alt=""> -->
+                                    <img src="image-home/ringmobil.png" alt="">
+                                    <button class="hmobil__container-logo-menu">
+                                        <img onclick="openBurger()" src="image-home/menumobil.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hmobil__container-name">
+                                <img class="hmobil__container-foto-size" src="image-home/mobImage.png"alt="">
+                                <div class="hmobil__container-name-man">
+                                    <div class="hmobil__container-name-name">
+                                        <span class="hmobil__container-imya">Александр</span>
+                                        <div class="hmobil__container-stars">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Staryellow.png" alt="">
+                                            <img src="image-home/Starblack.png" alt="">
+                                            <img src="image-home/Starblack.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hmobil__container-bag">
+                                    <img class="hmobil__container-bag-img" src="image-home/Group1000001080.png" alt="">
+                                    <span class="hmobil__container-bag-span">45</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <section class="kino">
-      
-        <div id="modal_menu" class="modal_menu">
-            <div class="modal-content_menu">
-               <div class="container">
-                  <div class="modal_container">
-                       <div class="modal_nav">
-                     <div class="modal_out_cont">
-                         <div class="modal_nav_cont">
-                             <img id="showMenuArrow" src="../assets/images/auction/backarrow.svg" alt="arrow left" style="margin-bottom: 40px; cursor: pointer;">
-                              <a href="./sign-in.html" class ="modal_nav_el">
-                               <img src="../assets/image/m1.svg">
-                               <span>Звездный магазин</span>
-                               <img class="modal_arrow" src="../assets/image/arrow.svg">
-                           </a>
-                           <a href="./sign-in.html" class ="modal_nav_el">
-                              <img src="../assets/image/m2.svg">
-                               <span>Смотри и пиши новости</span>
-                               <img class="modal_arrow" src="../assets/image/arrow.svg">
-                           </a>
-                           <a href="./sign-in.html" class ="modal_nav_el">
-                              <img src="../assets/image/m3.svg">
-                               <span>Предложи звезду</span>
-                               <img class="modal_arrow" src="../assets/image/arrow.svg">
-                           </a>
-                           <a href="./sign-in.html" class ="modal_nav_el">
-                              <img src="../assets/image/m4.svg">
-                               <span>Выбирай мировую звезду</span>
-                               <img class="modal_arrow" src="../assets/image/arrow.svg">
-                           </a>
-                           <a href="./sign-in.html" class ="modal_nav_el">
-                              <img src="../assets/image/m5.png" style="align-self: center;">
-                               <span>Олимп славы</span>
-                               <img class="modal_arrow" src="../assets/image/arrow.svg">
-                           </a>
-                           <a href="./sign-in.html" class ="modal_nav_el ">
-                              <img src="../assets/image/m6.svg">
-                               <span>Афиша встреч </span>
-                               <img class="modal_arrow" src="../assets/image/arrow.svg">
-                           </a>
-                           <a href="./sign-in.html" class ="modal_nav_el">
-                              <img src="../assets/image/m7.svg">
-                               <span>Профиль</span>
-                               <img class="modal_arrow" src="../assets/image/arrow.svg">
-                           </a>
-                           <a href="./sign-in.html" class ="modal_nav_el">
-                              <img src="../assets/image/m8.svg">
-                               <span>Кошелек</span>
-                               <img class="modal_arrow" src="../assets/image/arrow.svg">
-                           </a>
-                               
-                        </div>
-                     </div>
-                    </div>
-                    <span class ="modal_nav_el" id="modal_nav_el_dop">Дополнительно</span>
-                    <div class="modal_blocks">
-                      <div class="modal_nav_last">
-                         <a class ="modal_nav_el modal_last_el">
-                           <img src="../assets/image/bag_ws.png" style="align-self: center;">
-                            <span>Зарабатывай на сайте</span>
-                        </a>
-                     </div>
-                       <div class="modal_blocks_cont_first">
-                           <div class="modal_blocks_cont1">
-                                <div class="modal_block">
-                                    <p>ЗАРАБОТАЙ КЕШБЕК НА РЕКЛАМНОЙ НОВОСТИ</p>
-                                    <img class="modal_block_img" src="../assets/image/mb1.svg">
-                                </div>
-                                <div class="modal_block">
-                                    <p>ЗАРАБОТАТЬ НА СТИКЕРАХ И СМАЙЛИКАХ</p>
-                                    <img class="modal_block_img" src="../assets/image/mb2.svg">
-                                </div>
-                            </div>
-                                <div class="modal_blocks_cont2">
-                                    <div class="modal_block">
-                                        <p>ЗАРАБОТАТЬ НА КОЛЕСЕ УДАЧИ</p>
-                                        <img class="modal_block_img1" src="../assets/image/mb3.svg">
-                                    </div>
-                                    <div class="modal_block">
-                                        <p>ПОЛУЧИ КЕШБЕК НА ВСТРЕЧАХ С МИРОВЫМИ ЗВЕЗДАМИ</p>
-                                        <img class="modal_block_img" src="../assets/image/mb4.svg">
-                                    </div> 
-                                </div>
-                    </div>
-                        <div class="modal_blocks_cont3">
-                            <div class="modal_block">
-                                <p>ЗАРАБАТЫВАТЬ МОДЕРАТОРОМ</p>
-                                <img class="modal_block_img" src="../assets/image/mb5.svg">
-                            </div>
-                            <div class="modal_block">
-                                <p>ЗАРАБАТЫВАТЬ  НА 100% ЗАПОЛНЕНИИ ПРОФИЛЯ</p>
-                                <img class="modal_block_img" src="../assets/image/mb6.svg">
-                            </div>
+        <!-- burger menu -->
+        <div id="burger" class="burger">
+            <div class="container">
+                <button onclick="closeBurger()" class="burger__arrow">
+                    <img src="image-home/burgerarrow.svg" alt="">
+                </button>
+                <div class="burger__container">
+                    <div class="burger__container-left">
+                        <div class="burger__container-links">
+                            <a href="#" class="burger__container-links-link1">
+                                <img src="image-home/burger1.svg" alt="">
+                                <span>Звездный магазин</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link2">
+                                <img src="image-home/burger2.svg" alt="">
+                                <span>Пиши новости</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link3">
+                                <img src="image-home/burger3.svg" alt="">
+                                <span>Предложи звезду</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link4">
+                                <img src="image-home/burger4.svg" alt="">
+                                <span>Выбирай мировую звезду</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link5">
+                                <img src="image-home/burger5.png" alt="">
+                                <span>Олимп славы</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link6">
+                                <img src="image-home/burger6.svg" alt="">
+                                <span>Кошелек</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link7">
+                                <img src="image-home/burger7.svg" alt="">
+                                <span>Профиль</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
+                            <a href="#" class="burger__container-links-link8">
+                                <img src="image-home/burger8.svg" alt="">
+                                <span>Афиша встреч</span>
+                                <img class="burger__container-links-img" src="image-home/arrowburger.svg" alt="">
+                            </a>
                         </div>
                     </div>
-                  </div>
-               </div>
+                    <div class="burger__container-right">
+                        <div class="burger__container-right-up">
+                            <img src="image-home/bagheader.png" alt="">
+                            <h3 class="burger__container-right-title">Зарабатывай на сайте! </h3>
+                        </div>
+                        <div class="burger__container-right-images">
+                            <img src="image-home/burgerimage1.png" alt="">
+                            <img src="image-home/burgerimage2.png" alt="">
+                            <img src="image-home/burgerimage2.png" alt="">
+                            <img src="image-home/burgerimage4.png" alt="">
+                            <img src="image-home/burgerimage5.png" alt="">
+                            <img src="image-home/burgerimage6.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -169,15 +184,18 @@
                 <div class="choicekino__container">
                     <div class="choicekino__container-up">
                         <div class="choicekino__wrapper1">
-                            <div class="choicekino__wrapper1-hobbies">
-                                <div class="choicekino__wrapper1-hobbies-item1">
-                                    <span>Спорт</span>
-                                    <img src="image-home/choicehobbiesarrow.png" alt="">
-                                </div>
-                                <button class="choicekino__wrapper1-hobbies-item">Кино</button>
-                                <button class="choicekino__wrapper1-hobbies-item">Музыка</button>
-                                <button class="choicekino__wrapper1-hobbies-item">Мода</button>
-                                <button class="choicekino__wrapper1-hobbies-item">Танцы</button>
+                            <div class="sortDate_button_group" >
+                                <select name="sport" id="sport">
+                                    <option value="Football">Футбол</option>
+                                    <option value="Volleyball">Волейбол</option>
+                                    <option value="Basketball">Баскетбол</option>
+                                    <option value="Hockey">Хоккей</option>
+                                    <option value="Cricket">Крикет</option>
+                                </select>
+                                <button data-group="Movie">Кино</button>
+                                <button data-group="Music">Музыка</button>
+                                <button data-group="Fashion">Мода</button>
+                                <button data-group="Danse">Танцы</button>
                             </div>
                             <h3 class="choicekino__wrapper1-title">Мировые звезды кино</h3>
                             <span class="choicekino__wrapper1-title-span">Смотри и пиши свои новости о любимых мировых звездах кино</span>
@@ -238,7 +256,6 @@
             </div>
         </div>
     </div>
-
         <div class="read">
             <div class="container">
                 <h2 class="read__title">Читай новости о мировой звезде</h2>
@@ -252,16 +269,6 @@
                                 <span class="read__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
-
-                        <!-- <div class="read__container-item-news">
-                            <span>Новость</span>
-                            <div class="read__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="read__container-item-numbers">238</p>
-                        </div> -->
                         <span class="read__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир. выиграл десять титулов чемпиона Испании</span>
                     </div>
                     <div class="read__container-item">
@@ -273,16 +280,6 @@
                                 <span class="read__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
-
-                        <!-- <div class="read__container-item-news">
-                            <span>Новость</span>
-                            <div class="read__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="read__container-item-numbers">238</p>
-                        </div> -->
                         <span class="read__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир. выиграл десять титулов чемпиона Испании</span>
                     </div>
                     <div class="read__container-item">
@@ -294,16 +291,6 @@
                                 <span class="read__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
-
-                        <!-- <div class="read__container-item-news">
-                            <span>Новость</span>
-                            <div class="read__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="read__container-item-numbers">238</p>
-                        </div> -->
                         <span class="read__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир. выиграл десять титулов чемпиона Испании</span>
                     </div>
                     <div class="read__container-item">
@@ -315,16 +302,6 @@
                                 <span class="read__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
-
-                        <!-- <div class="read__container-item-news">
-                            <span>Новость</span>
-                            <div class="read__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="read__container-item-numbers">238</p>
-                        </div> -->
                         <span class="read__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир. выиграл десять титулов чемпиона Испании</span>
                     </div>
                     <div class="read__container-item">
@@ -336,16 +313,6 @@
                                 <span class="read__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
-
-                        <!-- <div class="read__container-item-news">
-                            <span>Новость</span>
-                            <div class="read__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="read__container-item-numbers">238</p>
-                        </div> -->
                         <span class="read__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир. выиграл десять титулов чемпиона Испании</span>
                     </div>
                     <div class="read__container-item">
@@ -404,20 +371,10 @@
                             <div class="readmobil__container-item-container">
                                 <span class="readmobil__container-item-autor">Автор: Саманта</span>
                                 <div class="readmobil__container-item-line"></div>
-                                <!-- <img class="readmobil__container-item-line" src="image-home/line.svg" alt=""> -->
                                 <span class="readmobil__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
 
-                        <!-- <div class="readmobil__container-item-news">
-                            <span>Новость</span>
-                            <div class="readmobil__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="readmobil__container-item-numbers">238</p>
-                        </div> -->
                         <span class="readmobil__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир</span>
                     </div>
                     <div class="readmobil__container-item">
@@ -426,20 +383,10 @@
                             <div class="readmobil__container-item-container">
                                 <span class="readmobil__container-item-autor">Автор: Саманта</span>
                                 <div class="readmobil__container-item-line"></div>
-                                <!-- <img class="readmobil__container-item-line" src="image-home/line.svg" alt=""> -->
                                 <span class="readmobil__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
 
-                        <!-- <div class="readmobil__container-item-news">
-                            <span>Новость</span>
-                            <div class="readmobil__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="readmobil__container-item-numbers">238</p>
-                        </div> -->
                         <span class="readmobil__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир</span>
                     </div>
                     <div class="readmobil__container-item">
@@ -448,20 +395,10 @@
                             <div class="readmobil__container-item-container">
                                 <span class="readmobil__container-item-autor">Автор: Саманта</span>
                                 <div class="readmobil__container-item-line"></div>
-                                <!-- <img class="readmobil__container-item-line" src="image-home/line.svg" alt=""> -->
                                 <span class="readmobil__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
 
-                        <!-- <div class="readmobil__container-item-news">
-                            <span>Новость</span>
-                            <div class="readmobil__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="readmobil__container-item-numbers">238</p>
-                        </div> -->
                         <span class="readmobil__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир</span>
                     </div>
                     <div class="readmobil__container-item">
@@ -470,20 +407,9 @@
                             <div class="readmobil__container-item-container">
                                 <span class="readmobil__container-item-autor">Автор: Саманта</span>
                                 <div class="readmobil__container-item-line"></div>
-                                <!-- <img class="readmobil__container-item-line" src="image-home/line.svg" alt=""> -->
                                 <span class="readmobil__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
-
-                        <!-- <div class="readmobil__container-item-news">
-                            <span>Новость</span>
-                            <div class="readmobil__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="readmobil__container-item-numbers">238</p>
-                        </div> -->
                         <span class="readmobil__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир</span>
                     </div>
                     <div class="readmobil__container-item">
@@ -492,20 +418,9 @@
                             <div class="readmobil__container-item-container">
                                 <span class="readmobil__container-item-autor">Автор: Саманта</span>
                                 <div class="readmobil__container-item-line"></div>
-                                <!-- <img class="readmobil__container-item-line" src="image-home/line.svg" alt=""> -->
                                 <span class="readmobil__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
-
-                        <!-- <div class="readmobil__container-item-news">
-                            <span>Новость</span>
-                            <div class="readmobil__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="readmobil__container-item-numbers">238</p>
-                        </div> -->
                         <span class="readmobil__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир</span>
                     </div>
                     <div class="readmobil__container-item">
@@ -513,27 +428,14 @@
                             <img class="readmobil__container-item-img" src="image-home/djekinews.png" alt="">
                             <div class="readmobil__container-item-container">
                                 <span class="readmobil__container-item-autor">Автор: Саманта</span>
-                                <!-- <img class="readmobil__container-item-line" src="image-home/line.svg" alt=""> -->
                                 <div class="readmobil__container-item-line"></div>
                                 <span class="readmobil__container-item-date">29 Сен. 2023</span>
                             </div>
                         </div>
-
-                        <!-- <div class="readmobil__container-item-news">
-                            <span>Новость</span>
-                            <div class="readmobil__container-item-arrows">
-                                <img src="image-home/kinoarrowprev.png" alt="">
-                                <span>058</span>
-                                <img src="image-home/kinoarrownext.png" alt="">
-                            </div>
-                            <p class="readmobil__container-item-numbers">238</p>
-                        </div> -->
                         <span class="readmobil__container-item-description">Леонель Месси стал лучшим игроком по версии журнала Times. Лучший бомбардир</span>
                     </div>
-                    
                 </div>
             </div>
-
             <div class="read__page">
                 <span class="read__page-desc">Страница</span>
                     <div class="read__page-kvadrat">
@@ -550,7 +452,6 @@
         </div>
     </div>
     </div>
-
         <div class="news">
             <div class="container">
                 <div class="news__container">
@@ -635,6 +536,12 @@
                 </div>
             </div>
         </div>
+
+        
+
+
+
+
 
         <div class="stylesmobil">
             <div class="container">
@@ -841,80 +748,102 @@
             </div>
         </div>
 
-   
-        <script src="index.js"></script>
-    </section>
-    <footer class="footer">
-        <div class="container">
-           <div class="footer_lists">
-            <ul class="footer_row">
-                <li><a href="#"><span class ='footer_logo_link'>World Stars</span><br> <span>мировые звезды brics</span> </a></li>
-                <li><a href="#"><span>О нас</span></a></li>
-                <li><a href="#"><span>Словарь сайта</span></a></li>
-                <li><a href="#"><span>Встреси со звёздами</span></a></li>
-                <li><a href="#"><span>Знакомься дружи</span></a></li>
-            </ul>
-            <ul class="footer_row">
-                <li><a href="#"><span>Главная</span></a></li>
-                <li><a href="#"><span>Звезды кино</span></a></li>
-                <li><a href="#"><span>Мода</span></a></li>
-                <li><a href="#"><span>Спорт</span></a></li>
-                <li><a href="#"><span>Музыка</span></a></li>
-                <li><a href="#"><span>Танцы</span></a></li>
-            </ul>
-            <ul class="footer_row">
-                <li><a href="#"><span>Поддержка</span> </a></li>
-                <li><a href="#"><span>Политика конфиденциальности</span></a></li>
-                <li><a href="#"><span>Term of service</span></a></li>
-                <li><a href="#"><span>Social Media</span></a></li>
-                <li><a href="#"><span>Контакты</span></a></li>
-                <div class="footer_row_contact">
-                    <div class="circlestar">
-                        <img src="../assets/images/footer/footerstar.svg" alt="footerstar">
+        <div class="footer">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__container-logo">
+                        <h2 class="footer__container-logo-world">World Stars</h2>
+                        <span class="footer__container-logo-stars">мировые звезды brics</span>
+                        <ul class="footer__container-menu1">
+                            <li><a class="footer__container-links-link" href="#">О нас</a></li>
+                            <li><a class="footer__container-links-link" href="#">Словарь сайта</a></li>
+                            <li><a class="footer__container-links-link" href="#">Встречи со звездами</a></li>
+                            <li><a class="footer__container-links-link" href="#">Знакомься дружи</a></li>
+                        </ul>
                     </div>
-                    <img src="../assets/images/footer/WhatsApp Inc. svg (1).png" alt="WhatsApp">
-                    <img src="../assets/images/footer/social icons.png" alt="social">
-                    <img src="../assets/images/footer/Telegram_2019_Logo.png" alt="Telegram_2019_Logo">
-                    <img src="../assets/images/footer/App Icon.svg" alt="App">
+                    <div class="footer__container-links">
+                        <ul class="footer__container-menu2">
+                            <li><a class="footer__container-links-link1" href="#">Главная</a></li>
+                            <li><a class="footer__container-links-link" href="#">Звезды кино</a></li>
+                            <li><a class="footer__container-links-link" href="#">Мода</a></li>
+                            <li><a class="footer__container-links-link" href="#">Спорт</a></li>
+                            <li><a class="footer__container-links-link" href="#">Музыка</a></li>
+                            <li><a class="footer__container-links-link" href="#">Танцы</a></li>
+                        </ul>
+                        <ul class="footer__container-menu3">
+                            <li><a class="footer__container-links-link1" href="#">Поддержка</a></li>
+                            <li><a class="footer__container-links-link" href="#">Политика конфиденциальности</a></li>
+                            <li><a class="footer__container-links-link" href="#">Term of service</a></li>
+                            <li><a class="footer__container-links-link" href="#">Social Media</a></li>
+                            <li><a class="footer__container-links-link" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </ul>
-           </div>
-        </div>
-        <div class="footerMobile container_fluid">
-            <div class="footerMobile_content">
-              <h2><span>World Stars</span><br> мировые звезды brics</h2>
-              <div class="footerMobile_content_links">
-              <ul>
-                <li style="font-weight: 700;">О нас</li>
-                <li>Словарь сайта</li>
-                <li>Контакты</li>
-                <li style="font-weight: 700;">Поддержка</li>
-                <li>Term of service</li>
-                <li style="font-weight: 700;">Social Media</li>
-              </ul>
-              <ul>
-                <li style="font-weight: 700;">Главная</li>
-                <li>Звезды кино</li>
-                <li>Мода</li>
-                <li>Спорт</li>
-                <li>Музыка</li>
-                <li>Танцы</li>
-                <li>Встречи со звездами</li>
-                <li>Знакомься дружи</li>
-              </ul>
-              </div>
-              <p class="footerMobile_content_rules">Политика конфиденциальности</p>
-               <div class="footer_row_contact">
-                 <div class="circlestar">
-                     <img src="../assets/images/footer/footerstar.svg" alt="footerstar">
-                 </div>
-                 <img src="../assets/images/footer/WhatsApp Inc. svg (1).png" alt="WhatsApp">
-                 <img src="../assets/images/footer/social icons.png" alt="social">
-                 <img src="../assets/images/footer/Telegram_2019_Logo.png" alt="Telegram_2019_Logo">
-                 <img src="../assets/images/footer/App Icon.svg" alt="App">
-               </div>
+
+                <div class="footer__container-social">
+                    <div class="footer__container-social-container">
+                        <a href="#"><img class="footer__container-social-image" src="image-home/socialmobilstar.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialwhatsapp.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialvk.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialtelegramm.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialsnap.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+
+        <!-- footermobil -->
+
+        <div class="footermobil">
+            <div class="container">
+                <div class="footermobil__container-logo">
+                    <h2 class="footer__container-logo-world">World Stars</h2>
+                        <span class="footer__container-logo-stars">мировые звезды brics</span>
+                </div>
+                <div class="footermobil__container-wrapper">
+                    <div class="footermobil__container-left">
+                        <ul class="footer__container-menu1">
+                            <li><a class="footer__container-links-link1" href="#">О нас</a></li>
+                            <li><a class="footer__container-links-link" href="#">Словарь сайта</a></li>
+                            <li><a class="footer__container-links-link" href="#">Контакты</a></li>
+                        </ul>
+                        <ul class="footer__container-menu3">
+                            <li><a class="footer__container-links-link1" href="#">Поддержка</a></li>
+                            <li><a class="footer__container-links-link" href="#">Term of service</a></li>
+                            <li><a class="footer__container-links-link1" href="#">Social Media</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footermobil__container-right">
+                        <ul class="footer__container-menu2">
+                            <li><a class="footer__container-links-link1" href="#">Главная</a></li>
+                            <li><a class="footer__container-links-link" href="#">Звезды кино</a></li>
+                            <li><a class="footer__container-links-link" href="#">Мода</a></li>
+                            <li><a class="footer__container-links-link" href="#">Спорт</a></li>
+                            <li><a class="footer__container-links-link" href="#">Музыка</a></li>
+                            <li><a class="footer__container-links-link" href="#">Танцы</a></li>
+                            <li><a class="footer__container-links-link" href="#">Встречи со звездами</a></li>
+                            <li><a class="footer__container-links-link" href="#">Знакомься дружи</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="footermobil__container-social">
+                    <ul>
+                        <li><a class="footer__container-links-link" href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                    <div class="footermobil__container-social-container">
+                        <a href="#"><img class="footermobil__container-social-image" src="image-home/socialmobilstar.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialmobilwhatsapp.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialmobilvk.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialmobiltelegram.svg" alt=""></a>
+                        <a href="#"><img src="image-home/socialmobilsnap.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </section>
 </body>
 </html>

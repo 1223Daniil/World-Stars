@@ -42,3 +42,62 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.sortDate_button_group select.active {
+   background: var(--q, linear-gradient(180deg, #ff2c15 0%, #fa9317 100%));
+   color: white;
+   option {
+     color: black;
+   }
+ }
+ .sortDate_button_group select {
+   border: 1px solid #000;
+   border-radius: 5px;
+   background: #fff;
+   color: #212121;
+   padding: 11px 24px;
+   font-size: 1.25rem;
+   align-self: center;
+   font-weight: 700;
+ }
+ .sortDate_button_group select option {
+      border-radius: 5px;
+      background: #ffffff;
+      font-size: 1.3rem;
+  
+ }
+ .sortDate_button_group button {
+   border-radius: 5px;
+   border: 1px solid #000;
+   background: #fff;
+   transition: color 0.5s;
+   align-self: center;
+   color: #212121;
+   text-align: center;
+   padding: 11px 24px;
+   font-family: Montserrat;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+ }
+ .sortDate_button_group button.active {
+   border-radius: 5px;
+   border: 1px solid var(--q, #ff2c15);
+   background: var(--q, linear-gradient(180deg, #ff2c15 0%, #fa9317 100%));
+   color: #fff;
+ }
+ .sortDate_button_group button:hover {
+   border-radius: 5px;
+   border: 1px solid var(--q, #ff2c15);
+   background: var(--q, linear-gradient(180deg, #ff2c15 0%, #fa9317 100%));
+   color: #ffffff;
+ }
+ .sortDate_button_group {
+   display: flex;
+   gap: 15px;
+   margin-bottom: 40px;
+ }

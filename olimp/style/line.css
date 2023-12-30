@@ -1,6 +1,6 @@
 .line {
-    background-image: url('/image-home/line.png');
-    background-repeat: no-repeat;
+    background-image: url('../image-home/line.png');
+    /* background-repeat: no-repeat; */
     height: 124px;
 }
 

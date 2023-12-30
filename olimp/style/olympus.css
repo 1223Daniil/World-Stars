@@ -1,7 +1,7 @@
 .olympus {
     
     /* background: linear-gradient(256deg, #F00 -43.56%, #FFD466 103.14%); */
-    background-image: url('/image-home/fonolimp.png');
+    background-image: url('../image-home/fonolimp.png');
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -67,12 +67,12 @@ z-index: 2;
     margin-bottom: 46px;
 }
 
-.olympus__container-slider {
+/* .olympus__container-slider {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 100px;
-}
+} */
 
 .olympus__container-down {
     display: flex;

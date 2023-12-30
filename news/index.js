@@ -1,30 +1,97 @@
-const modal_menu = document.getElementById("modal_menu");
-const modalContent = document.querySelector(".modal-content_menu");
-const menuButton = document.getElementById("menuButton");
+function openBurger() {
+  let burger = document.getElementById("burger");
+  burger.classList.toggle("burger__open");
+}
 
-// Функция открытия и закрытия модального окна
-function toggleModalMenu() {
-  if (modal_menu.style.display === "block") {
-    modal_menu.style.display = "none";
-  } else {
-    modal_menu.style.display = "block";
+function selectSportToggle() {
+  let SelectSport = document.getElementById("select-sport");
+  SelectSport.classList.toggle("select-sport--open");
+}
+
+function removeBackground() {
+  let body = document.getElementById("wallpaper");
+
+  body.classList.remove("backgroundColor0");
+  body.classList.remove("backgroundColor1");
+  body.classList.remove("backgroundColor2");
+  body.classList.remove("backgroundColor3");
+  body.classList.remove("backgroundColor4");
+  body.classList.remove("backgroundColor5");
+}
+
+function changeColor(element) {
+  let t = element.attributes.id.value;
+  let body = document.getElementById("wallpaper");
+  removeBackground();
+  switch (t) {
+    case "1":
+      body.classList.add("backgroundColor1");
+      console.log(t, body.classList);
+      break;
+    case "2":
+      body.classList.add("backgroundColor2");
+      console.log(t, body.classList);
+      break;
+    case "3":
+      body.classList.add("backgroundColor3");
+      console.log(t, body.classList);
+      break;
+    case "4":
+      body.classList.add("backgroundColor4");
+      console.log(t, body.classList);
+      break;
+    case "5":
+      body.classList.add("backgroundColor5");
+      console.log(t, body.classList);
+      break;
+    default:
+      body.classList.add("backgroundColor0");
+      console.log(t, body.classList);
+      break;
   }
 }
-// modal_nav Добавляем обработчик события для кнопки меню (открытия и закрытия модального окна)
-menuButton.addEventListener("click", toggleModalMenu);
 
-const modalNavElDop = document.getElementById("modal_nav_el_dop");
-const modalBlocks = document.querySelector(".modal_blocks");
-const modalNav = document.querySelector(".modal_nav");
-let isVisible = false; // Флаг для отслеживания видимости блока
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.querySelectorAll(".sortDate_button_group button");
+  let select = document.getElementById("sport");
 
-modalNavElDop.addEventListener("click", () => {
-  if (isVisible) {
-    modalBlocks.style.display = "none";
-    modalNav.style.display = "block";
-  } else {
-    modalBlocks.style.display = "block";
-    modalNav.style.display = "none";
+  function setActive(element) {
+    // Удаление класса "active" у всех элементов
+    buttons.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+    select.classList.remove("active");
+
+    // Добавление класса "active" к текущему элементу
+    element.classList.add("active");
   }
-  isVisible = !isVisible; // Инвертировать флаг видимости
+
+  // Обработчики событий для кнопок
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActive(button);
+    });
+  });
+
+  // Обработчик события для выбора в <select>
+  select.addEventListener("change", function () {
+    setActive(select);
+  });
 });
+function ChangeActive(groupbt) {
+  let buttons = document.querySelectorAll(groupbt);
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      // Удаление класса "active" у всех кнопок
+      buttons.forEach(function (btn) {
+        btn.classList.remove("active");
+      });
+
+      // Добавление класса "active" к кнопке, по которой был клик
+      button.classList.add("active");
+    });
+  });
+}
+ChangeActive(".choice__wrapper-country-item");
+ChangeActive(".form__viborfon-container-item");

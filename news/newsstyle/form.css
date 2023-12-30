@@ -258,7 +258,10 @@
     color: #fff;
     background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
 }
-
+.form__viborfon-container-item.active{
+    color: #fff;
+    background: linear-gradient(180deg, #FF2C15 0%, #FA9317 100%);
+}
 @media (max-width: 360px) {
     .form {
         display: none;
